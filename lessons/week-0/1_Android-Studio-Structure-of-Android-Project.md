@@ -43,8 +43,18 @@ Android Studio is based off IntelliJ, but created specifically for Android Devel
 * TODO
 
 #####SDK Manager
+
+The SDK manager allows you to install other libraries you might need, for example HAXM, Android Wear,
+or earlier versions of Android.
+
 #####AVD manager
+
+This is where you can manage virtual devices and create new ones.
+
 #####Managing virtual devices from the command line
+
+> Exercise: [Managing AVD from the Command Line](https://developer.android.com/tools/devices/managing-avds-cmdline.html)
+
 #####Module settings
 
 ####Assessment
