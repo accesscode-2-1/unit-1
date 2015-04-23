@@ -24,19 +24,32 @@ representing a student’s grade, and prints out the letter grade.
 
 ####Lesson
 
-* Key points the students will learn
-* List of exercises
+##### What is Android?
+##### Android Studio
+Android Studio is based off IntelliJ, but created specifically for Android Development. Although you'll very commonly see Eclipse online when looking for help, Android Studio is becoming more popular. Using this should be very similar to IntelliJ, including similar shortcuts, and the advice you find online for IntelliJ will often be transferable (except for gradle problems.
+
+> Exercise: Create a new Android Project of any type.
+
+##### Introduction to an Android project
+* Gradle Scripts: Thes
+* Manifests: This is where the information that the system must have to run the Android Project lives.
+* Java: This is where your Java code for the project lives.
+* Res: These are the resources files. Here's where static information lives.
+
+##### Exploring Android Studio panels:
+* Project (android view vs project view)
+* Android console (logcat, memory, cpu)
+* Structure
+* TODO
+
+#####SDK Manager
+#####AVD manager
+#####Managing virtual devices from the command line
+#####Module settings
 
 ####Assessment
 
-A short question/exercise that evaluates whether or not the lesson objective was reached.
-
-Example assessment questions:
-
-* **Objective**: Students will understand what Git and GitHub are.
-* **Assessment**: What is the difference between Git and GitHub?
-* **Objective**: Students will know how to write Java programs that output Strings using System.out.println().
-* **Assessment**: Write a program that prints a verse of your favorite song.
+Coming soon!
 
 ####Support materials (Optional)
 
@@ -44,11 +57,3 @@ Example assessment questions:
 * Video coming soon!
 * Reading: Android and Projects, Tutorial #2 - Creating a Stub Project,
 Getting Around Android Studio, Contents of Android Projects
-
-####TA Roles (Optional)
-
-List any TA Roles you need filled.
-
-* Attendance: TA 1
-* Lead group exercise: TA 2
-* Floating TA: TA 3, TA 4
