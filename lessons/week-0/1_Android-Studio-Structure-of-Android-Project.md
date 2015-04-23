@@ -57,6 +57,12 @@ This is where you can manage virtual devices and create new ones.
 
 #####Module settings
 
+> Exercise: Use your Do Now and create an Android app that does the same thing. Include a text field for user
+input and a button to submit. The output should be a text view of the letter. If you wish, you can try to make the
+letter different colors based on the grade. For a bonus challenge, add a notification that notifies the user of the grade when the submit button is pressed. The app should look like this.
+
+> ![](http://i.imgur.com/RgszB8z.png).
+
 ####Assessment
 
 Coming soon!
