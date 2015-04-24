@@ -13,4 +13,4 @@ Lesson plans, activities and assignments for Unit 1 will be posted here!
 
 | Due Date | Homework|
 |---|---|
-| Mar 7 | <ul><li>**READ** Think Piece: [How to Impress an Interviewer](https://medium.com/@joulee/how-to-impress-an-interviewer-c210d9d8e84a)</li><li>**WRITE** a Medium post about something technical or non technical you learned this week</li></ul>
+| Apr 25 | <ul><li>**READ** Think Piece: [How to Impress an Interviewer](https://medium.com/@joulee/how-to-impress-an-interviewer-c210d9d8e84a)</li><li>**WRITE** a Medium post about something technical or non technical you learned this week</li><li>**GUEST SPEAKER** [Vin Vacanti]()</li></ul>
