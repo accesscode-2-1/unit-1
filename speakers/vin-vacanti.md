@@ -1,6 +1,6 @@
 #Guest Speaker: Vin Vacanti
 
-**Elias Roman, Co-Founder and CEO of [Yipit](http://yipit.com)**
+**Vin Vacanti, Co-Founder and CEO of [Yipit](http://yipit.com)**
 
 **"The Five Miracles of Every Great Startup"**
 
