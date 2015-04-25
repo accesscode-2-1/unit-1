@@ -23,7 +23,7 @@ by their given name instead of their species name.
 * Create a constructor for your Domestic animal that takes in both the species name and given name.
 * Test your compareTo function by creating an array and calling sort.
 
-#### Problem 2:
+#### Problem 2: Cards
 * Create an abstract class representing a game, which includes the method getpieces().
 * Create a class that extends your Game class, PlayingCards.
 * Create a class, Card, representing a playing card.
