@@ -49,4 +49,5 @@ you design your code. Here's an example: You can make Character an abstract clas
 class and a Player Character class inheriting from it, and then make all characters instances of either NPCs or PCs.
 Although it may take a little more thinking, these kinds of decisions can prevent copy-pasting code and help you debug.
 
-#### Bonus: Design and implement [Battleship](http://en.wikipedia.org/wiki/Battleship_%28game%29) using your new object-oriented knowledge. Create a reasonable text-based user interface. Write a simple AI so you can play against your computer.
+#### Bonus
+Design and implement [Battleship](http://en.wikipedia.org/wiki/Battleship_%28game%29) using your new object-oriented knowledge. Create a reasonable text-based user interface. Write a simple AI so you can play against your computer.
