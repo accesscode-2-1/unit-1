@@ -229,8 +229,6 @@ Here the instanceof operator verifies that obj refers to a MountainBike so that 
 
 ![ method overriding ] (img/methodOverriding.gif)
 
-## watch: `Object - Basic Extension - Part 1` - advanced
-## watch: `Object - Basic Extension - Part 2` - advanced
 
 ###Instance Methods
 
@@ -342,8 +340,6 @@ This is an advanced topic and will not be discussed further.
 - Go checkout interfaces and come back. [ interfaces ] ( ./interfaces.md)
 
 ##The toString() Method
-
-## watch: `Basic Object Inheritance And Overriding The ToString Method` -advanced
 
 You should always consider overriding the toString() method in your classes.
 
