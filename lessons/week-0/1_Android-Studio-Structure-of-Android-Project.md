@@ -70,7 +70,7 @@ letter different colors based on the grade. For a bonus challenge, add a notific
 
 [Exit ticket](https://docs.google.com/a/c4q.nyc/forms/d/1HieXNBgrNRTCiZRPfOgCdCxSW3hY1ZYNMMiBzNefj2s/viewform)
 
-####Support materials (Optional)
+####Support materials
 
 * [Slides](https://docs.google.com/presentation/d/1jyr6z24BY3Vz3fZtAb7wW4_rn52yZhpr9AgbHujPOAA/edit#slide=id.gae49e002c_0_108)
 * Video coming soon!
