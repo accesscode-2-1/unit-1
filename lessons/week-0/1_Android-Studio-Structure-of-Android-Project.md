@@ -1,4 +1,4 @@
-#Lesson Plan Template
+#Android Studio and the Structure of an Android Project
 
 ####Objective
 
