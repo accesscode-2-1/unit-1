@@ -10,6 +10,7 @@ Lesson plans, activities and assignments for Unit 1 will be posted here!
  1 | Apr 23 | 0 | [Android Studio & Structure of an Android Project](lessons/week-0/1_Android-Studio-Structure-of-Android-Project.md)
  2 | Apr 25 | 0 | [Inheritance and Interfaces](lessons/week-0/20150425/inheritance.md)
  3 | Apr 26 | 0 | [Generics and Abstract Classes](/lessons/week-0/3_Generics-and-Abstract-Classes.md)
+ 4 | Apr 28 | 1 | [Anatomy of the Android Manifest](/lessons/week-0/4_Anatomy_Manifest.md)
 
 ### Homework
 
