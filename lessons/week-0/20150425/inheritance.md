@@ -11,9 +11,6 @@
 - Properties of the Object superclass
 - Dive into `Interfaces`
 
-
-#Grab these videos: [ videos ] ( http://mercury.noip.us/c4q/video_pack.zip )
-
 ## Recap
 
 ### Object relationships
