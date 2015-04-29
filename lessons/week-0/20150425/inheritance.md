@@ -56,7 +56,7 @@ In object oriented programming, relationships between objects can be classified 
 - method signature
 - instanceof
 - super
-- public,protected,package-protected,private
+- public,protected,package-private,private
 - implicit vs explicit
 - polymorphism
 - abstract
