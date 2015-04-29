@@ -17,4 +17,4 @@ Lesson plans, activities and assignments for Unit 1 will be posted here!
 | Due Date | Homework|
 |---|---|
 | Apr 25 | <ul><li>**READ** Think Piece: [How to Impress an Interviewer](https://medium.com/@joulee/how-to-impress-an-interviewer-c210d9d8e84a)</li><li>**WRITE** a Medium post about something technical or non technical you learned this week</li><li>**GUEST SPEAKER** [Vin Vacanti](speakers/vin-vacanti.md)</li></ul>
-| May 1 | Code: [OOP](https://github.com/accesscode-2-1/unit-1/blob/master/homework/week-0/assignment.md)
+| May 1 | <ul><li>**CODE:** [OOP](https://github.com/accesscode-2-1/unit-1/blob/master/homework/week-0/assignment.md)</li><li>**READ** Think Piece: [How to Impress an Interviewer](https://medium.com/@joulee/how-to-impress-an-interviewer-c210d9d8e84a)</li><li>**WRITE** a Medium post about something technical or non technical you learned this week</li></ul>
