@@ -12,7 +12,7 @@ its own subfolder under your name.
 [Comparable](https://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html) interface.
 Compare two animals by species name, alphabetically.
 * Implement `equals` to compare by species name.
-* Test your compareTo function by creating an array of Animal instances and calling sort.
+* Test your `compareTo` function by creating an array of Animal instances and calling sort.
 * Create the Domestic interface. This interface should include getters and setters for a name field,
 since pets tend to have their own names.
 * Create a class for a Domestic Animal, perhaps a DomesticCat, that both inherits from Animal
