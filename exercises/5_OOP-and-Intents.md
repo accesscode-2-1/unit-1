@@ -38,4 +38,4 @@ Make the MyPhone project much more beautiful using [Material Design](https://dev
 
 #### Assessment
 
-Don't forget to fill out the [Exit ticket](https://docs.google.com/forms/d/1a-gfjjsn35N-C6wrQU9y02vHoYLFaEfjUgD7J91n3rM/viewform?usp=send_form)!
+Don't forget to fill out the [exit ticket](https://docs.google.com/forms/d/1a-gfjjsn35N-C6wrQU9y02vHoYLFaEfjUgD7J91n3rM/viewform?usp=send_form)!
