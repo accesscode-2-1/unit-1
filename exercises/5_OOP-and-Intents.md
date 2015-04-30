@@ -20,8 +20,17 @@ Create the concrete class ClarinetPlayer, which extends Musician<Clarinet>. The 
 
 Refactor: Create the abstract class ReedPlayer, which extends Musician<ReedInstrument>. Port the functionality of ClarinetPlayer to ReedPlayer, including having the ReedPlayer keep a ReedInstrument field set in the constructor.
 
-Now ClarinetPlayer can inherit most of its functionality from ReedPlayer. Remove the redundant functionality and keep the constructor that takes in a Clarinet.
+Now ClarinetPlayer can inherit most of its functionality from ReedPlayer. Remove the redundant functionality but keep the constructor that takes in a Clarinet.
 
 #### Android exercise
 
+Import the MyPhone project.
+
+In MainActivity, add explicit intents to start the DialerActivity and EmailActivity. Add the Activities to the AndroidManifest.xml.
+
+In DialerActivity, add an implicit intent to open up the phone dialer when the user wants to make a call.
+
+In EmailActivity, add an implicit intent to open up an email activity and send an email to you (yes, you - put your email address as the recipient!).
+
 #### Bonus
+
