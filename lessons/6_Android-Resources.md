@@ -1,12 +1,18 @@
 ### How Android Handles Resources
 
-#### Do Now
-
 #### Objective
 
-#### Lesson
+#### Do Now (Morning)
+
+#### Lesson (Morning)
 
 ##### Review of Object Oriented Programming
+
+> Exercises
+
+#### Do Now (Afternoon)
+
+#### Lesson (Afternoon)
 
 ##### Overview of Android Resource Directories
 
@@ -19,3 +25,9 @@
 #### Assessment
 
 #### Support Materials
+
+[App Resources Docs](http://developer.android.com/guide/topics/resources/index.html)
+
+Textbook: 
+
+Videos:
