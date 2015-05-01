@@ -17,6 +17,19 @@
             </intent-filter>
         </activity>
         <!-- Add the DialerActivity and EmailActivity here. -->
+        <activity
+            android:name=".DialerActivity"
+            android:label="Dialer">
+            <uses-permission android:name="android.permission.CALL_PHONE" />
+        </activity>
+
+        <activity
+            android:name=".EmailActivity"
+            android:label="Email">
+
+
+        </activity>
+
     </application>
 
 </manifest>
