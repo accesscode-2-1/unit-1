@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="debug">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-e14e620ee78bad9727899f67ee6467cbf0988595.jar!/" />
+      <root url="jar://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/classes-1df24674d5ba099a9b62772224f7b98a8c663ff0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-0c57791ef684bd8ac1ae42c836c3a9da83b7f783.jar!/" />
+      <root url="jar://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/classes-dc64aed3a6ea7d85b1008dc6101f426e4d345099.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

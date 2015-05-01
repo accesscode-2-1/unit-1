@@ -7,6 +7,5 @@ public class Main
         Clarinet myClarinet= new Clarinet();
         ClarinetPlayer myPlayer= new ClarinetPlayer(myClarinet);
         System.out.println(myPlayer.myClarinet.hasReed());
-
     }
 }

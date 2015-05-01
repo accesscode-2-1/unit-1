@@ -12,6 +12,9 @@
         <option name="PROGUARD_LOGS_FOLDER_RELATIVE_PATH" value="/./proguard_logs" />
       </configuration>
     </facet>
+    <facet type="android" name="Android2">
+      <configuration />
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />

@@ -41,6 +41,18 @@ category#android.intent.category.LAUNCHER
 ADDED from AndroidManifest.xml:16:17
 	android:name
 		ADDED from AndroidManifest.xml:16:27
+activity#com.example.accesscode.myphone.DialerActivity
+ADDED from AndroidManifest.xml:19:9
+	android:name
+		ADDED from AndroidManifest.xml:19:19
+activity#com.example.accesscode.myphone.EmailActivity
+ADDED from AndroidManifest.xml:20:9
+	android:name
+		ADDED from AndroidManifest.xml:20:19
+uses-permission#android.permission.CALL_PHONE
+ADDED from AndroidManifest.xml:21:9
+	android:name
+		ADDED from AndroidManifest.xml:21:26
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:22.0.0:20:5

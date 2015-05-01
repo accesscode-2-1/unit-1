@@ -25,7 +25,7 @@ public class DialerActivity extends Activity {
                 /* get text input */
                 String phoneNumber = dialerText.getText().toString();
 
-                Intent openPhoneApp= new Intent(Intent.ACTION_CALL, Uri.parse("tel:<6463349648>"));
+                Intent openPhoneApp= new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+ phoneNumber));
                 startActivity(openPhoneApp);
 
                 /*

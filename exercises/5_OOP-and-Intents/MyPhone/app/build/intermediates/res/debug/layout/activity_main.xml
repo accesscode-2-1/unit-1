@@ -14,7 +14,8 @@
        android:layout_height="100dp"
        android:id="@+id/dialer_button"
        android:text="Call"
-       android:textSize="40dp"/>
+       android:textSize="40dp"
+       android:onClick="DialerActivity.java" />
 
    <Button
        android:layout_width="match_parent"
@@ -22,7 +23,8 @@
        android:id="@+id/email_button"
        android:layout_centerVertical="true"
        android:text="Email"
-       android:textSize="40dp"/>
+       android:textSize="40dp"
+       android:onClick="EmailActivity.java" />
 
 </RelativeLayout>
 <!-- From: file:/Users/c4q-madelyntavarez/Desktop/unit-2/exercises/5_OOP-and-Intents/MyPhone/app/src/main/res/layout/activity_main.xml -->
