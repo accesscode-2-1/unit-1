@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/c4q-anthonyf/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/c4q-anthonyf/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/classes-004dca2fbdce292a51f8cd8f0aa4446a99e31a52.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-anthonyf/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/c4q-anthonyf/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/classes-0ae3b56a87d4c3160123a0baaaec9de431564088.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-anthonyf/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/c4q-anthonyf/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-93a7e88593dc52d346b3e44a2f4b24e475ec4d9d.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-anthonyf/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/c4q-anthonyf/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-bfbc2ebb824ede27254ef86e57f1395b6d27bca6.jar" />
+    </item>
+
+</items>
