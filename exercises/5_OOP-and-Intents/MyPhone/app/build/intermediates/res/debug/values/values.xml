@@ -171,6 +171,8 @@
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">MyPhone</string>
+    <string name="dialer">Dialer</string>
+    <string name="email">Email</string>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/Users/kadeemmaragh/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>

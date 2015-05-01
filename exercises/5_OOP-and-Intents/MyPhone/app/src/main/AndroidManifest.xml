@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DialerActivity"
+            android:label="@string/dialer">
+
+            </activity>
+
+        <activity
+            android:name=".EmailActivity"
+            android:label="@string/email">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
         <!-- Add the DialerActivity and EmailActivity here. -->
     </application>
 
