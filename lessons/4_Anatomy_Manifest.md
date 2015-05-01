@@ -66,6 +66,8 @@ The [Android Manifest](http://developer.android.com/guide/topics/manifest/manife
 
 The manifest file is also used to specify [permissions](http://developer.android.com/guide/topics/manifest/manifest-intro.html#perms) that the app needs to run.
 
+[Intents and Intent Filters](http://developer.android.com/guide/components/intents-filters.html)
+
 ##### Explicit Intents
 
 > Exercise: Create an Android Project with multiple activities that communicate with each other using explicit intents and handles results.
