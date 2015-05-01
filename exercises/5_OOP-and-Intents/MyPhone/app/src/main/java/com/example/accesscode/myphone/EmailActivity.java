@@ -1,6 +1,7 @@
 package com.example.accesscode.myphone;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,7 +32,23 @@ public class EmailActivity extends Activity {
                     http://developer.android.com/guide/components/intents-common.html#Email
 
                  */
+                composeEmail(myEmailAddress, subject, body);
+
             }
         });
+    }
+
+    public void composeEmail(String address, String subject, String body) {
+
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+
+        intent.setType("text/html");
+        intent.putExtra(Intent.EXTRA_EMAIL, address);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_TEXT, body);
+
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }
