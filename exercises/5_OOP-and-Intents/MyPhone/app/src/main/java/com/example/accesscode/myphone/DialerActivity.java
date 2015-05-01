@@ -14,10 +14,10 @@ import android.widget.EditText;
 public class DialerActivity extends Activity {
 
     public void makePhoneCall(String phoneNumber) {
-        Intent dial = new Intent(Intent.ACTION_CALL);
-        dial.setData(Uri.parse("tel:" + phoneNumber));
-        if (dial.resolveActivity(getPackageManager()) != null) {
-            startActivity(dial);
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:" + phoneNumber));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
         }
     }
 
