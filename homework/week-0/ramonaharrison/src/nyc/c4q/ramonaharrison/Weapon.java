@@ -6,16 +6,9 @@ package nyc.c4q.ramonaharrison;
  * Weapon.java
  */
 
-public abstract class Weapon {
+public interface Weapon {
 
-    private String name;
-    private int accuracy;
-
-    public abstract void setName();
-    public abstract String getName();
-
-    public abstract void setAccuracy();
-    public abstract int getAccuracy();
-
+    public void load();
+    public void use(Character character);
 
 }
