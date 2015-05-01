@@ -1,6 +1,8 @@
 package com.example.accesscode.myphone;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +33,14 @@ public class EmailActivity extends Activity {
                     http://developer.android.com/guide/components/intents-common.html#Email
 
                  */
+
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+                intent.putExtra(Intent.EXTRA_EMAIL, body);
+                intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+                }
             }
         });
     }
