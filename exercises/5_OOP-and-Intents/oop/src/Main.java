@@ -5,8 +5,10 @@ package src;
  */
 public class Main {
     public static void main(String[] args){
-        Musician beethoven = new Musician();
-        Violin viola = new Violin();
-        System.out.println(beethoven.play_instrument(viola));
+
+        Clarinet myClarino = new Clarinet();
+        ClarinetPlayer joe = new ClarinetPlayer(myClarino);
+        //joe.toggleReed();
+        System.out.println(joe.play_instrument());
     }
 }
