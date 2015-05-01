@@ -3,14 +3,19 @@
  */
 public class Card {
 
-    int number;
-    String shape;
+    String number;
+    String suit;
 
-    public int getNumber() {
+    public Card(String number, String suit) {
+        this.number = number;
+        this.suit = suit;
+    }
+
+    public String getNumber() {
         return number;
     }
 
-    public String getShape() {
-        return shape;
+    public String getSuit() {
+        return suit;
     }
 }
