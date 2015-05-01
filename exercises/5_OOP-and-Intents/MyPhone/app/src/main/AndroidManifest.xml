@@ -16,19 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <!-- Add the DialerActivity and EmailActivity here. -->
+        <activity
+            android:name=".EmailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".DialerActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
