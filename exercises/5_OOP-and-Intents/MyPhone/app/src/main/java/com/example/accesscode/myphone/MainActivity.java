@@ -1,13 +1,23 @@
 package com.example.accesscode.myphone;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+/*
+Import the MyPhone project.
+
+In MainActivity, add explicit intents to start the DialerActivity and EmailActivity. Add the Activities to the AndroidManifest.xml.
+
+In DialerActivity, add an implicit intent to open up the phone dialer when the user wants to make a call.
+
+In EmailActivity, add an implicit intent to open up an email activity and send an email to you (yes, you - put your email address as the recipient!).
+ */
 
 public class MainActivity extends ActionBarActivity {
 
@@ -25,6 +35,8 @@ public class MainActivity extends ActionBarActivity {
                 /*
                     Use Explicit Intent to start DialerActivity here.
                  */
+                Intent dialer = new Intent(getApplicationContext(), DialerActivity.class);
+                startActivity(dialer);
             }
         });
         /* EmailActivity */
@@ -36,11 +48,12 @@ public class MainActivity extends ActionBarActivity {
                  /*
                     Use Explicit Intent to start EmailActivity here.
                  */
+                Intent Email = new Intent(getApplicationContext(), EmailActivity.class);
+                startActivity(Email);
 
             }
         });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

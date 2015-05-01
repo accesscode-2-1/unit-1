@@ -464,7 +464,9 @@ int string abc_shareactionprovider_share_with_application 0x7f0b000e
 int string abc_toolbar_collapse_description 0x7f0b000f
 int string action_settings 0x7f0b0010
 int string app_name 0x7f0b0011
-int string hello_world 0x7f0b0012
+int string dialer 0x7f0b0012
+int string email 0x7f0b0013
+int string hello_world 0x7f0b0014
 int style Animation_AppCompat_DropDownUp 0x7f0c0000
 int style AppTheme 0x7f0c0001
 int style Base_Animation_AppCompat_DropDownUp 0x7f0c0002
