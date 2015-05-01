@@ -9,7 +9,7 @@ public abstract class ReedInstrument implements Instrument {
     }
 
     public void placeReed() {
-        this.reed = true;
+        reed = true;
     }
 
     public void removeReed() {
