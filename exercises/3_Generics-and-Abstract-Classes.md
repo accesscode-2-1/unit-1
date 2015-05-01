@@ -22,9 +22,9 @@ returns something of type V.
 
 * In a class MyMapReduce, write a method `Iterable<V> map(Iterable<E>, Mapper<E,V>)`. This takes in an iterable collection of Es. For each E in the collection, it applies f() and creates a new iterable collection of Vs. For example, we might want to take in [1, 2, 3] and return [2, 3, 4], or take in [1, 2, 3] and return ['A', 'B', 'C']. map() will allow us to apply the map method to every element in the collection and get back a new collection.
 
-* Create an interface `Reducer<E, V>` which contains method g(). g() takes in two Es returns a single value of type V.
+* Create an interface `Reducer<V>` which contains method g(). g() takes in two Vs returns a single value of type V.
 
-* In MyMapReduce, write a method `V reduce(Iterable<E>, Reducer<E, V>)`. This takes in an iterable of Es and returns a V by applying g() to all of the Es. For example, if the Reducer sums up Es, then it will sum the first element with the second, and then that sum with the third and so on, so that [1, 2, 3] becomes 6.
+* In MyMapReduce, write a method `V reduce(Iterable<V>, Reducer<V>)`. This takes in an iterable of Vs and returns a V by applying g() to all of the Vs. For example, if the Reducer sums up Vs, then it will sum the first element with the second, and then that sum with the third and so on, so that [1, 2, 3] becomes 6.
 
 * In MyMapReduce, write a method map_and_reduce which takes in a generic Iterable, a Mapper, and a Reducer, and
 applies map and reduce in succession to turn the iterable into a single output.

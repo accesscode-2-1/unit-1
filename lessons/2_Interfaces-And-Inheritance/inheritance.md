@@ -11,9 +11,6 @@
 - Properties of the Object superclass
 - Dive into `Interfaces`
 
-
-#Grab these videos: [ videos ] ( http://mercury.noip.us/c4q/video_pack.zip )
-
 ## Recap
 
 ### Object relationships
@@ -59,7 +56,7 @@ In object oriented programming, relationships between objects can be classified 
 - method signature
 - instanceof
 - super
-- public,protected,package-protected,private
+- public,protected,package-private,private
 - implicit vs explicit
 - polymorphism
 - abstract
@@ -99,10 +96,6 @@ All Classes in the Java Platform are Descendants of Object
 ![classes-object] (img/classes-object.gif)
 
 At the top of the hierarchy, Object is the most general of all classes. Classes near the bottom of the hierarchy provide more specialized behavior.
-
-## watch: `Creating A Subclass` - basic
-## watch: `Basic terms` - advanced
-## watch: `Finishing The Subclass` - basic
 
 ####An Example of Inheritance
 
@@ -188,10 +181,6 @@ If the subclass is in the same package as its parent, it also inherits the packa
 * You can declare new methods in the subclass that are not in the superclass.
 * You can write a subclass constructor that invokes the constructor of the superclass, either implicitly or by using the keyword super.
 
-
-## watch: `Method Overriding` -basic
-## watch: `Using A Subclass`  -basic
-
 ### Private Members in a Superclass
 
 A subclass does not inherit the private members of its parent class. However, if the superclass has public or protected methods for accessing its private fields, these can also be used by the subclass.
@@ -240,8 +229,6 @@ Here the instanceof operator verifies that obj refers to a MountainBike so that 
 
 ![ method overriding ] (img/methodOverriding.gif)
 
-## watch: `Object - Basic Extension - Part 1` - advanced
-## watch: `Object - Basic Extension - Part 2` - advanced
 
 ###Instance Methods
 
@@ -353,8 +340,6 @@ This is an advanced topic and will not be discussed further.
 - Go checkout interfaces and come back. [ interfaces ] ( ./interfaces.md)
 
 ##The toString() Method
-
-## watch: `Basic Object Inheritance And Overriding The ToString Method` -advanced
 
 You should always consider overriding the toString() method in your classes.
 
@@ -478,9 +463,6 @@ Note that you can also declare an entire class final. A class that is declared f
 
 
 ##Polymorphism
-
-### watch: `Polymorphism - First Look` - advanced
-
 
 The dictionary definition of polymorphism refers to a principle in biology in which an organism or species can have many different forms or stages. This principle can also be applied to object-oriented programming and languages like the Java language. Subclasses of a class can define their own unique behaviors and yet share some of the same functionality of the parent class.
 
