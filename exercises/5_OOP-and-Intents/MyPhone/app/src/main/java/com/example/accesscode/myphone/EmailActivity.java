@@ -1,6 +1,8 @@
 package com.example.accesscode.myphone;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +25,10 @@ public class EmailActivity extends Activity {
                 String myEmailAddress = ""; /* put your email address here */
                 String subject = emailSubject.getText().toString();
                 String body = emailBody.getText().toString();
+
+                Intent sendEmail= new Intent(Intent.ACTION_SENDTO, Uri.parse("madelyntav@gmail.com"));
+                sendEmail.putExtra(Intent.EXTRA_SUBJECT, subject);
+
 
                 /*
                     Use an implicit intent to open up the user's email program and send
