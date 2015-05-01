@@ -27,4 +27,4 @@
         android:text="Email Me!"
         android:textSize="40dp"
         android:id="@+id/mail_button"/>
-</LinearLayout><!-- From: file:/Users/Willee/Desktop/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/src/main/res/layout/activity_email.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Luke/Desktop/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/src/main/res/layout/activity_email.xml -->
