@@ -46,7 +46,7 @@ The program should then step through the array, calling each object's toString m
 ![ uml diagram ] ( ../images/ExerciseOOP_ShapeAbstract.png )
 
 Create the superclass Shape and its subclasses Circle, Rectangle and Square, as shown in the class diagram.
-ExerciseOOP_ShapeAbstract.png
+
 In this exercise, Shape shall be defined as an abstract class, which contains:
 - Two protected instance variables color(String) and filled(boolean). The protected variables can be accessed by its subclasses and classes in the same package. They are denoted with a '#' sign in the class diagram.
 Getter and setter for all the instance variables, and toString().
