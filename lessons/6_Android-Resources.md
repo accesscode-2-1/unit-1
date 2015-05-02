@@ -43,7 +43,7 @@ The program should then step through the array, calling each object's toString m
 > Exercises
 
 ####Exercise: Abstract Superclass Shape and Its Concrete Subclasses
-[ uml diagram ] ( ../images/ExerciseOOP_ShapeAbstract.png )
+![ uml diagram ] ( ../images/ExerciseOOP_ShapeAbstract.png )
 
 Create the superclass Shape and its subclasses Circle, Rectangle and Square, as shown in the class diagram.
 ExerciseOOP_ShapeAbstract.png
