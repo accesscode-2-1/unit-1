@@ -38,6 +38,7 @@ The program should then step through the array, calling each object's toString m
 ##### Review of Object Oriented Programming
 
 [ inheritance and interfaces ] ( https://github.com/accesscode-2-1/unit-1/blob/master/lessons/2_Interfaces-And-Inheritance/inheritance.md )
+<br />
 [ generics tutorial ] ( https://github.com/davisRoman/generics/blob/master/generics_tutorial.md )
 > Exercises
 
