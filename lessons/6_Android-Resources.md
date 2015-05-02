@@ -348,6 +348,7 @@ Now you can use these resources in the following layout file to set the text col
 
 ##### Android Resources Exercises
 
+You guys will now be able to get your hands dirty playing with TextViews and layouts: Please clone the provided project and fill in the missing pieces!
 [ resources ] ( https://github.com/shurane/unit-1-android-resource-exercises/blob/master/app/src/androidTest/java/nyc/c4q/unit_1_android_resource_exercises/ActivityTest.java )
 
 #### Assessment
