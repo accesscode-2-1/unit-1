@@ -107,8 +107,9 @@ System.out.println(sq1.getArea());
 System.out.println(sq1.getColor());
 System.out.println(sq1.getSide());
 System.out.println(sq1.getLength());
-What is the usage of the abstract method and abstract class?
 ```
+
+#### What is the usage of the abstract method and abstract class?
 
 #### Do Now (Afternoon)
 - Work with the person next to you and code review each others' Thursday in-class assignment.
