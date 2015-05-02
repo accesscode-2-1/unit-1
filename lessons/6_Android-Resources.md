@@ -26,12 +26,14 @@ For any type of resource, you can specify `default` and `alternative` resources 
 - Alternative resources are those that you've designed for use with a specific configuration. To specify that a group of resources are for a specific configuration, append an appropriate configuration qualifier to the directory name.
 
 ![ picture 1 ] ( ../images/resource_devices_diagram1.png )
+<br />
 Figure 1. Two different devices, each using the default layout (the app provides no alternative layouts).
 
 
 <br />
 
 ![ picture 2 ] ( ../images/resource_devices_diagram2.png )
+<br />
 Figure 2. Two different devices, each using a different layout provided for different screen sizes.
 
 ##### Overview of Resource Qualifiers
