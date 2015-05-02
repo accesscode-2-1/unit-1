@@ -135,10 +135,10 @@ The resource type: Each resource is grouped into a "type," such as string, drawa
 The resource name, which is either: the filename, excluding the extension; or the value in the XML android:name attribute, if the resource is a simple value (such as a string).
 There are two ways you can access a resource:
 
-In code: Using a static integer from a sub-class of your R class, such as:
+`In code:` Using a static integer from a sub-class of your R class, such as:
 R.string.hello
 string is the resource type and hello is the resource name. There are many Android APIs that can access your resources when you provide a resource ID in this format. See Accessing Resources in Code.
-In XML: Using a special XML syntax that also corresponds to the resource ID defined in your R class, such as:
+`In XML:` Using a special XML syntax that also corresponds to the resource ID defined in your R class, such as:
 @string/hello
 string is the resource type and hello is the resource name. You can use this syntax in an XML resource any place where a value is expected that you provide in a resource. See Accessing Resources from XML.
 
