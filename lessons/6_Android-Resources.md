@@ -65,26 +65,18 @@ As you can see in this example, the res/ directory contains all the resources (i
 
 
 | Folder    | Resource Type                                  |
-|-----------| ---------------------------------------------- |
+|-----------|------------------------------------------------|
 | drawable/	|                                                |
 |           |  Bitmap files (.png, .9.png, .jpg, .gif) or    |
 |           |  XML files that are compiled into the          |
-|           |  following drawable                            |
+|           |    following drawable                          |  
 |           |                                                |
-|           | Bitmap files                                   |
-|           | Nine-Patches (re-sizable bitmaps)              |
-|           | State lists                                    |
-|           | Shapes                                         |
-|           | Animation drawables                            |
-|           | Other drawables                                |
-|           | See Drawable Resources.                        |  
 |           |                                                |
-|-----------|------------------------------------------------|
 | layout/   | XML files that define a user interface layout. |
-|-----------|------------------------------------------------|
+|           |                                                |
 | mipmap/	| Drawable files for different launcher icon     |
 |           | densities.                                     |
-|-----------|------------------------------------------------|
+|           |                                                |
 | values/   | XML files that contain simple values, such as  |
 |           | strings, integers, and colors.                 |
 
