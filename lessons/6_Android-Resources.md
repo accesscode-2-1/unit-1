@@ -152,6 +152,7 @@ string is the resource type and hello is the resource name. You can use this syn
 ![ pic1 ] ( ../images/density.png )
 <br />
 ![ pic2 ] ( ../images/pixel-density-3.png )
+<br />
 [ density independent pixels - youtube ] (https://www.youtube.com/watch?v=zhszwkcay2A)
 
 
