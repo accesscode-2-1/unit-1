@@ -1,4 +1,4 @@
-### How Android Handles Resources
+## How Android Handles Resources
 
 #### Objective
 
