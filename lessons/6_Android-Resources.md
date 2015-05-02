@@ -125,7 +125,28 @@ Once you provide a resource in your application (discussed in Providing Resource
 When your application is compiled, aapt generates the R class, which contains resource IDs for all the resources in your res/ directory. For each type of resource, there is an R subclass (for example, R.drawable for all drawable resources), and for each resource of that type, there is a static integer (for example, R.drawable.icon). This integer is the resource ID that you can use to retrieve your resource.
 
 
+Although the R class is where resource IDs are specified, you should never need to look there to discover a resource ID. A resource ID is always composed of:
+
+The resource type: Each resource is grouped into a "type," such as string, drawable, and layout. For more about the different types, see Resource Types.
+The resource name, which is either: the filename, excluding the extension; or the value in the XML android:name attribute, if the resource is a simple value (such as a string).
+There are two ways you can access a resource:
+
+In code: Using a static integer from a sub-class of your R class, such as:
+R.string.hello
+string is the resource type and hello is the resource name. There are many Android APIs that can access your resources when you provide a resource ID in this format. See Accessing Resources in Code.
+In XML: Using a special XML syntax that also corresponds to the resource ID defined in your R class, such as:
+@string/hello
+string is the resource type and hello is the resource name. You can use this syntax in an XML resource any place where a value is expected that you provide in a resource. See Accessing Resources from XML.
+
+
 ##### Pixels and density
+
+- dots per inch (dip) -> resolution divided by screen area
+-
+- density independent pixels (dp)
+
+[ density independent pixels - youtube ] (https://www.youtube.com/watch?v=zhszwkcay2A)
+
 
 ##### Configuration Changes
 
@@ -136,5 +157,7 @@ When your application is compiled, aapt generates the R class, which contains re
 [App Resources Docs](http://developer.android.com/guide/topics/resources/index.html)
 
 Textbook: 
+
+Please read "Some words about Resources" p117
 
 Videos:
