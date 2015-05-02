@@ -1,10 +1,17 @@
 package nyc.c4q.lukesterlee;
 
 /**
+ * Access Code 2.1
  * Created by Luke Lee on 5/2/15.
+ *
+ * Design a CargoShip class that extends the Ship class. The CargoShip class should have the following members :
+ * A field for the cargo capacity in tonnage (an int).
+ * A constructor and appropriate accessors and mutators.
+ * A toString method that overrides the toString method in the base class.
+ * The CargoShip class's toString method should display only the ship's name and the ship's cargo capacity.
  */
 public class CargoShip extends Ship {
-    int tonnage;
+    private int tonnage;
 
     public CargoShip() {
         super();

@@ -1,10 +1,17 @@
 package nyc.c4q.lukesterlee;
 
 /**
+ * Access Code 2.1
  * Created by Luke Lee on 5/2/15.
+ *
+ * Design a CruiseShip class that extends the Ship class. The CruiseShip class should have the following members :
+ * A field for the maximum number of passengers (an int).
+ * A constructor and appropriate accessors and mutators.
+ * A toString method that overrides the toString method in the base class.
+ * The CruiseShip class's toString method should display only the ship's name and the maximum number of passengers.
  */
 public class CruiseShip extends Ship {
-    int maxPassenger;
+    private int maxPassenger;
 
     public CruiseShip() {
         super();

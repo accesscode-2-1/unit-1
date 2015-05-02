@@ -1,11 +1,18 @@
 package nyc.c4q.lukesterlee;
 
 /**
+ * Access Code 2.1
  * Created by Luke Lee on 5/2/15.
+ *
+ * Design a Ship class that the following members :
+ * A field for the name of the ship (a string).
+ * A field for the year that the ship was built (a string).
+ * A constructor and appropriate accessors and mutators.
+ * A toString method that displays the ship's name and the year it was built.
  */
 public class Ship {
-    String name;
-    String year;
+    private String name;
+    private String year;
 
     public Ship() {
 

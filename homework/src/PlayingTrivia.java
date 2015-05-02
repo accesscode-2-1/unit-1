@@ -13,7 +13,6 @@ public class PlayingTrivia extends Game<Trivia> {
 
 
         triviaDeck = new ArrayList<Trivia>();
-        triviaDeck.add(new Trivia(""));
 
     }
 

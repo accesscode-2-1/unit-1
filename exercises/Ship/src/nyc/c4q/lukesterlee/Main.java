@@ -2,6 +2,15 @@ package nyc.c4q.lukesterlee;
 
 import java.util.ArrayList;
 
+/**
+ * Access Code 2.1
+ * Created by Luke Lee on 5/2/15.
+ *
+ * Demonstrate the classes in a program that has a Shiparray.
+ * Assign various Ship, CruiseShip, and CargoShip objects to the array elements.
+ * The program should then step through the array, calling each object's toString method.(use polymorphism)
+ */
+
 public class Main {
 
     public static void main(String[] args) {
