@@ -1,5 +1,5 @@
 /**
  * Created by Luke Lee on 4/27/2015.
  */
-public abstract class Room {
+public abstract class Room<E> {
 }
