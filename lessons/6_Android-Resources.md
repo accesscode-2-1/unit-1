@@ -258,6 +258,10 @@ string is the resource type and hello is the resource name. You can use this syn
 
 ##### Configuration Changes
 
+##### Android Resources Exercises
+
+[ resources ] ( https://github.com/shurane/unit-1-android-resource-exercises/blob/master/app/src/androidTest/java/nyc/c4q/unit_1_android_resource_exercises/ActivityTest.java )
+
 #### Assessment
 
 #### Support Materials
