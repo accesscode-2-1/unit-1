@@ -82,8 +82,48 @@ As you can see in this example, the res/ directory contains all the resources (i
 |           | strings, integers, and colors.                 |
 
 
+### Providing Alternative Resources
+
+Almost every application should provide alternative resources to support specific device configurations. For instance, you should include alternative drawable resources for different screen densities and alternative string resources for different languages. At runtime, Android detects the current device configuration and loads the appropriate resources for your application.
+
+To specify configuration-specific alternatives for a set of resources:
+
+Create a new directory in `res/` named in the form `<resources_name>-<config_qualifier>`
+
+- <resources_name> is the directory name of the corresponding default resources
+
+- <qualifier> is a name that specifies an individual configuration for which these resources are to be used 
+
+You can append more than one <qualifier>. Separate each one with a dash.
+
+For example, here are some default and alternative resources:
+
+```
+res/
+    drawable/   
+        icon.png
+        background.png    
+    drawable-hdpi/  
+        icon.png
+        background.png  
+```
+
+The hdpi qualifier indicates that the resources in that directory are for devices with a high-density screen. The images in each of these drawable directories are sized for a specific screen density, but the filenames are exactly the same. This way, the resource ID that you use to reference the icon.png or background.png image is always the same, but Android selects the version of each resource that best matches the current device, by comparing the device configuration information with the qualifiers in the resource directory name.
 
 ##### Overview of Resource Qualifiers
+
+Various to choose from:
+- Language and region	
+  Examples: en, fr, en-rUS, fr-rFR, fr-rCA
+
+- Screen pixel density (dpi)
+  Examples: ldpi, mdpi, hdpi, xhdpi
+
+# Accessing Resources
+Once you provide a resource in your application (discussed in Providing Resources), you can apply it by referencing its resource ID. All resource IDs are defined in your project's R class, which the aapt tool automatically generates.
+
+When your application is compiled, aapt generates the R class, which contains resource IDs for all the resources in your res/ directory. For each type of resource, there is an R subclass (for example, R.drawable for all drawable resources), and for each resource of that type, there is a static integer (for example, R.drawable.icon). This integer is the resource ID that you can use to retrieve your resource.
+
 
 ##### Pixels and density
 
