@@ -25,8 +25,8 @@ For any type of resource, you can specify `default` and `alternative` resources 
 - Default resources are those that should be used regardless of the device configuration or when there are no alternative resources that match the current configuration.
 - Alternative resources are those that you've designed for use with a specific configuration. To specify that a group of resources are for a specific configuration, append an appropriate configuration qualifier to the directory name.
 
-![ picture 1 ] ( ../images/resource_devices_diagram1.jpg )
-![ picture 2 ] ( ../images/resource_devices_diagram2.jpg )
+![ picture 1 ] ( ../images/resource_devices_diagram1.png )
+![ picture 2 ] ( ../images/resource_devices_diagram2.png )
 
 ##### Overview of Resource Qualifiers
 
