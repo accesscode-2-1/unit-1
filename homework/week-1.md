@@ -3,7 +3,7 @@
 ##### Exercise 1: Code Review
 
 You will be assigned another student for whom to conduct a code review.
-Details to follow; we'll discuss this more in class.
+Details to follow; we'll discuss this more in class. Create at least one change based on the code review you receive.
 
 ##### Exercise 2: Horoscope app
 
