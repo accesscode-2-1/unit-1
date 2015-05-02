@@ -15,7 +15,9 @@ selected, display information about the sign.
 * A feature where a user can select two signs and the app will display information about romantic compatibility.
 * A game. The game will display a birthdate and will give the user a few seconds'
 [countdown](http://developer.android.com/reference/android/os/CountDownTimer.html) to guess what sign the birthdate
-corresponds to. After some number of tries, the game should complete and display the results to the user.
+corresponds to. After some number of tries, the game finishes and display the results to the user.
 * Different verticial and horizontal layouts throughout the app.
 
 Get creative with your game and look at this [chart on signs](http://en.wikipedia.org/wiki/Western_astrology#The_zodiac).
+
+##### Bonus: Put [ads in your app](https://developers.google.com/mobile-ads-sdk/) and ship to the play store!
