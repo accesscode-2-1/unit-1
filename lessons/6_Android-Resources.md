@@ -33,7 +33,8 @@ Assign various Ship, CruiseShip, and CargoShip objects to the array elements.
 The program should then step through the array, calling each object's toString method. ( use polymorphism )
 
 > If you finish early, start reading up on uniform modeling language ( UML ) class diagrams. [ class diagrams ] ( http://en.wikipedia.org/wiki/Class_diagram )
-This will help you with the diagram below.
+<br /> 
+This will help grok the diagram shown below.
 
 #### Lesson (Morning)
 
