@@ -40,6 +40,29 @@ Figure 2. Two different devices, each using a different layout provided for diff
 ### Providing Resources
 You should always externalize application resources such as images and strings from your code, so that you can maintain them independently. You should also provide alternative resources for specific device configurations, by grouping them in specially-named resource directories. At runtime, Android uses the appropriate resource based on the current configuration.
 
+Once you externalize your application resources, you can access them using resource IDs that are generated in your project's R class. 
+
+Grouping Resource Types
+You should place each type of resource in a specific subdirectory of your project's res/ directory. For example, here's the file hierarchy for a simple project:
+
+```
+MyProject/
+    src/  
+        MyActivity.java  
+    res/
+        drawable/  
+            graphic.png  
+        layout/  
+            main.xml
+            info.xml
+        mipmap/  
+            icon.png 
+        values/  
+            strings.xml 
+```
+
+As you can see in this example, the res/ directory contains all the resources (in subdirectories): an image resource, two layout resources, mipmap/ directories for launcher icons, and a string resource file. 
+
 
 
 ##### Overview of Resource Qualifiers
