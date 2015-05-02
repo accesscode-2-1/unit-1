@@ -258,6 +258,89 @@ string is the resource type and hello is the resource name. You can use this syn
 
 ##### Configuration Changes
 
+##### Accessing Resources
+During your application development you will need to access defined resources either in your code, or in your layout XML files. Following section explains how to access your resources in both the scenarios:
+
+ACCESSING RESOURCES IN CODE
+When your Android application is compiled, a R class gets generated, which contains resource IDs for all the resources available in your res/ directory. You can use R class to access that resource using sub-directory and resource name or directly resource ID.
+
+EXAMPLE:
+To access res/drawable/myimage.png and set an ImageView you will use following code:
+
+```java
+ImageView imageView = (ImageView) findViewById(R.id.myimageview);
+imageView.setImageResource(R.drawable.myimage);
+```
+
+Here first line of the code make use of R.id.myimageview to get ImageView defined with id myimageview in a Layout file. Second line of code makes use of R.drawable.myimage to get an image with name myimage available in drawable sub-directory under /res.
+
+EXAMPLE:
+Consider next example where res/values/strings.xml has following definition:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string  name="hello">Hello, World!</string>
+</resources>
+```
+Now you can set the text on a TextView object with ID msg using a resource ID as follows:
+
+```java
+TextView msgTextView = (TextView) findViewById(R.id.msg);
+msgTextView.setText(R.string.hello);
+```
+
+EXAMPLE:
+Consider a layout res/layout/activity_main.xml with the following definition:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent" 
+   android:layout_height="fill_parent" 
+   android:orientation="vertical" >
+<TextView android:id="@+id/text"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Hello, I am a TextView" />
+<Button android:id="@+id/button"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Hello, I am a Button" />
+</LinearLayout>
+```
+
+This application code will load this layout for an Activity, in the onCreate() method as follows:
+
+```java
+public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.main_activity);
+}
+```
+
+ACCESSING RESOURCES IN XML
+Consider the following resource XML res/values/strings.xml file that includes a color resource and a string resource:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="opaque_red">#f00</color>
+   <string name="hello">Hello!</string>
+</resources>
+```
+Now you can use these resources in the following layout file to set the text color and text string as follows:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:textColor="@color/opaque_red"
+    android:text="@string/hello" />
+```
+
+
 ##### Android Resources Exercises
 
 [ resources ] ( https://github.com/shurane/unit-1-android-resource-exercises/blob/master/app/src/androidTest/java/nyc/c4q/unit_1_android_resource_exercises/ActivityTest.java )
