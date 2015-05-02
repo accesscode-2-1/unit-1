@@ -30,7 +30,7 @@ Demonstrate the classes in a program that has a Shiparray.
 
 Assign various Ship, CruiseShip, and CargoShip objects to the array elements. 
 
-The program should then step through the array, calling each object's toString method.
+The program should then step through the array, calling each object's toString method. ( use polymorphism )
 
 
 #### Lesson (Morning)
