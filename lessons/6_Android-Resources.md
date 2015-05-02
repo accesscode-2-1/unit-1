@@ -4,6 +4,8 @@
 
 #### Do Now (Morning)
 
+Work with the person next to you and code review each others' Thursday in-class assignment.
+
 #### Lesson (Morning)
 
 ##### Review of Object Oriented Programming
@@ -11,6 +13,8 @@
 > Exercises
 
 #### Do Now (Afternoon)
+
+Work with the person next to you and code review each others' homeworks.
 
 #### Lesson (Afternoon)
 
@@ -156,8 +160,6 @@ string is the resource type and hello is the resource name. You can use this syn
 
 [App Resources Docs](http://developer.android.com/guide/topics/resources/index.html)
 
-Textbook: 
+Textbook: Please read "Some words about Resources" p117
 
-Please read "Some words about Resources" p117
-
-Videos:
+Videos: https://youtu.be/YhRCAZNIu-c
