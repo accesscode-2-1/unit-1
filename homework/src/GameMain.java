@@ -7,5 +7,7 @@ public class GameMain {
 
         PlayingTrivia game = new PlayingTrivia();
 
+        game.start();
+
     }
 }

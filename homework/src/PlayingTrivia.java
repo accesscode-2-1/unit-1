@@ -17,7 +17,14 @@ public class PlayingTrivia extends Game<Trivia> {
 
     }
 
+    public void intro() {
+        System.out.println("Welcome to the game!");
+        System.out.println("Choose your character : ");
+    }
+
     public void start() {
+
+        intro();
 
     }
 
