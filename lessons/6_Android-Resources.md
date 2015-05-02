@@ -42,7 +42,7 @@ The program should then step through the array, calling each object's toString m
 [ generics tutorial ] ( https://github.com/davisRoman/generics/blob/master/generics_tutorial.md )
 > Exercises
 
-####Exercise: Abstract Superclass Shape and Its Concrete Subclasses
+#### Abstract Superclass Shape and Its Concrete Subclasses
 ![ uml diagram ] ( ../images/ExerciseOOP_ShapeAbstract.png )
 
 Create the superclass Shape and its subclasses Circle, Rectangle and Square, as shown in the class diagram.
