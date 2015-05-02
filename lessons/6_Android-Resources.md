@@ -36,6 +36,11 @@ Figure 1. Two different devices, each using the default layout (the app provides
 <br />
 Figure 2. Two different devices, each using a different layout provided for different screen sizes.
 
+
+### Providing Resources
+You should always externalize application resources such as images and strings from your code, so that you can maintain them independently. You should also provide alternative resources for specific device configurations, by grouping them in specially-named resource directories. At runtime, Android uses the appropriate resource based on the current configuration.
+
+
 ##### Overview of Resource Qualifiers
 
 ##### Pixels and density
