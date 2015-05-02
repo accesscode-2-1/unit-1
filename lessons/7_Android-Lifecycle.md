@@ -4,9 +4,9 @@
 
 #### Do Now (Morning)
 
-#### Code Review
-
 #### Github Workshop
+
+#### Code Review
 
 #### Do Now (Afternoon)
 
