@@ -37,6 +37,7 @@ The program should then step through the array, calling each object's toString m
 
 ##### Review of Object Oriented Programming
 
+
 > Exercises
 
 #### Do Now (Afternoon)
