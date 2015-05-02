@@ -10,6 +10,25 @@ public class Animal implements Comparable
         speciesName = name;
     }
 
+    public static void sort(Animal[] animals){
+
+        for(int i = 1; i < animals.length; i++)
+        {
+            for(int j = i; j > 0; j--)
+            {
+                if(animals[j-1].compareTo(animals[j]) > 0){
+                    Animal toSwap = animals[j-1];
+                    animals[j-1] = animals[j];
+                    animals[j] = toSwap;
+                }else
+                {
+                    break;
+                }
+            }
+        }
+
+    }
+
     protected int compareStrings(String first, String second){
 
         int shortestWordLength;

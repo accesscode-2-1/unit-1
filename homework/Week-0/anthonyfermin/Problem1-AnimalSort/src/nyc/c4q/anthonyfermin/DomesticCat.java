@@ -24,6 +24,26 @@ public class DomesticCat extends Animal implements Domestic
         givenName = name;
     }
 
+    public static void sort(DomesticCat[] cats){
+
+        for(int i = 1; i < cats.length; i++)
+        {
+            for(int j = i; j > 0; j--)
+            {
+                if(cats[j-1].compareTo(cats[j]) > 0){
+                    DomesticCat toSwap = cats[j-1];
+                    cats[j-1] = cats[j];
+                    cats[j] = toSwap;
+                }else
+                {
+                    break;
+                }
+            }
+        }
+
+    }
+
+
     public int compareTo(DomesticCat cat){
 
         String first = this.getGivenName().toLowerCase();

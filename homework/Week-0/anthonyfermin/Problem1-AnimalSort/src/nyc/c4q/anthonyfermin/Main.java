@@ -1,44 +1,40 @@
 package nyc.c4q.anthonyfermin;
 
-import sun.misc.Sort;
-
 public class Main {
 
-    public static void sort(Animal[] animals){
 
-        for(int i = 1; i < animals.length; i++)
-        {
-            for(int j = i; j > 0; j--)
-            {
-                if(animals[j-1].compareTo(animals[j]) > 0){
-                    Animal toSwap = animals[j-1];
-                    animals[j-1] = animals[j];
-                    animals[j] = toSwap;
-                }else
-                {
-                    break;
-                }
-            }
-        }
-
-    }
 
     public static void main(String[] args) {
 
         Animal[] animals = {new Animal("Zebra"),new Animal("Dog"),new Animal("Cod Fish"), new Animal("Cat"), new Animal("Elephant"), new Animal("Deer")};
 
-        System.out.println("Before sort: ");
-        for(int i = 0; i < animals.length; i++)
+        System.out.println("Before Animal sort: ");
+        for(Animal animal : animals)
         {
-            System.out.println(animals[i].getSpeciesName());
+            System.out.println(animal.getSpeciesName());
         }
 
-        sort(animals);
+        Animal.sort(animals);
 
-        System.out.println("\nAfter sort: ");
-        for(int i = 0; i < animals.length; i++)
+        System.out.println("\nAfter Animal Sort: ");
+        for(Animal animal : animals)
         {
-            System.out.println(animals[i].getSpeciesName());
+            System.out.println(animal.getSpeciesName());
+        }
+
+        DomesticCat[] cats = {new DomesticCat("Whiskers"), new DomesticCat("Furball"), new DomesticCat("Tom"), new DomesticCat("Garfield")};
+
+        System.out.println("\nBefore Domestic Cat Sort: ");
+        for(DomesticCat cat : cats){
+            System.out.println(cat.getGivenName());
+        }
+
+        DomesticCat.sort(cats);
+
+        System.out.println("\nAfter Domestic Cat Sort: ");
+
+        for(DomesticCat cat : cats){
+            System.out.println(cat.getGivenName());
         }
     }
 }
