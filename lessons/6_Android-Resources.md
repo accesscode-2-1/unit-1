@@ -53,7 +53,8 @@ Getter and setter for all the instance variables, and toString().
 - Two abstract methods getArea() and getPerimeter() (shown in italics in the class diagram).
 - The subclasses Circle and Rectangle shall override the abstract methods getArea() and getPerimeter() and provide the proper implementation. They also override the toString().
 - Write a test class to test these statements involving polymorphism and explain the outputs. Some statements may trigger compilation errors. Explain the errors, if any.
-```
+
+```java
 Shape s1 = new Circle(5.5, "RED", false);  // Upcast Circle to Shape
 System.out.println(s1);                    // which version?
 System.out.println(s1.getArea());          // which version?
