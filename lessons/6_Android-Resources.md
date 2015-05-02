@@ -261,7 +261,7 @@ string is the resource type and hello is the resource name. You can use this syn
 ##### Accessing Resources
 During your application development you will need to access defined resources either in your code, or in your layout XML files. Following section explains how to access your resources in both the scenarios:
 
-ACCESSING RESOURCES IN CODE
+##### ACCESSING RESOURCES IN CODE
 When your Android application is compiled, a R class gets generated, which contains resource IDs for all the resources available in your res/ directory. You can use R class to access that resource using sub-directory and resource name or directly resource ID.
 
 EXAMPLE:
@@ -319,7 +319,7 @@ public void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-ACCESSING RESOURCES IN XML
+##### ACCESSING RESOURCES IN XML
 Consider the following resource XML res/values/strings.xml file that includes a color resource and a string resource:
 
 ```xml
