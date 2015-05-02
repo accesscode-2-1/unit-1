@@ -63,7 +63,27 @@ MyProject/
 
 As you can see in this example, the res/ directory contains all the resources (in subdirectories): an image resource, two layout resources, mipmap/ directories for launcher icons, and a string resource file. 
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
+| Folder    | Resource Type                                  |
+|-----------| ---------------------------------------------- |
+| drawable/	|                                                |
+|           |  Bitmap files (.png, .9.png, .jpg, .gif) or    |
+|           |  XML files that are compiled into the          |
+|           |  following drawable                            |
+|           |                                                |
+|           | Bitmap files                                   |
+|           | Nine-Patches (re-sizable bitmaps)              |
+|           | State lists                                    |
+|           | Shapes                                         |
+|           | Animation drawables                            |
+|           | Other drawables                                |
+|           | See Drawable Resources.                        |  
+|           |                                                |
+| --------- | -----------------------------------------------|
 
 ##### Overview of Resource Qualifiers
 
