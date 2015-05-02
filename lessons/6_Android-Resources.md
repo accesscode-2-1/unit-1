@@ -121,6 +121,8 @@ System.out.println(sq1.getLength());
 ##### Overview of Android Resource Directories
 
 
+![ android build process ] ( ../images/build-process.png )
+
 You should always externalize resources such as images and strings from your application code, so that you can maintain them independently. Externalizing your resources also allows you to provide alternative resources that support specific device configurations such as different languages or screen sizes, which becomes increasingly important as more Android-powered devices become available with different configurations. In order to provide compatibility with different configurations, you must organize resources in your project's `res/` directory, using various sub-directories that group resources by type and configuration.
 
 
