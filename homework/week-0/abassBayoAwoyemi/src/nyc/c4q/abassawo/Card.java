@@ -28,23 +28,4 @@ public class Card {
         this.suit = suit;
     }
 
-
-
-//    private String getSuit() {
-//        return suit;
-//    }
-//
-//    public void setSuit(String suit) {
-//        this.suit = suit;
-//    }
-//
-//    public char getRank() {
-//        return rank;
-//    }
-//
-//    public void setRank(char rank) {
-//        this.rank = rank;
-//    }
-
-    // ACE, 2 = 10, King, Queen, Jack
 }

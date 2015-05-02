@@ -33,6 +33,13 @@ public class Main {
         // ArrayList<String> suits = new ArrayList<String>();
         //suits.add("hearts");
 
+        PlayingCards x = new PlayingCards();
+
+        x.printPieces();
+
+        x.getPieces();
+        //x.printPieces();
+
     }
 
 

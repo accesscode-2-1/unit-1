@@ -6,6 +6,8 @@ package nyc.c4q.abassawo;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class PlayingCards extends Game {
@@ -13,12 +15,8 @@ public class PlayingCards extends Game {
 
     ArrayList<Card>CardDeck;
     public PlayingCards() {
-        //ArrayList<String>suits = new ArrayList<String>();
 
          this.CardDeck = new ArrayList(52);
-
-        //ArrayList<String>ranks = new ArrayList<String>();
-        //System.out.println(ranks.size());
 
         String[] ranks = {"A", "2", "3", "4", "5", "6", "7", "8", "9","10", "K", "Q", "J"};
         String[] suits = {"♥", "♣", " ♦", "♠"};
@@ -31,19 +29,26 @@ public class PlayingCards extends Game {
         }
 
     }
-        @Override
-        void getPieces () {
-            (for Card x : CardDeck){
 
-            }
-        }
 
-    public static void main(String[] args) {
-        (for Card x : CardDeck){
-
-        }
+    @Override
+    public ArrayList getPieces() {   //Shuffles and returns card deck
+        Collections.shuffle(CardDeck);
+        return CardDeck;
     }
 
+
+
+    public void printPieces() { //Created to see actual face value of cards.
+        System.out.println(CardDeck.size() + "Playing Cards");
+
+        for(Card x : CardDeck){
+            System.out.println(x.getRank() + "," + x.getSuit()); //Loop exercise print this in different lines by rank/by suit.
+        }
+
+
+
+    }
 
 
 }
