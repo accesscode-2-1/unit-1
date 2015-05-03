@@ -9,25 +9,28 @@ package nyc.c4q.m47bell;
  */
 public class Animal implements Comparable
 {
+    public String speciesName;
+    private Object animal;
 
-public String speciesName;
+    public Animal(String speciesName)
+    {
+
+    }
 
     @Override
-    public int compareTo(Object o)
+    public int compareTo(Object Animal)
     {
+        animal = Animal;
         return 0;
     }
 
     //Implement equals to compare by species name.
 
     @Override
-    public boolean equals(Object obj)
+    public boolean equals(Object Animal)
     {
-        return super.equals(obj);
+        return super.equals(Animal);
     }
-
-
-
 
 
 }
