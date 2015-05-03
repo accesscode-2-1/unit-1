@@ -29,9 +29,18 @@ play with/look at the sample app.
 
 #### Android LifeCycle
 
-##### Activity LifeCycle Callbacks
+An Activity is an Android object that represents one single task a user can do. The Activity Lifecycle methods are called depending on the current state of the Activity. This is not controlled by the application developer. The developer is given some guarantees (for example, that `onCreate` is called before `onStart`) but besides that must write these methods with all sorts of user interactions in mind. These are the lifecycle methods:
+* `onCreate` is called when the Activity is first created - performs any necessary setup
+* `onStart` and `onResume` are called when the Activity is first made visible.
+* `onResume` is called anytime an Activity is made visible
+* `onPause` is called anytime an Activity is made only partially visible
+* `onStop` is called when an Activity is no longer visible to the user - can be followed by either `onRestart` or `onDestroy`.
+* `onRestart` is called when a stopped Activity becomes active again.
+* `onDestroy` is called to Destroy an Acivity.
 
-###### Exercise
+The system may also kill an Activity. When this happens, any state about the activity is passed in a [`Bundle`](http://developer.android.com/reference/android/os/Bundle.html). Information about the View hierarchy is typically saved by `onSaveInstanceState`. You can implement this method in order to save more information about the current Activity state using key-value pairs. You can then restore state either in `onCreate` or in `onRestoreInstanceState`, which is called after `onStart` when restoring the Activity.
+
+###### Exercise: Activity LifeCycle Callbacks
 * Create a new blank Android Studio project (select the "Add No Activity" option in the New Project Wizard)
 * Create a new Activity.
 * In the Project View, right click on the main package (it should be something like `com.yourname.lifecycleexcercise`).
@@ -50,11 +59,7 @@ play with/look at the sample app.
 7. Start the app using any method (from the Launcher or from the Recent Apps screen).
 8. Rotate the device - note down the order in which the lifecycle methods are executed.
 
-
-##### Saving and Restoring State
-
-
-###### Exercise
+###### Exercise: Saving and Restoring State
 
 The goal of this excericse is to learn how to save and restore instance state in an activity's Bundle.
 
@@ -102,7 +107,7 @@ Explanation - in order to save and restore state on data that was generated dyna
 * save the state of any vars you want to preserve into the outState Bundle
 * restore state from the bundle in the `onCreate()` method.
 
-Further exercise: Modify the code in MainActivity so that it saves the time into the Activity's bundle and restores it in `onCreate(Bundle savedInstanceState)` if savedInstanceState is not null
+Further exercise: Modify the code in MainActivity so that it saves the time into the Activity's bundle and restores it in `onCreate(Bundle savedInstanceState)` if savedInstanceState is not null.
 
 #### Assessment
 
