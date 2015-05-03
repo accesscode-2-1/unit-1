@@ -16,7 +16,9 @@ public class Room implements Renewable
     @Override
     public void renew()
     {
-
+        for(Monster monster: monsters){
+            monster.reset();
+        }
     }
 
 
