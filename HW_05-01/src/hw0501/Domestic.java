@@ -6,8 +6,7 @@ package hw0501;
  */
 public interface Domestic
 {
-    //Create the Domestic interface. This interface should include getters and setters for a name
-    // field, since pets tend to have their own names.
     public void setName (String Name);
+
     public String getName();
 }

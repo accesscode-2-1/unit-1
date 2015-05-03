@@ -4,7 +4,7 @@ package hw0501;
  * Ray Acevedo
  * Room.java
  */
-public class Room
+public abstract class Room
 {
     String name;
     int area;

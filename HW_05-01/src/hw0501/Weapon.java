@@ -7,5 +7,4 @@ package hw0501;
 public interface Weapon
 {
     public void fireWeapon (Weapon weapon);
-
 }
