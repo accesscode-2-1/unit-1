@@ -8,9 +8,15 @@ public abstract class Game
 {
     public Card[] deck;
 
-    public void get_pieces()
+    public Card[] getDeck()
     {
-        return Card;
-
+        return deck;
     }
+
+    public void setDeck(Card[] deck)
+    {
+        this.deck = deck;
+    }
+
+
 }

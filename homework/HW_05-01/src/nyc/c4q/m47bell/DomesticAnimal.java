@@ -8,7 +8,23 @@ package nyc.c4q.m47bell;
  */
 public abstract class DomesticAnimal extends Animal implements Domestic
 {
+    private String domesticAnimalName;
 
+    public String getDomesticAnimalName()
+    {
+        return domesticAnimalName;
+    }
+
+    public void setDomesticAnimalName(String domesticAnimalName)
+    {
+        this.domesticAnimalName = domesticAnimalName;
+    }
+
+    public DomesticAnimal(String speciesName, String domesticAnimalName)
+    {
+        super(speciesName);
+        this.domesticAnimalName = domesticAnimalName;
+    }
 
     public DomesticAnimal(String speciesName)
     {
@@ -16,7 +32,7 @@ public abstract class DomesticAnimal extends Animal implements Domestic
     }
 
 
-
+//don't know how to use these methods in this class
     @Override
     public boolean equals(Object Animal)
     {

@@ -8,8 +8,8 @@ public class Main {
 
         // allocates memory for 5 Animal objects
         listAnimal = new Animal[5];
-        // initialize the elements
 
+        // initialize the elements
         listAnimal[0] = new Animal("dog");
         listAnimal[1] = new Animal("tiger");
         listAnimal[2] = new Animal("cat");

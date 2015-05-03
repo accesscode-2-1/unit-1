@@ -14,7 +14,17 @@ public class Animal implements Comparable
 
     public Animal(String speciesName)
     {
+        this.speciesName = speciesName;
+    }
 
+    public String getSpeciesName()
+    {
+        return speciesName;
+    }
+
+    public void setSpeciesName(String speciesName)
+    {
+        this.speciesName = speciesName;
     }
 
     @Override
