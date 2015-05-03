@@ -9,7 +9,7 @@ public abstract class ReedPlayer extends Musician
     public ReedPlayer(ReedInstrument instrument)
     {
     }
-    
+
     public void toggle_reed(Clarinet myClarinet){
         if(myClarinet.has_reed()){
             myClarinet.remove_reed();
