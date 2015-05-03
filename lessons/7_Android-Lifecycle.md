@@ -29,7 +29,7 @@ play with/look at the sample app.
 
 #### Android LifeCycle
 
-##### Android LifeCycle Callbacks
+##### Activity LifeCycle Callbacks
 
 ###### Exercise
 * Create a new blank Android Studio project (select the "Add No Activity" option in the New Project Wizard)
