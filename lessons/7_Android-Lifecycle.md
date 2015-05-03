@@ -22,6 +22,8 @@ all students are able to submit homework.
 
 #### Do Now (Afternoon)
 
+Download [ActivityLifecycle.zip](http://developer.android.com/training/basics/activity-lifecycle/index.html) and
+play with/look at the sample app.
 
 #### Tech Industry Chat
 
@@ -104,6 +106,12 @@ Further exercise: Modify the code in MainActivity so that it saves the time into
 
 #### Assessment
 
+
+
 #### Resources
 
 Android docs: [Managing the Activity Lifecycle](http://developer.android.com/training/basics/activity-lifecycle/index.html), [Activity](http://developer.android.com/reference/android/app/Activity.html)
+
+Udacity: Developing Android Apps Lesson 4 incl. [Why We Need An Activity Lifecyle](https://www.youtube.com/watch?v=-zr5QLH4Qy4), [The Android Activity Lifecycle](https://www.youtube.com/watch?v=85MppyLJHz0), [Active and Visible Lifetimes](https://www.youtube.com/watch?v=88rJq9HyGLI). [Maintaining State](https://www.youtube.com/watch?v=KE1hwhltOu8)
+
+Textbook: Activities and Their Lifecycles
