@@ -13,8 +13,8 @@ public class MyWeapon implements Weapon
     public MyWeapon (){}
 
     public MyWeapon (String name, int bullets){}
-    @Override
 
+    @Override
     public void fireWeapon(Weapon weapon)
     {
         System.out.println("Bang!");
