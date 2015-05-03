@@ -1,11 +1,15 @@
 package nyc.c4q.charlyn23;
 /**
- * Created by charlynbuchanan on 4/29/15.
- */
-public class DomesticCat extends Animal implements Domestic
-{
+* Created by charlynbuchanan on 4/29/15.
+*/
+public class DomesticCat extends Animal implements Domestic {
 
     String name;
+
+    public DomesticCat(String speciesName)
+    {
+        super(speciesName);
+    }
 
     @Override
     public String getName()

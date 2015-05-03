@@ -3,20 +3,29 @@ package nyc.c4q.charlyn23;
 /**
  * Created by charlynbuchanan on 4/29/15.
  */
-public class Animal implements Comparable<Animal>
-{
-    String species;
+/*Create an Animal class that includes a "species name" field and implements the Comparable
+ interface.
+  */
+public class Animal implements Comparable<Animal> {
+    String speciesName;
+
+    public Animal(String speciesName)
+    {
+        this.speciesName = speciesName;
+    }
 
     public String getSpecies()
     {
-        return species;
+        return speciesName;
     }
-
+//Compare two animals by species name, alphabetically.
     @Override
     public int compareTo(Animal o)
     {
-        return this.species.compareTo(o.getSpecies());
+        if (this.speciesName)
+        return this.speciesName.compareTo(o.getSpecies());
     }
+
 
     @Override
     public boolean equals(Object obj)
