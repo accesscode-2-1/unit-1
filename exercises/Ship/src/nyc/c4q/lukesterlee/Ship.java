@@ -15,7 +15,8 @@ public class Ship {
     private String year;
 
     public Ship() {
-
+        this.name = "noname";
+        this.year = "noyear";
     }
 
     public Ship(String name, String year) {
@@ -43,4 +44,5 @@ public class Ship {
     public String toString() {
         return this.getName() + " " + this.getYear();
     }
+
 }
