@@ -2,6 +2,9 @@
 
 #### Objective
 
+- To gain a better understanding of object oriented principles
+- To explore how Android manages external resources such as strings, layouts, and drawables.
+
 #### Do Now (Morning)
 
 Title: Ship, CruiseShip, and CargoShip 
