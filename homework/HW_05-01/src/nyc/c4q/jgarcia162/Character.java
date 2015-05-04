@@ -4,5 +4,13 @@ package nyc.c4q.jgarcia162;
  */
 
 //You must create Character, Weapon and Room classes.
-public class Character {
+public abstract class Character{
+    String name;
+
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(Character character){
+        return character.name;
+    }
 }

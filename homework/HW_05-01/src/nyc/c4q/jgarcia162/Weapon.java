@@ -4,5 +4,7 @@ package nyc.c4q.jgarcia162;
  */
 
 //You must create Character, Weapon and Room classes.
-public class Weapon {
+public abstract class Weapon {
 }
+
+
