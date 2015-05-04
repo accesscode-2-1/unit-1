@@ -59,3 +59,5 @@ corresponds to. After some number of tries, the game finishes and display the re
 Get creative with your game and look at this [chart on signs](http://en.wikipedia.org/wiki/Western_astrology#The_zodiac).
 
 ##### Bonus: Put [ads in your app](https://developers.google.com/mobile-ads-sdk/) and ship to the play store!
+
+Submit your homework to the horoscope branch. Your work should be in homework/$username.
