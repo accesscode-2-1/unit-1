@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Created by kadeemmaragh on 5/1/15.
  * Create an abstract class representing a game, which includes the method getpieces().
@@ -8,4 +10,16 @@
  */
 public class Main
 {
+    public static void main(String[] args)
+    {
+        PlayingCards playingCards = new PlayingCards();
+        ArrayList<Card> deck = playingCards.getPieces();
+
+        System.out.println(deck.size());
+
+        for(Card card : deck){
+            card.showCard();
+            System.out.println();
+        }
+    }
 }
