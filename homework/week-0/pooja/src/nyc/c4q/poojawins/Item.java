@@ -1,13 +1,13 @@
 package nyc.c4q.poojawins;
 
 /**
- * Created by pooja on 5/1/15.
+ * Created by pooja on 5/5/15.
  */
-public class Room {
+public class Item {
     private String name;
     private String description;
 
-    public Room(String name, String description) {
+    public Item(String name, String description) {
         this.name = name;
         this.description = description;
     }
@@ -18,10 +18,5 @@ public class Room {
 
     public String getDescription() {
         return description;
-    }
-
-    @Override
-    public String toString() {
-        return "This is the " + name;
     }
 }
