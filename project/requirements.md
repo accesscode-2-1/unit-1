@@ -1,4 +1,4 @@
-### Final Project: Calculator
+### Final Project: Scientific Calculator
 
 #### Due Date
 A pull request with your code must be issued to the unit-1 `calculator` branch by 18:59 on 5/21 (that is, before class). Presentations will be in class that day.
