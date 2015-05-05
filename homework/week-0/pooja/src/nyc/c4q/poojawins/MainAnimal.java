@@ -13,7 +13,7 @@ public class MainAnimal {
         Animal[] myAnimals = {ani1, ani2, ani3, ani4};
         Arrays.sort(myAnimals);
         for (Animal ani : myAnimals) {
-            System.out.println(ani.toString());
+            System.out.println(ani);
         }
 
         System.out.println();
@@ -26,7 +26,7 @@ public class MainAnimal {
         DomesticCat[] myDCS = {dc1, dc2, dc3, dc4};
         Arrays.sort(myDCS);
         for (DomesticCat dc : myDCS) {
-            System.out.println(dc.toString());
+            System.out.println(dc);
         }
 
         System.out.println();
@@ -34,7 +34,7 @@ public class MainAnimal {
         Animal[] allAnimals = {ani1, ani2, ani3, ani4, dc1, dc2, dc3, dc4};
         Arrays.sort(allAnimals);
         for (Animal ani : allAnimals) {
-            System.out.println(ani.toString());
+            System.out.println(ani);
         }
 
     }

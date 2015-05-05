@@ -11,7 +11,7 @@ public class Animal implements Comparable<Animal> {
     }
 
     public String getSpeciesName() {
-        return this.speciesName;
+        return speciesName;
     }
 
     public void setSpeciesName(String speciesName) {

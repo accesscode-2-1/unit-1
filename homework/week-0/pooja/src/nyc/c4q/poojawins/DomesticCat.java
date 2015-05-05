@@ -12,7 +12,7 @@ public class DomesticCat extends Animal implements Domestic {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {

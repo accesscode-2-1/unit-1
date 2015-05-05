@@ -13,11 +13,11 @@ public class Card {
     }
 
     public String getSuit() {
-        return this.suit;
+        return suit;
     }
 
     public String getValue() {
-        return this.value;
+        return value;
     }
 
     @Override
