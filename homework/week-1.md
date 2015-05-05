@@ -22,10 +22,10 @@ Find your name in the first column; code review the developer in the second colu
 | John Gomez | Charlyn Buchanan |
 | Jorge Reina | Abass Bayo-Awoyemi |
 | Jose Garcia | Na Li |
-| Joshelyn Vivas | Joshelyn Vivas |
+| Joshelyn Vivas | Elvis Boves |
 | Kadeem Maragh | Madelyn Tavarez |
 | Madelyn Tavarez | Vanice Yee |
-| Marbella Vidals |	Elvis Boves |
+| Marbella Vidals |	Joshelyn Vivas |
 | Na Li | Jose Garcia |
 | Ramona Harrison | Kadeem Maragh |
 | Raynaldie Acevedi | Anthony McBride |
