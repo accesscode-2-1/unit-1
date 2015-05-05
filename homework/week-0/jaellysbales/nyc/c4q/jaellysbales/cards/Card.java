@@ -1,11 +1,7 @@
-package nyc.c4q.jaellysbales.cards;
-/**
+ /**
  * Access Code 2.1
  * Created by Jaellys Bales on 4/29/15.
- * Project: week-0
- * <p/>
- * ${FILE_NAME}
- * Enter a description.
+ * Project: Cards
  */
 public class Card
 {
@@ -21,7 +17,6 @@ public class Card
     {
         return suit;
     }
-
 
     public Card(String rank, String suit) {
         this.rank = rank;

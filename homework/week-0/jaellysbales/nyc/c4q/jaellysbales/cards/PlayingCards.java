@@ -1,14 +1,9 @@
-package nyc.c4q.jaellysbales.cards;
 import java.util.ArrayList;
 import java.util.Collections;
-
 /**
  * Access Code 2.1
  * Created by Jaellys Bales on 4/29/15.
- * Project: week-0
- * <p/>
- * ${FILE_NAME}
- * Enter a description.
+ * Project: Cards
  */
 public class PlayingCards extends Game<Card>
 {
@@ -20,6 +15,7 @@ public class PlayingCards extends Game<Card>
         String[] suits = {"♣", "♦", "♥", "♠"};
         String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
 
+        // Build the deck.
         for(int i = 0; i < ranks.length; i++)
         {
             for(int j = 0; j < suits.length; j++)
@@ -30,8 +26,9 @@ public class PlayingCards extends Game<Card>
     }
 
     @Override
-    public ArrayList<Card> getpieces()
+    public ArrayList<Card> getPieces()
     {
+        ArrayList<Card> myDeck = new ArrayList<Card>(deck);
         Collections.shuffle(deck);
         return deck;
     }

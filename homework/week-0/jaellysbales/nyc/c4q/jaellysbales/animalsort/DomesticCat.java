@@ -1,15 +1,17 @@
-package nyc.c4q.jaellysbales.animalsort;
 /**
  * Access Code 2.1
  * Created by Jaellys Bales on 4/29/15.
- * Project: week-0
- * <p/>
- * ${FILE_NAME}
- * Enter a description.
+ * Project: Animal Sort
  */
 public class DomesticCat extends Animal implements Domestic
 {
-    String name;
+    private String name;
+
+    public DomesticCat(String species, String name)
+    {
+        super(species);
+        this.name = name;
+    }
 
     @Override
     public String getName()

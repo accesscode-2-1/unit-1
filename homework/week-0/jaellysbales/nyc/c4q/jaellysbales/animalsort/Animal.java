@@ -1,18 +1,22 @@
-package nyc.c4q.jaellysbales.animalsort;
 /**
  * Access Code 2.1
  * Created by Jaellys Bales on 4/29/15.
- * Project: week-0
- *
- * Animal.java
- * Enter a description.
+ * Project: Animal Sort
  */
 public class Animal implements Comparable<Animal> {
-    String species;
+    private String species;
+    private String name;
 
     public String getSpecies()
     {
         return species;
+    }
+
+    public Animal(){}
+
+    public Animal (String species)
+    {
+        this.species = species;
     }
 
     @Override
