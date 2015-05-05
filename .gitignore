@@ -2,5 +2,5 @@
 out/
 *.class
 build/
-idea/
+.idea/
 *.iml
