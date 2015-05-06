@@ -6,4 +6,7 @@ public interface Greeting
     public void greeting();
     public void farewell();
 
+
+    
+
 }

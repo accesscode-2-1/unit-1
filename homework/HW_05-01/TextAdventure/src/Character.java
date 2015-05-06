@@ -13,4 +13,6 @@ public abstract class Character
     public void setHealthPoints(int num){}
     public abstract int getHealthPoints();
 
+
+
 }

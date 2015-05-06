@@ -24,6 +24,7 @@ public class Player extends Character
         }
     }
 
+
     public void subtractFromWallet(int num)
     {
         if(wallet - num <= 0)

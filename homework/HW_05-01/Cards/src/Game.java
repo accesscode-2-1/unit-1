@@ -6,4 +6,5 @@ import java.util.List;
 public abstract class Game
 {
     public abstract List getPieces();
+
 }
