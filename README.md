@@ -11,7 +11,8 @@ Lesson plans, activities and assignments for Unit 1 will be posted here!
  2 | Apr 25 | 0 | [Inheritance and Interfaces](lessons/2_Interfaces-And-Inheritance)
  3 | Apr 26 | 0 | [Generics and Abstract Classes](/lessons/3_Generics-and-Abstract-Classes.md)
  4 | Apr 28 | 1 | [Anatomy of the Android Manifest](/lessons/4_Anatomy_Manifest.md)
-
+ 5 | May 02 | 1 | [Android Resources] (lessons/6_Android-Resources.md)
+ 6 | May 03 | 1 | [Activity Lifecycle](lessons/7_Android-Lifecycle.md)
 ### Homework
 
 | Due Date | Homework|
