@@ -16,7 +16,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import nyc.c4q.ramonaharrison.horoscope.dummy.DummyContent;
+import nyc.c4q.ramonaharrison.horoscope.sign.SignContent;
 
 /**
  * A fragment representing a list of Items.
@@ -144,7 +144,7 @@ public class ListViewFragment extends Fragment implements AbsListView.OnItemClic
         if (null != mListener) {
             // Notify the active callbacks interface (the activity, if the
             // fragment is attached to one) that an item has been selected.
-            mListener.onFragmentInteraction(DummyContent.ITEMS.get(position).id);
+            mListener.onFragmentInteraction(SignContent.ITEMS.get(position).id);
         }
     }
 
@@ -173,7 +173,7 @@ public class ListViewFragment extends Fragment implements AbsListView.OnItemClic
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        public void onFragmentInteraction(String id);
+        public void onFragmentInteraction(int id);
     }
 
 }

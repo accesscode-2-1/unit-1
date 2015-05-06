@@ -5,36 +5,59 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <LinearLayout
+    <RelativeLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="about sign"
+            android:text="Libra"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
             android:id="@+id/signTitle" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text=""
+            android:layout_below="@id/signTitle"
+            android:layout_marginLeft="5dp"
+            android:text="September 23 - October 30"
             android:id="@+id/signDateRange" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/signImage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/imageBox"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/signDateRange"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:src="@drawable/libra"
+                android:id="@+id/signImage" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/imageBox"
+            android:layout_margin="15dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text=""
+            android:layout_centerHorizontal="true"
+            android:text="Description"
             android:id="@+id/signDescription" />
-    </LinearLayout>
+    </RelativeLayout>
 
 </FrameLayout>

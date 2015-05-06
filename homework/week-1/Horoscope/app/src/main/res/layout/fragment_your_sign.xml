@@ -5,42 +5,40 @@
     tools:context="nyc.c4q.ramonaharrison.horoscope.YourSignFragment">
 
     <RelativeLayout
+        android:gravity="center"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/horoscope"
-            android:id="@+id/horoscope_image" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/birthdate_text"
-            android:layout_below="@id/horoscope_image"
-            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:textSize="40sp"
             android:text="@string/your_birth_date" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:inputType="date"
+
+        <DatePicker
             android:layout_below="@id/birthdate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:startYear="1900"
+            android:endYear="2015"
+            android:layout_centerHorizontal="true"
             android:id="@+id/birthdate_edit" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/birthdate_edit"
-            android:text="@string/birthdate_button"
             android:layout_marginTop="10dp"
+            android:text="@string/birthdate_button"
             android:layout_centerHorizontal="true"
             android:id="@+id/birthdate_button" />
     </RelativeLayout>

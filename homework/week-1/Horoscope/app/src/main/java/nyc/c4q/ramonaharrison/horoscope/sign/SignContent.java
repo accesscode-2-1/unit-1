@@ -22,23 +22,23 @@ public class SignContent {
     /**
      * A map of items, by ID.
      */
-    public static Map<String, Sign> ITEM_MAP = new HashMap<String, Sign>();
+    public static Map<Integer, Sign> ITEM_MAP = new HashMap<Integer, Sign>();
 
 
     static {
         // Add 3 sample items.
-        addItem(new Sign("0", signs[0]));
-        addItem(new Sign("1", signs[1]));
-        addItem(new Sign("2", signs[2]));
-        addItem(new Sign("3", signs[3]));
-        addItem(new Sign("4", signs[4]));
-        addItem(new Sign("5", signs[5]));
-        addItem(new Sign("6", signs[6]));
-        addItem(new Sign("7", signs[7]));
-        addItem(new Sign("8", signs[8]));
-        addItem(new Sign("9", signs[9]));
-        addItem(new Sign("10", signs[10]));
-        addItem(new Sign("11", signs[11]));
+        addItem(new Sign(0, signs[0]));
+        addItem(new Sign(1, signs[1]));
+        addItem(new Sign(2, signs[2]));
+        addItem(new Sign(3, signs[3]));
+        addItem(new Sign(4, signs[4]));
+        addItem(new Sign(5, signs[5]));
+        addItem(new Sign(6, signs[6]));
+        addItem(new Sign(7, signs[7]));
+        addItem(new Sign(8, signs[8]));
+        addItem(new Sign(9, signs[9]));
+        addItem(new Sign(10, signs[10]));
+        addItem(new Sign(11, signs[11]));
     }
 
     private static void addItem(Sign item) {
@@ -47,10 +47,10 @@ public class SignContent {
     }
 
     public static class Sign {
-        public String id;
+        public int id;
         public String content;
 
-        public Sign(String id, String content) {
+        public Sign(int id, String content) {
             this.id = id;
             this.content = content;
         }

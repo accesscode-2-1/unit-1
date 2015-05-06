@@ -1,12 +1,16 @@
 package nyc.c4q.ramonaharrison.horoscope;
 
 import android.app.Activity;
-import android.net.Uri;
-import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.DatePicker;
+
+import java.util.Calendar;
+import java.util.TimeZone;
 
 
 /**
@@ -20,12 +24,15 @@ import android.view.ViewGroup;
 public class YourSignFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private static final String MONTH = "month";
+    private static final String DAY = "day";
+
+
+    final static String TAG = "test";
 
     // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private int month;
+    private int day;
 
     private OnFragmentInteractionListener mListener;
 
@@ -33,16 +40,16 @@ public class YourSignFragment extends Fragment {
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
+     * @param day Parameter 1.
+     * @param month Parameter 2.
      * @return A new instance of fragment YourSignFragment.
      */
-    // TODO: Rename and change types and number of parameters
-    public static YourSignFragment newInstance(String param1, String param2) {
+
+    public static YourSignFragment newInstance(int month, int day) {
         YourSignFragment fragment = new YourSignFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putInt(MONTH, month);
+        args.putInt(DAY, day);
         fragment.setArguments(args);
         return fragment;
     }
@@ -55,8 +62,8 @@ public class YourSignFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            month = getArguments().getInt(MONTH);
+            day = getArguments().getInt(DAY);
         }
     }
 
@@ -64,15 +71,85 @@ public class YourSignFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_your_sign, container, false);
+        View view = inflater.inflate(R.layout.fragment_your_sign, container, false);
+
+        DatePicker datePicker = (DatePicker) view.findViewById(R.id.birthdate_edit);
+        datePicker.updateDate(1987, 8, 24);
+
+        Button button = (Button) view.findViewById(R.id.birthdate_button);
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                DatePicker datePicker = (DatePicker) getActivity().findViewById(R.id.birthdate_edit);
+
+                int month = datePicker.getMonth();
+                int day = datePicker.getDayOfMonth();
+                int sign = getSign(month, day);
+                onButtonPressed(sign);
+            }
+        });
+
+        return view;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
+    public void onButtonPressed(int sign) {
+
+
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+            mListener.onYourSignFragmentInteraction(sign);
         }
+
     }
+
+
+    public int getSign(int month, int dayOfMonth) {
+        Calendar localCalendar = Calendar.getInstance(TimeZone.getDefault());
+        localCalendar.set(2015, month, dayOfMonth);
+        int day = localCalendar.get(Calendar.DAY_OF_YEAR);
+
+        if (day < 22) {
+            return 9;
+        }
+        if (day < 49) {
+            return 10;
+        }
+        if (day < 79) {
+            return 11;
+        }
+        if (day < 109) {
+            return 0;
+        }
+        if (day < 140) {
+            return 1;
+        }
+        if (day < 171) {
+            return 2;
+        }
+        if (day < 203) {
+            return 3;
+        }
+        if (day < 234) {
+            return 4;
+        }
+        if (day < 266) {
+            return 5;
+        }
+        if (day < 295) {
+            return 6;
+        }
+        if (day < 325) {
+            return 7;
+        }
+        if (day < 355) {
+            return 8;
+        }
+
+        return 0;
+
+    }
+
 
     @Override
     public void onAttach(Activity activity) {
@@ -102,8 +179,8 @@ public class YourSignFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        public void onFragmentInteraction(Uri uri);
+
+        public void onYourSignFragmentInteraction(int sign);
     }
 
 }

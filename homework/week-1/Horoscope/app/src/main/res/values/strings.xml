@@ -22,8 +22,8 @@
     <string name="aquarius">Aquarius</string>
     <string name="pisces">Pisces</string>
 
-    <string name="your_birth_date">Enter birth date to discover your sign:</string>
-    <string name="birthdate_button">Submit</string>
+    <string name="your_birth_date">Birth date:</string>
+    <string name="birthdate_button">Go</string>
 
     <string-array name="signs_array">
         <item>Aries</item>
@@ -56,18 +56,18 @@
     </string-array>
 
     <string-array name="description_array">
-        <item>Aries</item>
-        <item>Taurus</item>
-        <item>Gemini</item>
-        <item>Cancer</item>
-        <item>Leo</item>
-        <item>Virgo</item>
-        <item>Libra</item>
-        <item>Scorpio</item>
-        <item>Sagittarius</item>
-        <item>Capricorn</item>
-        <item>Aquarius</item>
-        <item>Pisces</item>
+        <item>This sign is represented by the Ram.</item>
+        <item>This sign is represented by the Bull.</item>
+        <item>This sign is represented by the Twins.</item>
+        <item>This sign is represented by the Crab.</item>
+        <item>This sign is represented by the Lion.</item>
+        <item>This sign is represented by the Virgin.</item>
+        <item>This sign is represented by the Scales.</item>
+        <item>This sign is represented by the Scorpion.</item>
+        <item>This sign is represented by the Archer.</item>
+        <item>This sign is represented by the Sea Goat.</item>
+        <item>This sign is represented by the Water Bearer.</item>
+        <item>This sign is represented by the Fish.</item>
     </string-array>
 
 
@@ -75,8 +75,6 @@
 
     <string name="action_settings">Settings</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_signs">Signs</string>
 
     <string name="hello_world">Hello world!</string>
