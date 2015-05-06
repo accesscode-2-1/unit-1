@@ -40,6 +40,7 @@ public class Main {
 
         for(DomesticCat catt : cats){
             System.out.println(catt.getName());
+
         }
 
 

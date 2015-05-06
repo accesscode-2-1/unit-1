@@ -7,4 +7,5 @@ public interface Domestic
     public  void setName(String name);
 
 
+
 }

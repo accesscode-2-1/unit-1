@@ -41,4 +41,5 @@ public class NPC extends Character implements Greeting
     {
         System.out.println("Goodbye adventurer");
     }
+
 }

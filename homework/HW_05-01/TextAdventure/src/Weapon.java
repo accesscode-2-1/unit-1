@@ -26,6 +26,6 @@ public class Weapon extends Item
     public String toString()
     {
             return "Item: " + getItemName() + ", Price: " + getItemPrice() + ", Damage: " + getWeaponDamage();
-
     }
+
 }

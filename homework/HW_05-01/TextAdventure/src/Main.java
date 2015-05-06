@@ -59,7 +59,6 @@ public class Main
         {
             return "no npc picked";
         }
-
-
     }
+
 }
