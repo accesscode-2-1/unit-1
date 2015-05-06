@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+
+    <string name="title_section1">Signs Overview</string>
+    <string name="title_section2">Your Sign</string>
+    <string name="title_section3">Compatibility</string>
+    <string name="title_section4">Guess the sign!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="aries">Aries</string>
+    <string name="taurus">Taurus</string>
+    <string name="gemini">Gemini</string>
+    <string name="cancer">Cancer</string>
+    <string name="leo">Leo</string>
+    <string name="virgo">Virgo</string>
+    <string name="libra">Libra</string>
+    <string name="scorpio">Scorpio</string>
+    <string name="sagittarius">Sagittarius</string>
+    <string name="capricorn">Capricorn</string>
+    <string name="aquarius">Aquarius</string>
+    <string name="pisces">Pisces</string>
+
+    <string name="your_birth_date">Enter birth date to discover your sign:</string>
+    <string name="birthdate_button">Submit</string>
+
+    <string-array name="signs_array">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+    <string-array name="dates_array">
+        <item>March 21 - April 19</item>
+        <item>April 20 - May 20</item>
+        <item>May 21 - June 21</item>
+        <item>June 22 - July 22</item>
+        <item>July 23 - August 22</item>
+        <item>August 23 - September 22</item>
+        <item>September 23 - October 23</item>
+        <item>October 24 - November 20</item>
+        <item>November 21 - December 22</item>
+        <item>December 23 - January 20</item>
+        <item>January 21 - February 21</item>
+        <item>February 22 - March 20</item>
+    </string-array>
+
+    <string-array name="description_array">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+
+    <string name="action_example"></string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_signs">Signs</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
