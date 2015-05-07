@@ -9,21 +9,14 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="aries">Aries</string>
-    <string name="taurus">Taurus</string>
-    <string name="gemini">Gemini</string>
-    <string name="cancer">Cancer</string>
-    <string name="leo">Leo</string>
-    <string name="virgo">Virgo</string>
-    <string name="libra">Libra</string>
-    <string name="scorpio">Scorpio</string>
-    <string name="sagittarius">Sagittarius</string>
-    <string name="capricorn">Capricorn</string>
-    <string name="aquarius">Aquarius</string>
-    <string name="pisces">Pisces</string>
 
     <string name="your_birth_date">Birth date:</string>
     <string name="birthdate_button">Go</string>
+
+    <string name="your_sign">Your sign:</string>
+    <string name="their_sign">Their sign:</string>
+    <string name="match">It\'s a match!</string>
+
 
     <string-array name="signs_array">
         <item>Aries</item>
@@ -55,6 +48,21 @@
         <item>February 22 - March 20</item>
     </string-array>
 
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
     <string-array name="description_array">
         <item>This sign is represented by the Ram.</item>
         <item>This sign is represented by the Bull.</item>
@@ -76,6 +84,9 @@
     <string name="action_settings">Settings</string>
 
     <string name="title_activity_signs">Signs</string>
+    <string name="horoscope">Horoscope</string>
+    <string name="horoscope_subtitle">Find your sign | Check your compatibility | Test your knowledge!</string>
 
     <string name="hello_world">Hello world!</string>
+
 </resources>

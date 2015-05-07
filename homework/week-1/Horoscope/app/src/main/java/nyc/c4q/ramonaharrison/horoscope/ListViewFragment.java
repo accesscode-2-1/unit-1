@@ -3,7 +3,6 @@ package nyc.c4q.ramonaharrison.horoscope;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -84,38 +83,16 @@ public class ListViewFragment extends Fragment implements AbsListView.OnItemClic
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        Log.d("test", "ItemFragment onCreateView() called");
         View view = inflater.inflate(R.layout.fragment_item3, container, false);
-
 
         String[] signs = new String[]  {"♈ Aries", "♉ Taurus", "♊ Gemini", "♋ Cancer", "♌ Leo", "♍ Virgo", "♎ Libra", "♏ Scorpio", "♐ Sagittarius", "♑ Capricorn", "♒ Aquarius", "♓ Pisces"};
         ArrayList<String> signList = new ArrayList<String>();
         signList.addAll( Arrays.asList(signs) );
-        Log.d("test", "signsList built");
-
         mAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, signList);
-        Log.d("test", "adapter created");
-
-
         mListView = (ListView) view.findViewById(R.id.list);
-        if (mListView == null) {
-            Log.d("test", "listview null");
-        } else {
-            Log.d("test", "listview ok");
-        }
-
-        if (mAdapter == null) {
-            Log.d("test", "adapter null");
-        } else {
-            Log.d("test", "adapter ok");
-        }
-
-
         mListView.setAdapter(mAdapter);
-        Log.d("test", "adapter set");
-
         mListView.setOnItemClickListener(this);
-        Log.d("test", "onclicklistener set");
+
 
 
         return view;

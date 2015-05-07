@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 
 
 public class MainActivity extends ActionBarActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks, ListViewFragment.OnFragmentInteractionListener, YourSignFragment.OnFragmentInteractionListener, GameFragment.OnFragmentInteractionListener, CompatibilityFragment.OnFragmentInteractionListener, AboutSignFragment.OnFragmentInteractionListener {
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks, MainFragment.OnFragmentInteractionListener, ListViewFragment.OnFragmentInteractionListener, YourSignFragment.OnFragmentInteractionListener, GameFragment.OnFragmentInteractionListener, ResultFragment.OnFragmentInteractionListener, CompatibilityFragment.OnFragmentInteractionListener, AboutSignFragment.OnFragmentInteractionListener {
 
     final static String TAG = "test";
 
@@ -34,6 +34,7 @@ public class MainActivity extends ActionBarActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
@@ -45,6 +46,15 @@ public class MainActivity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
+        if(null == savedInstanceState){
+
+            android.app.FragmentManager fragmentManager = getFragmentManager();
+            MainFragment main = MainFragment.newInstance();
+
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, main)
+                    .commit();
+        }
 
     }
 
@@ -110,14 +120,18 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (!mNavigationDrawerFragment.isDrawerOpen()) {
-            // Only show items in the action bar relevant to this screen
-            // if the drawer is not showing. Otherwise, let the drawer
-            // decide what to show in the action bar.
-            getMenuInflater().inflate(R.menu.main, menu);
-            restoreActionBar();
-            return true;
+
+        if (this.mNavigationDrawerFragment != null) {
+            if (!mNavigationDrawerFragment.isDrawerOpen()) {
+                // Only show items in the action bar relevant to this screen
+                // if the drawer is not showing. Otherwise, let the drawer
+                // decide what to show in the action bar.
+                getMenuInflater().inflate(R.menu.main, menu);
+                restoreActionBar();
+                return true;
+            }
         }
+
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -138,9 +152,30 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void onFragmentInteraction(int id) {
-        Log.d(TAG, "clicked on " + id);
         android.app.FragmentManager fragmentManager = getFragmentManager();
         AboutSignFragment aboutSign = AboutSignFragment.newInstance(id);
+
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, aboutSign)
+                .commit();
+
+    }
+
+    @Override
+    public void onCompatibilityFragmentInteraction() {
+        android.app.FragmentManager fragmentManager = getFragmentManager();
+        ResultFragment result = ResultFragment.newInstance();
+
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, result)
+                .commit();
+    }
+
+    @Override
+    public void onYourSignFragmentInteraction(int sign) {
+
+        android.app.FragmentManager fragmentManager = getFragmentManager();
+        AboutSignFragment aboutSign = AboutSignFragment.newInstance(sign);
 
         fragmentManager.beginTransaction()
                 .replace(R.id.container, aboutSign)
@@ -154,14 +189,7 @@ public class MainActivity extends ActionBarActivity
     }
 
     @Override
-    public void onYourSignFragmentInteraction(int sign) {
-
-        android.app.FragmentManager fragmentManager = getFragmentManager();
-        AboutSignFragment aboutSign = AboutSignFragment.newInstance(sign);
-
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, aboutSign)
-                .commit();
+    public void onGameFragmentInteraction() {
 
     }
 

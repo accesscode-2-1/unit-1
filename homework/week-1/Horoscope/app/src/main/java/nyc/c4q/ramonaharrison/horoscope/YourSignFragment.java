@@ -72,7 +72,6 @@ public class YourSignFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_your_sign, container, false);
-
         DatePicker datePicker = (DatePicker) view.findViewById(R.id.birthdate_edit);
         datePicker.updateDate(1987, 8, 24);
 
@@ -95,7 +94,6 @@ public class YourSignFragment extends Fragment {
     }
 
     public void onButtonPressed(int sign) {
-
 
         if (mListener != null) {
             mListener.onYourSignFragmentInteraction(sign);
