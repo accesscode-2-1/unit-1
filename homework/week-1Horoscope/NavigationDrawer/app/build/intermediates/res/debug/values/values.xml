@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/July/Desktop/AndroidApps/NavigationDrawer/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="drawer_options">
+        <item>Choose a sign</item>
+        <item>MY SIGN</item>
+        <item>ROMANCE</item>
+        <item>Horoscope Guru</item>
+    </string-array>
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <!-- From: file:/Users/July/Desktop/AndroidApps/NavigationDrawer/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="user_input_of_sign" type="id"/>
+    <!-- From: file:/Users/July/Desktop/AndroidApps/NavigationDrawer/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_websearch">Web search</string>
+    <string name="app_name">Horoscope</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="enter_BD">Enter Your BirthDay</string>
+    <string name="press_to_start">Press to start</string>
+</resources>
