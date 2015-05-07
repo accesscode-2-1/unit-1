@@ -1,1 +1,0 @@
-/** * Created by Hoshiko on 4/30/15. */public class ClarinetAnswer extends ReedInstrument {    boolean reed;    @Override    boolean hasReed(){        return reed;    }    @Override    public String play(){        return "reed sound";    }    @Override    void place_reed(){        reed = true;    }    @Override    void remove_reed(){reed = false;    }}
