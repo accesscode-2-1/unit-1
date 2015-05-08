@@ -28,6 +28,8 @@ public class EmailActivity extends Activity {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setType("*/*");
                 intent.setData(Uri.parse("mailto:" + myEmailAddress));
+
+
                 intent.putExtra(Intent.EXTRA_SUBJECT, subject);
                 intent.putExtra(Intent.EXTRA_TEXT, body);
                 if (intent.resolveActivity(getPackageManager()) != null) {
