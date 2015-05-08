@@ -1,0 +1,125 @@
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_gravity="center_horizontal" tools:context="nyc.c4q.anthonyfermin.horoscope.SignInfo"
+        
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#ffffffff"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/capricornButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/capricorn"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="test"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/aquariusButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/aquarius"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="test2"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/piscesButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/pisces"
+            android:layout_row="0"
+            android:layout_column="2"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ariesButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/aries"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/taurusButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/taurus"
+            android:layout_row="1"
+            android:layout_column="1"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/geminiButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gemini"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/cancerButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cancer"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/leoButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/leo"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <!--<ImageButton-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:id="@+id/virgoButton"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/virgo"-->
+            <!--android:layout_row="4"-->
+            <!--android:layout_column="0" />-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:id="@+id/libraButton"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/libra"-->
+            <!--android:layout_row="4"-->
+            <!--android:layout_column="1" />-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:id="@+id/scorpioButton"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/scorpio"-->
+            <!--android:layout_row="5"-->
+            <!--android:layout_column="0" />-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:id="@+id/sagittariusButton"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/sagittarius"-->
+            <!--android:layout_row="5"-->
+            <!--android:layout_column="1" />-->
+
+    </GridLayout>
+
+
