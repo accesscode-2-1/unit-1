@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".GetHoroscope"
+            android:label="@string/title_activity_get_horoscope" >
+        </activity>
+        <activity
+            android:name=".GetHoroscopeSign"
+            android:label="@string/title_activity_get_horoscope_sign" >
+        </activity>
+        <activity
+            android:name=".HoroscopeCompatibility"
+            android:label="@string/title_activity_horoscope_compatibility" >
+        </activity>
+        <activity
+            android:name=".HoroscopeGame"
+            android:label="@string/title_activity_horoscope_game" >
+        </activity>
     </application>
 
 </manifest>

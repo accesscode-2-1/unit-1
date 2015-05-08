@@ -1,22 +1,18 @@
 package ahhhlvin.c4q.nyc.alvin_horoscope;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity
@@ -59,16 +55,30 @@ public class MainActivity extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
+                // changes title bar to say the title of each FRAGMENT !
                 mTitle = getString(R.string.title_section1);
+                Intent horoscopeList = new Intent(getApplicationContext(), GetHoroscope.class);
+                startActivity(horoscopeList);
+
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
+                Intent horoscopeSign = new Intent(getApplicationContext(), GetHoroscopeSign.class);
+                startActivity(horoscopeSign);
+
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+                Intent horoscopeCompatibility = new Intent(getApplicationContext(), HoroscopeCompatibility.class);
+                startActivity(horoscopeCompatibility);
+
                 break;
             case 4:
                 mTitle = getString(R.string.title_section4);
+                Intent horoscopeGame = new Intent(getApplicationContext(), HoroscopeGame.class);
+                startActivity(horoscopeGame);
+
+
                 break;
         }
     }
@@ -102,9 +112,7 @@ public class MainActivity extends ActionBarActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }
