@@ -12,7 +12,9 @@ import android.view.ViewGroup;
  */
 public class CompatiblilityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.compatibility,  container, false);
-        //return super.onCreateView(inflater, container, savedInstanceState);
+
+        final View myInflatedView = inflater.inflate(R.layout.astro_info, container,false);
+
+
     }
 }
