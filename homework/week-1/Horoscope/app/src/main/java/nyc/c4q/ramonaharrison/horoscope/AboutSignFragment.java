@@ -1,7 +1,7 @@
 package nyc.c4q.ramonaharrison.horoscope;
 
 import android.app.Activity;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,7 +21,6 @@ import android.widget.TextView;
  */
 public class AboutSignFragment extends Fragment {
 
-    final String TAG = "test";
     private static final String SIGN = "sign";
     private int sign;
     private OnFragmentInteractionListener mListener;
@@ -73,7 +72,6 @@ public class AboutSignFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
         View aboutSignView = inflater.inflate(R.layout.fragment_about_sign, container, false);
 
         TextView signTitle = (TextView) aboutSignView.findViewById(R.id.signTitle);

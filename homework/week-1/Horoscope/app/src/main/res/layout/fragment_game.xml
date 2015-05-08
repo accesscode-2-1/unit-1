@@ -1,26 +1,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/fragment_game"
     tools:context="nyc.c4q.ramonaharrison.horoscope.GameFragment">
 
 
     <LinearLayout
         android:orientation="vertical"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Guess the sign:"
-            android:textSize="40sp"
-            android:id="@+id/game_title" />
-
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="0dp"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -28,50 +21,64 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#B2E6FF"
                 android:textColor="@color/material_blue_grey_800"
-                android:textSize="30sp"
-                android:text="Sep 24"
-                android:id="@+id/sign_date" />
+                style="@android:style/TextAppearance.Medium"
+                android:text="If your birthday is "
+                android:id="@+id/sign_quiz" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/material_blue_grey_800"
-                android:textSize="30sp"
-                android:text=" = "
-                android:id="@+id/equals" />
-
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner" />
+                style="@android:style/TextAppearance.Medium"
+                android:text="Sep 24"
+                android:id="@+id/sign_date" />
 
         </LinearLayout>
 
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/material_blue_grey_800"
+            style="@android:style/TextAppearance.Medium"
+            android:text="your sign is: "
+            android:id="@+id/sign_quiz2" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/material_blue_grey_800"
+            style="@android:style/TextAppearance.Large"
+            android:text="00:00"
+            android:id="@+id/countdown_timer" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/birthdate_button"
-            android:layout_marginTop="40dp"
+            android:text="Go!"
+            android:layout_marginTop="20dp"
             android:id="@+id/game_button" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text=" "
             android:layout_marginTop="10dp"
             android:id="@+id/result" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:textSize="80sp"
-            android:text="00:00"
-            android:id="@+id/countdown_timer" />
-
 
     </LinearLayout>
 

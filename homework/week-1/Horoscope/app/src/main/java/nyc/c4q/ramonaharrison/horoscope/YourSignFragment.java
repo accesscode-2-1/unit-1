@@ -1,14 +1,13 @@
 package nyc.c4q.ramonaharrison.horoscope;
 
 import android.app.Activity;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
-
 import java.util.Calendar;
 import java.util.TimeZone;
 
@@ -22,18 +21,13 @@ import java.util.TimeZone;
  * create an instance of this fragment.
  */
 public class YourSignFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
+
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String MONTH = "month";
     private static final String DAY = "day";
-
-
     final static String TAG = "test";
-
-    // TODO: Rename and change types of parameters
     private int month;
     private int day;
-
     private OnFragmentInteractionListener mListener;
 
     /**

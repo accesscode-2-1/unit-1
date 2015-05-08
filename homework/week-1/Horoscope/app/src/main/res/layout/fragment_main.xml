@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:id="@+id/fragment_main"
     tools:context="nyc.c4q.ramonaharrison.horoscope.MainFragment">
 
     <ImageView
@@ -16,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/horoscope_title"
-        android:textSize="40sp"
+        android:textSize="40dp"
+        android:textColor="@color/material_blue_grey_800"
         android:layout_below="@id/title_image"
         android:layout_centerHorizontal="true"
         android:text="@string/horoscope"
@@ -26,9 +28,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/horoscope_subtitle"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/material_blue_grey_800"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/horoscope_title"
-        android:textSize="10sp"
+        style="@android:style/TextAppearance.Small"
         android:text="@string/horoscope_subtitle" />
 
 </RelativeLayout>

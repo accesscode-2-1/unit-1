@@ -10,6 +10,8 @@ import android.widget.EditText;
 /**
  * Created by amyquispe on 4/30/15.
  */
+
+
 public class EmailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +23,7 @@ public class EmailActivity extends Activity {
         mailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String myEmailAddress = ""; /* put your email address here */
+                String myEmailAddress = "ramonaliza@gmail.com"; /* put your email address here */
                 String subject = emailSubject.getText().toString();
                 String body = emailBody.getText().toString();
 
@@ -51,4 +53,22 @@ public class EmailActivity extends Activity {
             startActivity(intent);
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+
+        String subject = ((EditText)findViewById(R.id.email_subject)).getText().toString();
+        String body = ((EditText)findViewById(R.id.email_body)).getText().toString();
+        savedInstanceState.putString("subject", subject);
+        savedInstanceState.putString("body", body);
+
+    }
+
+
 }

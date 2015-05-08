@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/fragment_compatibility"
     tools:context="nyc.c4q.ramonaharrison.horoscope.CompatibilityFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -21,14 +22,16 @@
             android:id="@+id/your_sign_text"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textSize="40sp"
+            android:textColor="@color/material_blue_grey_800"
+            style="@android:style/TextAppearance.Medium"
             android:text="@string/your_sign" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:inputType="text"
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:id="@+id/your_sign" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,18 +40,21 @@
             android:layout_marginTop="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textSize="40sp"
+            android:textColor="@color/material_blue_grey_800"
+            style="@android:style/TextAppearance.Medium"
             android:text="@string/their_sign" />
 
-        <EditText
-            android:layout_width="match_parent"
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
-            android:inputType="text"
             android:id="@+id/their_sign" />
+
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="@string/birthdate_button"
             android:id="@+id/compatibility_button" />
     </LinearLayout>

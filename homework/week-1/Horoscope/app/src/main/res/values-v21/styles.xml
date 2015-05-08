@@ -20,16 +20,15 @@
     </style>
 
     <style name="spinnerItemStyle">
-        <item name="android:padding">5dp</item>
-        <item name="android:background">#B2E6FF</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/material_blue_grey_800</item>
 
     </style>
 
     <style name="spinnerDropDownItemStyle">
-        <item name="android:padding">5dp</item>
-        <item name="android:background">#B2E6FF</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/material_blue_grey_800</item>
+        <item name="android:textSize">18sp</item>
 
     </style>
 </resources>

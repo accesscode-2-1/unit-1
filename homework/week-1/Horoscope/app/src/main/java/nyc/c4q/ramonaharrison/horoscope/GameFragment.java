@@ -1,10 +1,10 @@
 package nyc.c4q.ramonaharrison.horoscope;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -90,19 +91,18 @@ public class GameFragment extends Fragment  {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_game, container, false);
-        Resources res = getResources();
 
+        Resources res = getResources();
         setUpGame(view, res);
 
         // set up spinner
-        String[] signs = res.getStringArray(R.array.signs_array);
+        final String[] signs = res.getStringArray(R.array.signs_array);
         signList.addAll(Arrays.asList(signs));
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, signList);
         Spinner spinner = (Spinner) view.findViewById(R.id.spinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
-        {
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id)
@@ -128,18 +128,17 @@ public class GameFragment extends Fragment  {
         });
 
         final TextView countdown = (TextView) view.findViewById(R.id.countdown_timer);
-        final TextView result = (TextView) view.findViewById(R.id.result);
 
         new CountDownTimer(9000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 countdown.setText("00:0" + millisUntilFinished / 1000);
+
             }
 
             public void onFinish() {
-                countdown.setText("!");
-                result.setText("Out of time");
-              //result.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                countdown.setText(signs[sign]);
+                Toast.makeText(getActivity().getApplicationContext(), "Out of time!", Toast.LENGTH_SHORT).show();
             }
         }.start();
 
@@ -212,11 +211,9 @@ public class GameFragment extends Fragment  {
         TextView result = (TextView) getActivity().findViewById(R.id.result);
 
         if (guess == sign) {
-            result.setText("Correct!");
-            result.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
+            Toast.makeText(getActivity().getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
         } else {
-            result.setText("Wrong!");
-            result.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+            Toast.makeText(getActivity().getApplicationContext(), "Wrong Answer!", Toast.LENGTH_SHORT).show();
         }
     }
 

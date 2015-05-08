@@ -1,7 +1,8 @@
 package nyc.c4q.ramonaharrison.horoscope;
 
 import android.app.Activity;
-import android.app.Fragment;
+import android.content.res.Resources;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -85,7 +86,8 @@ public class ListViewFragment extends Fragment implements AbsListView.OnItemClic
 
         View view = inflater.inflate(R.layout.fragment_item3, container, false);
 
-        String[] signs = new String[]  {"♈ Aries", "♉ Taurus", "♊ Gemini", "♋ Cancer", "♌ Leo", "♍ Virgo", "♎ Libra", "♏ Scorpio", "♐ Sagittarius", "♑ Capricorn", "♒ Aquarius", "♓ Pisces"};
+        Resources res = getResources();
+        String[] signs = res.getStringArray(R.array.signs_array);
         ArrayList<String> signList = new ArrayList<String>();
         signList.addAll( Arrays.asList(signs) );
         mAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, signList);

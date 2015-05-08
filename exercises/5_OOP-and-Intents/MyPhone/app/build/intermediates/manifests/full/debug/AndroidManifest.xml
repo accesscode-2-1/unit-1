@@ -23,6 +23,25 @@
             </intent-filter>
         </activity>
         <!-- Add the DialerActivity and EmailActivity here. -->
+
+        <activity android:name="com.example.accesscode.myphone.EmailActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="text/html" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.accesscode.myphone.DialerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+
+                <uses-permission android:name="android.permission.CALL_PHONE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

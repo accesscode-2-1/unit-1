@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -18,42 +19,44 @@ import android.view.ViewGroup;
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks, MainFragment.OnFragmentInteractionListener, ListViewFragment.OnFragmentInteractionListener, YourSignFragment.OnFragmentInteractionListener, GameFragment.OnFragmentInteractionListener, ResultFragment.OnFragmentInteractionListener, CompatibilityFragment.OnFragmentInteractionListener, AboutSignFragment.OnFragmentInteractionListener {
 
-    final static String TAG = "test";
-
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
+    private MainFragment mMainFragment;
+    private ListViewFragment mListViewFragment;
+    private AboutSignFragment mAboutSignFragment;
+    private YourSignFragment mYourSignFragment;
+    private CompatibilityFragment mCompatibilityFragment;
+    private GameFragment mGameFragment;
+    private ResultFragment mResultFragment;
 
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
+    final static String TAG = "test"; // TAG for debugging
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
 
-        mNavigationDrawerFragment = (NavigationDrawerFragment)
-                getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
-        mTitle = getTitle();
-
         // Set up the drawer.
+        mNavigationDrawerFragment = (NavigationDrawerFragment) getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+        mTitle = getTitle();
 
-        if(null == savedInstanceState){
-
-            android.app.FragmentManager fragmentManager = getFragmentManager();
-            MainFragment main = MainFragment.newInstance();
-
-            fragmentManager.beginTransaction()
-                    .replace(R.id.container, main)
-                    .commit();
+        if (savedInstanceState == null) {
+            // Place main fragment
+            mMainFragment = MainFragment.newInstance();
+            FragmentTransaction fx = getSupportFragmentManager().beginTransaction();
+            fx.replace(R.id.container, mMainFragment);
+            fx.addToBackStack(null);
+            fx.commit();
         }
 
     }
@@ -61,32 +64,40 @@ public class MainActivity extends ActionBarActivity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        android.app.FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fx;
 
         switch (position) {
             case 0:
-                Log.d(TAG, "case 0");
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, ListViewFragment.newInstance("", ""))
-                        .commit();
+                mListViewFragment = ListViewFragment.newInstance("", "");
+                fx = getSupportFragmentManager().beginTransaction();
+                fx.replace(R.id.container, mListViewFragment);
+                fx.addToBackStack(null);
+                fx.commit();
+
                 break;
             case 1:
                 Log.d(TAG, "case 1");
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, YourSignFragment.newInstance(0, 0))
-                        .commit();
+                mYourSignFragment = YourSignFragment.newInstance(0, 0);
+                fx = getSupportFragmentManager().beginTransaction();
+                fx.replace(R.id.container, mYourSignFragment);
+                fx.addToBackStack(null);
+                fx.commit();
                 break;
             case 2:
                 Log.d(TAG, "case 2");
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, CompatibilityFragment.newInstance("", ""))
-                        .commit();
+                mCompatibilityFragment = CompatibilityFragment.newInstance("", "");
+                fx = getSupportFragmentManager().beginTransaction();
+                fx.replace(R.id.container, mCompatibilityFragment);
+                fx.addToBackStack(null);
+                fx.commit();
                 break;
             case 3:
                 Log.d(TAG, "case 3");
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, GameFragment.newInstance("", ""))
-                        .commit();
+                mGameFragment = GameFragment.newInstance("", "");
+                fx = getSupportFragmentManager().beginTransaction();
+                fx.replace(R.id.container, mGameFragment);
+                fx.addToBackStack(null);
+                fx.commit();
                 break;
         }
 
@@ -152,34 +163,30 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void onFragmentInteraction(int id) {
-        android.app.FragmentManager fragmentManager = getFragmentManager();
-        AboutSignFragment aboutSign = AboutSignFragment.newInstance(id);
-
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, aboutSign)
-                .commit();
+        mAboutSignFragment = AboutSignFragment.newInstance(id);
+        FragmentTransaction fx = getSupportFragmentManager().beginTransaction();
+        fx.replace(R.id.container, mAboutSignFragment);
+        fx.addToBackStack(null);
+        fx.commit();
 
     }
 
     @Override
     public void onCompatibilityFragmentInteraction() {
-        android.app.FragmentManager fragmentManager = getFragmentManager();
-        ResultFragment result = ResultFragment.newInstance();
-
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, result)
-                .commit();
+        mResultFragment = ResultFragment.newInstance();
+        FragmentTransaction fx = getSupportFragmentManager().beginTransaction();
+        fx.replace(R.id.container, mResultFragment);
+        fx.addToBackStack(null);
+        fx.commit();
     }
 
     @Override
     public void onYourSignFragmentInteraction(int sign) {
-
-        android.app.FragmentManager fragmentManager = getFragmentManager();
-        AboutSignFragment aboutSign = AboutSignFragment.newInstance(sign);
-
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, aboutSign)
-                .commit();
+        mAboutSignFragment = AboutSignFragment.newInstance(sign);
+        FragmentTransaction fx = getSupportFragmentManager().beginTransaction();
+        fx.replace(R.id.container, mAboutSignFragment);
+        fx.addToBackStack(null);
+        fx.commit();
 
     }
 

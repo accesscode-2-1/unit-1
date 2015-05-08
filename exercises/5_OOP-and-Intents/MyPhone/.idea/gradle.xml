@@ -8,8 +8,8 @@
         <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone" />
-            <option value="$USER_HOME$/Desktop/accesscode/unit-1/exercises/5_OOP-and-Intents/MyPhone/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -1,13 +1,20 @@
 package nyc.c4q.ramonaharrison.horoscope;
 
 import android.app.Activity;
-import android.app.Fragment;
+import android.content.res.Resources;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 /**
@@ -29,7 +36,7 @@ public class CompatibilityFragment extends Fragment {
     private String mParam2;
 
     final static String TAG = "test";
-
+    private ArrayList<String> signList = new ArrayList<String>();
     private OnFragmentInteractionListener mListener;
 
     /**
@@ -68,7 +75,49 @@ public class CompatibilityFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_compatibility, container, false);
-        Log.d(TAG, "view inflated");
+        Resources res = getResources();
+
+        // set up spinner
+        final String[] signs = res.getStringArray(R.array.signs_array);
+        signList.addAll(Arrays.asList(signs));
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, signList);
+        Spinner spinner = (Spinner) view.findViewById(R.id.your_sign);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id)
+            {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+
+
+            }
+        });
+
+        // set up spinner2
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, signList);
+        Spinner spinner2 = (Spinner) view.findViewById(R.id.their_sign);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner2.setAdapter(adapter2);
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id)
+            {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+
+            }
+        });
 
         Button button = (Button) view.findViewById(R.id.compatibility_button);
         Log.d(TAG, "button found");

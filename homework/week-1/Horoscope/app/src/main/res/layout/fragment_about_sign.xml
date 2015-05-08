@@ -1,6 +1,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/fragment_about_sign"
     tools:context="nyc.c4q.ramonaharrison.horoscope.AboutSignFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -14,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/material_blue_grey_800"
             android:text="Libra"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="5dp"
@@ -23,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/material_blue_grey_800"
             android:layout_below="@id/signTitle"
             android:layout_marginLeft="5dp"
             android:text="September 23 - October 30"
@@ -55,6 +58,7 @@
             android:layout_below="@id/imageBox"
             android:layout_margin="15dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/material_blue_grey_800"
             android:layout_centerHorizontal="true"
             android:text="Description"
             android:id="@+id/signDescription" />
