@@ -6,7 +6,7 @@ package nyc.c4q.m47bell;
  */
 public interface Domestic {
 
-    public void getName();
+    public void getName(String name);
 
     public String setName();
 

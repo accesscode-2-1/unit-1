@@ -6,4 +6,38 @@ package nyc.c4q.m47bell;
  */
 public class Card
 {
+    String suitType;
+    String cardValue;
+
+    public Card(String suitType, String cardValue)
+    {
+        this.suitType = suitType;
+        this.cardValue = cardValue;
+    }
+
+    public String getSuitType()
+    {
+        return suitType;
+    }
+
+    public void setSuitType(String suitType)
+    {
+        this.suitType = suitType;
+    }
+
+    public String getCardValue()
+    {
+        return cardValue;
+    }
+
+    public void setCardValue(String cardValue)
+    {
+        this.cardValue = cardValue;
+    }
+
+    @Override
+    public String toString()
+    {
+        return suitType + cardValue;
+    }
 }

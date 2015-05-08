@@ -7,10 +7,10 @@ package nyc.c4q.m47bell;
  * implements the Comparable interface. Compare two animals by species
  * name, alphabetically.
  */
-public class Animal implements Comparable
+public class Animal implements Comparable <Animal>
 {
     public String speciesName;
-    private Object animal;
+
 
     public Animal(String speciesName)
     {
@@ -27,20 +27,17 @@ public class Animal implements Comparable
         this.speciesName = speciesName;
     }
 
-    @Override
-    public int compareTo(Object Animal)
-    {
-        animal = Animal;
-        return 0;
-    }
 
-    //Implement equals to compare by species name.
-
-    @Override
-    public boolean equals(Object Animal)
+    public boolean equals(Animal o)
     {
-        return super.equals(Animal);
+
+        return (this.speciesName.equals(o.getSpeciesName()));
     }
 
 
+    @Override
+    public int compareTo(Animal o)
+    {
+        return (this.speciesName.compareTo(o.getSpeciesName()));
+    }
 }

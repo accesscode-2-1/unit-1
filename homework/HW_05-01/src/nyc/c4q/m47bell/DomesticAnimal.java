@@ -8,40 +8,33 @@ package nyc.c4q.m47bell;
  */
 public abstract class DomesticAnimal extends Animal implements Domestic
 {
-    private String domesticAnimalName;
+    private String name;
 
-    public String getDomesticAnimalName()
+    public String getName()
     {
-        return domesticAnimalName;
+        return name;
     }
 
-    public void setDomesticAnimalName(String domesticAnimalName)
+    public void setName(String name)
     {
-        this.domesticAnimalName = domesticAnimalName;
+        this.name = name;
     }
 
-    public DomesticAnimal(String speciesName, String domesticAnimalName)
+    public DomesticAnimal(String speciesName, String name)
     {
         super(speciesName);
-        this.domesticAnimalName = domesticAnimalName;
-    }
-
-    public DomesticAnimal(String speciesName)
-    {
-        super(speciesName);
+        this.name = name;
     }
 
 
-//don't know how to use these methods in this class
-    @Override
-    public boolean equals(Object Animal)
+    public boolean equals(DomesticAnimal o)
     {
-        return super.equals(Animal);
+        return (this.name).equals(o.getName());
     }
 
-    @Override
-    public int compareTo(Object Animal)
+
+    public int compareTo(DomesticAnimal o)
     {
-        return super.compareTo(Animal);
+        return (this.name.compareTo(o.getName()));
     }
 }
