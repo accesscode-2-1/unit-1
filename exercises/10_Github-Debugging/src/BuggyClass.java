@@ -1,4 +1,4 @@
-class BuggyClass {
+public class BuggyClass {
     static int N = 1000*1000;
     static int TRIES = 100;
     static int TOLERANCE = 10;
@@ -7,7 +7,7 @@ class BuggyClass {
     static int used_recursive = 0;
     static int used_divide_and_conquer = 0;
 
-    public static void main(String args) {
+    public static void main(String[] args) {
         int[] A = new int[N];
         int BIG = 1000*1000*1000;
         long correct_sum = 0;
