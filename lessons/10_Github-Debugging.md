@@ -95,17 +95,42 @@ Find the pull request for your reviewee from this week's code review. Download a
 
 #### Debugging Basics
 
-##### Printing
+##### Printing and Logging
 
-Printing is a very useful debugging method that you've probably already touched.
-
-##### Logging
-
-
+Printing is a very useful debugging method that you've probably already touched. Printing is useful because it can help display intermediate program state. Logging is essentially the same method (i.e. writing state to external output).
 
 ##### Reading Stack Traces
 
-Stack traces tell you where
+Stack traces explain the series of method calls that have led to the current state. For example:
+
+```
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1000000
+	at BuggyClass.sum_loop(BuggyClass.java:44)
+	at BuggyClass.find_sum(BuggyClass.java:29)
+	at BuggyClass.main(BuggyClass.java:19) <5 internal calls>
+```
+
+Means that `main` called `find_sum` on line 19, `find_sum` called `sum_loop` on line 29, and `sum_loop` received an `ArrayIndexOutOfBoundsException` on line 44. On the other hand:
+
+```
+Exception in thread "main" java.lang.StackOverflowError
+	at BuggyClass.sum_recursive(BuggyClass.java:50)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	at BuggyClass.sum_recursive(BuggyClass.java:52)
+	.
+	.
+	.
+```
+
+means that `sum_recursive` infinitely calls itself and eventually crashes.
 
 ##### Using the Debugger
 
