@@ -1,11 +1,8 @@
 package com.example.accesscode.myphone;
 
 import android.app.Activity;
-<<<<<<< HEAD
 import android.content.Intent;
 import android.net.Uri;
-=======
->>>>>>> 96bc6f1e1b8acc5e2df1557e0d6896b9f0dcb031
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,11 +22,7 @@ public class EmailActivity extends Activity {
         mailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
                 String myEmailAddress = "sufeizhao@gmail.com"; /* put your email address here */
-=======
-                String myEmailAddress = ""; /* put your email address here */
->>>>>>> 96bc6f1e1b8acc5e2df1557e0d6896b9f0dcb031
                 String subject = emailSubject.getText().toString();
                 String body = emailBody.getText().toString();
 
@@ -38,7 +31,6 @@ public class EmailActivity extends Activity {
                     and email with this subject and body to you.
 
                     http://developer.android.com/guide/components/intents-common.html#Email
-<<<<<<< HEAD
                  */
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setType("*/*");
@@ -48,11 +40,6 @@ public class EmailActivity extends Activity {
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }
-
-=======
-
-                 */
->>>>>>> 96bc6f1e1b8acc5e2df1557e0d6896b9f0dcb031
             }
         });
     }
