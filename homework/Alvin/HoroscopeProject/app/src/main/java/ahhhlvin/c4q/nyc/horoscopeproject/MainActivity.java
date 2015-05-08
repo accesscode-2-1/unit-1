@@ -36,6 +36,7 @@ public class MainActivity extends ActionBarActivity
         title.setText("HOROSCOPE IT OUT");
 
         ImageView img = (ImageView) findViewById(R.id.imageView);
+        //img.setImageResource(R.drawable.horoscope);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
