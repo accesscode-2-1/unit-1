@@ -22,4 +22,21 @@
         android:name="ahhhlvin.c4q.nyc.alvin_horoscope.NavigationDrawerFragment"
         tools:layout="@layout/fragment_navigation_drawer" />
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
 </android.support.v4.widget.DrawerLayout>

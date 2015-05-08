@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 
 public class MainActivity extends ActionBarActivity
@@ -47,41 +49,50 @@ public class MainActivity extends ActionBarActivity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment fragment = PlaceholderFragment.newInstance(0);
+
+        switch (position) {
+            case 1:
+                fragment = new GetHoroscope();
+                break;
+
+            case 2:
+                fragment = new GetHoroscopeSign();
+                break;
+            case 3:
+                fragment = new HoroscopeGame();
+                break;
+            case 4:
+                fragment = new HoroscopeCompatibility();
+                break;
+
+        }
+
+
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, fragment)
                 .commit();
     }
+
 
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                // changes title bar to say the title of each FRAGMENT !
                 mTitle = getString(R.string.title_section1);
-                Intent horoscopeList = new Intent(getApplicationContext(), GetHoroscope.class);
-                startActivity(horoscopeList);
-
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
-                Intent horoscopeSign = new Intent(getApplicationContext(), GetHoroscopeSign.class);
-                startActivity(horoscopeSign);
-
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
-                Intent horoscopeCompatibility = new Intent(getApplicationContext(), HoroscopeCompatibility.class);
-                startActivity(horoscopeCompatibility);
-
                 break;
             case 4:
                 mTitle = getString(R.string.title_section4);
-                Intent horoscopeGame = new Intent(getApplicationContext(), HoroscopeGame.class);
-                startActivity(horoscopeGame);
-
-
                 break;
         }
     }
+
+
 
     public void restoreActionBar() {
         ActionBar actionBar = getSupportActionBar();
@@ -149,12 +160,73 @@ public class MainActivity extends ActionBarActivity
             return rootView;
         }
 
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-            ((MainActivity) activity).onSectionAttached(
-                    getArguments().getInt(ARG_SECTION_NUMBER));
+
+    }
+
+
+    public static class GetHoroscope extends Fragment {
+        public GetHoroscope() {
+
         }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            return rootView;
+        }
+
+    }
+
+
+    public static class GetHoroscopeSign extends Fragment {
+        public GetHoroscopeSign() {
+
+        }
+
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+
+
+            return rootView;
+        }
+
+    }
+
+
+    public static class HoroscopeCompatibility extends Fragment {
+        public HoroscopeCompatibility() {
+
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            return rootView;
+        }
+
+
+    }
+
+
+    public static class HoroscopeGame extends Fragment {
+        public HoroscopeGame() {
+
+        }
+
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            return rootView;
+        }
+
     }
 
 }
