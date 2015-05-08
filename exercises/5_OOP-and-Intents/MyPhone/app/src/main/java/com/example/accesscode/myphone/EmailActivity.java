@@ -17,6 +17,10 @@ public class EmailActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email);
 
+        if (savedInstanceState == null) {
+
+        }
+
         final EditText emailSubject = (EditText) findViewById(R.id.email_subject);
         final EditText emailBody = (EditText) findViewById(R.id.email_body);
 
@@ -49,5 +53,18 @@ public class EmailActivity extends Activity {
             }
         });
 
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outstate) {
+        super.onSaveInstanceState(outstate);
+
+    }
+
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
     }
 }
