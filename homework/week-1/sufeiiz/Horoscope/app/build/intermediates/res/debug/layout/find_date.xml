@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_800">
+
+    <TextView
+        android:id="@+id/date_textview"
+        android:text="@string/enter"
+        android:textSize="20sp"
+        android:textColor="@color/button_material_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/date_textview"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:text="@string/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_picker"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="@color/background_material_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/submit"
+        android:layout_marginBottom="108dp" />
+
+
+</RelativeLayout><!-- From: file:/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/Horoscope/app/src/main/res/layout/find_date.xml -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/activity-lifecycle/app/libs/android-support-v13.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecda966839090a41b29a9239d44bafc06fdadb87">
+        <dex dex="/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/activity-lifecycle/app/build/intermediates/pre-dexed/debug/android-support-v13-84ccde713030c91d1feaabb52605766a29cae3d7.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/Horoscope/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/Horoscope/app/build/intermediates/pre-dexed/debug/classes-b19050b2cef9a6ac6b63c056f357bcbabbfe3794.jar" />
+    </item>
+    <item
+        jar="/Users/sufeizhao/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/Horoscope/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-68b0b15683a9261edf3a9a1e2acdf5ccc32a9551.jar" />
+    </item>
+    <item
+        jar="/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/Horoscope/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/Horoscope/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-7801e8c0f9944ac61a74db1b324486a1498ea713.jar" />
+    </item>
+    <item
+        jar="/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/Horoscope/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/sufeizhao/Desktop/accesscode_forks/unit-1/homework/Horoscope/app/build/intermediates/pre-dexed/debug/classes-dee34821f17dd13a5fb01109aefe6ba3ebd319ce.jar" />
+    </item>
+
+</items>
