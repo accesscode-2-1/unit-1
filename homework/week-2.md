@@ -50,5 +50,4 @@ It is on you to have communication with your reviewer/reviewee in order to compl
 The main purpose of this week's assignment is to play around with the visual elements - have fun with it and iterate with your peers.
 
 ##### Bonus
-
-Implement bonus features from [last week](homework/week-1.md).
+* Create your own [Style](http://developer.android.com/guide/topics/ui/themes.html).
