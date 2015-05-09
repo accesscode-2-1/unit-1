@@ -14,8 +14,8 @@
         android:layout_height="match_parent"
         android:id="@+id/horosmainpic"
         android:layout_gravity="center"
-        android:contentDescription="@string/wat"
-        android:src="@drawable/horoscope_icon"
+        android:contentDescription="@string/watt"
+        android:src="horoscope_icon"
         android:clickable="true"
         android:cropToPadding="false" />
 
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/mainscreentitle"
+        android:text="mainscreentitle"
         android:id="@+id/maintitle"
         android:layout_gravity="center_horizontal|top"
         android:textColor="#ff808080"
