@@ -49,6 +49,11 @@ Other vocabulary:
 * Upstream: The repository that origin copied.
 * Branch: A series of changes starting at a particular commit.
 
+## Git log --graph
+[git log graph](https://github.com/davisRoman/git_dag/blob/master/intro_to_the_dag.md)
+
+-----
+
 > Exercise: Partner with the other person at your table.
 
 > Part I: Fork and Pull
