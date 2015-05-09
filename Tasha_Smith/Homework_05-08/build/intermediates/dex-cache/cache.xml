@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/c4q-tashasmith/Desktop/unit-1/homework/tashsmit/hw_05-08/Homework_05-08/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/c4q-tashasmith/Desktop/unit-1/homework/tashsmit/hw_05-08/Homework_05-08/app/build/intermediates/pre-dexed/debug/classes-f3c00a36800b5e71dafaebcaaa95477787c85717.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-tashasmith/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/c4q-tashasmith/Desktop/unit-1/homework/tashsmit/hw_05-08/Homework_05-08/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-6ec691cdf03e7f4f7382e3ac269b83fe5e974c55.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-tashasmith/Desktop/unit-1/homework/tashsmit/hw_05-08/Homework_05-08/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/c4q-tashasmith/Desktop/unit-1/homework/tashsmit/hw_05-08/Homework_05-08/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-ecf3c97a4ff335a1993ab94ecb6855c87e237556.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-tashasmith/Desktop/unit-1/homework/tashsmit/hw_05-08/Homework_05-08/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/c4q-tashasmith/Desktop/unit-1/homework/tashsmit/hw_05-08/Homework_05-08/app/build/intermediates/pre-dexed/debug/classes-481ef39b2b6370b5efe4cfb3146c47264e3d6937.jar" />
+    </item>
+
+</items>
