@@ -15,18 +15,7 @@ public class DomesticCat extends Animal implements Domestic
     {
         if(o instanceof DomesticCat)
         {
-            if(this.petName.toLowerCase().compareTo(((DomesticCat) o).petName.toLowerCase()) < 0)
-            {
-                return - 1; //if the object animal's name is alphabetically before this's name
-            }
-            else if(this.petName.toLowerCase().compareTo(((DomesticCat) o).petName.toLowerCase()) == 0)
-            {
-                return 0; //If they are the same
-            }
-            else
-            {
-                return 1; // if the object animal's name is alphabetically after this's name
-            }
+           return this.petName.toLowerCase().compareTo(((DomesticCat) o).petName.toLowerCase());
         }
         else{
             return 1;
