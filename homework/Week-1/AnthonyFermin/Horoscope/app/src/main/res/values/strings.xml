@@ -8,11 +8,54 @@
         <item>Horoscope Game</item>
     </string-array>
 
+   <string-array name="zodiac_names_array">
+       <item>Capricorn</item>
+       <item>Aquarius</item>
+       <item>Pisces</item>
+       <item>Aries</item>
+       <item>Taurus</item>
+       <item>Gemini</item>
+       <item>Cancer</item>
+       <item>Leo</item>
+       <item>Virgo</item>
+       <item>Libra</item>
+       <item>Scorpio</item>
+       <item>Sagittarius</item>
+   </string-array>
+
+    <string-array name="zodiac_date_array">
+        <item>Date: Dec 22 to Jan 20</item>
+        <item>Date: Jan 21 to Feb 19</item>
+        <item>Date: Feb 20 to Mar 20</item>
+        <item>Date: Mar 21 to Apr 19</item>
+        <item>Date: Apr 20 to May 20</item>
+        <item>Date: May 21 to Jun 21</item>
+        <item>Date: Jun 22 to Jul 23</item>
+        <item>Date: Jul 24 to Aug 23</item>
+        <item>Date: Aug 24 to Sept 22</item>
+        <item>Date: Sept 23 to Oct 22</item>
+        <item>Date: Oct 23 to Nov 22</item>
+        <item>Date: Nov 23 to Dec 21</item>
+    </string-array>
+
+    <string-array name="zodiac_description_array">
+        <item>\nYour element: Earth\nYour ruling planets: Saturn\nSymbol: The Goat\nYour stone: Garnet\nLife Pursuit: To be proud of their achievements\n\nVibration: Powerful resilient energy\n\nCapricorn Secret Desire: to be admired by their family and friends and the world at large</item>
+        <item>\nYour element: Air\nYour ruling planets: Uranus\nSymbol: The Water Bearer\nYour stone: Amethyst\nLife Pursuit: To understand life\'s mysteries\n\nVibration: High frequency\n\nAquarian\'s Secret Desire: To be unique and original</item>
+        <item>\nYour element: Water\nYour ruling planets: Neptune\nSymbol: The Fish\nYour stone: Bloodstone\nLife Pursuit: To avoid feeling alone and instead feel connected to others and the world at large\n\nVibration: Erratic Energy levels\n\nPisces Secret Desire: To live their dreams and turn fantasies into realities.</item>
+        <item>\nYour element: Fire\nYour ruling planets: Mars\nSymbol: The Ram\nYour stone: Diamond\nLife Pursuit: The thrill of the moment\nVibration: Enthusiastic\n\nAries Secret Desire: To lead the way for others.</item>
+        <item>\nYour element: Earth\nYour ruling planets: Venus\nSymbol: The Bull\nYour stone: Emerald\nLife Pursuit: Emotional and financial security\nVibration: Determined energy\n\nTaurus Secret Desire: To have a secure, happy and wealthy life/marriage.</item>
+        <item>\nYour element: Air\nYour ruling planets: Mercury\nSymbol: The Twins\nYour stone: Aquamarine\nLife Pursuit: To explore a little bit of everything.\n\nVibration: Intense mental energy\n\nGemini\'s Secret Desire: To be ahead of the crowd</item>
+        <item>\nYour element: Water\nYour ruling planets: The Moon\nSymbol: The Crab\nYour stone: Moonstone\nLife Pursuit: Constant reassurance and intimacy\n\nVibration: Moody\n\nCancer\'s Secret Desire: To feel safe (emotionally, spiritually, romantically and financially)</item>
+        <item>\nYour element: Fire\nYour ruling planets: The Sun\nSymbol: The Lion\nYour stone: Peridot\nLife Pursuit: To lead the way\n\nVibration: Radiant Energy\n\nLeo\'s Secret Desire: To be a star</item>
+        <item>\nYour element: Earth\nYour ruling planets: Mercury\nSymbol: The Virgin\nYour stone: Sapphire\nLife Pursuit: To do the right thing\n\nVibration: Compassionate and caring\n\nVirgo\'s Secret Desire: To love and be loved in return</item>
+        <item>\nYour element: Air\nYour ruling planets: Venus\nSymbol: The Scales\nYour stone: Opals\nLife Pursuit: To be consistent\n\nVibration: Unsteady\n\nLibra\'s Secret Desire: To live an easy, uncomplicated life.</item>
+        <item>\nYour element: Water\nYour ruling planets: Pluto\nSymbol: The Scorpion\nYour stone: Topaz\nLife Pursuit: To survive against all opposition\n\nVibration: Resilient\n\nScorpio\'s Secret Desire: To triumph</item>
+        <item>\nYour element: Fire\nYour ruling planets: Jupiter\nSymbol: The Archer\nYour stone: Turquoise\nLife Pursuit: To live the good life\n\nVibration: Overly expressive - frequent burnouts\n\nSagittarian\'s Secret Desire: To make a difference in the world</item>
+    </string-array>
+
+
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="action_websearch">Web search</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

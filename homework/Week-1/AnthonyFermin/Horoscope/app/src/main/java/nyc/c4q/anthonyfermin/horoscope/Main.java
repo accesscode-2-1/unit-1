@@ -3,6 +3,7 @@ package nyc.c4q.anthonyfermin.horoscope;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.res.Configuration;
+import android.graphics.drawable.Drawable;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,8 +16,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -115,6 +118,7 @@ public class Main extends ActionBarActivity {
     }
 
     public void zodiacSelect(int zodiac){
+
         Fragment fragment = new SignDetailFragment();
 
         Bundle args = new Bundle();
@@ -136,9 +140,18 @@ public class Main extends ActionBarActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_sign_info, container, false);
+
+            String[] zodiacs = getResources().getStringArray(R.array.zodiac_names_array);
+            for(String zodiac :zodiacs){
+                zodiac = zodiac.toLowerCase();
+                Button button = (Button) rootView.findViewById(getResources().getIdentifier(zodiac,"id", "nyc.c4q.anthonyfermin.horoscope"));
+                button.setText(zodiac);
+            }
+
             int i = getArguments().getInt(ARG_LIST_NUMBER);
             String listItem = getResources().getStringArray(R.array.list_names_array)[i];
             getActivity().setTitle(listItem);
+
             return rootView;
         }
     }
@@ -154,17 +167,43 @@ public class Main extends ActionBarActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_sign_detail, container, false);
+
             int i = getArguments().getInt(ARG_LIST_NUMBER);
-            String listItem = getResources().getStringArray(R.array.list_names_array)[i];
-            getActivity().setTitle(listItem);
+            String zodiacItem = getResources().getStringArray(R.array.zodiac_names_array)[i];
+
+            getActivity().setTitle(zodiacItem);
+
+            TextView zodiacTitle = (TextView) rootView.findViewById(R.id.zodiacTitle);
+            zodiacTitle.setText(zodiacItem);
+
+            zodiacItem = zodiacItem.toLowerCase();
+            ImageView zodiacImageView = (ImageView) rootView.findViewById(R.id.zodiacImage);
+            int imageId = getResources().getIdentifier(zodiacItem, "drawable", "nyc.c4q.anthonyfermin.horoscope" );
+            zodiacImageView.setImageResource(imageId);
+
+            TextView zodiacDate = (TextView) rootView.findViewById(R.id.zodiacDate);
+            zodiacDate.setText(getResources().getStringArray(R.array.zodiac_date_array)[i]);
+
+            TextView zodiacDescrip = (TextView) rootView.findViewById(R.id.zodiacDescription);
+            zodiacDescrip.setText(getResources().getStringArray(R.array.zodiac_description_array)[i]);
+
             return rootView;
         }
     }
 
-    public static void test(View v){
-        System.out.println("logtest");
+    public void signDetail(View v){
+        Button button = (Button) v;
+        String buttonText = (String) button.getText();
+        int zodiacNum = 0;
+
+        String[] zodiacs = getResources().getStringArray(R.array.zodiac_names_array);
+
+        for(int i = 0; i < zodiacs.length; i++){
+            if(zodiacs[i].equalsIgnoreCase(buttonText)){
+                zodiacNum = i;
+            }
+        }
+        zodiacSelect(zodiacNum);
     }
-    public static void test2(View v){
-        System.out.println("logtest2");
-    }
+
 }
