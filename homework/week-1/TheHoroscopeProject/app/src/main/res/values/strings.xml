@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">The Horoscope Project</string>
+
+    <string name="choosehoroscope">Horoscopes</string>
+    <string name="compatibility_chart">Compatibility chart</string>
+    <string name="guessinggame">Guess that horoscope!</string>
+    <string name="inputhoroscope">Your sign.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="wat">mainview</string>
+    <string name="mainscreentext">Throughout history many have believed their destiny has depended on the position
+        of the stars upon their birth. An idea that is today largely overlooked. One that states that through
+        sacred mathematics, by the star\'s very positional nature at the moment of our inception into this world,
+        we are to live and reflect an ancient perspective of the universe on this planet. Each with its
+        own attributes to guide the individual on their short journey throughout this world. Take this as you will.
+        For every on earth should have the ability to choose who they are, what to believe in, and the course that their journey
+        should take.</string>
+    <string name="mainscreentitle"><b>Welcome to the Golden Scope of Heaven.</b></string>
+</resources>

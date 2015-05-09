@@ -27,9 +27,10 @@ public class MainActivity extends ActionBarActivity {
                     Use Explicit Intent to start DialerActivity here.
 
                  */
-//                public void sendMessage(View view) {
-//                    Intent intent = new Intent(this, DialerActivity.class);
-//                }
+                public void sendMessage(View v) {
+                    Intent intent = new Intent();
+
+                }
 
 
             }
