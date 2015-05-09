@@ -1,5 +1,9 @@
 package com.example.accesscode.myphone;
 
+<<<<<<< HEAD
+import android.content.Intent;
+=======
+>>>>>>> 96bc6f1e1b8acc5e2df1557e0d6896b9f0dcb031
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,21 +26,34 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Dialer clicked", Toast.LENGTH_SHORT).show();
+<<<<<<< HEAD
+                Intent intent = new Intent(getApplicationContext(), DialerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+=======
                 /*
                     Use Explicit Intent to start DialerActivity here.
                  */
             }
         });
+>>>>>>> 96bc6f1e1b8acc5e2df1557e0d6896b9f0dcb031
         /* EmailActivity */
         Button emailButton = (Button) findViewById(R.id.email_button);
         emailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Email clicked", Toast.LENGTH_SHORT).show();
+<<<<<<< HEAD
+                Intent intent = new Intent(getApplicationContext(), EmailActivity.class);
+                startActivity(intent);
+=======
                  /*
                     Use Explicit Intent to start EmailActivity here.
                  */
 
+>>>>>>> 96bc6f1e1b8acc5e2df1557e0d6896b9f0dcb031
             }
         });
     }
