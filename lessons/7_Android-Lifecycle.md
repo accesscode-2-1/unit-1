@@ -111,7 +111,7 @@ Further exercise: Modify the code in MainActivity so that it saves the time into
 
 #### Assessment
 
-
+[Exit Ticket](https://docs.google.com/a/c4q.nyc/forms/d/1a-gfjjsn35N-C6wrQU9y02vHoYLFaEfjUgD7J91n3rM/edit)
 
 #### Resources
 
