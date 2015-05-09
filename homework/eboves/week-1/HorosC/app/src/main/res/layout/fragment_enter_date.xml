@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="eboves.c4q.nyc.horosc.EnterDate"
+    android:background="#ff0838ff"
+    android:id="@+id/frame">
+
+
+    <ScrollView
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:id="@+id/month"
+        android:layout_gravity="left|center_vertical"
+        android:background="#ff25ff3d" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="New Button"
+                android:id="@+id/button"
+                android:onClick="setContentView" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="New Button"
+                android:id="@+id/button2" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="New Button"
+                android:id="@+id/button3" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="New Button"
+                android:id="@+id/button4" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:id="@+id/years"
+        android:layout_gravity="right|center_vertical"
+        android:background="#ffff060b" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <NumberPicker
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/yearsPicker"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:id="@+id/days"
+        android:layout_gravity="center"
+        android:background="#ffff0fd0">
+
+        <NumberPicker
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/daysPicker"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:nestedScrollingEnabled="true" />
+    </ScrollView>
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:calendarViewShown="false"
+        an
+        android:layout_gravity="center_horizontal|top" />
+
+</FrameLayout>

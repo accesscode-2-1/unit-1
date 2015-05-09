@@ -1,0 +1,161 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="eboves.c4q.nyc.horosc.SelectSign"
+    android:background="#ff1affc5"
+    android:id="@+id/ads">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Sign"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:id="@+id/layout">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aries"
+            android:id="@+id/radioButton"
+            android:layout_marginTop="27dp"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gemini"
+            android:id="@+id/radioButton2"
+            android:textSize="20dp"
+            android:layout_below="@+id/radioButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="34dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leo"
+            android:id="@+id/radioButton3"
+            android:textSize="20dp"
+            android:layout_below="@+id/radioButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="41dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taurus"
+            android:id="@+id/radioButton4"
+            android:textSize="20dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp"
+            android:layout_below="@+id/radioButton"
+            android:layout_toRightOf="@+id/radioButton8"
+            android:layout_toEndOf="@+id/radioButton8" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/radioButton5"
+            android:textSize="20dp"
+            android:layout_below="@+id/radioButton2"
+            android:layout_alignRight="@+id/radioButton4"
+            android:layout_alignEnd="@+id/radioButton4" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Libra"
+            android:id="@+id/radioButton6"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sagittarius"
+            android:id="@+id/radioButton7"
+            android:layout_below="@+id/radioButton6"
+            android:textSize="20dp"
+            android:layout_marginTop="46dp"
+            android:checked="false"
+            android:layout_toLeftOf="@+id/radioButton11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aquarius"
+            android:id="@+id/radioButton8"
+            android:layout_below="@+id/radioButton7"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="45dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virgo"
+            android:id="@+id/radioButton9"
+            android:textSize="20dp"
+            android:layout_below="@+id/radioButton3"
+            android:layout_alignLeft="@+id/radioButton5"
+            android:layout_alignStart="@+id/radioButton5" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scorpio"
+            android:id="@+id/radioButton10"
+            android:layout_below="@+id/radioButton6"
+            android:textSize="20dp"
+            android:layout_alignLeft="@+id/radioButton9"
+            android:layout_alignStart="@+id/radioButton9"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capricorn"
+            android:id="@+id/radioButton11"
+            android:layout_below="@+id/radioButton7"
+            android:textSize="20dp"
+            android:layout_alignLeft="@+id/radioButton10"
+            android:layout_alignStart="@+id/radioButton10"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pisces"
+            android:id="@+id/radioButton12"
+            android:textSize="20dp"
+            android:layout_below="@+id/radioButton8"
+            android:layout_alignRight="@+id/radioButton11"
+            android:layout_alignEnd="@+id/radioButton11"
+            android:checked="false"
+            android:layout_alignLeft="@+id/radioButton11"
+            android:layout_alignStart="@+id/radioButton11" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
