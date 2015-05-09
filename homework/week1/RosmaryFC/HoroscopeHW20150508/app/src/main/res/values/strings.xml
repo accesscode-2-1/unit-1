@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">HoroscopeHW20150508</string>
+
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Signs</string>
+    <string name="title_section3">Type your Birthday</string>
+    <string name="title_section4">Game</string>
+
+    <string-array name="signs_array">
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+    </string-array>
+
+    <string name="capricorn">
+        Your element: Earth,
+        Your ruling planets: Saturn,
+        Symbol: The Goat,
+        Your stone: Garnet,
+        Life Pursuit: To be proud of their achievements,
+        Vibration: Powerful resilient energy,
+        Capricorn Secret Desire: to be admired by their family and friends and the world at large
+    </string>
+
+    <string name="aquarius">
+        Your element: Air
+        Your ruling planets: Uranus
+        Symbol: The Water Bearer
+        Your stone: Amethyst
+        Life Pursuit: To understand life\'s mysteries
+        Vibration: High frequency
+        Aquarius Secret Desire: To be unique and original
+    </string>
+
+    <string name="pisces">
+        Your element: Water
+        Your ruling planets: Neptune
+        Symbol: The Fish
+        Your stone: Bloodstone
+        Life Pursuit: To avoid feeling alone and instead feel connected to others and the world at large
+        Vibration: Erratic Energy levels
+        Pisces Secret Desire: To live their dreams and turn fantasies into realities.
+    </string>
+
+    <string name="aries">
+    Your element: Fire
+    Your ruling planets: Mars
+    Symbol: The Ram
+    Your stone: Diamond
+    Life Pursuit: The thrill of the moment
+    Vibration: Enthusiastic
+    Aries Secret Desire: To lead the way for others.
+    </string>
+
+    <string name="taurus">
+        Your element: Earth
+        Your ruling planets: Venus
+        Symbol: The Bull
+        Your stone: Emerald
+        Life Pursuit: Emotional and financial security
+        Vibration: Determined energy
+        Taurus Secret Desire: To have a secure, happy and wealthy life/marriage.
+    </string>
+
+    <string name="gemini">
+        Your element: Air
+        Your ruling planets: Mercury
+        Symbol: The Twins
+        Your stone: Aquamarine
+        Life Pursuit: To explore a little bit of everything.
+        Vibration: Intense mental energy
+        Gemini Secret Desire: To be ahead of the crowd
+    </string>
+
+    <string name="cancer">
+        Your element: Water
+        Your ruling planets: The Moon
+        Symbol: The Crab
+        Your stone: Moonstone
+        Life Pursuit: Constant reassurance and intimacy
+        Vibration: Moody
+        Cancer Secret Desire: To feel safe (emotionally, spiritually, romantically and financially)
+    </string>
+
+    <string name="leo">
+        Your element: Fire
+        Your ruling planets: The Sun
+        Symbol: The Lion
+        Your stone: Peridot
+        Life Pursuit: To lead the way
+        Vibration: Radiant Energy
+        Leo Secret Desire: To be a star
+    </string>
+
+    <string name="virgo">
+        Your element: Earth
+        Your ruling planets: Mercury
+        Symbol: The Virgin
+        Your stone: Sapphire
+        Life Pursuit: To do the right thing
+        Vibration: Compassionate and caring
+        Virgo Secret Desire: To love and be loved in return
+    </string>
+
+    <string name="libra">
+        Your element: Air
+        Your ruling planets: Venus
+        Symbol: The Scales
+        Your stone: Opals
+        Life Pursuit: To be consistent
+        Vibration: Unsteady
+        Libra Secret Desire: To live an easy, uncomplicated life.
+    </string>
+
+    <string name="scorpio">
+        Your element: Water
+        Your ruling planets: Pluto
+        Symbol: The Scorpion
+        Your stone: Topaz
+        Life Pursuit: To survive against all opposition
+        Vibration: Resilient
+        Scorpio Secret Desire: To triumph
+    </string>
+
+    <string name="sagittarius">
+        Your element: Fire
+        Your ruling planets: Jupiter
+        Symbol: The Archer
+        Your stone: Turquoise
+        Life Pursuit: To live the good life
+        Vibration: Overly expressive - frequent burnouts
+        Sagittarius Secret Desire: To make a difference in the world
+    </string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
