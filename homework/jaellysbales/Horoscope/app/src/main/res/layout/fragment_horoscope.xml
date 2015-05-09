@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HoroscopeFragment">
+
+    <ImageButton
+        android:id="@+id/icon_aries"
+        android:background="@drawable/zodiac_icon_aries"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:layout_alignTop="@+id/icon_taurus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/icon_taurus"
+        android:background="@drawable/zodiac_icon_taurus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_alignTop="@+id/icon_gemini"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/icon_gemini"
+        android:background="@drawable/zodiac_icon_gemini"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_above="@+id/icon_virgo"
+        android:layout_alignLeft="@+id/icon_virgo"
+        android:layout_alignStart="@+id/icon_virgo" />
+
+    <ImageButton
+        android:id="@+id/icon_cancer"
+        android:background="@drawable/zodiac_icon_cancer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_alignTop="@+id/icon_leo"
+        android:layout_alignLeft="@+id/icon_libra"
+        android:layout_alignStart="@+id/icon_libra" />
+
+    <ImageButton
+        android:id="@+id/icon_leo"
+        android:background="@drawable/zodiac_icon_leo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_above="@+id/icon_scorpio"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/icon_virgo"
+        android:background="@drawable/zodiac_icon_virgo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_above="@+id/icon_sagittarius"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/icon_libra"
+        android:background="@drawable/zodiac_icon_libra"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_above="@+id/icon_capricorn"
+        android:layout_alignLeft="@+id/icon_capricorn"
+        android:layout_alignStart="@+id/icon_capricorn" />
+
+    <ImageButton
+        android:id="@+id/icon_scorpio"
+        android:background="@drawable/zodiac_icon_scorpio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_alignTop="@+id/icon_sagittarius"
+        android:layout_alignLeft="@+id/icon_aquarius"
+        android:layout_alignStart="@+id/icon_aquarius" />
+
+    <ImageButton
+        android:id="@+id/icon_sagittarius"
+        android:background="@drawable/zodiac_icon_sagittarius"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_above="@+id/icon_pisces"
+        android:layout_alignLeft="@+id/icon_pisces"
+        android:layout_alignStart="@+id/icon_pisces" />
+
+    <ImageButton
+        android:id="@+id/icon_capricorn"
+        android:background="@drawable/zodiac_icon_capricorn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/icon_aries"
+        android:layout_alignStart="@+id/icon_aries" />
+
+    <ImageButton
+        android:id="@+id/icon_aquarius"
+        android:background="@drawable/zodiac_icon_aquarius"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/icon_pisces"
+        android:background="@drawable/zodiac_icon_pisces"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+           
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/icon_text_aries"
+        android:id="@+id/icon_text_aries"
+           
+        android:layout_below="@+id/icon_aries"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/icon_text_taurus"
+        android:id="@+id/icon_text_taurus"
+           
+        android:layout_below="@+id/icon_taurus"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/icon_text_gemini"
+        android:id="@+id/icon_text_gemini"
+        android:layout_marginStart="18dp"
+           
+        android:layout_alignBaseline="@+id/icon_text_taurus"
+        android:layout_alignBottom="@+id/icon_text_taurus"
+        android:layout_alignLeft="@+id/icon_gemini"
+        android:layout_alignStart="@+id/icon_gemini"
+        android:layout_marginLeft="18dp" />
+
+</RelativeLayout>
