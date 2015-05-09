@@ -4,14 +4,26 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class zodiacSignData extends ActionBarActivity {
 
+    TextView signInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zodiac_sign_data);
+
+        signInfo = (TextView) findViewById(R.id.zodiacInfo);
+
+        Bundle extras = getIntent().getExtras();
+        String text;
+
+        if(extras != null){
+            text = extras.getString("words");
+            signInfo.setText(text);
+        }
     }
 
 
