@@ -21,6 +21,34 @@ Create a new Java class to do the following string operations:
 
 *Git* is a version control system. *Github* is a very popular website for storing git repositories and collaborating.
 
+Some basic git commands:
+
+| Command | Description |
+|---------|-------------|
+| git init | Creates a new git repository |
+| git clone [path] | Creates a local copy of a repository |
+| git add | Adds a file or directory to staging |
+| git rm | Adds the removal of a file or directory to staging |
+| git commit | Commits staged changes to head |
+| git push origin [branch] | Push changes to [branch] at remote |
+| git status | Lists staged changes and changes that have not get been staged |
+| git fetch | Get remote changes |
+| git pull | Get remote changes and merge |
+| git branch | List branches and indicate current branch |
+| git branch [branchname] | Create new branch called [branchname] |
+| git checkout [branchname] | Switch to branch called [branchname] |
+| git checkout -b [branchname] | Create a new branch called [branchname] and switch to it |
+| git blame | Revision and author of a line of the file |
+| git log | Show commit logs |
+| git diff | Show changes between commits |
+
+Other vocabulary:
+* Fork: A copy of a repository.
+* Master: The main branch.
+* Origin: The remote repository.
+* Upstream: The repository that origin copied.
+* Branch: A series of changes starting at a particular commit.
+
 > Exercise: Partner with the other person at your table.
 
 > Part I: Fork and Pull
@@ -95,9 +123,12 @@ Find the pull request for your reviewee from this week's code review. Download a
 
 #### Debugging Basics
 
-##### Printing and Logging
+##### Variable Scope
 
-Printing is a very useful debugging method that you've probably already touched. Printing is useful because it can help display intermediate program state. Logging is essentially the same method (i.e. writing state to external output).
+A few rules about variable scope:
+* Anything declared between {} belongs only to that block. This also goes for the signature of a loop.
+* Anything declared in a method only exists for the scope of that method.
+* Reference class variables using the `this` keyword.
 
 ##### Reading Stack Traces
 
@@ -132,7 +163,13 @@ Exception in thread "main" java.lang.StackOverflowError
 
 means that `sum_recursive` infinitely calls itself and eventually crashes.
 
+##### Printing and Logging
+
+Printing is a very useful debugging method that you've probably already touched. Printing is useful because it can help display intermediate program state. Logging is essentially the same method (i.e. writing state to external output).
+
 ##### Using the Debugger
+
+The debugger allows you to set breakpoints in your code. When you run your code, the execution stops when it reaches a breakpoint. At this point, you can inspect the current state of the program as well as step through the code line by line.
 
 > Exercise: Debug [BuggyClass](exercises/10_Github-Debugging/src/BuggyClass.java). BuggyClass attemps to compare several different array addition algorithms, but it's fraught with bugs. Remember, bugs are problems with functionality, not just crashing. It may be tricky to infer what someone *meant* to do with the code - in the future you may have to deal with (and fix!) poorly-documented code written by someone who is no longer at the company, or is otherwise not contactable.
 
@@ -177,6 +214,10 @@ public static void myCalculator(String userInput) {
 
 Here, we use the exception to alert the user as to what went wrong. Exceptions propogate up the call stack, so the method that called `myCalculator` can also handle the exception. If the exception gets to the top of the call stack, then the program crashes.
 
+#### Bonus
+
+[Project Euler Problem 20](https://projecteuler.net/problem=20)
+
 #### Assessment
 
-
+What does the first line in the call stack indicate?
