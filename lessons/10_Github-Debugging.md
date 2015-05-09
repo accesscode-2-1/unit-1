@@ -168,6 +168,49 @@ Exception in thread "main" java.lang.StackOverflowError
 
 means that `sum_recursive` infinitely calls itself and eventually crashes.
 
+### Example:
+
+```java
+public class Main {
+
+    public static void m1(){
+        System.out.println("Method one - m1");
+        m2();
+    }
+
+    public static void m2(){
+        System.out.println("Method two - m2");
+
+        int  x= 10;
+        int y = 0;
+
+        double z = x/y;
+
+        System.out.println(z);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Starting Main method");
+        m1();
+        System.out.println("End main method");
+    }
+}
+```
+```
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+Starting Main method
+Method one - m1
+Method two - m2
+	at com.company.Main.m2(Main.java:16)
+	at com.company.Main.m1(Main.java:7)
+	at com.company.Main.main(Main.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+```
+
 ##### Printing and Logging
 
 Printing is a very useful debugging method that you've probably already touched. Printing is useful because it can help display intermediate program state. Logging is essentially the same method (i.e. writing state to external output).
