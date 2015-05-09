@@ -169,6 +169,7 @@ Exception in thread "main" java.lang.StackOverflowError
 means that `sum_recursive` infinitely calls itself and eventually crashes.
 
 ### Example:
+- Division by zero
 
 ```java
 public class Main {
@@ -196,6 +197,7 @@ public class Main {
     }
 }
 ```
+Output:
 ```
 Exception in thread "main" java.lang.ArithmeticException: / by zero
 Starting Main method
