@@ -6,8 +6,6 @@ Students will learn about the properties of widgets and containers and be more c
 
 #### Do Now (Morning)
 
-
-
 #### Lesson (Morning)
 
 Widgets are UI components meant to serve a particular interaction with the user. Containers determine the structure of how widgets are arranged. Here are a few key things to know about widgets:
@@ -15,8 +13,10 @@ Widgets are UI components meant to serve a particular interaction with the user.
 * Padding vs. Margin: Padding is internal spacing, margin is external spacing.
 * match_parent: Fills the space of the parent element. 
 * wrap_content: Takes up the minimum amount of space needed for the content.
-* Structure vs Function: XML displays the structure of a 
-* Listener: 
+* Structure vs Function: XML displays the structure of the user interface. Function should be definied in Java. When structure needs to be defined in Java, it should be disconnected from function as much as possible.
+* Structure vs Style: Structure defines the hierchy in which elements are laid out, while style dictates things such as font color and size. Although both can be defined in XML, these different pieces should also be separated from each other when possible.
+* Callbacks: A callback is a piece of code passed to another piece of code, which controls the execution. We will start to see code that asynchronously executes some action. This may be different from the "linear" programs you may have been writing before. We'll see more synchronous/asynchronous items in the future.
+
 
 > Exercise: Without using the designer, do the following:
 
@@ -60,8 +60,5 @@ Spend the rest of the day working on your group project with your team.
 
 #### Assessment
 
-
-
 #### Resources
-* Videos:
 * Textbook: The Theory of Widgets, The Android User Interface, Basic Widgets
