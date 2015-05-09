@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/review/2015-04-27/2015-04-27.iml" filepath="$PROJECT_DIR$/review/2015-04-27/2015-04-27.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/androidTest/androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review/2015-04-29/AndroidSample/app/src/main/main.iml" filepath="$PROJECT_DIR$/review/2015-04-29/AndroidSample/app/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/main/main1.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/oop/oop.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/oop/oop.iml" />
+    </modules>
+  </component>
+</project>
