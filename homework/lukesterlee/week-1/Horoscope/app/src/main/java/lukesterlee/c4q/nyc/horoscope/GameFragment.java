@@ -60,25 +60,30 @@ public class GameFragment extends Fragment {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                date = Calculator.getRandomDate();
-                randomDate.setText(date);
+                if (date == null) {
+                    date = Calculator.getRandomDate();
+                    randomDate.setText(date);
+                }
+
                 gridview = (GridView) getActivity().findViewById(R.id.game_grid_view);
                 gridview.setAdapter(new ImageAdapter(getActivity()));
+                if (timer == null) {
+                    timer = new CountDownTimer(10000, 1000) {
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                            remainingTime.setText("seconds remaining: " + millisUntilFinished / 1000);
+                        }
 
-                timer = new CountDownTimer(10000, 1000) {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                        remainingTime.setText("seconds remaining: " + millisUntilFinished / 1000);
-                    }
+                        @Override
+                        public void onFinish() {
+                            remainingTime.setText("Time out!");
+                            answer = (TextView) getActivity().findViewById(R.id.gameAnswer);
+                            answer.setText("The answer is " + Calculator.getAnswer(date));
+                            startButton.setText("One more?");
+                        }
+                    }.start();
+                }
 
-                    @Override
-                    public void onFinish() {
-                        remainingTime.setText("Time out!");
-                        answer = (TextView) getActivity().findViewById(R.id.gameAnswer);
-                        answer.setText("The answer is " + Calculator.getAnswer(date));
-                        startButton.setText("One more?");
-                    }
-                }.start();
 
                 gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
