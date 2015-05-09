@@ -213,10 +213,6 @@ Method two - m2
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
 ```
 
-##### Printing and Logging
-
-Printing is a very useful debugging method that you've probably already touched. Printing is useful because it can help display intermediate program state. Logging is essentially the same method (i.e. writing state to external output).
-
 ##### Using the Debugger
 
 The debugger allows you to set breakpoints in your code. When you run your code, the execution stops when it reaches a breakpoint. At this point, you can inspect the current state of the program as well as step through the code line by line.
@@ -263,6 +259,10 @@ public static void myCalculator(String userInput) {
 ```
 
 Here, we use the exception to alert the user as to what went wrong. Exceptions propogate up the call stack, so the method that called `myCalculator` can also handle the exception. If the exception gets to the top of the call stack, then the program crashes.
+
+##### Printing and Logging ( time permitting )
+
+Printing is a very useful debugging method that you've probably already touched. Printing is useful because it can help display intermediate program state. Logging is essentially the same method (i.e. writing state to external output).
 
 #### Bonus
 
