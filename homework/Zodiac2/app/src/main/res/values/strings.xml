@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Zodiac2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="contents">
+        <item>Display Sign</item>
+        <item>Your Sign</item>
+        <item>Romance Calculator</item>
+        <item>Zodiac Game</item>
+    </string-array>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string name="title_activity_display_sign">DisplaySign</string>
+    <string name="title_activity_user_sign">UserSign</string>
+    <string name="title_activity_romantic_calc">RomanticCalc</string>
+    <string name="signbutton">Sign Info</string>
+    <string name="userbutton">Your Sign</string>
+    <string name="romanbutton">Romance</string>
+    <string name="gamebutton">Game</string>
+    <string name="zodiac"><b>Zodiac</b></string>\
+    <string-array name="zodiacArray">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+    <string name="AriesInfo">Aries is the first astrological sign in the Zodiac, spanning the first 30 degrees of celestial longitude. Under the tropical zodiac, the Sun transits this sign between March 21 and April 21 each year. This time duration is exactly the first month of Solar Hejri calendar (Farvardin). Under the sidereal zodiac, the sun currently transits Aries from 15 April to 15 May (approximately). The symbol of the ram is based on the Chrysomallus, the flying ram that provided the Golden Fleece</string>
+    <string name="TaurusInfo">Taurus is the second astrological sign in the present Zodiac. It spans the 30to60th degree of the zodiac, between 27.25 and 54.75 degree of celestial longitude.Under the tropic zodiac, the Sun transits this area on average between April 20 and May 20 each year. Under the sidereal zodiac, the sun currently transits the constellation of Taurus from May 16 to June 15. People born between these dates, depending on which system of astrology they subscribe to,may be called Taureans</string>
+    <string name="GeminiInfo">Gemini is the third astrological sign in the Zodiac, originating from the constellation of Gemini. Under the tropical zodiac, the sun transits this sign between May 21 and June 21. The symbol of the twins is based on the Dioscuri, two mortals that were granted shared godhood after death.</string>
+    <string name="CancerInfo">Cancer is the fourth astrological sign, which is associated with the constellation Cancer. It spans the 90to120th degree of the zodiac, between 90 and 125.25 degree of celestial longitude. Under the tropical zodiac, the Sun transits this area on average between June 21 and July 21, and under the sidereal zodiac, the Sun transits this area between approximately July 16 and August 15. A person under this sign is called a Moon child.</string>
+    <string name="LeoInfo">Leo is the fifth astrological sign of the zodiac, originating from the constellation of Leo. It spans the 120 to 150th degree of the Tropical zodiac, between 125.25 and 152.75 degree of celestial longitude. Under the tropical zodiac, Jupiter transits this area on average between July 23 and August 27 each year, and under the sidereal zodiac, Jupiter currently transits this area from approximately August 16 to September 15. </string>
+    <string name="VirgoInfo">Virgo is the sixth astrological sign in the Zodiac. Virgo is the second-largest constellation. It spans the 150 to 180th degree of the zodiac, between 152.75 and 180 degree of celestial longitude. Under the tropical zodiac, the Sun transits this area on average between August 28 and September 24, and under the sidereal zodiac, the sun currently transits the constellation of Virgo from September 17 to October 17. Individuals born during these dates are called Virgos</string>
+    <string name="LibraInfo">Libra is the seventh astrological sign in the Zodiac. It spans the 180–210th degree of the zodiac, between 180 and 207.25 degree of celestial longitude. Under the tropical zodiac, Sun transits this area on average between (northern autumnal equinox) September 22 and October 23, and under the sidereal zodiac, the sun currently transits the constellation of Libra from approximately November 1 to November 23.</string>
+    <string name="ScorpiusInfo">Scorpio is the eighth astrological sign in the Zodiac. It spans the 210–240th degree of the zodiac, between 207.25 and 234.75 degree of celestial longitude. Under the tropic zodiac, the sun transits this area on average between October 23 and November 22, and under the sidereal zodiac, the sun currently transits the constellation of Scorpius from approximately November 16 to December 15.</string>
+    <string name="SagittariusInfo">Sagittarius is the ninth astrological sign, which is associated with the constellation Sagittarius. Under the tropical zodiac, the sun transits this sign between November 23 and December 21. The symbol of the archer is based on the centaur Chiron, who mentored Achilles in archery.</string>
+    <string name="CapricornInfo">Capricorn is the tenth astrological sign in the zodiac, originating from the constellation of Capricornus. It spans the 270–300th degree of the zodiac, corresponding to celestial longitude. Capricorn is ruled by the planet Saturn. Under the tropical zodiac, the sun transits this area from December 22 to January 19 each year, and under the sidereal zodiac, the sun currently transits the constellation of Capricorn from approximately January 15 to February 14.</string>
+    <string name="AquariusInfo">Aquarius is the eleventh astrological sign in the Zodiac, originating from the constellation Aquarius. Under the tropical zodiac, the sun is in Aquarius typically between January 20 and February 18, while under the Sidereal Zodiac, the sun is in Aquarius from approximately February 15 to March 14, depending on leap year.</string>
+    <string name="PiscesInfo">Pisces is the twelfth astrological sign in the Zodiac, originating from the Pisces constellation. It spans the 330° to 360° of the zodiac, between 332.75° and 360° of celestial longitude. Under the tropical zodiac the sun transits this area on average between February 19 and March 20 and under the sidereal zodiac, the sun transits this area between approximately March 14 and April 14.</string>
+    <string name="month">Month</string>
+    <string name="date">Date</string>
+    <string name="AriesSign">You are an Aries</string>
+    <string name="TaurusSign">You are a Tauris</string>
+    <string name="GeminiSign">You are a Gemini</string>
+    <string name="CancerSign">You are a Cancer</string>
+    <string name="LeoSign">You are a Leo</string>
+    <string name="VirgoSign">You are a Virgo</string>
+    <string name="LibraSign">You are a Libra</string>
+    <string name="ScorpiusSign">You are a Scorpio</string>
+    <string name="SagittariusSign">You are a Sagittarius</string>
+    <string name="CapricornSign">You are a Capricorn</string>
+    <string name="AquariusSign">You are an Aquarius</string>
+    <string name="PiscesSign">You are a Pisces</string>
+    <string name="lucky">Today is your lucky day</string>
+    <string name="unlucky">Not so lucky today</string>
+    <string name="soso">Your luck is neither good or bad today</string>
+    <string name="urzodiac">Your Zodiac</string>
+    <string name="whozdiac">Whoevers Zodiac</string>
+    <string name="hcomp">You two have high compatibility</string>
+    <string name="lcomp">You two have low compatibility</string>
+    <string name="romancebutton">Find Out!</string>
+    <string name="title_activity_game">Game</string>
+</resources>
