@@ -11,15 +11,25 @@ public class Animal implements Comparable
         this.speciesName = speciesName;
     }
 
+    public String getSpeciesName()
+    {
+        return speciesName;
+    }
+
+    public void setSpeciesName(String speciesName)
+    {
+        this.speciesName = speciesName;
+    }
+
     @Override
     public int compareTo(Object o)
     {
-        return 0;
+        return this.getSpeciesName().compareTo(this.getSpeciesName());
     }
 
     @Override
     public boolean equals(Object obj)
     {
-        return super.equals(obj);
+        return super.equals(getSpeciesName());
     }
 }
