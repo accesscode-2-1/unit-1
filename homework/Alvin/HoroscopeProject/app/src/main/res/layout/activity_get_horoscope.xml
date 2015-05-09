@@ -12,16 +12,8 @@
         android:layout_height="wrap_content"
         android:text="GET HOROSCOPE"
         android:id="@+id/getHoroscopeButton"
-        android:layout_below="@+id/getHoroscope"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/getHoroscope"
-        android:hint="Enter horoscope sign here"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,6 +22,18 @@
         android:id="@+id/getHoroscopeView"
         android:layout_below="@+id/getHoroscopeButton"
         android:textAlignment="center"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_above="@+id/getHoroscopeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="59dp" />
 
 </RelativeLayout>

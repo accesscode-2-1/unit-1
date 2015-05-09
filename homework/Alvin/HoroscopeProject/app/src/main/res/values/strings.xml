@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Horoscope It Out!</string>
+    <string name="app_name">Horoscope It Out</string>
 
     <string name="title_section1">Get Horoscope</string>
     <string name="title_section2">Get Horoscope Sign</string>
@@ -11,10 +11,9 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="title_activity_get_horoscope">GetHoroscope</string>
+    <string name="title_activity_get_horoscope">Get Horoscope</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_get_horoscope_sign">GetHoroscopeSign</string>
-    <string name="title_activity_horoscope_compatibility">HoroscopeCompatibility</string>
-    <string name="title_activity_horoscope_game">HoroscopeGame</string>
+    <string name="title_activity_get_horoscope_sign">Get Horoscope Sign</string>
+    <string name="title_activity_horoscope_compatibility">Horoscope Compatibility</string>
+    <string name="title_activity_horoscope_game">Horoscope Game</string>
 </resources>

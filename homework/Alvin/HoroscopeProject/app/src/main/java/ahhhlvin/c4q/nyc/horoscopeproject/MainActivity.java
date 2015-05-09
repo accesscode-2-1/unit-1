@@ -33,10 +33,9 @@ public class MainActivity extends ActionBarActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView title = (TextView) findViewById(R.id.textView2);
-        title.setText("HOROSCOPE IT OUT");
+        title.setText("horoscope \nit \nout.");
 
-        ImageView img = (ImageView) findViewById(R.id.imageView);
-        //img.setImageResource(R.drawable.horoscope);
+
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);

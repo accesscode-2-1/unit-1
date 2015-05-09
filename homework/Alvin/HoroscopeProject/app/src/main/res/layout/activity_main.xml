@@ -7,13 +7,8 @@
     <!-- As the main content view, the view below consumes the entire
          space available using match_parent in both dimensions. -->
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_gravity="center" />
+        android:layout_height="match_parent"
+        android:background="#ac52514e">
 
         <TextView
             android:layout_width="wrap_content"
@@ -21,6 +16,17 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Large Text"
             android:id="@+id/textView2"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="120px"
+            android:textStyle="bold"
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@drawable/horoscope"
             android:layout_gravity="center_horizontal|top" />
 
     </FrameLayout>

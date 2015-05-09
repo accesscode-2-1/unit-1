@@ -5,9 +5,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 public class GetHoroscope extends ActionBarActivity {
@@ -18,12 +22,34 @@ public class GetHoroscope extends ActionBarActivity {
         setContentView(R.layout.activity_get_horoscope);
 
         final TextView horoscope = (TextView) findViewById(R.id.getHoroscopeView);
-        final EditText sign = (EditText) findViewById(R.id.getHoroscope);
+        final Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayList<String> list2 = new ArrayList<String>();
+
+        list2.add("Select horoscope sign");
+        list2.add("Capricorn");
+        list2.add("Aries");
+        list2.add("Taurus");
+        list2.add("Gemini");
+        list2.add("Cancer");
+        list2.add("Leo");
+        list2.add("Libra");
+        list2.add("Virgo");
+        list2.add("Scorpio");
+        list2.add("Sagittarius");
+        list2.add("Pisces");
+        list2.add("Aquarius");
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, list2);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(dataAdapter);
+
+
         Button button = (Button) findViewById(R.id.getHoroscopeButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                horoscope.setText(getHoroscope(sign.getText().toString()));
+                horoscope.setText(getHoroscope(spinner.getSelectedItem().toString()));
             }
         });
 
