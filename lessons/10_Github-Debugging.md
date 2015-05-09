@@ -217,7 +217,7 @@ Method two - m2
 
 The debugger allows you to set breakpoints in your code. When you run your code, the execution stops when it reaches a breakpoint. At this point, you can inspect the current state of the program as well as step through the code line by line.
 
-> Exercise: Debug [BuggyClass](exercises/10_Github-Debugging/src/BuggyClass.java). BuggyClass attemps to compare several different array addition algorithms, but it's fraught with bugs. Remember, bugs are problems with functionality, not just crashing. It may be tricky to infer what someone *meant* to do with the code - in the future you may have to deal with (and fix!) poorly-documented code written by someone who is no longer at the company, or is otherwise not contactable.
+> Exercise: Debug [BuggyClass](../exercises/10_Github-Debugging/src/BuggyClass.java). BuggyClass attemps to compare several different array addition algorithms, but it's fraught with bugs. Remember, bugs are problems with functionality, not just crashing. It may be tricky to infer what someone *meant* to do with the code - in the future you may have to deal with (and fix!) poorly-documented code written by someone who is no longer at the company, or is otherwise not contactable.
 
 #### Exception Handling
 
