@@ -7,24 +7,17 @@
     tools:context="ksmaragh.c4q.nyc.horoscope.zodiacSignData">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="Zodiac Sign name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/"/>
+        android:id="@+id/zodiacSign"/>
 
     <TextView
-        android:text="@string/hello_world"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/zodiacInfo"
+        android:layout_below="@+id/zodiacSign"
+        android:layout_centerHorizontal="true"/>
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>

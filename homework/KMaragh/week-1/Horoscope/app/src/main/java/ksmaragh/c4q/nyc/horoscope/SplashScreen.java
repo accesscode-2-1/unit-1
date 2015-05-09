@@ -20,7 +20,7 @@ public class SplashScreen extends Activity {
             public void run() {
                 try {
                     super.run();
-                    sleep(5000);  //Delay of 10 seconds
+                    sleep(3000);  //Delay of 3 seconds
                 } catch (Exception e) {
 
                 } finally {
