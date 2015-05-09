@@ -1,0 +1,5 @@
+<root>
+    <item name='android.widget.FrameLayout'>
+        <annotation name='java.lang.annotation.Deprecated' />
+    </item>
+</root>
