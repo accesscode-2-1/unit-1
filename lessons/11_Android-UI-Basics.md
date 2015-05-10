@@ -62,5 +62,7 @@ Spend the rest of the day working on your group project with your team.
 
 #### Assessment
 
+[Exit Ticket](https://docs.google.com/forms/d/1a-gfjjsn35N-C6wrQU9y02vHoYLFaEfjUgD7J91n3rM/viewform?usp=send_form)
+
 #### Resources
 * Textbook: The Theory of Widgets, The Android User Interface, Basic Widgets
