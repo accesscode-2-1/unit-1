@@ -10,7 +10,7 @@ public class Methods {
         } else if (sign.equalsIgnoreCase("Taurus")) {
             return "You are kind.";
         } else if (sign.equalsIgnoreCase("Gemini")) {
-            return "You are funy.";
+            return "You are funny.";
         } else if (sign.equalsIgnoreCase("Cancer")) {
             return "You are lucky.";
         } else if (sign.equalsIgnoreCase("Leo")) {
