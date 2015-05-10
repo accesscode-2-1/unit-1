@@ -4,7 +4,9 @@
 
 Students will learn about the properties of widgets and containers and be more comfortable editing widget properties in the XML.
 
-#### Do Now (Morning)
+#### Code Review
+
+Code Review a lucky developer's app!
 
 #### Lesson (Morning)
 
@@ -50,9 +52,9 @@ Widgets are UI components meant to serve a particular interaction with the user.
 
 Add TODOs into your horoscope app based on what we learned this morning.
 
-#### Code Review
+#### Github
 
-Code Review a lucky developer's app!
+Work on yesterdays' [Github exercises](10_Github-Debugging.md)
 
 #### Group Project 
 
