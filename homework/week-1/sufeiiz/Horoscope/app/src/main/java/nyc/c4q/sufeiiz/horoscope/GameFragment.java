@@ -2,6 +2,7 @@ package nyc.c4q.sufeiiz.horoscope;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,7 +43,24 @@ public class GameFragment extends Fragment {
         final Button enter = (Button) rootView.findViewById(R.id.submit);
         final Button next = (Button) rootView.findViewById(R.id.next);
         final TextView image = (TextView) rootView.findViewById(R.id.grade);
+        final TextView counter = (TextView) rootView.findViewById(R.id.counter);
 
+        // Timer
+        new CountDownTimer(10000, 1000) {
+            public void onTick(long millisUntilFinished) {
+                counter.setText("Time Left: " + millisUntilFinished / 1000);
+            }
+
+            public void onFinish() {
+                counter.setText("Time's Up!");
+                enter.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {}
+                });
+            }
+        }.start();
+
+        // Question
         textView.setText(Question());
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,10 +71,11 @@ public class GameFragment extends Fragment {
                 try {
                     String correct = BirthdayFragment.FindHoroscope(question+"-2015");
 
-                    if (correct.equalsIgnoreCase(ans))
+                    if (correct.equalsIgnoreCase(ans)) {
                         image.setText("Correct!");
-                    else
-                        image.setText("Incorrect");
+                        counter.setText("Keep playing?");
+                    } else
+                        image.setText("Try Again");
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
@@ -68,6 +87,7 @@ public class GameFragment extends Fragment {
             public void onClick(View v) {
                 image.setText("");
                 textView.setText(Question());
+                //TODO: start timer again?
             }
         });
 

@@ -63,13 +63,21 @@
 
     <TextView
         android:id="@+id/grade"
-        android:text=""
         android:textColor="@color/background_material_light"
         android:textSize="25sp"
         android:layout_below="@id/answer"
         android:layout_marginTop="130dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grade"
+        android:textSize="25sp"
+        android:textColor="@color/background_material_light"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
