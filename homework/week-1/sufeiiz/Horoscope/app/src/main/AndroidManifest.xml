@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nyc.c4q.sufeiiz.horoscope" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AriesActivity"
+            android:label="@string/aries"/>
+        <activity android:name=".TaurusActivity"
+            android:label="@string/taurus"/>
+        <activity android:name=".GeminiActivity"
+            android:label="@string/gemini"/>
+        <activity android:name=".CancerActivity"
+            android:label="@string/cancer"/>
+        <activity android:name=".LeoActivity"
+            android:label="@string/leo"/>
+        <activity android:name=".VirgoActivity"
+            android:label="@string/virgo"/>
+        <activity android:name=".ScorpioActivity"
+            android:label="@string/scorpio"/>
+        <activity android:name=".LibraActivity"
+            android:label="@string/libra"/>
+        <activity android:name=".SagittariusActivity"
+            android:label="@string/sagittarius"/>
+        <activity android:name=".CapricornActivity"
+            android:label="@string/capricorn"/>
+        <activity android:name=".AquariusActivity"
+            android:label="@string/aquarius"/>
+        <activity android:name=".PiscesActivity"
+            android:label="@string/pisces"/>
+
+
+    </application>
+
+</manifest>

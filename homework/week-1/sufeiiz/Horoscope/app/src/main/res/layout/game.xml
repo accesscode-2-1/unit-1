@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_800">
+
+    <TextView
+        android:id="@+id/info"
+        android:text="@string/game_info"
+        android:textColor="@color/background_material_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:text="vvvvvvv"
+        android:textColor="@color/background_material_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/info"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/answer"
+        android:entries="@array/signs"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/question"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+    <Button
+        android:id="@+id/next"
+        android:text="@string/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_toRightOf="@+id/question"
+        android:layout_toEndOf="@+id/question"
+        android:layout_below="@id/answer"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:text="@string/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/question"
+        android:layout_toStartOf="@+id/question"
+        android:layout_below="@id/answer"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/grade"
+        android:text=""
+        android:textColor="@color/background_material_light"
+        android:textSize="25sp"
+        android:layout_below="@id/answer"
+        android:layout_marginTop="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
