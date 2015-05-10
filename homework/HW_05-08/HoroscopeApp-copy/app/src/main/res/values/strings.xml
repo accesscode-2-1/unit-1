@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HoroscopeApp</string>
+
+    <string name="title_section1">Pick Horoscope Sign</string>
+    <string name="title_section2">Find sign via Birthday</string>
+    <string name="title_section3">Romance Compatibility</string>
+    <string name="title_section4">Play Game</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+
+    <string name="action_settings">Settings</string>
+      //navigation drawer example
+        <string-array name="menuOptions">
+            <item>Pick a sign</item>
+            <item>Enter Birthdate</item>
+            <item>Romantic Compatibility</item>
+            <item>Play Game</item>
+        </string-array>
+
+
+        <string name="action_websearch">Web search</string>
+        <string name="app_not_available">Sorry, there\'s no web browser available</string>
+        <string name="enterBirthDate">Enter Birthday</string>
+        <string name="pressStartGame">Start Game </string>
+        <item name="userSelectSign" type="id" />
+
+</resources>
