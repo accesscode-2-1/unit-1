@@ -37,32 +37,60 @@ public class Game extends ActionBarActivity {
         setContentView(R.layout.activity_game);
     }
 
-    public void starTimer(){
+    public void starTimer() {
 
-        text = (TextView) this.findViewById(R.id.timer);
-        countDownTimer = new MyCountDownTimer(startTime, interval);
-        countDownTimer.start();
-        text.setText(String.valueOf(startTime / 1000));
+        final TextView timer = (TextView) findViewById(R.id.timer_tv);
+
+        if (timer!=null) {
+
+            CountDownTimer myTimer = new CountDownTimer(3000, 1000) {
+
+
+                public void onTick(long millisUntilFinished) {
+
+
+                    timer.setText("seconds remaining: " + millisUntilFinished / 1000);
+                }
+
+                public void onFinish() {
+
+                    timer.setText("done!");
+                }
+
+
+            }.start();
+
+        }
 
     }
 
 
     public void revealRandomDate(View v) {
 
-        //starTimer();
+        starTimer();
 
         String months = "January February March April May June July August September October November December";
         String[] monthsArray = months.split(" ");
         String[] days = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"};
 
-        Random gen = new Random();
-        // since we can access arrays via index, let's generate some random numbers for the indices
-        birthdayDay = Integer.parseInt(days[gen.nextInt() % days.length]);
-        birthdayMonth = monthsArray[gen.nextInt() % monthsArray.length];
+//        Random gen = new Random();
+//        // since we can access arrays via index, let's generate some random numbers for the indices
+//        birthdayDay = Integer.parseInt(days[gen.nextInt() % days.length]);
+//        birthdayMonth = monthsArray[gen.nextInt() % monthsArray.length];
+
+        int index = new Random().nextInt(monthsArray.length);
+        birthdayMonth = monthsArray[index];
+
+        int index2 = new Random().nextInt(days.length);
+        birthdayDay = Integer.parseInt(days[index2]);
+
 
         String randomDate = birthdayMonth + " " + birthdayDay;
         TextView dayView = (TextView) findViewById(R.id.dayView);
         dayView.setText(randomDate);
+
+
+
     }
 
     public void randomBirthday(View v) {
