@@ -6,10 +6,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import ahhhlvin.c4q.nyc.horoscopeproject.ui.fragments.PlaceholderFragment;
@@ -57,24 +55,24 @@ public class MainActivity extends ActionBarActivity
         switch (position) {
 
             case 1:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getResources().getStringArray(R.array.titles)[0];
                 Intent getHoroscope = new Intent(getApplicationContext(), GetHoroscope.class);
                 startActivity(getHoroscope);
 
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getResources().getStringArray(R.array.titles)[1];
                 Intent getHoroscopeSign = new Intent(getApplicationContext(), GetHoroscopeSignActivity.class);
                 startActivity(getHoroscopeSign);
 
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
+                mTitle = getResources().getStringArray(R.array.titles)[2];
                 Intent horoscopeCompatibility = new Intent(getApplicationContext(), HoroscopeCompatibility.class);
                 startActivity(horoscopeCompatibility);
                 break;
             case 4:
-                mTitle = getString(R.string.title_section4);
+                mTitle = getResources().getStringArray(R.array.titles)[3];
                 Intent horoscopeGame = new Intent(getApplicationContext(), HoroscopeGame.class);
                 startActivity(horoscopeGame);
                 break;
@@ -85,16 +83,16 @@ public class MainActivity extends ActionBarActivity
         switch (number) {
 
             case 1:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getResources().getStringArray(R.array.titles)[0];
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getResources().getStringArray(R.array.titles)[1];
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
+                mTitle = getResources().getStringArray(R.array.titles)[2];
                 break;
             case 4:
-                mTitle = getString(R.string.title_section4);
+                mTitle = getResources().getStringArray(R.array.titles)[3];
                 break;
         }
     }
