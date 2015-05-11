@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/material_blue_grey_800"
+                android:textColor="#FFFFFF"
                 style="@android:style/TextAppearance.Medium"
                 android:text="If your birthday is "
                 android:id="@+id/sign_quiz" />
@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/material_blue_grey_800"
+                android:textColor="#FFFFFF"
                 style="@android:style/TextAppearance.Medium"
                 android:text="Sep 24"
                 android:id="@+id/sign_date" />
@@ -47,9 +47,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/material_blue_grey_800"
+            android:textColor="#FFFFFF"
+            android:paddingRight="5dp"
             style="@android:style/TextAppearance.Medium"
-            android:text="your sign is: "
+            android:text="@string/your_sign_is"
             android:id="@+id/sign_quiz2" />
 
         <Spinner
@@ -62,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/material_blue_grey_800"
+            android:textColor="#FFFFFF"
             style="@android:style/TextAppearance.Large"
             android:text="00:00"
             android:id="@+id/countdown_timer" />

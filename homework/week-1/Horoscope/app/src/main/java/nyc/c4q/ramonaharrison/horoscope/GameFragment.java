@@ -32,24 +32,18 @@ import java.util.TimeZone;
  * create an instance of this fragment.
  */
 public class GameFragment extends Fragment  {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     private ArrayList<String> signList = new ArrayList<String>();
     private Random random = new Random();
     private int guess;
     private int sign;
-    private int month;
-    private int day;
     private int randomDay;
     private int randomMonth;
     private String dateDisplay;
+    private CountDownTimer timer;
+    private long tick;
+    private boolean timesUp;
+
 
 
     private OnFragmentInteractionListener mListener;
@@ -58,17 +52,11 @@ public class GameFragment extends Fragment  {
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
      * @return A new instance of fragment GameFragment.
      */
-    // TODO: Rename and change types and number of parameters
-    public static GameFragment newInstance(String param1, String param2) {
+
+    public static GameFragment newInstance() {
         GameFragment fragment = new GameFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -76,14 +64,6 @@ public class GameFragment extends Fragment  {
         // Required empty public constructor
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -91,12 +71,46 @@ public class GameFragment extends Fragment  {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_game, container, false);
-
         Resources res = getResources();
-        setUpGame(view, res);
-
-        // set up spinner
         final String[] signs = res.getStringArray(R.array.signs_array);
+        final TextView countdown = (TextView) view.findViewById(R.id.countdown_timer);
+        timesUp = false;
+        tick = 9000;
+
+
+        setUpGame(view, res);
+        setUpSpinner(view, res, signs);
+        Button button = (Button) view.findViewById(R.id.game_button);
+        button.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    setResult(countdown);
+                }
+            });
+
+
+        timer = new CountDownTimer(tick, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                tick = millisUntilFinished;
+                countdown.setText("00:0" + millisUntilFinished / 1000);
+
+            }
+
+            public void onFinish() {
+                timesUp = true;
+                countdown.setText(signs[sign]);
+                Toast.makeText(getActivity().getApplicationContext(), "Out of Time!", Toast.LENGTH_SHORT).show();
+
+            }
+        }.start();
+
+        return view;
+    }
+
+
+    public void setUpSpinner(View view, Resources res, String[] signs) {
         signList.addAll(Arrays.asList(signs));
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, signList);
         Spinner spinner = (Spinner) view.findViewById(R.id.spinner);
@@ -105,8 +119,7 @@ public class GameFragment extends Fragment  {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id)
-            {
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 Log.d("test", "pos: " + position + "id: " + id);
                 guess = position;
             }
@@ -116,44 +129,23 @@ public class GameFragment extends Fragment  {
                 guess = 0;
             }
         });
+    }
 
-        Button button = (Button) view.findViewById(R.id.game_button);
-        button.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
-            @Override
-            public void onClick(View v) {
-                setResult();
-                Log.d("test", "guess: " + guess + "sign: " + sign);
-            }
-        });
 
-        final TextView countdown = (TextView) view.findViewById(R.id.countdown_timer);
-
-        new CountDownTimer(9000, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-                countdown.setText("00:0" + millisUntilFinished / 1000);
-
-            }
-
-            public void onFinish() {
-                countdown.setText(signs[sign]);
-                Toast.makeText(getActivity().getApplicationContext(), "Out of time!", Toast.LENGTH_SHORT).show();
-            }
-        }.start();
-
-        return view;
     }
 
     public void setUpGame(View view, Resources res) {
-        randomDay = random.nextInt(28);
-        randomMonth = random.nextInt(12);
+        randomDay = random.nextInt(27) + 1;
+        randomMonth = random.nextInt(11) + 1;
         sign = getSign(randomMonth, randomDay);
         dateDisplay = getDisplayDate(randomMonth, randomDay, res);
 
         TextView signDate = (TextView) view.findViewById(R.id.sign_date);
         signDate.setText(dateDisplay);
-
     }
 
     public String getDisplayDate(int month, int day, Resources res) {
@@ -207,13 +199,20 @@ public class GameFragment extends Fragment  {
 
     }
 
-    public void setResult() {
+    public void setResult(TextView countdown) {
         TextView result = (TextView) getActivity().findViewById(R.id.result);
 
-        if (guess == sign) {
-            Toast.makeText(getActivity().getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
+        if (timesUp) {
+            Toast.makeText(getActivity().getApplicationContext(), "Out of time! Better luck next time...", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(getActivity().getApplicationContext(), "Wrong Answer!", Toast.LENGTH_SHORT).show();
+            if (guess == sign) {
+                timer.cancel();
+                countdown.setText("Correct");
+                Toast.makeText(getActivity().getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
+
+            } else {
+                Toast.makeText(getActivity().getApplicationContext(), "Wrong answer!", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -232,6 +231,17 @@ public class GameFragment extends Fragment  {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        this.timer.cancel();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
     }
 
 

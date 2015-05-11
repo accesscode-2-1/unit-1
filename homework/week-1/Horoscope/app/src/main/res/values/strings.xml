@@ -88,5 +88,6 @@
     <string name="horoscope_subtitle">Find your sign | Check your compatibility | Test your knowledge!</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="your_sign_is">your sign is:  </string>
 
 </resources>

@@ -93,7 +93,7 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 3:
                 Log.d(TAG, "case 3");
-                mGameFragment = GameFragment.newInstance("", "");
+                mGameFragment = GameFragment.newInstance();
                 fx = getSupportFragmentManager().beginTransaction();
                 fx.replace(R.id.container, mGameFragment);
                 fx.addToBackStack(null);
