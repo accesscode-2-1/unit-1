@@ -1,204 +1,119 @@
 package ksmaragh.c4q.nyc.horoscope;
 
-import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.Toast;
+import android.view.ViewGroup;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends ActionBarActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
-    ImageView aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sag, capricorn, aquarius, pisces;
-    private ListView mDrawerList;
-    private DrawerLayout mDrawerLayout;
-    private ArrayAdapter<String> mAdapter;
-    private ActionBarDrawerToggle mDrawerToggle;
-    private String mActivityTitle;
+
+    /**
+     * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
+     */
+    private NavigationDrawerFragment mNavigationDrawerFragment;
+
+    /**
+     * Used to store the last screen title. For use in {@link #restoreActionBar()}.
+     */
+    private CharSequence mTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mDrawerList = (ListView)findViewById(R.id.navList);
-        mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
-        mActivityTitle = getTitle().toString();
+        mNavigationDrawerFragment = (NavigationDrawerFragment)
+                getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
+        mTitle = getTitle();
 
-        addDrawerItems();
-        setupDrawer();
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
-
-        aries = (ImageView) findViewById(R.id.aries);
-        taurus = (ImageView) findViewById(R.id.taurus);
-        gemini = (ImageView) findViewById(R.id.gemini);
-        cancer = (ImageView) findViewById(R.id.cancer);
-        leo = (ImageView) findViewById(R.id.leo);
-        virgo = (ImageView) findViewById(R.id.virgo);
-        libra = (ImageView) findViewById(R.id.libra);
-        scorpio = (ImageView) findViewById(R.id.scorpio);
-        sag = (ImageView) findViewById(R.id.sagittarius);
-        capricorn = (ImageView) findViewById(R.id.capricorn);
-        aquarius = (ImageView) findViewById(R.id.aquarius);
-        pisces = (ImageView) findViewById(R.id.pisces);
-
-        //Making the images clickable so they can act as buttons
-        aries.setOnClickListener(this);
-        taurus.setOnClickListener(this);
-        gemini.setOnClickListener(this);
-        cancer.setOnClickListener(this);
-        leo.setOnClickListener(this);
-        virgo.setOnClickListener(this);
-        libra.setOnClickListener(this);
-        scorpio.setOnClickListener(this);
-        sag.setOnClickListener(this);
-        capricorn.setOnClickListener(this);
-        aquarius.setOnClickListener(this);
-        pisces.setOnClickListener(this);
-
-    }
+        // Set up the drawer.
+        mNavigationDrawerFragment.setUp(
+                R.id.navigation_drawer,
+                (DrawerLayout) findViewById(R.id.drawer_layout));
 
 
-    @Override
-    public void onClick(View v) {
-        Intent i = new Intent(getApplicationContext(), zodiacSignData.class);
-        Bundle bundle = new Bundle();
-
-        int signID = v.getId();
-
-        if(signID == aries.getId()) {
-            bundle.putString("words","Aries start with the letter A");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == taurus.getId()) {
-            bundle.putString("words","Taurus start with the letter T");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == gemini.getId()) {
-            bundle.putString("words","Gemini start with the letter G");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == cancer.getId()) {
-            bundle.putString("words","Cancer start with the letter C");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == leo.getId()){
-            bundle.putString("words","Leo start with the letter L");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == virgo.getId()) {
-            bundle.putString("words","Virgo start with the letter V");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == libra.getId()) {
-            bundle.putString("words","Libra start with the letter L");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == scorpio.getId()){
-            bundle.putString("words","Scorpio start with the letter S");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == sag.getId()) {
-            bundle.putString("words","Sagitarius start with the letter S");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == capricorn.getId()) {
-            bundle.putString("words","Capricorn start with the letter C");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == aquarius.getId()){
-            bundle.putString("words","Aquarius starts with the letter A");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-        else if(signID == pisces.getId()){
-            bundle.putString("words","Pisces start with the letter P");
-            i.putExtras(bundle);
-            startActivity(i);
-        }
-
-    }
-
-    private void addDrawerItems() {
-        String[] osArray = { "Android", "iOS", "Windows", "OS X", "Linux" };
-        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, osArray);
-        mDrawerList.setAdapter(mAdapter);
-
-        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-    public void chooseActivity(String activityName){
-
-        //if(activityName.equalsIgnoreCase())
-
-    }
-
-    private void setupDrawer() {
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close) {
-
-            /** Called when a drawer has settled in a completely open state. */
-            public void onDrawerOpened(View drawerView) {
-                super.onDrawerOpened(drawerView);
-                getSupportActionBar().setTitle("Navigation!");
-                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
-            }
-
-            /** Called when a drawer has settled in a completely closed state. */
-            public void onDrawerClosed(View view) {
-                super.onDrawerClosed(view);
-                getSupportActionBar().setTitle(mActivityTitle);
-                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
-            }
-        };
-
-        mDrawerToggle.setDrawerIndicatorEnabled(true);
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
     }
 
     @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        // Sync the toggle state after onRestoreInstanceState has occurred.
-        mDrawerToggle.syncState();
+    public void onNavigationDrawerItemSelected(int position) {
+        // update the main content by replacing fragments
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment fragment = null;
+        String actionBarTitle = null;
+
+        switch (position) {
+            case 0:
+                fragment = new MainFragment();
+                actionBarTitle = getString(R.string.title_section1);
+                break;
+            case 1:
+                fragment = new BirthdayZodiacFragment();
+                actionBarTitle = getString(R.string.title_section2);
+                break;
+            case 2:
+                fragment = new CompatibilityFragment();
+                actionBarTitle = getString(R.string.title_section3);
+                break;
+            case 3:
+                fragment = new ZodiacGameFragment();
+                actionBarTitle = getString(R.string.title_section4);
+                break;
+        }
+
+        if (fragment != null) {
+            fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+            getSupportActionBar().setTitle(actionBarTitle);
+        }
+
     }
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        mDrawerToggle.onConfigurationChanged(newConfig);
+//    //Name on the action bar when list item in Nav Drawer is selected
+//    public void onSectionAttached(int number) {
+//        switch (number) {
+//            case 1:
+//                mTitle = getString(R.string.title_section1);
+//                break;
+//            case 2:
+//                mTitle = getString(R.string.title_section2);
+//                break;
+//            case 3:
+//                mTitle = getString(R.string.title_section3);
+//                break;
+//            case 4:
+//                mTitle = getString(R.string.title_section4);
+//                break;
+//        }
+//    }
+
+    public void restoreActionBar() {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setTitle(mTitle);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        if (!mNavigationDrawerFragment.isDrawerOpen()) {
+            // Only show items in the action bar relevant to this screen
+            // if the drawer is not showing. Otherwise, let the drawer
+            // decide what to show in the action bar.
+            getMenuInflater().inflate(R.menu.main, menu);
+            restoreActionBar();
+            return true;
+        }
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -213,15 +128,49 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return true;
         }
 
-        // Activate the navigation drawer toggle
-        if (mDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * A placeholder fragment containing a simple view.
+     */
+    public static class PlaceholderFragment extends Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "Section 4";
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static PlaceholderFragment newInstance(int sectionNumber) {
+            PlaceholderFragment fragment = new PlaceholderFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        public PlaceholderFragment() {
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            return rootView;
+        }
+
+//        @Override
+//        public void onAttach(Activity activity) {
+//            super.onAttach(activity);
+//            ((MainActivity) activity).onSectionAttached(
+//                    getArguments().getInt(ARG_SECTION_NUMBER));
+//        }
+    }
+
+
+
 }
-
-
-
-

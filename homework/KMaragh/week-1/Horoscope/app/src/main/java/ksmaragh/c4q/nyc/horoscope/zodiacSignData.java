@@ -1,5 +1,8 @@
 package ksmaragh.c4q.nyc.horoscope;
 
+/**
+ * Created by kadeemmaragh on 5/10/15.
+ */
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,12 +12,13 @@ import android.widget.TextView;
 
 public class zodiacSignData extends ActionBarActivity {
 
-    TextView signInfo;
+    TextView signInfo,signName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zodiac_sign_data);
 
+        signName = (TextView) findViewById(R.id.zodiacSign);
         signInfo = (TextView) findViewById(R.id.zodiacInfo);
 
         Bundle extras = getIntent().getExtras();
@@ -23,6 +27,8 @@ public class zodiacSignData extends ActionBarActivity {
         if(extras != null){
             text = extras.getString("words");
             signInfo.setText(text);
+            text = extras.getString("name");
+            signName.setText(text);
         }
     }
 

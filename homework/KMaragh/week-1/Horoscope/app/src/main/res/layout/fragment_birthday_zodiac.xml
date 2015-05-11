@@ -8,11 +8,13 @@
 
     <Spinner
         android:id="@+id/months"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
         android:entries="@array/month"
         android:layout_alignRight="@+id/btnSubmit"
-        android:layout_alignEnd="@+id/btnSubmit" />
+        android:layout_alignEnd="@+id/btnSubmit"
+        />
 
     <Spinner
         android:id="@+id/days"
