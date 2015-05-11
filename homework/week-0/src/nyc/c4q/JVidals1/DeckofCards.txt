@@ -1,0 +1,83 @@
+package nyc.c4q.JVidals1;
+import javax.smartcardio.Card;
+
+/**
+ * Created by s3a on 5/1/15.
+ * Janneisy Vidals
+ * 2.1 Accesscode
+ * HW Excercises
+ * Description:
+ * Due March 27, 2015.
+ */
+
+
+public abstract class DeckofCards
+{
+    public static final int NumOfCards = 52;
+
+
+    private Card[] deckofCards; // has  all 52 cards ..getpieces
+    private int    currentCard; // deal this card in deck
+
+    //Create a contructor method to make 52 cards in a deck.
+    public DeckofCards()
+    {
+
+        deckofCards = new Card[NumOfCards]; // Creating an array
+
+        int i = 0; // intialize at 0;
+
+        for(int suit = Card.DIAMONDS; suit <= Card.SPADES; suit++)
+        {
+            for(int rank = 1; rank <= 13; rank++) {
+                deckofCards[i++] = new Card (suit, rank);
+
+                 // putting card in position i
+            }
+            currentCard = 0; //Fresh deck of cards
+        }
+    }
+    // create a method that shuffles(n) : shuffle the deck n exchanges
+    public void shuffle (int n){
+        int i , j, k ;
+        for( k = 0; k <n; k ++)
+        {
+            i = (int) (NumOfCards * Math.random()); //pick 2 random cards
+            j = (int) (NumOfCards * Math.random()); // in the deck
+
+            // swap randomly chosen cards
+
+            Card swp = deckofCards[i];
+            deckofCards[i] = deckofCards[j];
+            deckofCards[j] = swp;
+        }
+        currentCard=0;// reset current card to deal from the top of deck
+    }
+
+    //create a method that has no parameters and returns a card object
+    public Card deal (){
+        if (currentCard < NumOfCards){
+            return (deckofCards[currentCard++]);
+        }
+        else {
+            System.out.println("Out of cards! ");
+            return (null); //Error will occurs;
+        }
+    }
+
+    public String toString() {
+
+        String s = " ";
+
+        int k = 0;
+        for(int i = 0; i < 4; i++) {
+            for(int j = 1; j <= 13; j++) {
+                s += (deckofCards[k++] + " ");
+                s += "/n"; // add a new line after 13 cards
+            }
+
+        }
+            return (s);
+    }
+
+}
