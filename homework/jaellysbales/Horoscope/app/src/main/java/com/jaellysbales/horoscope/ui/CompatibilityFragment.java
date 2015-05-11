@@ -66,7 +66,6 @@ public class CompatibilityFragment extends Fragment implements AdapterView.OnIte
                 else {
                     // TextView appearing beneath spinners in view?
                     getCompatibility(String.valueOf(spinner_sign1.getSelectedItem()), String.valueOf(spinner_sign2.getSelectedItem()));
-
                 }
             }
         });

@@ -6,16 +6,43 @@
     android:orientation="vertical"
     tools:context=".activity.GuessSignFragment">
 
+    <TextView
+        android:id="@+id/counter"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guesses_left"
+        android:layout_centerHorizontal="true"/>
+
+   <TextView
+        android:id="@+id/date"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/guesses_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
     <Spinner
         style="@style/Base.Widget.AppCompat.Spinner.Underlined"
-        android:id="@+id/spinner"
+        android:id="@+id/spinner_guess"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="154dp"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/guesses_left"
         android:layout_centerHorizontal="true" />
-    <TextView
 
+    <TextView
         android:id="@+id/time_remaining"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -24,4 +51,5 @@
         android:id="@+id/time_over"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
 </RelativeLayout>
