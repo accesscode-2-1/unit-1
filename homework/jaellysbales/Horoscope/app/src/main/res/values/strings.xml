@@ -21,16 +21,302 @@
         <item>@string/nav_item_guess_sign</item>
     </string-array>
 
+    <!-- section titles -->
     <string name="title_home">Home</string>
     <string name="title_horoscope">Horoscopes</string>
     <string name="title_sign_profiles">Sign Profiles</string>
     <string name="title_compatibility">Compatibility</string>
     <string name="title_guess_sign">Guess the Sign</string>
 
+    <!-- signs -->
+    <string name="sign_aquarius">Aquarius</string>
+    <string name="sign_aries">Aries</string>
+    <string name="sign_cancer">Cancer</string>
+    <string name="sign_capricorn">Capricorn</string>
+    <string name="sign_gemini">Gemini</string>
+    <string name="sign_leo">Leo</string>
+    <string name="sign_libra">Libra</string>
+    <string name="sign_pisces">Pisces</string>
+    <string name="sign_sagittarius">Sagittarius</string>
+    <string name="sign_scorpio">Scorpio</string>
+    <string name="sign_taurus">Taurus</string>
+    <string name="sign_virgo">Virgo</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="icon_text_aries">Aries</string>
-    <string name="icon_text_taurus">Taurus</string>
-    <string name="icon_text_gemini">Gemini</string>
+    <!-- sign descriptions -->
+    <string name="desc_aquarius">The Water Bearer</string>
+    <string name="desc_aries">The Ram</string>
+    <string name="desc_cancer">The Crab</string>
+    <string name="desc_capricorn">The Sea Goat</string>
+    <string name="desc_gemini">The Twins</string>
+    <string name="desc_leo">The Lion</string>
+    <string name="desc_libra">The Scales</string>
+    <string name="desc_pisces">The Fish</string>
+    <string name="desc_sagittarius">The Archer</string>
+    <string name="desc_scorpio">The Scorpio</string>
+    <string name="desc_taurus">The Bull</string>
+    <string name="desc_virgo">The Virgin</string>
+
+    <!-- start dates -->
+    <string name="start_date_aquarius">January 21</string>
+    <string name="start_date_aries">March 21</string>
+    <string name="start_date_cancer">June 22</string>
+    <string name="start_date_capricorn">December 23</string>
+    <string name="start_date_gemini">May 21</string>
+    <string name="start_date_leo">July 23</string>
+    <string name="start_date_libra">September 23</string>
+    <string name="start_date_pisces">February 22</string>
+    <string name="start_date_sagittarius">November 21</string>
+    <string name="start_date_scorpio">October 24</string>
+    <string name="start_date_taurus">April 20</string>
+    <string name="start_date_virgo">August 23</string>
+
+    <!-- end dates -->
+    <string name="end_date_aquarius">February 21</string>
+    <string name="end_date_aries">April 19</string>
+    <string name="end_date_cancer">July 22</string>
+    <string name="end_date_capricorn">January 20</string>
+    <string name="end_date_gemini">June 21</string>
+    <string name="end_date_leo">August 22</string>
+    <string name="end_date_libra">October 23</string>
+    <string name="end_date_pisces">March 20</string>
+    <string name="end_date_sagittarius">December 22</string>
+    <string name="end_date_scorpio">November 20</string>
+    <string name="end_date_taurus">May 20</string>
+    <string name="end_date_virgo">September 22</string>
+
+    <!-- horoscopes -->
+    <string name="horoscope_aquarius">
+        There has rarely been a better time than now to refine the art of being your own mommy or
+        daddy. You\'re finally ready to take over from the parental voices in your head and assume
+        full responsibility for raising yourself the rest of the way. What do you want to be when
+        you grow up? You may feel a giddy sense of freedom as it becomes clear that the only
+        authority who has the right to answer that question is you.
+    </string>
+    <string name="horoscope_aries">
+        Benedictine monks observe the Latin motto Laborare est Orare. The 19th-century abbot Maurus
+        Wolter interpreted these words to mean "work is worship" or "work is prayer." He was trying
+        to impress upon his fellow monks that the work they did was not a grudging distraction from
+        their service to God, but rather at the heart of their devotion. To do their tasks with love
+        was a way to express gratitude for having been blessed with the gift of life. I propose that
+        you experiment with this approach in the coming weeks, even if your version is more secular.
+        What would it be like to feel contentment with and appreciation for the duties you have been
+        allotted?
+    </string>
+    <string name="horoscope_cancer">
+        Here\'s a confession: I have taken a vow to foster beauty, truth, love, justice, equality,
+        tolerance, creativity, playfulness, and hope. To do this work is one of my life goals. I
+        approach it with the devotion of a monk and the rigor of a warrior. Does that mean I ignore
+        difficulty and suffering and cruelty? Of course not. I\'m trying to diminish the power of
+        those problems, so I sure as hell better know a lot about them. On the other hand, my main
+        focus is on redemption and exaltation. I prefer not to describe in detail the world\'s
+        poisons, but rather to provide an antidote for them. Even if you don\'t normally share my
+        approach, Cancerian, I invite you to try it for the next two weeks. The astrological time
+        is right.
+    </string>
+    <string name="horoscope_capricorn">
+        In 1934, Capricorn baseball player Dizzy Dean was named the Most Valuable Player after
+        winning 30 games. It was a feat that no National League pitcher has repeated ever since.
+        After Dean retired, he was inducted into the Hall of Fame. Never shy about acknowledging
+        his own prowess, he declared that "if you can do it, it ain\'t bragging." It is in this
+        spirit that I invite you to freely expound on your talents and accomplishments in the
+        coming week. You won\'t be boasting. You will simply be providing information. And that
+        will ultimately result in you being offered an interesting new opportunity or two.
+    </string>
+    <string name="horoscope_gemini">
+        In the children\'s book The Little Engine That Could, a little blue engine volunteers to
+        pull a long chain of train cars up a steep hill, even though it\'s not confident it has
+        the power to do so. As it strains to haul the heavy weight, it recites a mantra to give
+        itself hope: "I think I can, I think I can, I think I can." The story ends happily. The
+        little blue engine reaches the top of the hill with its many cars in tow, and is able to
+        glide down the rest of the way. As you deal with your own challenge, Gemini, I recommend
+        that you use an even more forceful incantation. Chant this: "I know I can, I know I can,
+        I know I can."
+    </string>
+    <string name="horoscope_leo">
+        The hill where I take my late afternoon hikes is teeming with the six-petaled purple
+        wildflower known as the elegant cluster-lily. Every one of them — and there are hundreds —
+        lean hard in the direction of the sun in the west. Should I deride them as conformists that
+        follow the law of the pack? Should I ridicule them for their blind devotion? Or should I more
+        sensibly regard them as having a healthy instinct to gravitate toward the life-giving light?
+        I\'ll go with the latter theory. In that spirit, Leo, I urge you to ignore the opinions of
+        others as you turn strongly toward the sources that provide you with essential nourishment.
+    </string>
+    <string name="horoscope_libra">
+        According to the three science fiction films collectively known as The Matrix, we humans
+        suffer from a fundamental delusion. What we think is real life is actually a sophisticated
+        computer simulation. Intelligent machines have created this dream world to keep us in
+        suspended animation while they harvest our energy to fuel their civilization. Now as far as
+        I can tell, this scenario isn\'t literally true. But it is an apt metaphor for how many of us
+        seem to be half-asleep or under a spell, lost in our addiction to the simulated world created
+        by technology. I bring this to your attention, Libra, because now is a favorable time to
+        diminish the hold that the metaphorical Matrix has on you. What can you do to at least
+        partially escape your bondage? (Hint: A little more contact with nature could do the trick.)
+    </string>
+    <string name="horoscope_pisces">
+        The universe has always played tricks on you. Some have been so perplexing that you\'ve
+        barely understood the joke. Others have been amusing but not particularly educational.
+        Now I sense a new trend in the works, however. I suspect that the universe\'s pranks are
+        becoming more comprehensible. They may have already begun to contain hints of kindness.
+        What\'s the meaning of this lovely turn of events? Maybe you have finally discharged a very
+        old karmic debt. It\'s also conceivable that your sense of humor has matured so much that
+        you\'re able to laugh at some of the crazier plot twists. Here\'s another possibility: You are
+        cashing in on the wisdom you were compelled to develop over the years as you dealt with the
+        universe\'s tricks.
+    </string>
+    <string name="horoscope_sagittarius">
+        Physicist Frank Wilczek won a Nobel Prize for his research into quarks, the tiny particles
+        that compose protons and neutrons. The guy is breathtakingly smart. Here\'s one of his
+        operating principles: "If you don\'t make mistakes, you\'re not working on hard enough
+        problems. And that\'s a big mistake." Let\'s enshrine his advice as your meditation,
+        Sagittarius. I think you\'re strong enough and brave enough to go hunting for some new
+        super-rich dilemmas. Yes, they may lead you to commit some booboos. But they will also
+        stretch your intelligence beyond its previous limits, giving you a more vigorous
+        understanding of the way the world works.
+    </string>
+    <string name="horoscope_scorpio">
+        In the coming weeks, you may be as alluring and intriguing and tempting as you have been in
+        a long time. I suggest you capitalize on this advantage. Proceed as if you do indeed have
+        the power to attract more of the emotional riches you desire. Assume that you are primed to
+        learn new secrets about the arts of intimacy, and that these secrets will make you even
+        smarter and more soulful than you already are. Cultivate your ability to be the kind of
+        trusted ally and imaginative lover who creates successful relationships.
+    </string>
+    <string name="horoscope_taurus">
+        Here\'s one of the best things you can do for your mental and physical health: Withdraw your
+        attention from the life that lies behind you, and be excited about the life that stretches
+        ahead of you. Forget about the past, and get wildly inventive as you imagine the interesting
+        future you will create for yourself. Forgive everyone who has offended you, and fantasize
+        about the fun adventures you\'ll go on, the inspiring plans you\'ll carry out, and the
+        invigorating lessons you hope to learn.
+    </string>
+    <string name="horoscope_virgo">
+        Am I reading the astrological omens correctly? I hope so. From what I can tell, you have
+        been flying under the radar and over the rainbow. You have been exploiting the loopholes in
+        the big bad system and enjoying some rather daring experiments with liberation. At this
+        point in the adventure, you may be worried that your lucky streak can\'t continue much
+        longer. I\'m here to tell you that it can. It will. It must. I predict that your
+        detail-loving intelligence will paradoxically guide you to expand your possibilities even further.
+    </string>
+
+    <!-- profiles -->
+    <string name="profile_aquarius">
+        Aquarians present themselves in one of two ways. One on hand, you’ll see someone who is shy,
+        and quiet. On the other, an Aquarian can be boisterous, eccentric, and energetic. Both are 
+        deep thinkers with a love of helping others. Highly intellectual, this is a sign of fierce 
+        independence that prizes intuition tempered with logic. Both personality types have an 
+        uncanny ability to see both sides of an argument without prejudice, making them excellent 
+        problem-solvers. While very much attuned to the energies around them, Aquarians have a deep 
+        need to take time out alone and away to rejuvenate themselves. The keyword for this sign is 
+        imagination. The Aquarian can see a world of possibilities even when there appears to be none.
+    </string>
+    <string name="profile_aries">
+        As the first sign of the zodiac, the presence of an Aries almost always indicates the 
+        beginning of something energetic and boisterous. Not much holds this sign back. They\'re 
+        eager, dynamic, quick, and competitive. When it comes to getting the ball rolling, 
+        an Aries is the best. Pioneering everything from work-related projects to parties with 
+        friends, these folks go for the gusto.
+    </string>
+    <string name="profile_cancer">
+        Deeply intuitive and sentimental, Cancer can be one of the most challenging Zodiac signs to 
+        get to know. Emotion runs strong for this sign, and when it comes to family and home, 
+        nothing is more important. Sympathetic and empathetic, Cancerians are greatly attuned to 
+        those around them. Devotion is the keyword for this sign, making them wonderfully sensitive 
+        people to be around.
+    </string>
+    <string name="profile_capricorn">
+        When it comes to professionalism and traditional values, Capricorn wins hands-down. 
+        This practical sign loves to tackle life in the most conventional of ways, leaving no stone 
+        unturned. Considered the most serious-minded of the signs, the Capricorn possesses an 
+        independence that allows for considerable progress both personally and on the job.
+    </string>
+    <string name="profile_gemini">
+        Versatility is a great keyword for this dual sign. Expressive and quick-witted, the Gemini 
+        presents two distinctive sides to his or her personality, and you can never be sure with 
+        which one you\'re going to come face-to-face. On one hand, the Gemini can be outgoing, 
+        flirtatious, communicative, and ready for fun, fun, fun. Yet when the other twin is present, 
+        you can find this air sign contemplative, serious, restless, and even indecisive. Both twins
+        are able to adapt to life\'s circumstances well, making them wonderful people to know. Things
+        are never boring when a Gemini is on the scene.
+    </string>
+    <string name="profile_leo">
+        When the mighty Lion enters center stage, everyone notices. This dramatic, creative, and 
+        outgoing sign has the keyword magnetism for good reason. Fiery and self-assured, a Leo\'s 
+        charm can be almost impossible to resist. Whether it\'s time spent with family and friends or
+        efforts on the job scene, a Leo is going to bring a lot to the table.
+    </string>
+    <string name="profile_libra">
+        "I balance" is the key phrase for this sign, and when it comes to keeping everything on an 
+        even keel, a Libran will lead the pack. Peace loving and judicial, this sign abhors being 
+        alone. Partnerships are very important for the Libran, especially those on a personal level. 
+        With their winning personalities and cooperative style, they aren\'t apt to be alone for long!
+    </string>
+    <string name="profile_pisces">
+        "Understanding" is a most appropriate keyword for this gentle, affectionate sign. Easygoing
+        and generally accepting of others around them, Pisceans are often found in the company of a
+        variety of different personalities. Their willingness to give of themselves emotionally
+        lends to an aura of quiet empathy. A Pisces is comforting to be around. While not likely to
+        be the leader, this sign\'s presence is strong and vibrant in any cause they put their hearts into.
+    </string>
+    <string name="profile_sagittarius">
+        Inquisitive and energetic, the Sagittarius is the traveler of the Zodiac. Their 
+        philosophical, broad-minded approach to life motivates them to wander far and wide in the 
+        search for the meaning of life. Extroverted, optimistic, and enthusiastic, it can be almost 
+        impossible to keep the Sagittarius down. They love change. In fact, change is essential for 
+        this sign to feel their best.
+    </string>
+    <string name="profile_scorpio">
+        Beneath a controlled, cool exterior beats the heart of the deeply intense Scorpio. 
+        Passionate, penetrating, and determined, this sign will probe until they reach the truth. 
+        The Scorpio may not speak volumes or show emotions readily, yet rest assured there\'s an 
+        enormous amount of activity happening beneath the surface. Excellent leaders, Scorpions are 
+        always aware. When it comes to resourcefulness, this sign comes out ahead.
+    </string>
+    <string name="profile_taurus">
+        Strong, dependable Taurus leads the way when it comes to reaping the rewards of hard work. 
+        Lovers of everything that is fine and beautiful, Taureans surround themselves with material 
+        gains. This is a sensual, tactile sign. Touch is very important in everything from work to 
+        romance. Stable and conservative, Taureans are among the most reliable of the zodiac. While 
+        sometimes viewed as stubborn, this sign will plod along on a task until the very end, 
+        ensuring that everything is up to standard. They\'re highly creative and thoroughly enjoy 
+        making things with their own hands.
+    </string>
+    <string name="profile_virgo">
+        With an acute attention to detail, the Virgo is the sign in the zodiac most dedicated to 
+        serving. Their deep sense of the humane leads them to caregiving like no other, while their 
+        methodical approach to life ensures that nothing is missed. The Virgo is often gentle and 
+        delicate, preferring to step back and analyze before moving ahead.
+    </string>
+
+    <!-- compatibility spinner array -->
+    <string-array name="sign_array">
+        <item>Sign</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+    <!-- placeholders -->
+    <string name="placeholder_sign">Sign</string>
+    <string name="placeholder_description">Description</string>
+    <string name="placeholder_end_date">End Date</string>
+    <string name="placeholder_start_date">Start Date</string>
+    <string name="placeholder_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
+        vel vestibulum nulla. Aliquam ac enim dignissim, vulputate nulla sed, sollicitudin dolor. 
+        Duis quis ultricies neque, ac ultrices tortor. Nunc lobortis lorem ac lorem fermentum 
+        convallis. Phasellus ipsum tortor, molestie id turpis vel, mattis imperdiet enim.
+    </string>
+
+    <!-- miscellaneous -->
+    <string name="pick_date">Set Birthdate</string>
+    <string name="button_text_submit">Submit</string>
+
 </resources>

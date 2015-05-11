@@ -6,26 +6,33 @@
     android:orientation="vertical"
     tools:context=".activity.CompatibilityFragment">
 
-
-    <TextView
-        android:id="@+id/label"
+    <Spinner
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:id="@+id/spinner_sign1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="154dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="45dp"
-        android:text="COMPATIBILITY"
-        android:textStyle="bold"/>
+        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_below="@id/label"
-        android:layout_centerInParent="true"
-        android:layout_width="fill_parent"
+    <Spinner
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:id="@+id/spinner_sign2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/spinner_sign1"
+        android:layout_alignLeft="@+id/spinner_sign1"
+        android:layout_alignStart="@+id/spinner_sign1" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:text="@string/button_text_submit"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="12dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:text="Edit fragment_compatibility.xml to change the appearance" />
+        android:layout_below="@+id/spinner_sign2"
+        android:layout_alignRight="@+id/spinner_sign2"
+        android:layout_alignEnd="@+id/spinner_sign2"
+        android:layout_marginTop="35dp" />
 
 </RelativeLayout>

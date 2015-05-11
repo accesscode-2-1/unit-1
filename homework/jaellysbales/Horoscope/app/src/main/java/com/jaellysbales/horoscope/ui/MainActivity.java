@@ -87,7 +87,7 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
                 title = getString(R.string.title_horoscope);
                 break;
             case 2:
-                fragment = new SignProfilesFragment();
+                fragment = new ProfileFragment();
                 title = getString(R.string.title_sign_profiles);
                 break;
             case 3:

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" tools:context="activity.ProfileSignFragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:transitionGroup="true">
+
+    <TextView
+        android:id="@+id/sign_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/placeholder_sign"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sign_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/placeholder_description"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/sign_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/zodiac_icon_aries"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/sign_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/placeholder_start_date"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/placeholder_lorem"
+        android:layout_margin="20dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

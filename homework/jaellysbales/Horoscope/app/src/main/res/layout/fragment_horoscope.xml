@@ -22,7 +22,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_alignTop="@+id/icon_gemini"
         android:layout_centerHorizontal="true" />
 
@@ -32,7 +31,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_above="@+id/icon_virgo"
         android:layout_alignLeft="@+id/icon_virgo"
         android:layout_alignStart="@+id/icon_virgo" />
@@ -43,7 +41,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_alignTop="@+id/icon_leo"
         android:layout_alignLeft="@+id/icon_libra"
         android:layout_alignStart="@+id/icon_libra" />
@@ -54,7 +51,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_above="@+id/icon_scorpio"
         android:layout_centerHorizontal="true" />
 
@@ -64,7 +60,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_above="@+id/icon_sagittarius"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -75,7 +70,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_above="@+id/icon_capricorn"
         android:layout_alignLeft="@+id/icon_capricorn"
         android:layout_alignStart="@+id/icon_capricorn" />
@@ -86,7 +80,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_alignTop="@+id/icon_sagittarius"
         android:layout_alignLeft="@+id/icon_aquarius"
         android:layout_alignStart="@+id/icon_aquarius" />
@@ -97,7 +90,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_above="@+id/icon_pisces"
         android:layout_alignLeft="@+id/icon_pisces"
         android:layout_alignStart="@+id/icon_pisces" />
@@ -108,7 +100,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/icon_aries"
         android:layout_alignStart="@+id/icon_aries" />
@@ -119,7 +110,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
@@ -129,7 +119,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-           
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -138,9 +127,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/icon_text_aries"
+        android:text="@string/sign_aries"
         android:id="@+id/icon_text_aries"
-           
         android:layout_below="@+id/icon_aries"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -151,9 +139,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/icon_text_taurus"
+        android:text="@string/sign_taurus"
         android:id="@+id/icon_text_taurus"
-           
         android:layout_below="@+id/icon_taurus"
         android:layout_centerHorizontal="true" />
 
@@ -161,10 +148,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/icon_text_gemini"
+        android:text="@string/sign_gemini"
         android:id="@+id/icon_text_gemini"
         android:layout_marginStart="18dp"
-           
         android:layout_alignBaseline="@+id/icon_text_taurus"
         android:layout_alignBottom="@+id/icon_text_taurus"
         android:layout_alignLeft="@+id/icon_gemini"

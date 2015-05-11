@@ -52,42 +52,95 @@ public class HoroscopeFragment extends Fragment {
                 //Toast.makeText(HoroscopeFragment.this.getActivity(), "Test!", Toast.LENGTH_SHORT).show();
                 int buttonId = view.getId();
                 String sign = null;
+                String description = null;
+                String startDate = null;
+                String endDate = null;
+                String horoscope = null;
+
                 switch (buttonId) {
                     case R.id.icon_aquarius:
-                        sign = "Aquarius";
+                        sign = getString(R.string.sign_aquarius);
+                        description = getString(R.string.desc_aquarius);
+                        startDate = getString(R.string.start_date_aquarius);
+                        endDate = getString(R.string.end_date_aquarius);
+                        horoscope = getString(R.string.horoscope_aquarius);
                         break;
                     case R.id.icon_aries:
-                        sign = "Aries";
+                        sign = getString(R.string.sign_aries);
+                        description = getString(R.string.desc_aries);
+                        startDate = getString(R.string.start_date_aries);
+                        endDate = getString(R.string.end_date_aries);
+                        horoscope = getString(R.string.horoscope_aries);
                         break;
                     case R.id.icon_cancer:
-                        sign = "Cancer";
+                        sign = getString(R.string.sign_cancer);
+                        description = getString(R.string.desc_cancer);
+                        startDate = getString(R.string.start_date_cancer);
+                        endDate = getString(R.string.end_date_cancer);
+                        horoscope = getString(R.string.horoscope_cancer);
                         break;
                     case R.id.icon_capricorn:
-                        sign = "Capricorn";
+                        sign = getString(R.string.sign_capricorn);
+                        description = getString(R.string.desc_capricorn);
+                        startDate = getString(R.string.start_date_capricorn);
+                        endDate = getString(R.string.end_date_capricorn);
+                        horoscope = getString(R.string.horoscope_capricorn);
                         break;
                     case R.id.icon_gemini:
-                        sign = "Gemini";
+                        sign = getString(R.string.sign_gemini);
+                        description = getString(R.string.desc_gemini);
+                        startDate = getString(R.string.start_date_gemini);
+                        endDate = getString(R.string.end_date_gemini);
+                        horoscope = getString(R.string.horoscope_gemini);
                         break;
                     case R.id.icon_leo:
-                        sign = "Leo";
+                        sign = getString(R.string.sign_leo);
+                        description = getString(R.string.desc_leo);
+                        startDate = getString(R.string.start_date_leo);
+                        endDate = getString(R.string.end_date_leo);
+                        horoscope = getString(R.string.horoscope_leo);
                         break;
                     case R.id.icon_libra:
-                        sign = "Libra";
+                        sign = getString(R.string.sign_libra);
+                        description = getString(R.string.desc_libra);
+                        startDate = getString(R.string.start_date_libra);
+                        endDate = getString(R.string.end_date_libra);
+                        horoscope = getString(R.string.horoscope_libra);
                         break;
                     case R.id.icon_pisces:
-                        sign = "Pisces";
+                        sign = getString(R.string.sign_pisces);
+                        description = getString(R.string.desc_pisces);
+                        startDate = getString(R.string.start_date_pisces);
+                        endDate = getString(R.string.end_date_pisces);
+                        horoscope = getString(R.string.horoscope_pisces);
                         break;
                     case R.id.icon_sagittarius:
-                        sign = "Sagittarius";
+                        sign = getString(R.string.sign_sagittarius);
+                        description = getString(R.string.desc_sagittarius);
+                        startDate = getString(R.string.start_date_sagittarius);
+                        endDate = getString(R.string.end_date_sagittarius);
+                        horoscope = getString(R.string.horoscope_sagittarius);
                         break;
                     case R.id.icon_scorpio:
-                        sign = "Scorpio";
+                        sign = getString(R.string.sign_scorpio);
+                        description = getString(R.string.desc_scorpio);
+                        startDate = getString(R.string.start_date_scorpio);
+                        endDate = getString(R.string.end_date_scorpio);
+                        horoscope = getString(R.string.horoscope_scorpio);
                         break;
                     case R.id.icon_taurus:
-                        sign = "Taurus";
+                        sign = getString(R.string.sign_taurus);
+                        description = getString(R.string.desc_taurus);
+                        startDate = getString(R.string.start_date_taurus);
+                        endDate = getString(R.string.end_date_taurus);
+                        horoscope = getString(R.string.horoscope_taurus);
                         break;
                     case R.id.icon_virgo:
-                        sign = "Virgo";
+                        sign = getString(R.string.sign_virgo);
+                        description = getString(R.string.desc_virgo);
+                        startDate = getString(R.string.start_date_virgo);
+                        endDate = getString(R.string.end_date_virgo);
+                        horoscope = getString(R.string.horoscope_virgo);
                         break;
                     default:
                         throw new UnsupportedOperationException("should never happen");
@@ -99,6 +152,10 @@ public class HoroscopeFragment extends Fragment {
                 Fragment fragment = new HoroscopeSignFragment();
                 Bundle args = new Bundle();
                 args.putString("SIGN", sign);
+                args.putString("DESCRIPTION", description);
+                args.putString("STARTDATE", startDate);
+                args.putString("ENDDATE", endDate);
+                args.putString("HOROSCOPE", horoscope);
                 fragment.setArguments(args);
 
                 fragmentManager.

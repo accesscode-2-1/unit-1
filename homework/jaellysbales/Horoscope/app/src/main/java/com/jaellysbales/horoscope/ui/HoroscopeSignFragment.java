@@ -18,6 +18,10 @@ import java.util.HashMap;
  */
 public class HoroscopeSignFragment extends Fragment {
     private String sign;
+    private String description;
+    private String startDate;
+    private String endDate;
+    private String horoscope;
     private HashMap<String, Integer> icons;
 
     @Override
@@ -51,14 +55,23 @@ public class HoroscopeSignFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         //Toast.makeText(HoroscopeSignFragment.this.getActivity(), "Sign TEST!", Toast.LENGTH_SHORT).show();
-        TextView title = (TextView) view.findViewById(R.id.sign_title);
-        ImageView icon = (ImageView) view.findViewById(R.id.sign_icon);
-        TextView startDate = (TextView) view.findViewById(R.id.sign_start_date);
-        TextView endDate = (TextView) view.findViewById(R.id.sign_end_date);
-        TextView blurb = (TextView) view.findViewById(R.id.sign_blurb);
 
-        title.setText(sign);
-        icon.setImageResource(icons.get(sign));
+        Bundle args = getArguments();
+        startDate = args.getString("STARTDATE");
+        description = args.getString("DESCRIPTION");
+        endDate = args.getString("ENDDATE");
+        horoscope = args.getString("HOROSCOPE");
 
+        TextView myTitle = (TextView) view.findViewById(R.id.sign_title);
+        TextView myDescription = (TextView) view.findViewById(R.id.sign_description);
+        ImageView myIcon = (ImageView) view.findViewById(R.id.sign_icon);
+        TextView myDateRange = (TextView) view.findViewById(R.id.sign_range);
+        TextView myHoroscope = (TextView) view.findViewById(R.id.sign_horoscope);
+
+        myTitle.setText(sign);
+        myDescription.setText(description);
+        myIcon.setImageResource(icons.get(sign)); // Doesn't work.
+        myDateRange.setText(startDate + " - " + endDate);
+        myHoroscope.setText(horoscope);
     }
 }

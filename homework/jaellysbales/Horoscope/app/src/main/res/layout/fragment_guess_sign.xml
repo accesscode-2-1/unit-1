@@ -6,26 +6,22 @@
     android:orientation="vertical"
     tools:context=".activity.GuessSignFragment">
 
-
-    <TextView
-        android:id="@+id/label"
+    <Spinner
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="154dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="45dp"
-        android:text="GUESS THE SIGN"
-        android:textStyle="bold"/>
+        android:layout_centerHorizontal="true" />
+    <TextView
+
+        android:id="@+id/time_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <TextView
-        android:layout_below="@id/label"
-        android:layout_centerInParent="true"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:text="Edit fragment_guess_sign.xml to change the appearance" />
-
+        android:id="@+id/time_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
