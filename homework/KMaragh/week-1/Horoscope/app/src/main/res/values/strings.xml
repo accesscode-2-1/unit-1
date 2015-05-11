@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">Horoscope</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello World</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
+    <string-array name="listItems">
+        <item>Zodiac Signs</item>
+        <item>Determine Your Zodiac</item>
+        <item>Zodiac Compatibility</item>
+        <item>Zodiac Game</item>
+    </string-array>
 
     <string-array name="month">
         <item>January</item>
@@ -56,15 +58,30 @@
         <item>31</item>
     </string-array>
 
+    <string-array name="zodiacSigns">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
 
-    <string name="title_activity_splash_screen">SplashScreen</string>
-    <string name="title_activity_zodiac_sign_data">zodiacSignData</string>
-    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="title_section1">Zodiac Signs</string>
+    <string name="title_section2">Determine Your Zodiac</string>
+    <string name="title_section3">Zodiac Compatibility</string>
+    <string name="title_section4">Zodiac Game</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_example">Example action</string>
-    <string name="title_activity_birthday_zodiac">birthdayZodiac</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
