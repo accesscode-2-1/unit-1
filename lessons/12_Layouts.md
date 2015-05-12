@@ -39,4 +39,7 @@ In a Relative Layout, the children can define their position relative to the par
 
 #### Exercises
 
+> Create a form using a Linear Layout that asks a user for first and last name, username, DOB, etc.
+> Create a calculator layout using a Linear Layout. Use this opportunity to figure out how to nest layouts.
+
 #### Quiz
