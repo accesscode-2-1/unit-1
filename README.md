@@ -17,6 +17,8 @@ Lesson plans, activities and assignments for Unit 1 will be posted here!
  8 | May 05 | 2 | [Intro to Final Project](lessons/8_Intro-Final-Project.md)
  9 | May 07 | 2 | [Android Exercises](https://github.com/shurane/unit-1-exercises)
  10 | May 09 | 2 | [Github and Debugging](lessons/10_Github-Debugging.md)
+ 11 | May 10 | 3 | [UI Basics](lessons/11_Android-UI-Basics.md)
+ 12 | May 12 | 3 | [Layouts](lessons/12_Layouts.md)
 ### Homework
 
 | Due Date | Homework|
