@@ -37,10 +37,10 @@ amount), and two views with weights of 1 and 2 will fill the layout with a 1:2 r
 
 In a Relative Layout, the children can define their position relative to the parent or the other children available.
 
-#### Exercises
+### Exercises
 
 > 1. Create a form using a Linear Layout that asks a user for first and last name, username, DOB, etc.
 
 > 1. Create a calculator layout using a Linear Layout. Use this opportunity to figure out how to nest layouts.
 
-#### Quiz
+### Quiz
