@@ -1,7 +1,5 @@
 ## Layouts
 
-### Do Now
-
 ### Lesson: Layouts
 
 #### Views and View Groups
@@ -43,4 +41,8 @@ In a Relative Layout, the children can define their position relative to the par
 
 > 1. Create a calculator layout using a Linear Layout. Use this opportunity to figure out how to nest layouts.
 
-### Quiz
+### [Quiz](https://docs.google.com/a/c4q.nyc/forms/d/1AZO4SyYgglEzroJqMbEuTTRp3D7TnEBiI--LHcfNTSo/viewform?usp=send_form)
+
+### Assessment
+
+[Exit ticket](https://docs.google.com/forms/d/1a-gfjjsn35N-C6wrQU9y02vHoYLFaEfjUgD7J91n3rM/viewform?usp=send_form)
