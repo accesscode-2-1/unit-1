@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_result"
+    tools:context="nyc.c4q.ramonaharrison.horoscope.ResultFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heart"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/match"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            style="@android:style/TextAppearance.Medium"
+            android:text="@string/match" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,7 +1,8 @@
 package com.example.accesscode.myphone;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,6 +26,9 @@ public class MainActivity extends ActionBarActivity {
                 /*
                     Use Explicit Intent to start DialerActivity here.
                  */
+                Intent dialerIntent = new Intent(getApplicationContext(), DialerActivity.class);
+                startActivity(dialerIntent);
+
             }
         });
         /* EmailActivity */
@@ -36,6 +40,8 @@ public class MainActivity extends ActionBarActivity {
                  /*
                     Use Explicit Intent to start EmailActivity here.
                  */
+                Intent emailIntent = new Intent(getApplicationContext(), EmailActivity.class);
+                startActivity(emailIntent);
 
             }
         });

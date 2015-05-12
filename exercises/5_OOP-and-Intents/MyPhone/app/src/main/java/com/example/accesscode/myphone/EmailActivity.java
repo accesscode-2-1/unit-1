@@ -1,6 +1,7 @@
 package com.example.accesscode.myphone;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +10,8 @@ import android.widget.EditText;
 /**
  * Created by amyquispe on 4/30/15.
  */
+
+
 public class EmailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +23,7 @@ public class EmailActivity extends Activity {
         mailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String myEmailAddress = ""; /* put your email address here */
+                String myEmailAddress = "ramonaliza@gmail.com"; /* put your email address here */
                 String subject = emailSubject.getText().toString();
                 String body = emailBody.getText().toString();
 
@@ -31,7 +34,41 @@ public class EmailActivity extends Activity {
                     http://developer.android.com/guide/components/intents-common.html#Email
 
                  */
+                composeEmail(myEmailAddress, subject, body);
+
             }
         });
     }
+
+    public void composeEmail(String address, String subject, String body) {
+
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+
+        intent.setType("text/html");
+        intent.putExtra(Intent.EXTRA_EMAIL, address);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_TEXT, body);
+
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+
+        String subject = ((EditText)findViewById(R.id.email_subject)).getText().toString();
+        String body = ((EditText)findViewById(R.id.email_body)).getText().toString();
+        savedInstanceState.putString("subject", subject);
+        savedInstanceState.putString("body", body);
+
+    }
+
+
 }

@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/your_sign_fragment"
+    tools:context="nyc.c4q.ramonaharrison.horoscope.YourSignFragment">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/birthdate_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFFFFF"
+            style="@android:style/TextAppearance.Medium"
+            android:text="@string/your_birth_date" />
+
+
+        <DatePicker
+            android:layout_below="@id/birthdate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_marginTop="10dp"
+            android:startYear="1900"
+            android:endYear="2015"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/birthdate_edit" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/birthdate_edit"
+            android:layout_marginTop="10dp"
+            android:text="@string/birthdate_button"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/birthdate_button" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+
+    <string name="title_section1">Signs Overview</string>
+    <string name="title_section2">Your Sign</string>
+    <string name="title_section3">Compatibility</string>
+    <string name="title_section4">Guess the sign!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="your_birth_date">Your birth date:</string>
+    <string name="birthdate_button">Go</string>
+
+    <string name="your_sign">Your sign:</string>
+    <string name="their_sign">Their sign:</string>
+    <string name="match">It\'s a match!</string>
+
+
+    <string-array name="signs_array">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+    <string-array name="dates_array">
+        <item>March 21 - April 19</item>
+        <item>April 20 - May 20</item>
+        <item>May 21 - June 21</item>
+        <item>June 22 - July 22</item>
+        <item>July 23 - August 22</item>
+        <item>August 23 - September 22</item>
+        <item>September 23 - October 23</item>
+        <item>October 24 - November 20</item>
+        <item>November 21 - December 22</item>
+        <item>December 23 - January 20</item>
+        <item>January 21 - February 21</item>
+        <item>February 22 - March 20</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="description_array">
+        <item>This sign is represented by the Ram.</item>
+        <item>This sign is represented by the Bull.</item>
+        <item>This sign is represented by the Twins.</item>
+        <item>This sign is represented by the Crab.</item>
+        <item>This sign is represented by the Lion.</item>
+        <item>This sign is represented by the Virgin.</item>
+        <item>This sign is represented by the Scales.</item>
+        <item>This sign is represented by the Scorpion.</item>
+        <item>This sign is represented by the Archer.</item>
+        <item>This sign is represented by the Sea Goat.</item>
+        <item>This sign is represented by the Water Bearer.</item>
+        <item>This sign is represented by the Fish.</item>
+    </string-array>
+
+
+    <string name="action_example"></string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_signs">Signs</string>
+    <string name="horoscope">Horoscope</string>
+    <string name="horoscope_subtitle">Find your sign | Check your compatibility | Test your knowledge!</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="your_sign_is">your sign is:  </string>
+
+</resources>
