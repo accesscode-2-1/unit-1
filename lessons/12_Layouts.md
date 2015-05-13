@@ -25,7 +25,7 @@ A Layout is a rectangle - the boundaries of the a Layout are defined by `getLeft
 In a Linear Layout, all the children are aligned either horizontally or vertically, depending on the
 `android:orientation`. That is, all the children are placed one after another linearly.
 
-* Orientation: Vertical for rows, horizonatal for columns.
+* Orientation: Vertical for rows, horizontal for columns.
 * Gravity: [Gravity and layout_gravity](http://sandipchitale.blogspot.com/2010/05/linearlayout-gravity-and-layoutgravity.html)
 * Weight: Weight describes the relative importance of the Views, which allows these views to expand to fit the
 parent proportionally. For example, two views with a weight of 1 will fill the layout at a 1:1 ratio (or, the same
