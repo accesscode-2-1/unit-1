@@ -15,6 +15,10 @@ import android.widget.TextView;
 
 public class DescriptionFragment extends Fragment {
 
+    TextView descriptionTitle;
+    TextView personalityTitle;
+    TextView personality;
+
     public final static String POSITION = "position";
 
     public static int mCurrentPosition = -1;
@@ -45,9 +49,12 @@ public class DescriptionFragment extends Fragment {
 
     // maybe I should delete this. in this state, move to drawer and come back (test this)
     public void updateDescription(int position) {
-
-        TextView description = (TextView) getActivity().findViewById(R.id.description);
-        description.setText(Data.description[position]);
+        mCurrentPosition = position;
+        descriptionTitle = (TextView) getActivity().findViewById(R.id.description_title);
+        descriptionTitle.setText(Data.signs[position]);
+        personalityTitle = (TextView) getActivity().findViewById(R.id.personality_title);
+        personality = (TextView) getActivity().findViewById(R.id.personality);
+        personality.setText(Data.personality[position]);
         mCurrentPosition = position;
 
     }
