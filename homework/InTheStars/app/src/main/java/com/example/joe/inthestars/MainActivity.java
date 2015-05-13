@@ -1,6 +1,7 @@
 package com.example.joe.inthestars;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v4.widget.DrawerLayout;
@@ -17,6 +18,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,7 +26,6 @@ import android.widget.Toast;
 import java.lang.reflect.Array;
 import java.util.List;
 
-import static com.example.joe.inthestars.R.layout.custom_list;
 
 
 public class MainActivity extends ActionBarActivity{
@@ -33,7 +34,7 @@ public class MainActivity extends ActionBarActivity{
     private ListView signsList;
     String[] appMenu;
     public String[] signs;
-    public TableLayout signsTable;
+    public RelativeLayout signsTable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,25 +44,56 @@ public class MainActivity extends ActionBarActivity{
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         appMenu = getResources().getStringArray(R.array.appMenu);
         mDrawerList = (ListView) findViewById(R.id.listView);
-        mDrawerList.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,appMenu));
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,appMenu));
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                switch(position){
+                    case 0:{
+                        Intent home = new Intent(MainActivity.this, MainActivity.class);
+                        startActivity(home);
+                        break;
+                    }
+                    case 1:{
+                        Intent signsInfo = new Intent(MainActivity.this, SignsInfo.class);
+                        startActivity(signsInfo);
+                        break;
+                    }
+                    case 2:{
+                        Intent romance = new Intent(MainActivity.this, Romance.class);
+                        startActivity(romance);
+                        break;
+                    }
+                    case 3:{
+                        Intent guessingGame = new Intent(MainActivity.this, GuessingGame.class);
+                        startActivity(guessingGame);
+                        break;
+                    }
+                }
 
             }
         });
-        // Table of buttons
-        signsTable = (TableLayout) findViewById(R.id.signs_table);
+
+
+        // Buttons
+        signsTable = (RelativeLayout) findViewById(R.id.signs_buttons);
         signsTable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                final Button aries =(Button) findViewById(R.id.aries_button);
+                aries.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        try {
+                            Intent ariesInfo = new Intent(MainActivity.this, Class.forName(SignsInfo.buttonClicked(aries)));
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
             }
         });
-
-
-
     }
 
     @Override

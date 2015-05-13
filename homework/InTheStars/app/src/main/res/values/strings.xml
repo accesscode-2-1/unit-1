@@ -23,4 +23,17 @@
     <string name="capricorn">Capricorn</string>
     <string name="aquarius">Aquarius</string>
     <string name="pisces">Pisces</string>
+
+    <string name="ariesInfo">THIS IS ARIES</string>
+    <string name="taurusInfo">THIS IS TAURUS</string>
+    <string name="geminiInfo">THIS IS GEMINI</string>
+    <string name="cancerInfo">THIS IS CANCER</string>
+    <string name="leoInfo">THIS IS LEO</string>
+    <string name="virgoInfo">THIS IS VIRGO</string>
+    <string name="libraInfo">THIS IS LIBRA</string>
+    <string name="scorpioInfo">THIS IS SCORPIO</string>
+    <string name="sagInfo">THIS IS SAG</string>
+    <string name="capricornInfo">THIS IS CAPRICORN</string>
+    <string name="aquariusInfo">THIS IS AQUARIUS</string>
+    <string name="piscesInfo">THIS IS PISCES</string>
 </resources>

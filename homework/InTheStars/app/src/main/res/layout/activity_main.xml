@@ -18,138 +18,143 @@
         android:clickable="true"
         android:choiceMode="singleChoice">
     </ListView>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="#ffe8ff17"
-        android:gravity="center_horizontal"
-        android:textSize="32sp"
-        android:textStyle="bold|italic"
-        android:background="#ff0e154d" />
-
-    <TableLayout
-        android:id="@+id/signs_table"
+        android:background="@drawable/zodiac"/>
+    <RelativeLayout
+        android:id="@+id/main_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="true"
-        android:gravity="center_vertical">
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-            <Button
-                android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/in_the_stars"
+            android:textColor="#f87217"
+            android:textSize="40sp"
+            android:textStyle="italic"/>
+        <RelativeLayout
+            android:id="@+id/signs_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:clickable="true">
+            <LinearLayout
+                android:id="@+id/top_row"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/aries"
-                android:id="@+id/aries_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-
-            <Button
-                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/aries_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aries"
+                    android:textColor="#F87217"
+                    android:clickable="true" />
+                <Button
+                    android:id="@+id/taurus_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/taurus"
+                    android:textColor="#F87217"
+                    android:clickable="true" />
+                <Button
+                    android:id="@+id/gemini_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/gemini"
+                    android:textColor="#F87217"
+                    android:clickable="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/second_row"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/taurus"
-                android:id="@+id/taurus_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-
-            <Button
-                android:layout_width="wrap_content"
+                android:layout_below="@id/top_row"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/cancer_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancer"
+                    android:textColor="#F87217"
+                    android:clickable="true"/>
+                <Button
+                    android:id="@+id/leo_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/leo"
+                    android:textColor="#F87217"
+                    android:clickable="true"/>
+                <Button
+                    android:id="@+id/virgo_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/virgo"
+                    android:textColor="#F87217"
+                    android:clickable="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/third_row"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/gemini"
-                android:id="@+id/gemini_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-            <Button
-                android:layout_width="wrap_content"
+                android:layout_below="@id/second_row"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/libra_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/libra"
+                    android:textColor="#F87217"
+                    android:clickable="true" />
+                <Button
+                    android:id="@+id/scorpio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scorpio"
+                    android:textColor="#F87217"
+                    android:clickable="true"/>
+                <Button
+                    android:id="@+id/sag_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sag"
+                    android:textColor="#F87217"
+                    android:clickable="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/last_row"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cancer"
-                android:id="@+id/cancer_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/leo"
-                android:id="@+id/leo_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/virgo"
-                android:id="@+id/virgo_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/libra"
-                android:id="@+id/libra_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/scorpio"
-                android:id="@+id/scorpio_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sag"
-                android:id="@+id/sag_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/capricorn"
-                android:id="@+id/cap_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/aquarius"
-                android:id="@+id/aquarius_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pisces"
-                android:id="@+id/pisces_button"
-                android:clickable="true"
-                style="@style/Base.Widget.AppCompat.Button.Borderless" />
-        </TableRow>
-
-    </TableLayout>
+                android:layout_below="@id/third_row"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/cap_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/capricorn"
+                    android:textColor="#F87217"
+                    android:clickable="true"/>
+                <Button
+                    android:id="@+id/aquarius_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aquarius"
+                    android:textColor="#F87217"
+                    android:clickable="true"/>
+                <Button
+                    android:id="@+id/pisces_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pisces"
+                    android:textColor="#F87217"
+                    android:clickable="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
 </android.support.v4.widget.DrawerLayout>
