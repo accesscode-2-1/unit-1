@@ -18,6 +18,8 @@ public class DescriptionFragment extends Fragment {
     TextView descriptionTitle;
     TextView personalityTitle;
     TextView personality;
+    TextView dateMenTitle;
+    TextView dateMen;
 
     public final static String POSITION = "position";
 
@@ -55,6 +57,10 @@ public class DescriptionFragment extends Fragment {
         personalityTitle = (TextView) getActivity().findViewById(R.id.personality_title);
         personality = (TextView) getActivity().findViewById(R.id.personality);
         personality.setText(Data.personality[position]);
+        dateMenTitle = (TextView) getActivity().findViewById(R.id.dateman_title);
+        dateMenTitle.setText("What it's like to date " + Data.signs[position] + " men :");
+        dateMen = (TextView) getActivity().findViewById(R.id.dateman);
+        dateMen.setText(Data.dateMan[position]);
         mCurrentPosition = position;
 
     }
