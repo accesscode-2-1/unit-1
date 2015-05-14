@@ -3,7 +3,6 @@ package com.example.android.navigationdrawerexample;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,7 @@ import android.widget.TextView;
 import java.util.Random;
 
 /**
- * Created by July on 5/4/15.
+ * Created by Yuliya Kaleda on 5/4/15.
  */
 public class ForthFragment extends Fragment {
 
@@ -22,18 +21,21 @@ public class ForthFragment extends Fragment {
     public static final int START_TIME_MILLIS = START_IN_SECONDS * 1000;
 
     private static final String DATE_KEY = "date";
-    private  static final String CURRENT_SECONDS = "current_seconds";
+    private  static final String CURRENT_SECONDS_KEY = "currentSeconds";
+    private static final String SUBMIT_STATE_KEY = "submitState";
+    private static final String CORRECT_SIGN_KEY = "correctSign";
+    private static final String FIRST_GAME_KEY = "firstGame";
+    private static final String INTRO_KEY = "intro";
+    private static final String VISIBILITY_KEY = "visible";
+    private static final String SECONDS_TEXTVIEW_KEY = "secondsTextView";
+    private static final String SIGN_RESULT_KEY = "guessResult";
 
-
-    Random rand = new Random();
-
-    private EditText mUserInput;
     private TextView mResult;
-    private Button getAnswerBtn;
-    private View rootView;
     private TextView mTextField;
     private TextView mRandomBD;
-
+    private TextView mIntro;
+    private EditText mUserInput;
+    private Button getAnswerBtn;
     private CountDownTimer myTimer;
 
     private String mSign;
@@ -44,46 +46,57 @@ public class ForthFragment extends Fragment {
     private int rightGuesses;
     private String[] mMonths;
     private long currentSeconds;
+    private boolean firstGame = true;
 
+    Random rand = new Random();
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-       // outState.putCharSequence("guess", mGuess);
         outState.putCharSequence(DATE_KEY, mRandomBD.getText());
-        outState.putLong(CURRENT_SECONDS, currentSeconds);
-        Log.i("on save inst", "" + currentSeconds);
-
+        outState.putLong(CURRENT_SECONDS_KEY, currentSeconds);
+        outState.putBoolean(SUBMIT_STATE_KEY, submit);
+        outState.putString(CORRECT_SIGN_KEY, mSign);
+        outState.putBoolean(FIRST_GAME_KEY, firstGame);
+        outState.putString(INTRO_KEY, mIntro.getText().toString());
+        outState.putBoolean(VISIBILITY_KEY, submit);
+        outState.putString(SECONDS_TEXTVIEW_KEY, mTextField.getText().toString());
+        outState.putString(SIGN_RESULT_KEY, mResult.getText().toString());
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        Log.i("seconds", "" + currentSeconds);
-        rootView = inflater.inflate(R.layout.fragment_forth, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_forth, container, false);
         submit = false;
         mCount = 0;
         rightGuesses = 0;
 
         mMonths = getResources().getStringArray(R.array.months);
         mRandomBD = (TextView) rootView.findViewById(R.id.random_date);
-
         mTextField = (TextView) rootView.findViewById(R.id.timer);
-        myTimer = new MyTimer(START_TIME_MILLIS, 1000, mTextField);
-
         mUserInput = (EditText) rootView.findViewById(R.id.user_input_of_sign);
-
         mResult = (TextView) rootView.findViewById(R.id.result);
+        mIntro = (TextView) rootView.findViewById(R.id.intro);
 
         //create a multifunctional button
         getAnswerBtn = (Button) rootView.findViewById(R.id.go);
 
+        //make EditText for userInput invisible
+        mUserInput.setVisibility(View.GONE);
+
         getAnswerBtn.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                //when button is to check the user's input
+
+                //when the function of the button is to check the user's input
                 if (submit) {
+
+                    firstGame = false;
+                    submit = false;
+
+                    mUserInput.setVisibility(View.GONE);
 
                     //stop timer and clear the TextView of the timer
                     myTimer.cancel();
@@ -98,36 +111,61 @@ public class ForthFragment extends Fragment {
                     //change the text on the Button to play again
                     getAnswerBtn.setText("replay");
 
-                    submit = false;
 
                     //when button is to replay the game
                 } else {
-                    //set a TextView and EditText
-                    changeScreen();
 
+                    //change the random BD
+                    changeScreen();
+                    myTimer = new MyTimer(START_TIME_MILLIS, 1000, mTextField);
                     myTimer.start();
 
                     mUserInput.setText("");
+                    mIntro.setText("");
 
                     mResult.setText("");
                     submit = true;
 
                     //when the user types in a guess, change the button's name
                     getAnswerBtn.setText("check the answer");
-
+                    mUserInput.setVisibility(View.VISIBLE);
                 }
             }
-
         });
 
         if(savedInstanceState!=null) {
-            //mGuess = savedInstanceState.getString("guess");
-            mRandomBD.setText(savedInstanceState.getString(DATE_KEY));
-            myTimer = new MyTimer(savedInstanceState.getLong(CURRENT_SECONDS), 1000, mTextField);
-            mTextField.setText("seconds remaining: " + savedInstanceState.getLong(CURRENT_SECONDS));
-            //myTimer.start();// = new MyTimer(savedInstanceState.getLong(CURRENT_SECONDS), 1000, mTextField);
-        }
 
+            firstGame = savedInstanceState.getBoolean(FIRST_GAME_KEY);
+            mSign = savedInstanceState.getString(CORRECT_SIGN_KEY);
+            currentSeconds = savedInstanceState.getLong(CURRENT_SECONDS_KEY);
+            submit = savedInstanceState.getBoolean(SUBMIT_STATE_KEY);
+            String intro = savedInstanceState.getCharSequence(INTRO_KEY).toString();
+            String secondsTextView = savedInstanceState.get(SECONDS_TEXTVIEW_KEY).toString();
+            String guessResult = savedInstanceState.get(SIGN_RESULT_KEY).toString();
+            String randomDate = savedInstanceState.getString(DATE_KEY);
+
+            if (submit) {
+                getAnswerBtn.setText("check the answer");
+                mUserInput.setVisibility(View.VISIBLE);
+                myTimer = new MyTimer(currentSeconds * 1000, 1000, mTextField);
+                myTimer.start();
+            }
+            else {
+                if (firstGame) {
+                    getAnswerBtn.setText("press to start");
+                    mUserInput.setVisibility(View.GONE);
+                }
+                else {
+                    getAnswerBtn.setText("replay");
+                    mUserInput.setVisibility(View.GONE);
+                }
+            }
+
+            mIntro.setText(intro);
+            mRandomBD.setText(randomDate);
+            mTextField.setText(secondsTextView);
+            mResult.setText(guessResult);
+        }
         return rootView;
     }
 
@@ -205,7 +243,6 @@ public class ForthFragment extends Fragment {
             mTextField.setText("done!");
             changeScreen();
             myTimer.start();
-
         }
     }
 }

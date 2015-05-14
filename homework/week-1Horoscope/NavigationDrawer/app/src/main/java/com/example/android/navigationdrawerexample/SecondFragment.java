@@ -19,7 +19,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * Created by July on 5/4/15.
+ * Created by Yuliya Kaleda on 5/4/15.
  */
 public class SecondFragment extends Fragment {
 
@@ -47,7 +47,7 @@ public class SecondFragment extends Fragment {
                     public void onDateChanged(DatePicker view,
                                               int year, int monthOfYear, int dayOfMonth) {
 
-                        info.setText(MainActivity.displaySign(monthOfYear, dayOfMonth));
+                        info.setText("Your sign is " + MainActivity.displaySign(monthOfYear, dayOfMonth));
 
                     }
                 });

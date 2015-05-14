@@ -42,8 +42,10 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="action_websearch">Web search</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
-    <string name="enter_BD">Enter Your BirthDay</string>
+    <string name="enter_BD">Choose Your BirthDay</string>
     <string name="press_to_start">Press to start</string>
+    <string name="intro">Let\'s Test out how well you know zodiac signs. For each randomly presented date of birth you have to provide the right zodiac sign. You have 30 seconds to guess the sign. Good Luck!</string>
+
 
 
 

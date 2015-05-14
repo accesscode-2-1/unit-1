@@ -16,24 +16,24 @@ public final class R {
     }
     public static final class drawable {
         public static final int action_search=0x7f020000;
-        public static final int aquarius5=0x7f020001;
-        public static final int aries5=0x7f020002;
-        public static final int cancer5=0x7f020003;
-        public static final int capricorn5=0x7f020004;
+        public static final int aqua=0x7f020001;
+        public static final int ari=0x7f020002;
+        public static final int can=0x7f020003;
+        public static final int capr=0x7f020004;
         public static final int drawer_shadow=0x7f020005;
-        public static final int gemini5=0x7f020006;
+        public static final int gem=0x7f020006;
         public static final int ic_drawer=0x7f020007;
         public static final int ic_launcher=0x7f020008;
-        public static final int leo5=0x7f020009;
-        public static final int libra5=0x7f02000a;
-        public static final int pisces5=0x7f02000b;
-        public static final int sagitario5=0x7f02000c;
-        public static final int scorpio5=0x7f02000d;
-        public static final int taurus5=0x7f02000e;
-        public static final int virgo5=0x7f02000f;
+        public static final int le=0x7f020009;
+        public static final int libr=0x7f02000a;
+        public static final int pisc=0x7f02000b;
+        public static final int sag=0x7f02000c;
+        public static final int scor=0x7f02000d;
+        public static final int taur=0x7f02000e;
+        public static final int virg=0x7f02000f;
     }
     public static final class id {
-        public static final int action_websearch=0x7f05001a;
+        public static final int action_websearch=0x7f05001b;
         public static final int button=0x7f050004;
         public static final int button_aquarius=0x7f050006;
         public static final int button_aries=0x7f050007;
@@ -48,17 +48,18 @@ public final class R {
         public static final int button_taurus=0x7f05000f;
         public static final int button_virgo=0x7f050010;
         public static final int content_frame=0x7f050002;
-        public static final int datePicker=0x7f050018;
+        public static final int datePicker=0x7f050019;
         public static final int drawer_layout=0x7f050001;
-        public static final int go=0x7f050013;
-        public static final int image=0x7f050016;
+        public static final int go=0x7f050014;
+        public static final int image=0x7f050017;
+        public static final int intro=0x7f050012;
         public static final int left_drawer=0x7f050003;
-        public static final int random_date=0x7f050012;
-        public static final int result=0x7f050014;
+        public static final int random_date=0x7f050013;
+        public static final int result=0x7f050015;
         public static final int result_user_input=0x7f050005;
-        public static final int test=0x7f050019;
-        public static final int textView=0x7f050017;
-        public static final int timer=0x7f050015;
+        public static final int test=0x7f05001a;
+        public static final int textView=0x7f050018;
+        public static final int timer=0x7f050016;
         public static final int user_input_of_sign=0x7f050000;
     }
     public static final class layout {
@@ -69,7 +70,6 @@ public final class R {
         public static final int fragment_forth=0x7f030004;
         public static final int fragment_planet=0x7f030005;
         public static final int fragment_second=0x7f030006;
-        public static final int fragment_third=0x7f030007;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -81,6 +81,7 @@ public final class R {
         public static final int drawer_close=0x7f060003;
         public static final int drawer_open=0x7f060004;
         public static final int enter_BD=0x7f060005;
-        public static final int press_to_start=0x7f060006;
+        public static final int intro=0x7f060006;
+        public static final int press_to_start=0x7f060007;
     }
 }

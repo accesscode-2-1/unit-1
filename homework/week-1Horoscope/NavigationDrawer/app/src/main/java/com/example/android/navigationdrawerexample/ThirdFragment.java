@@ -8,14 +8,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 /**
- * Created by July on 5/4/15.
+ * Created by Yuliya Kaleda on 5/4/15.
  */
 public class ThirdFragment extends Fragment {
 
@@ -54,14 +53,14 @@ public class ThirdFragment extends Fragment {
                     //when only the 1 button is clicked, get its ID, do nothing
                     if (mNumOfClicks == 0) {
                         mNumOfClicks += 1;
-                        firstB =  v.getId();
-                        Toast.makeText(getActivity(), "first", Toast.LENGTH_LONG ).show();
+                        firstB = v.getId();
+                        Toast.makeText(getActivity(), "Choose another sign to read about your compatibility", Toast.LENGTH_LONG).show();
                     }
 
-                    //when the 2 buttons is clicked, get its ID and go to the website to read about love compatability
+                    //when the 2 buttons is clicked, get its ID and go to the website to read about love compatibility
                     else if (mNumOfClicks == 1) {
-                        secondB =  v.getId();
-                        Toast.makeText(getActivity(), "second", Toast.LENGTH_LONG ).show();
+                        secondB = v.getId();
+                        Toast.makeText(getActivity(), "Compatibility is set", Toast.LENGTH_LONG).show();
 
                         String url = coupleUrl(firstB, secondB);
                         Intent i = new Intent(Intent.ACTION_VIEW);
@@ -77,63 +76,62 @@ public class ThirdFragment extends Fragment {
             }));
 
         }
-            return rootView;
-
-
+        return rootView;
     }
 
 
+    //the purpose of this method is not to provide the right website about romantic compatibility for just two signs, but to
+    //set two buttons on ClickListener
     public String coupleUrl(int firstB, int secondB) {
-        String result ="";
+        String result = "";
 
-        if (firstB == R.id.button_aries || secondB == R.id.button_aries ) {
+        if (firstB == R.id.button_aries || secondB == R.id.button_aries) {
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Aries";
-        }
-
-        else if  (firstB == R.id.button_aquarius || secondB == R.id.button_aquarius)
+        } else if (firstB == R.id.button_aquarius || secondB == R.id.button_aquarius)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Aquarius";
 
-        else if  (firstB == R.id.button_taurus || secondB == R.id.button_taurus)
+        else if (firstB == R.id.button_taurus || secondB == R.id.button_taurus)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Taurus";
 
-        else if  (firstB == R.id.button_gemini || secondB == R.id.button_gemini)
+        else if (firstB == R.id.button_gemini || secondB == R.id.button_gemini)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Gemini";
 
-        else if  (firstB == R.id.button_cancer || secondB == R.id.button_cancer)
+        else if (firstB == R.id.button_cancer || secondB == R.id.button_cancer)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Cancer";
 
-        else if  (firstB == R.id.button_leo || secondB == R.id.button_leo)
+        else if (firstB == R.id.button_leo || secondB == R.id.button_leo)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Leo";
 
-        else if  (firstB == R.id.button_virgo || secondB == R.id.button_virgo)
+        else if (firstB == R.id.button_virgo || secondB == R.id.button_virgo)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Virgo";
 
-        else if  (firstB == R.id.button_libra || secondB == R.id.button_libra)
+        else if (firstB == R.id.button_libra || secondB == R.id.button_libra)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Libra";
 
-        else if  (firstB == R.id.button_scorpio || secondB == R.id.button_scorpio)
+        else if (firstB == R.id.button_scorpio || secondB == R.id.button_scorpio)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Scorpio";
 
-        else if  (firstB == R.id.button_sagitario || secondB == R.id.button_sagitario)
+        else if (firstB == R.id.button_sagitario || secondB == R.id.button_sagitario)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Sagittarius";
 
-        else if  (firstB == R.id.button_capricorn || secondB == R.id.button_capricorn)
+        else if (firstB == R.id.button_capricorn || secondB == R.id.button_capricorn)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Capricorn";
 
-        else if  (firstB == R.id.button_pisces || secondB == R.id.button_pisces)
+        else if (firstB == R.id.button_pisces || secondB == R.id.button_pisces)
 
             result = "http://www.psychicguild.com/zodiac-compatibility/Pisces";
+
         return result;
     }
 }

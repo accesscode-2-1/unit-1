@@ -25,5 +25,4 @@ public class ZodiacButtonListener implements View.OnClickListener {
        Activity act = MainActivity.getActivity();
         act.startActivity(i);
     }
-
-        }
+}
