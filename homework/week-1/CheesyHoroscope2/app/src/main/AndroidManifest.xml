@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="abassawo.c4q.nyc.cheesyhoroscope2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HoroscopeDetail"
+            android:label="@string/title_activity_horoscope_detail" >
+        </activity>
+        <activity
+            android:name=".AstroDetail"
+            android:label="@string/title_activity_astro_detail" >
+        </activity>
+        <activity
+            android:name=".AstroReading"
+            android:label="@string/title_activity_astro_reading" >
+        </activity>
+        <activity
+            android:name=".ZodiacRomance"
+            android:label="@string/title_activity_zodiac_romance" >
+        </activity>
+        <activity
+            android:name=".HoroscopeGame"
+            android:label="@string/title_activity_horoscope_game" >
+        </activity>
+    </application>
+
+</manifest>

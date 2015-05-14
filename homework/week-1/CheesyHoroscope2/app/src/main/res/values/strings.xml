@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">CheesyHoroscope</string>
+    <string name="viewHoroscope">Daily Horoscope</string>
+    <string name="title_section1">Horoscope</string>
+    <string name="title_section2">Romantic Match </string>
+    <string name="title_section3">Horoscope ID Game</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_horoscope_detail">HoroscopeDetail</string>
+
+    <string name="gameCaption">Guess A Sign!</string>
+
+    <string name="signTitle"></string>
+    <string name="ariesDetail">Extremely sensitive and emotional, you absorb the emotions of others (whether positive or negative) like a sponge. Emotionally vulnerable, you are easily upset and tend to cry readily. You are at your best when you can structure your environment in such a way that you are surrounded by positive, upbeat people. You are very helpful and understanding of the needs of others. Indeed, at times this can be a disadvantage, because you can be a sucker for anyone who needs help. Shy, dreamy, romantic in nature, you delight in retreating into your private fantasy world. Just be careful that you do not get lost in it! Trust your intuitions -- you may be quite psychic. </string>
+    <string name="taurusDetail">An idealist, you prefer the grand, the beautiful, the good and the noble. You get very disappointed when your high expectations in life are not met. Very curious by nature, you enjoy traveling and learning about other peoples and cultures. Try to avoid your tendency to ignore the small but important details of living. You are independent and free, and you want others to be that way, too. Optimistic, buoyant and cheerful, others like to have you around. You have an incessant desire to learn as much as possible about metaphysics, religion, philosophy and any other broad, deep subject. Your life tends to be punctuated by bursts of energy and frenetic activity. </string>
+    <string name="geminiDetail">You rarely get involved closely with anyone unless he or she has something specific and practical to offer you. You tend to be "all business" when it comes to dealing with others. You\'re usually so intently focused on a particular goal that you rarely have time for social niceties or casual fellowship. But you can definitely be counted on by others to get things done. When you say that you\'ll do something, you do it. As such, you\'re a valuable member of any team situation and will probably rise to a position of leadership within the group. Your trustworthiness and sense of responsibility are unquestioned. But do try to avoid the temptation to "use" others to reach your goals -- they might come to resent you.  </string>
+    <string name="cancerDetail">You are a very affectionate person but you hate to be tied down. You are more than willing to be the aggressor in initiating new relationships. Indeed, once you have set your sights on someone, you tend to pursue him or her ardently and passionately. But you do demand your own way in a relationship. Try to give in to your partner\'s needs and desires once in a while. </string>
+    <string name="leoDetail">Your energies get turned on quickly whenever anything interests you. But you have a very short attention span and it is difficult for you to complete tasks because something else more interesting always seems to be beckoning. You love to debate and argue, usually in a spirit of friendly disagreement. But watch out that you do not get too overly aggressive or antagonistic or others will be quick to take offense where none may have really been intended. You need to be in constant physical motion -- sports or daily exercise is a must for you if you are to feel fit and healthy. </string>
+<string name="virgoDetail">You must be proud of all that you do in order to grow and develop. You enjoy being totally honest and aboveboard and you revel in the admiration and respect you receive from others due to your high- minded, upright way of life. Make sure, though, that your natural tendency to boast and show off is based on your actual accomplishments. Don\'t fall prey to self-exaggeration or arrogance. You truly do like outrageous spectacles and grand jolly times and will go out of your way to make them a reality.
+</string>
+    <string name="libraDetail"></string>
+    <string name="scorpioDetail"></string>
+    <string name="sagittariusDetail"></string>
+    <string name="capricornDetail">You, and your entire generation, will idealize work, practicality and the ability to attain reasonable goals. But, because you will also stress the need to be selfless and giving, you may find it difficult to attain your goals unless you have lowered your expectations on all fronts. </string>
+<string name="aquariusDetail">Your personal sense of values is a reflection of the value structures of your peer group and of those you respect and admire. Try to be more critical in your acceptance of these values -- you tend to prejudge the abilities of those you trust and then follow what they say blindly. Basically very conservative, you prefer orderly, systematic changes and fear doing things rashly or impulsively. Ideas and philosophies must have some sort of immediately realizable, utilitarian function in order for you to pay any attention to them.
+</string>
+<string name="piscesDetail">Your ideas and thought processes do not come to you in an orderly, logical fashion. Instead, you think with your feelings or with images produced by your rich and fertile imagination. A very subjective person, your dreams and fantasies are very important to you. You trust your intuitions and tend to reject ideas that are based solely on logic. Very impressionable, you are sensitive to the moods and emotional states of those with whom you come into contact.
+</string>
+    <string-array name="navBar_array">
+        <item>Horoscope</item>
+    </string-array>
+
+    <string-array name="spinners_array">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+    <string-array name="signDetail_array">
+        <item>@string/ariesDetail</item>
+        <item>@string/taurusDetail</item>
+        <item>@string/geminiDetail</item>
+        <item>@string/cancerDetail</item>
+        <item>@string/leoDetail</item>
+        <item>@string/virgoDetail</item>
+        <item>@string/libraDetail</item>
+        <item>@string/scorpioDetail</item>
+        <item>@string/sagittariusDetail</item>
+        <item>@string/capricornDetail</item>
+        <item>@string/aquariusDetail</item>
+        <item>@string/piscesDetail</item>
+    </string-array>
+    <string-array name = "navItems">
+
+        <item>Learn about Horoscopes</item>
+        <item>Romantic Compatibility</item>
+        <item>Horoscope Game</item>
+
+    </string-array>
+    <string name="title_activity_horoscope_game">HoroscopeGame</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_astro_reading">AstroReading</string>
+    <string name="title_activity_astro_detail">AstroDetail</string>
+    <string name="title_activity_zodiac_romance">ZodiacRomance</string>
+
+
+</resources>
