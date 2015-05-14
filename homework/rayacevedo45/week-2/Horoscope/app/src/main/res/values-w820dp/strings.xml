@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Horoscope4</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Horoscopes!</string>
+    <string name="Aries">Aries</string>
+    <string name="Taurus">Taurus</string>
+    <string name="Gemini">Gemini</string>
+    <string name="Cancer">Cancer</string>
+    <string name="Leo">Leo</string>
+    <string name="Virgo">Virgo</string>
+    <string name="Libra">Libra</string>
+    <string name="Scorpio">Scorpio</string>
+    <string name="Sagittarius">Sagittarius</string>
+    <string name="Capricorn">Capricorn</string>
+    <string name="Aquarius">Aquarius</string>
+    <string name="Pisces">Pisces</string>
+    <string name="title_activity_scorpio">ScorpioActivity</string>
+    <string name="title_activity_aries">AriesActivity</string>
+    <string name="title_activity_taurus">TaurusActivity</string>
+    <string name="title_activity_gemini">GeminiActivity</string>
+    <string name="title_activity_cancer">CancerActivity</string>
+    <string name="title_activity_leo">LeoActivity</string>
+    <string name="title_activity_virgo">VirgoActivity</string>
+    <string name="title_activity_libra">LibraActivity</string>
+    <string name="title_activity_sagittarius">SagittariusActivity</string>
+    <string name="title_activity_capricorn">CapricornActivity</string>
+    <string name="title_activity_aquarius">AquariusActivity</string>
+    <string name="title_activity_pisces">PiscesActivity</string>
+    <string name="aquarius_date">January 21 - February 19</string>
+    <string name="aries_date">March 21 - April 20</string>
+    <string name="cancer_date">June 22 - July 22</string>
+    <string name="capricorn_date">December 23 - January 20</string>
+    <string name="gemini_date">May 22 - June 21</string>
+    <string name="leo_date">July 23 -August 21</string>
+    <string name="libra_date">September 24 - October 23</string>
+    <string name="pisces_date">February 20- March 20</string>
+    <string name="sagittarius_date">November 23 - December 22</string>
+    <string name="scorpio_date">October 24 - November 22</string>
+    <string name="taurus_date">April 21 - May 21</string>
+    <string name="virgo_date">August 22 - September 23</string>
+    <string name="prompt">Don\'t know your sign\? Type it in below (mm-dd) and I\'ll show you.</string>
+    <string name="the_good">The Good \=\)</string>
+    <string name="the_bad">The Bad \=\(</string>
+    <string name="title_activity_game">Game</string>
+
+
+</resources>
