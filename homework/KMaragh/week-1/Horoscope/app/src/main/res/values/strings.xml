@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+    <string name="hello_world">Hello World</string>
+
+    <string-array name="listItems">
+        <item>Zodiac Signs</item>
+        <item>Determine Your Zodiac</item>
+        <item>Zodiac Compatibility</item>
+        <item>Zodiac Game</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="zodiacSigns">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagitarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+    <string name="title_section1">Zodiac Signs</string>
+    <string name="title_section2">Determine Your Zodiac</string>
+    <string name="title_section3">Zodiac Compatibility</string>
+    <string name="title_section4">Zodiac Game</string>
+
+    <string name="birthday">Enter Your Birth Day!</string>
+    <string name="generateZodiac">Generate Zodiac Info</string>
+    <string name="yourSign">Your Sign: </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="good">You could not have picked a better sign, you two are very compatible!</string>
+    <string name="aboveAverage"> This is not your ideal sign but you can find prosperity with this pairing.</string>
+    <string name="average"> This pairing will not fulfill your lasting desires, but nonetheless something great can spawn from this.</string>
+    <string name="belowAverage">This is a very unlikely union, but stranger things have happened.</string>
+    <string name="bad">Avoid this pairing at all costs. Nothing but ruin will befall you.</string>
+
+</resources>
