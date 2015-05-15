@@ -36,6 +36,8 @@
             android:name=".HoroscopeGame"
             android:label="@string/title_activity_horoscope_game" >
         </activity>
+
+
     </application>
 
 </manifest>

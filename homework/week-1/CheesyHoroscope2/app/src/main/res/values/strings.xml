@@ -13,7 +13,11 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_horoscope_detail">HoroscopeDetail</string>
 
+
     <string name="gameCaption">Guess A Sign!</string>
+
+
+    <string name="hello_world">Hello world!</string>
 
     <string name="signTitle"></string>
     <string name="ariesDetail">Extremely sensitive and emotional, you absorb the emotions of others (whether positive or negative) like a sponge. Emotionally vulnerable, you are easily upset and tend to cry readily. You are at your best when you can structure your environment in such a way that you are surrounded by positive, upbeat people. You are very helpful and understanding of the needs of others. Indeed, at times this can be a disadvantage, because you can be a sucker for anyone who needs help. Shy, dreamy, romantic in nature, you delight in retreating into your private fantasy world. Just be careful that you do not get lost in it! Trust your intuitions -- you may be quite psychic. </string>
@@ -64,6 +68,7 @@
         <item>@string/aquariusDetail</item>
         <item>@string/piscesDetail</item>
     </string-array>
+
     <string-array name = "navItems">
 
         <item>Learn about Horoscopes</item>
@@ -72,15 +77,20 @@
 
     </string-array>
     <string name="title_activity_horoscope_game">HoroscopeGame</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="randomizedDate"></string>
+    <string name="title_activity_main">Cheesy Horoscope</string>
+    <string name="Horoscope Compatibility"></string>
+
+    <string name="title_activity_horoscope_game">Horoscop eGame</string>
+    <string name="title_activity_main">Cheesy Horoscopey</string>
 
 
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="title_activity_astro_reading">AstroReading</string>
     <string name="title_activity_astro_detail">AstroDetail</string>
+
     <string name="title_activity_zodiac_romance">ZodiacRomance</string>
+
 
 
 </resources>
