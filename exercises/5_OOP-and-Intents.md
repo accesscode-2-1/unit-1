@@ -35,3 +35,7 @@ In EmailActivity, add an implicit intent to open up an email activity and send a
 #### Bonus
 
 Make the MyPhone project much more beautiful using [Material Design](https://developer.android.com/design/material/index.html) (or generally have fun redesigning the app)!
+
+#### Assessment
+
+Don't forget to fill out the [exit ticket](https://docs.google.com/forms/d/1a-gfjjsn35N-C6wrQU9y02vHoYLFaEfjUgD7J91n3rM/viewform?usp=send_form)!
