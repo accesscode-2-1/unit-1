@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="madelyntav.c4q.nyc.zodiac.EnterBirthday"
+    android:background="#ff181818">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_your_birthday_below"
+        android:text="@string/enter_your_birthday_Below"
+        android:background="#ffff2671"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/enter_your_birthday_below"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/month"
+        android:textSize="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffff2671"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/day"
+        android:textSize="50dp"
+        android:id="@+id/textView2"
+        android:background="#ffff2671"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/enter_your_birthday_below"
+        android:layout_alignStart="@+id/enter_your_birthday_below" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editDay"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:background="#fff9f9f9"
+        android:layout_alignRight="@+id/enter_your_birthday_below"
+        android:layout_alignEnd="@+id/enter_your_birthday_below"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editMonth"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginLeft="10dp"
+        android:background="#fffefefe"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/new_enter_birthday"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button"
+        android:layout_alignRight="@+id/editDay"
+        android:layout_alignEnd="@+id/editDay"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Birthday"
+        android:background="#ffb88afe"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:onClick="chooseSign"/>
+
+</RelativeLayout>
