@@ -3,10 +3,10 @@
     android:layout_height="wrap_content" android:layout_gravity="center_horizontal" tools:context="nyc.c4q.anthonyfermin.horoscope.SignInfo">
 
     <LinearLayout
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:background="#ffffffff">
+        android:background="#000000">
 
         <Button
             android:layout_width="200dp"
@@ -15,16 +15,22 @@
             android:id="@+id/capricorn"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp" />
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
-            android:layout_width="200dp"
+            android:layout_width="200sp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:id="@+id/aquarius"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -33,7 +39,10 @@
             android:id="@+id/pisces"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -42,7 +51,10 @@
             android:id="@+id/aries"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -51,7 +63,10 @@
             android:id="@+id/taurus"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -60,7 +75,10 @@
             android:id="@+id/gemini"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -69,7 +87,10 @@
             android:id="@+id/cancer"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -78,7 +99,10 @@
             android:id="@+id/leo"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -87,7 +111,10 @@
             android:id="@+id/virgo"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -96,7 +123,10 @@
             android:id="@+id/libra"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -105,7 +135,10 @@
             android:id="@+id/scorpio"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
         <Button
             android:layout_width="200dp"
@@ -114,7 +147,10 @@
             android:id="@+id/sagittarius"
             android:onClick="signDetail"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffff9c51"/>
 
     </LinearLayout>
 

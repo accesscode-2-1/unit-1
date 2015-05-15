@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">Horoscope</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="zodiac_names_array">
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+    </string-array>
+
+    <!-- Nav Drawer Resources -->
     <string-array name="list_names_array">
         <item>Sign Info</item>
         <item>Get Your Sign</item>
@@ -8,20 +25,13 @@
         <item>Horoscope Game</item>
     </string-array>
 
-   <string-array name="zodiac_names_array">
-       <item>Capricorn</item>
-       <item>Aquarius</item>
-       <item>Pisces</item>
-       <item>Aries</item>
-       <item>Taurus</item>
-       <item>Gemini</item>
-       <item>Cancer</item>
-       <item>Leo</item>
-       <item>Virgo</item>
-       <item>Libra</item>
-       <item>Scorpio</item>
-       <item>Sagittarius</item>
-   </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <!-- sign detail Resources -->
+    <string name="content_description">Zodiac</string>
 
     <string-array name="zodiac_date_array">
         <item>Dec 22 to Jan 20</item>
@@ -53,9 +63,23 @@
         <item>\nYour element: Fire\nYour ruling planets: Jupiter\nSymbol: The Archer\nYour stone: Turquoise\nLife Pursuit: To live the good life\n\nVibration: Overly expressive - frequent burnouts\n\nSagittarian\'s Secret Desire: To make a difference in the world</item>
     </string-array>
 
+    <!-- Get Sign Resources -->
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="get_sign">Get Sign</string>
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
 
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
-    <string name="action_websearch">Web search</string>
-    <string name="app_not_available">Sorry, there\'s no web browser available</string>
 </resources>

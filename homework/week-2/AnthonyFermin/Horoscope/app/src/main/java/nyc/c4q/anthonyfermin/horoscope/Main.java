@@ -19,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -134,72 +135,15 @@ public class Main extends ActionBarActivity {
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
     }
 
-    public static class SignInfoFragment extends Fragment {
-        public static final String ARG_LIST_NUMBER = "list_number";
 
-        public SignInfoFragment() {
-            // Empty constructor required for fragment subclasses
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_sign_info, container, false);
-
-            String[] zodiacs = getResources().getStringArray(R.array.zodiac_names_array);
-            for(String zodiac :zodiacs){
-                zodiac = zodiac.toLowerCase();
-                Button button = (Button) rootView.findViewById(getResources().getIdentifier(zodiac,"id", "nyc.c4q.anthonyfermin.horoscope"));
-                button.setText(zodiac);
-            }
-
-            int i = getArguments().getInt(ARG_LIST_NUMBER);
-            String listItem = getResources().getStringArray(R.array.list_names_array)[i];
-            getActivity().setTitle(listItem);
-
-            return rootView;
-        }
-    }
-
-    public static class SignDetailFragment extends Fragment {
-        public static final String ARG_LIST_NUMBER = "list_number";
-
-        public SignDetailFragment() {
-            // Empty constructor required for fragment subclasses
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_sign_detail, container, false);
-
-            int i = getArguments().getInt(ARG_LIST_NUMBER);
-            String zodiacItem = getResources().getStringArray(R.array.zodiac_names_array)[i];
-
-            getActivity().setTitle(zodiacItem);
-
-            TextView zodiacTitle = (TextView) rootView.findViewById(R.id.zodiacTitle);
-            zodiacTitle.setText(zodiacItem);
-
-            zodiacItem = zodiacItem.toLowerCase();
-            ImageView zodiacImageView = (ImageView) rootView.findViewById(R.id.zodiacImage);
-            int imageId = getResources().getIdentifier(zodiacItem, "drawable", "nyc.c4q.anthonyfermin.horoscope" );
-            zodiacImageView.setImageResource(imageId);
-
-            TextView zodiacDate = (TextView) rootView.findViewById(R.id.zodiacDate);
-            zodiacDate.setText(getResources().getStringArray(R.array.zodiac_date_array)[i]);
-
-            TextView zodiacDescrip = (TextView) rootView.findViewById(R.id.zodiacDescription);
-            zodiacDescrip.setText(getResources().getStringArray(R.array.zodiac_description_array)[i]);
-
-            return rootView;
-        }
-    }
 
     // passes the number 0 to 11 that corresponds to the zodiac sign contained in the button clicked
     public void signDetail(View v){
         Button button = (Button) v;
         String buttonText = (String) button.getText();
+        if(buttonText.equals("")){
+            return;
+        }
         int zodiacNum = 0;
 
         String[] zodiacs = getResources().getStringArray(R.array.zodiac_names_array);
@@ -210,26 +154,6 @@ public class Main extends ActionBarActivity {
             }
         }
         zodiacSelect(zodiacNum);
-    }
-
-    public static class GetSignFragment extends Fragment {
-        public static final String ARG_LIST_NUMBER = "list_number";
-
-        public GetSignFragment() {
-            // Empty constructor required for fragment subclasses
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_get_sign, container, false);
-
-            int i = getArguments().getInt(ARG_LIST_NUMBER);
-            String listItem = getResources().getStringArray(R.array.list_names_array)[i];
-            getActivity().setTitle(listItem);
-
-            return rootView;
-        }
     }
 
 }
