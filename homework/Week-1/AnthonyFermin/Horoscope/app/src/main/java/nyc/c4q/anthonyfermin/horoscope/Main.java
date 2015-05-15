@@ -34,6 +34,9 @@ public class Main extends ActionBarActivity {
     private CharSequence mTitle;
     private String[] mListTitles;
 
+    // TODO: Add remaining fragment classes and layouts for each position in drawer
+    // TODO: set up landscape layouts
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,7 +105,9 @@ public class Main extends ActionBarActivity {
 
         if(position == 0){
             fragment = new SignInfoFragment();
-        }else {
+        }else if(position == 1){
+            fragment = new GetSignFragment();
+        }else{
             fragment = new SignInfoFragment();
         }
         Bundle args = new Bundle();
@@ -191,6 +196,7 @@ public class Main extends ActionBarActivity {
         }
     }
 
+    // passes the number 0 to 11 that corresponds to the zodiac sign contained in the button clicked
     public void signDetail(View v){
         Button button = (Button) v;
         String buttonText = (String) button.getText();
@@ -204,6 +210,26 @@ public class Main extends ActionBarActivity {
             }
         }
         zodiacSelect(zodiacNum);
+    }
+
+    public static class GetSignFragment extends Fragment {
+        public static final String ARG_LIST_NUMBER = "list_number";
+
+        public GetSignFragment() {
+            // Empty constructor required for fragment subclasses
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_get_sign, container, false);
+
+            int i = getArguments().getInt(ARG_LIST_NUMBER);
+            String listItem = getResources().getStringArray(R.array.list_names_array)[i];
+            getActivity().setTitle(listItem);
+
+            return rootView;
+        }
     }
 
 }

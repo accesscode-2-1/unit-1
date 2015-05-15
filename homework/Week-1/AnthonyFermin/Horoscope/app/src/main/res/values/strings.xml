@@ -24,18 +24,18 @@
    </string-array>
 
     <string-array name="zodiac_date_array">
-        <item>Date: Dec 22 to Jan 20</item>
-        <item>Date: Jan 21 to Feb 19</item>
-        <item>Date: Feb 20 to Mar 20</item>
-        <item>Date: Mar 21 to Apr 19</item>
-        <item>Date: Apr 20 to May 20</item>
-        <item>Date: May 21 to Jun 21</item>
-        <item>Date: Jun 22 to Jul 23</item>
-        <item>Date: Jul 24 to Aug 23</item>
-        <item>Date: Aug 24 to Sept 22</item>
-        <item>Date: Sept 23 to Oct 22</item>
-        <item>Date: Oct 23 to Nov 22</item>
-        <item>Date: Nov 23 to Dec 21</item>
+        <item>Dec 22 to Jan 20</item>
+        <item>Jan 21 to Feb 19</item>
+        <item>Feb 20 to Mar 20</item>
+        <item>Mar 21 to Apr 19</item>
+        <item>Apr 20 to May 20</item>
+        <item>May 21 to Jun 21</item>
+        <item>Jun 22 to Jul 23</item>
+        <item>Jul 24 to Aug 23</item>
+        <item>Aug 24 to Sept 22</item>
+        <item>Sept 23 to Oct 22</item>
+        <item>Oct 23 to Nov 22</item>
+        <item>Nov 23 to Dec 21</item>
     </string-array>
 
     <string-array name="zodiac_description_array">
@@ -46,7 +46,7 @@
         <item>\nYour element: Earth\nYour ruling planets: Venus\nSymbol: The Bull\nYour stone: Emerald\nLife Pursuit: Emotional and financial security\nVibration: Determined energy\n\nTaurus Secret Desire: To have a secure, happy and wealthy life/marriage.</item>
         <item>\nYour element: Air\nYour ruling planets: Mercury\nSymbol: The Twins\nYour stone: Aquamarine\nLife Pursuit: To explore a little bit of everything.\n\nVibration: Intense mental energy\n\nGemini\'s Secret Desire: To be ahead of the crowd</item>
         <item>\nYour element: Water\nYour ruling planets: The Moon\nSymbol: The Crab\nYour stone: Moonstone\nLife Pursuit: Constant reassurance and intimacy\n\nVibration: Moody\n\nCancer\'s Secret Desire: To feel safe (emotionally, spiritually, romantically and financially)</item>
-        <item>\nYour element: Fire\nYour ruling planets: The Sun\nSymbol: The Lion\nYour stone: Peridot\nLife Pursuit: To lead the way\n\nVibration: Radiant Energy\n\nLeo\'s Secret Desire: To be a star</item>
+        <item>\nYour element: Fire\nYour ruling planets: The Sun\nSymbol: The Lion\nYour stone: Peridot\nLife Pursuit: To lead the way\n\nVibration: Radiant Energy\n\nLeo\'s Secret Desire: To be a star ljljlkjlk lj lkj lkj lkjl kjk lkj klj lkj lkj lkj lkj lkj kj </item>
         <item>\nYour element: Earth\nYour ruling planets: Mercury\nSymbol: The Virgin\nYour stone: Sapphire\nLife Pursuit: To do the right thing\n\nVibration: Compassionate and caring\n\nVirgo\'s Secret Desire: To love and be loved in return</item>
         <item>\nYour element: Air\nYour ruling planets: Venus\nSymbol: The Scales\nYour stone: Opals\nLife Pursuit: To be consistent\n\nVibration: Unsteady\n\nLibra\'s Secret Desire: To live an easy, uncomplicated life.</item>
         <item>\nYour element: Water\nYour ruling planets: Pluto\nSymbol: The Scorpion\nYour stone: Topaz\nLife Pursuit: To survive against all opposition\n\nVibration: Resilient\n\nScorpio\'s Secret Desire: To triumph</item>
