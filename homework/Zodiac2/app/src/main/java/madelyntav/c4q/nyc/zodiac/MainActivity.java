@@ -20,9 +20,6 @@ import java.util.List;
 public class MainActivity extends ActionBarActivity {
     private ListView mDrawerList;
     private ArrayAdapter<String> mAdapter;
-    private ActionBarDrawerToggle mDrawerToggle;
-    private DrawerLayout mDrawerLayout;
-    private String mActivityTitle;
 
 
     @Override

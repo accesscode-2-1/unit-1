@@ -17,8 +17,19 @@
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="32dp"
+        android:textSize="20dp"
         android:textColor="#ffff0a98" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numWrong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/dayView"
+        android:layout_alignTop="@+id/dayView"
+        android:background="#01ffffff"
+        android:inputType="number" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,13 +38,14 @@
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:textSize="50dp"
+        android:textSize="30dp"
         android:textColor="#ff1440ff"
         android:onClick="revealRandomDate"
-        android:text="     Click Here    To Reveal Date"
+        android:text="Click Here To Reveal Date"
         android:textAlignment="center" />
 
     <EditText
+        android:layout_below="@+id/dayView"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:id="@+id/answer"
@@ -58,7 +70,8 @@
         android:id="@+id/timer_tv"
         android:layout_below="@+id/submit"
         android:layout_centerHorizontal="true"
-        android:textSize="50dp"
+        android:textSize="30dp"
         android:textColor="#ffff0205" />
+
 
 </RelativeLayout>

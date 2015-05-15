@@ -50,13 +50,14 @@
         android:onClick="randomBirthday"
         android:layout_centerHorizontal="true" />
 
-    <TextClock
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textClock"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/timer"
         android:layout_below="@+id/submit"
         android:layout_centerHorizontal="true"
-        android:textSize="40dp"
-        android:textColor="#ffff3e89" />
+        android:textSize="50dp"
+        android:textColor="#ffff0205" />
 
 </RelativeLayout>

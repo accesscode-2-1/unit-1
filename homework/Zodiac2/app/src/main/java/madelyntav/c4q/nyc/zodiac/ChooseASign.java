@@ -27,78 +27,68 @@ public class ChooseASign extends ActionBarActivity {
     public void setAriesImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.ariesinfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.ariesinfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setTaurusImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.taurusinfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.taurusinfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setGeminiImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.geminiinfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.geminiinfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setCancerImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.cancerinfo);
-        imageView.setImageDrawable(draw);
+
+        imageView.setImageResource(R.drawable.cancerinfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setLeoImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.leoinfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.leoinfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setVirgoImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.virgoinfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.virgoinfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setLibraSign(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.librainfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.librainfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setScorpioImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.scorpioinfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.scorpioinfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setSagittariusImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.sagittariusinfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.sagittariusinfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setCapricornImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.capricorninfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.capricorninfo);
     }
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setPiscesImage(View v) {
         //Resources res=getResources();
         ImageView imageView = (ImageView) findViewById(R.id.result);
-        Drawable draw = getDrawable(R.drawable.piscesinfo);
-        imageView.setImageDrawable(draw);
+        imageView.setImageResource(R.drawable.piscesinfo);
     }
 
 }

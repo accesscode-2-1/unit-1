@@ -42,45 +42,32 @@ public class EnterBirthday extends ActionBarActivity {
 
 
         if ((birthdayMonth.equalsIgnoreCase("january") && (birthdayDay >= 21 && birthdayDay <= 31) || ((birthdayMonth.equalsIgnoreCase("february") && (birthdayDay >= 1 && birthdayDay <= 21))))) {
-            Drawable draw = getDrawable(R.drawable.aquarius);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.aquarius);
 
         } else if ((birthdayMonth.equalsIgnoreCase("february") && (birthdayDay >= 22 && birthdayDay <= 29) || ((birthdayMonth.equalsIgnoreCase("march") && (birthdayDay >= 1 && birthdayDay <= 20))))) {
-            Drawable draw = getDrawable(R.drawable.pisces);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.pisces);
         } else if ((birthdayMonth.equalsIgnoreCase("march") && (birthdayDay >= 21 && birthdayDay <= 31) || ((birthdayMonth.equalsIgnoreCase("april") && (birthdayDay >= 1 && birthdayDay <= 19))))) {
-            Drawable draw = getDrawable(R.drawable.aries);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.aries);
         } else if ((birthdayMonth.equalsIgnoreCase("april") && (birthdayDay >= 20 && birthdayDay <= 30) || ((birthdayMonth.equalsIgnoreCase("may") && (birthdayDay >= 1 && birthdayDay <= 20))))) {
-            Drawable draw = getDrawable(R.drawable.taurus);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.taurus);
         }else if ((birthdayMonth.equalsIgnoreCase("may") && (birthdayDay >= 21 && birthdayDay <= 31) || ((birthdayMonth.equalsIgnoreCase("june") && (birthdayDay >= 1 && birthdayDay <= 21))))) {
-            Drawable draw = getDrawable(R.drawable.gemini);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.gemini);
         }else if ((birthdayMonth.equalsIgnoreCase("june") && (birthdayDay >= 22 && birthdayDay <= 30) || ((birthdayMonth.equalsIgnoreCase("july") && (birthdayDay >= 1 && birthdayDay <= 22))))) {
-            Drawable draw = getDrawable(R.drawable.cancer);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.cancer);
         }else if ((birthdayMonth.equalsIgnoreCase("july") && (birthdayDay >= 23 && birthdayDay <= 31) || ((birthdayMonth.equalsIgnoreCase("august") && (birthdayDay >= 1 && birthdayDay <= 22))))) {
-            Drawable draw = getDrawable(R.drawable.leo);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.leo);
         }else if ((birthdayMonth.equalsIgnoreCase("august") && (birthdayDay >= 23 && birthdayDay <= 31) || ((birthdayMonth.equalsIgnoreCase("september") && (birthdayDay >= 1 && birthdayDay <= 22))))) {
-            Drawable draw = getDrawable(R.drawable.virgo);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.virgo);
         }else if ((birthdayMonth.equalsIgnoreCase("september") && (birthdayDay >= 23 && birthdayDay <= 30) || ((birthdayMonth.equalsIgnoreCase("october") && (birthdayDay >= 1 && birthdayDay <= 23))))) {
-            Drawable draw = getDrawable(R.drawable.libra);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.libra);
         }else if ((birthdayMonth.equalsIgnoreCase("october") && (birthdayDay >= 24 && birthdayDay <= 31) || ((birthdayMonth.equalsIgnoreCase("november") && (birthdayDay >= 1 && birthdayDay <= 20))))) {
-            Drawable draw = getDrawable(R.drawable.scorpio);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.scorpio);
         }else if ((birthdayMonth.equalsIgnoreCase("november") && (birthdayDay >= 21 && birthdayDay <= 30) || ((birthdayMonth.equalsIgnoreCase("december") && (birthdayDay >= 1 && birthdayDay <= 22))))) {
-            Drawable draw = getDrawable(R.drawable.sagittarius);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.sagittarius);
         }else if ((birthdayMonth.equalsIgnoreCase("december") && (birthdayDay >= 23 && birthdayDay <= 31) || ((birthdayMonth.equalsIgnoreCase("january") && (birthdayDay >= 1 && birthdayDay <= 20))))) {
-            Drawable draw = getDrawable(R.drawable.capricorn);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.capricorn);
         } else {
-            Drawable draw = getDrawable(R.drawable.alien);
-            imageView.setImageDrawable(draw);
+            imageView.setImageResource(R.drawable.alien);
         }
 
     }
