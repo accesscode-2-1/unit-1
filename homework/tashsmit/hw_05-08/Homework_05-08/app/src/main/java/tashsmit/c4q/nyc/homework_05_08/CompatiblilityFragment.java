@@ -16,5 +16,9 @@ public class CompatiblilityFragment extends Fragment {
         final View myInflatedView = inflater.inflate(R.layout.astro_info, container,false);
 
 
+        return myInflatedView;
+
+
     }
+
 }

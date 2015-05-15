@@ -17,9 +17,6 @@ public class AstroInfoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        //return inflater.inflate(R.layout.astro_info, container, false);
-        //return super.onCreateView(inflater, container, savedInstanceState);
-
         final View myInflatedView = inflater.inflate(R.layout.astro_info, container,false);
 
         Button waterButton = (Button) myInflatedView.findViewById(R.id.water);
