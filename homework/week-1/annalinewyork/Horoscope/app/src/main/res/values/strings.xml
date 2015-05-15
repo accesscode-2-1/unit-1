@@ -1,15 +1,6 @@
 <resources>
     <string name="app_name">Horoscope</string>
 
-    <string name="title_section1">Signs</string>
-    <string name="title_section2">Signs\' Secret</string>
-    <string name="title_section3">Romantic Match</string>
-    <string name="title_section4">Game</string>
-
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="action_example">Example action</string>
-
+    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 </resources>
