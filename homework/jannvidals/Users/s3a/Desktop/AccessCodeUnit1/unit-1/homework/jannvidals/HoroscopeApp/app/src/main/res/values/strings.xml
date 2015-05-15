@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HoroscopeApp</string>
+
+
+    <string-array name="titles_array">
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+<string name="drawer_open">Open navigation drawer</string>
+<string name="drawer_close">Close navigation drawer</string>
+<string name="action_websearch">Web search</string>
+<string name="app_not_available">Sorry, there\'s no web browser available</string>
+</resources>
