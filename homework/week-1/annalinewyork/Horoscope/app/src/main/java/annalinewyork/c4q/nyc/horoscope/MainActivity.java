@@ -1,9 +1,13 @@
 package annalinewyork.c4q.nyc.horoscope;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +16,48 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button signbutton = (Button) findViewById(R.id.signButton);
+        signbutton.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent signbutton = new Intent(getApplicationContext(), SignActivity.class);
+                        startActivity(signbutton);
+                    }
+                }
+        );
+
+
+        Button findbutton = (Button) findViewById(R.id.findButton);
+        findbutton.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent findbutton = new Intent(getApplicationContext(), FindActivity.class);
+                        startActivity(findbutton);
+                    }
+                }
+
+        );
+
+        Button romanticbutton = (Button) findViewById(R.id.romanticButton);
+        romanticbutton.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent romanticbutton = new Intent(getApplicationContext(), RomanticActivity.class);
+                        startActivity(romanticbutton);
+                    }
+                }
+        );
+
+        Button gamebutton = (Button) findViewById(R.id.gameButton);
+        gamebutton.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent gamebutton = new Intent(getApplicationContext(), GameActivity.class);
+                        startActivity(gamebutton);
+                    }
+                }
+        );
     }
 
 

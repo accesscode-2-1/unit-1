@@ -3,4 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="sign_button">Signs</string>
+    <string name="find_button">Find Your Sign</string>
+    <string name="romantic_button">Romantic Math</string>
+    <string name="game_button">Game</string>
 </resources>
