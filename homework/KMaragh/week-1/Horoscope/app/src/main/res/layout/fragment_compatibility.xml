@@ -3,8 +3,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
+<<<<<<< HEAD
     android:layout_height="match_parent">
 
+=======
+
+    android:layout_height="match_parent">
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
     <TextView
         android:id="@+id/title"
@@ -12,6 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/title_section3"
+<<<<<<< HEAD
         android:textSize="20sp" />
 
     <LinearLayout
@@ -62,23 +68,69 @@
 
 
         </LinearLayout>
+=======
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/firstSignLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_gravity="start"
+        android:text="First Sign: " />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstSignLabel"
+        android:entries="@array/zodiacSigns">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/secondSignLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_gravity="start"
+        android:text="Second Sign: " />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondSignLabel"
+        android:entries="@array/zodiacSigns">
+
+    </Spinner>
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
     <Button
         android:id="@+id/submitbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_below="@+id/compatibilityLayout2"
         android:text="Submit"
         android:layout_centerHorizontal="true"
         android:paddingBottom="20dp"/>
+=======
+        android:layout_below="@+id/spinner2"
+        android:text="Submit" />
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
     <TextView
         android:id="@+id/compatibilityInfo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+<<<<<<< HEAD
         android:layout_below="@+id/submitbtn"
         android:textSize="20sp"/>
+=======
+        android:layout_below="@+id/submitbtn" />
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
 
 </RelativeLayout>

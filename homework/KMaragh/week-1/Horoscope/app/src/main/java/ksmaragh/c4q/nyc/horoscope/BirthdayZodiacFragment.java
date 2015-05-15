@@ -139,6 +139,10 @@ public class BirthdayZodiacFragment extends android.support.v4.app.Fragment {
         else if (month.equals("December"))
             return 12;
         else
+<<<<<<< HEAD
             return 13;
+=======
+            return 0;
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
     }
 }

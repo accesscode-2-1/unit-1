@@ -67,7 +67,11 @@
         <item>Virgo</item>
         <item>Libra</item>
         <item>Scorpio</item>
+<<<<<<< HEAD
         <item>Sagitarius</item>
+=======
+        <item>Sagittarius</item>
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
         <item>Capricorn</item>
         <item>Aquarius</item>
         <item>Pisces</item>
@@ -78,16 +82,20 @@
     <string name="title_section3">Zodiac Compatibility</string>
     <string name="title_section4">Zodiac Game</string>
 
+<<<<<<< HEAD
     <string name="birthday">Enter Your Birth Day!</string>
     <string name="generateZodiac">Generate Zodiac Info</string>
     <string name="yourSign">Your Sign: </string>
 
+=======
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_example">Example action</string>
 
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
 
     <string name="good">You could not have picked a better sign, you two are very compatible!</string>
     <string name="aboveAverage"> This is not your ideal sign but you can find prosperity with this pairing.</string>
@@ -95,4 +103,6 @@
     <string name="belowAverage">This is a very unlikely union, but stranger things have happened.</string>
     <string name="bad">Avoid this pairing at all costs. Nothing but ruin will befall you.</string>
 
+=======
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 </resources>

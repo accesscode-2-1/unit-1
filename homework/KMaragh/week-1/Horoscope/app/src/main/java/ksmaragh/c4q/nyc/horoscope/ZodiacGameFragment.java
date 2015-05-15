@@ -24,16 +24,23 @@ public class ZodiacGameFragment extends Fragment {
         return rootView;
     }
 
+<<<<<<< HEAD
     private Button btnStart, submit;
     private TextView textViewTime, randomMonth, randomDay;
     private Spinner months;
     private final CounterClass timer = new CounterClass(60000, 1000);
     private int counter;
     private String hms = "01:00";
+=======
+    Button btnStart, btnStop, submit;
+    TextView textViewTime, randomMonth, randomDay;
+    Spinner months;
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
 
     public void gameSetup(View view){
         btnStart = (Button) view.findViewById(R.id.btnStart);
+<<<<<<< HEAD
         textViewTime = (TextView) view.findViewById(R.id.time);
         randomMonth = (TextView) view.findViewById(R.id.monthTextView);
         randomDay = (TextView) view.findViewById(R.id.dayTextView);
@@ -42,30 +49,72 @@ public class ZodiacGameFragment extends Fragment {
 
         textViewTime.setText(hms);
 
+=======
+        btnStop = (Button) view.findViewById(R.id.btnStop);
+        textViewTime = (TextView) view.findViewById(R.id.time);
+        randomMonth = (TextView) view.findViewById(R.id.monthTextView);
+        randomDay = (TextView) view.findViewById(R.id.dayTextView);
+        months = (Spinner) view.findViewById(R.id.monthSpinnerForGame);
+        submit = (Button) view.findViewById(R.id.submitSpinnerForGame);
+
+        textViewTime.setText("00:03:00");
+
+        final CounterClass timer = new CounterClass(180000, 1000);
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 timer.start();
+<<<<<<< HEAD
                 generateRandomDate();
                 submit.setEnabled(true);
                 counter = 0;
                 hms = "01:00";
+=======
+            }
+        });
+        btnStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                timer.cancel();
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
             }
         });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 counter++;
+=======
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
                 checkResponse();
             }
         });
 
+<<<<<<< HEAD
     }
 
     //Class for creating my timer
     public class CounterClass extends CountDownTimer {
 
+=======
+
+        generateRandomDate();
+
+    }
+
+    public class CounterClass extends CountDownTimer {
+
+
+        /**
+         * @param millisInFuture    The number of millis in the future from the call
+         *                          to {@link #start()} until the countdown is done and {@link #onFinish()}
+         *                          is called.
+         * @param countDownInterval The interval along the way to receive
+         *                          {@link #onTick(long)} callbacks.
+         */
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
         public CounterClass(long millisInFuture, long countDownInterval) {
             super(millisInFuture, countDownInterval);
         }
@@ -75,7 +124,11 @@ public class ZodiacGameFragment extends Fragment {
 
             long millis = millisUntilFinished;
 
+<<<<<<< HEAD
             hms = String.format("%02d:%02d",
+=======
+            String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
                     TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
                     TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
 
@@ -85,13 +138,18 @@ public class ZodiacGameFragment extends Fragment {
         @Override
         public void onFinish() {
 
+<<<<<<< HEAD
             textViewTime.setText("00:00");
+=======
+            textViewTime.setText("Completed!");
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
         }
     }
 
 
     //Handles creating the random date for the game
     public void generateRandomDate(){
+<<<<<<< HEAD
         String[] monthsArray = getResources().getStringArray(R.array.month);
         String[] daysArray = getResources().getStringArray(R.array.day);
 
@@ -107,6 +165,22 @@ public class ZodiacGameFragment extends Fragment {
     public void checkResponse(){
 
         String getMonthFromRan = randomMonth.getText().toString().replace("Month: ","");
+=======
+        String[] months = getResources().getStringArray(R.array.month);
+        String[] days = getResources().getStringArray(R.array.day);
+
+        int monthNum = new Random().nextInt(months.length);
+        int dayNum = new Random().nextInt(days.length);
+
+        randomMonth.setText("Month: " + months[monthNum]);
+        randomDay.setText("Day: " + dayNum);
+
+    }
+
+    public void checkResponse(){
+
+        String getMonthFromRan = randomMonth.getText().toString();
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
         String getDayFromRan = randomDay.getText().toString().replace("Day: ","");
 
 
@@ -115,6 +189,7 @@ public class ZodiacGameFragment extends Fragment {
 
         String zodiacSign = BirthdayZodiacFragment.findZodiacSign(month, day);
 
+<<<<<<< HEAD
         //Get response from spinner, if statements to tell user current guessing status
         String userResponse = String.valueOf(months.getSelectedItem());
 
@@ -131,8 +206,23 @@ public class ZodiacGameFragment extends Fragment {
         }
         else{
             Toast.makeText(this.getActivity(),"Wrong answer, You have " + (5 - counter) + " tries left", Toast.LENGTH_SHORT).show();
+=======
+        //Get response from spinner
+        String userResponse = String.valueOf(months.getSelectedItem());
+
+        if(zodiacSign.equals(userResponse)){
+            btnStop.performClick();
+            Toast.makeText(this.getActivity(),"Congratulations you got it!", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this.getActivity(), zodiacSign + " " + userResponse +" Sorry, wrong answer", Toast.LENGTH_SHORT).show();
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
         }
 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 }
