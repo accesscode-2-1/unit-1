@@ -1,5 +1,9 @@
 package ahhhlvin.c4q.nyc.horoscopeprojectf;
 
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Random;
+
 /**
  * Created by alvin2 on 5/10/15.
  */
@@ -74,16 +78,6 @@ public class Methods {
         return str;
     }
 
-
-    public static String horoscopeGame(String horoscopeGuess) {
-
-        if (horoscopeGuess.equalsIgnoreCase("Capricorn")) {
-            return "You are correct!";
-        } else {
-            return "Sorry that is incorrect. \nPlease try again!";
-        }
-
-    }
 
 
 }

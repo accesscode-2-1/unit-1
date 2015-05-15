@@ -4,6 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
     tools:context="ahhhlvin.c4q.nyc.horoscopeproject.GetHoroscopeSignActivity">
 
     <TextView
@@ -11,25 +12,22 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView"
-        android:textAlignment="center"
-        android:layout_alignBottom="@+id/datePicker"
-        android:layout_alignRight="@+id/txt"
-        android:layout_alignEnd="@+id/txt"
-        android:layout_marginRight="40dp"
-        android:layout_marginEnd="45dp"
-        android:textSize="90px" />
+        android:textSize="90px"
+        android:layout_below="@id/txt"
+        android:layout_alignLeft="@id/txt"
+        android:layout_alignBottom="@+id/datePicker" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GET HOROSCOPE SIGN!"
         android:id="@+id/button"
-        android:layout_marginTop="63dp"
-        android:layout_alignParentTop="true"
+        android:hapticFeedbackEnabled="true"
+        android:layout_alignTop="@+id/datePicker"
         android:layout_toRightOf="@+id/datePicker"
         android:layout_toEndOf="@+id/datePicker"
-        android:layout_marginLeft="66dp"
-        android:layout_marginStart="66dp" />
+        android:layout_marginLeft="128dp"
+        android:layout_marginStart="128dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,8 +36,8 @@
         android:text="Your horoscope sign is:"
         android:id="@+id/txt"
         android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
 
     <DatePicker
         android:layout_width="wrap_content"

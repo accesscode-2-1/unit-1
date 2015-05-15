@@ -19,7 +19,11 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Random;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -129,7 +133,7 @@ public class MainActivity extends ActionBarActivity {
             final Spinner spinner = (Spinner) rootView.findViewById(R.id.spinner);
             ArrayList<String> list2 = new ArrayList<String>();
 
-            list2.add("Select horoscope sign");
+            list2.add("Select your horoscope sign");
             list2.add("Capricorn");
             list2.add("Aries");
             list2.add("Taurus");
@@ -273,7 +277,7 @@ public class MainActivity extends ActionBarActivity {
                 ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<String>(getActivity().getApplicationContext(),
                         android.R.layout.simple_spinner_item, list2);
                 dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                spinner2.setAdapter(dataAdapter2);
+                spinner2.setAdapter(dataAdapter);
 
 
                 final TextView compatibilityView = (TextView) rootView.findViewById(R.id.viewCompatibility);
@@ -300,6 +304,7 @@ public class MainActivity extends ActionBarActivity {
 
         public static class horoscopeGame extends Fragment {
             public static final String ARG_LIST_NUMBER = "list_number";
+            TextView time;
 
             public horoscopeGame() {
                 // Empty constructor required for fragment subclasses
@@ -312,9 +317,17 @@ public class MainActivity extends ActionBarActivity {
                 final View rootView = inflater.inflate(R.layout.fragment_horoscope_game, container, false);
 
 
+
+
+
                 int i = getArguments().getInt(ARG_LIST_NUMBER);
                 String listItem = getResources().getStringArray(R.array.titles)[i];
                 getActivity().setTitle(listItem);
+
+                // Setting up bundle to save when screen is rotated!
+//                if (savedInstanceState != null) {
+//                    time.setText(savedInstanceState.getString("time"));
+//                }
 
 
                 final TextView birthGuess = (TextView) rootView.findViewById(R.id.birthGuess);
@@ -324,6 +337,11 @@ public class MainActivity extends ActionBarActivity {
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        Random random = new Random(365);
+                        final Calendar calendar = Calendar.getInstance();
+                        final DateFormat format = new SimpleDateFormat("MM/dd/yyyy");
+                        calendar.set(Calendar.DAY_OF_YEAR, random.nextInt());
+                        button.setEnabled(false);
                         new CountDownTimer(30000, 1000) {
 
 
@@ -334,7 +352,7 @@ public class MainActivity extends ActionBarActivity {
 
                             public void onFinish() {
                                 time.setText("Time is up!");
-                                answer.setText("The answer was: CAPRICORN");
+                                answer.setText("The answer was:  " + Methods.getHoroscopeSign(calendar.MONTH, calendar.DAY_OF_MONTH).toString().toUpperCase());
                             }
 
                             ;
@@ -347,11 +365,16 @@ public class MainActivity extends ActionBarActivity {
                         final EditText guess = (EditText) rootView.findViewById(R.id.horoscopeGuess);
                         Button guessButton = (Button) rootView.findViewById(R.id.submit);
 
-                        birthGuess.setText("JANUARY 13, 1992");
+                        birthGuess.setText(calendar.MONTH + " / " + calendar.DATE);
                         guessButton.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                answer.setText(Methods.horoscopeGame(guess.getText().toString()));
+                                if (guess.getText().toString().equalsIgnoreCase(Methods.getHoroscopeSign(calendar.MONTH, calendar.DAY_OF_MONTH))) {
+                                    answer.setText("You are correct!");
+                                } else {
+                                    answer.setText("Sorry that is incorrect. \nPlease try again!");
+                                }
+
                             }
                         });
 
@@ -360,8 +383,23 @@ public class MainActivity extends ActionBarActivity {
                 });
 
 
+
+
                 return rootView;
             }
+
+
+
+
+
+
+
+//            @Override
+//            public void onSaveInstanceState(Bundle outState) {
+//                outState.putString("time", time.getText().toString());
+//
+//                super.onSaveInstanceState(outState);
+//            }
 
 
 
