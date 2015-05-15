@@ -4,36 +4,24 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-<<<<<<< HEAD
     tools:context="ksmaragh.c4q.nyc.horoscope.zodiacSignData"
     android:background="@color/lightBlue">
-=======
-    tools:context="ksmaragh.c4q.nyc.horoscope.zodiacSignData">
->>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
     <TextView
         android:text="Zodiac Sign name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:id="@+id/zodiacSign"
         android:textSize="40sp"
         />
-=======
-        android:id="@+id/zodiacSign"/>
->>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/zodiacInfo"
         android:layout_below="@+id/zodiacSign"
-<<<<<<< HEAD
         android:layout_centerHorizontal="true"
         android:textSize="20sp"/>
-=======
-        android:layout_centerHorizontal="true"/>
->>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
 
 </RelativeLayout>

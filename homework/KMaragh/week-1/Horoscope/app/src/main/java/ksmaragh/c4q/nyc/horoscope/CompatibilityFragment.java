@@ -8,11 +8,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-<<<<<<< HEAD
 import java.util.HashMap;
 
-=======
->>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 /**
  * Created by kadeemmaragh on 5/11/15.
  */
@@ -25,10 +22,7 @@ public class CompatibilityFragment extends android.support.v4.app.Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_compatibility, container, false);
 
-<<<<<<< HEAD
         setupHashmap();
-=======
->>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
         addListenerOnButton(rootView);
 
         return rootView;
@@ -39,21 +33,14 @@ public class CompatibilityFragment extends android.support.v4.app.Fragment {
     TextView compatibilityInfo;
     Button submitBtn;
 
-<<<<<<< HEAD
     private HashMap<String, String> signCompatibility = new HashMap<String, String>();
 
-=======
->>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
     public void addListenerOnButton(View view) {
 
         firstSign = (Spinner) view.findViewById(R.id.spinner1);
         secondSign = (Spinner) view.findViewById(R.id.spinner2);
         submitBtn = (Button) view.findViewById(R.id.submitbtn);
-<<<<<<< HEAD
         compatibilityInfo = (TextView) view.findViewById(R.id.compatibilityInfo);
-=======
-        compatibilityInfo = (TextView) view.findViewById(R.id.signName);
->>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
 
@@ -62,18 +49,13 @@ public class CompatibilityFragment extends android.support.v4.app.Fragment {
 
                 String signOne = String.valueOf(firstSign.getSelectedItem());
                 String signTwo = String.valueOf(secondSign.getSelectedItem());
-<<<<<<< HEAD
                 compatibilityInfo.setText(signCompatibility.get(signOne));
-=======
-                //String compatibility = signCompat();
->>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 
             }
 
         });
     }
 
-<<<<<<< HEAD
 
 
     public void setupHashmap (){
@@ -91,6 +73,4 @@ public class CompatibilityFragment extends android.support.v4.app.Fragment {
         signCompatibility.put("Pisces",getString(R.string.average));
     }
 
-=======
->>>>>>> 5d8aa141766e275bfd1660cbb88d45cf9da14500
 }
