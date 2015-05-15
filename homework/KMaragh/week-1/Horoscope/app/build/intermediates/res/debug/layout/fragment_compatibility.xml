@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_section3"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/compatibilityLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/firstSignLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Your Sign: "
+            android:paddingRight="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/zodiacSigns"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/compatibilityLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compatibilityLayout1"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/secondSignLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Compatible Sign: "
+            android:paddingRight="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/zodiacSigns"/>
+
+
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compatibilityLayout2"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/compatibilityInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/submitbtn"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout><!-- From: file:/Users/kadeemmaragh/Desktop/accesscode/unit-1/homework/KMaragh/week-1/Horoscope/app/src/main/res/layout/fragment_compatibility.xml -->
