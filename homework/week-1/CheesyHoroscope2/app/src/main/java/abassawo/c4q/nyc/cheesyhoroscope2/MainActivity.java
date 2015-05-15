@@ -77,7 +77,8 @@ public class MainActivity extends ActionBarActivity
 //        addNavBar();
 //        setupDrawer();
         Spinner spinner = (Spinner) findViewById(R.id.signs_spinner);
-        spinner.setOnItemSelectedListener(this);
+
+
         DatePicker picker = (DatePicker) findViewById(R.id.datePicker);
 
         astroIntent = new Intent(MainActivity.this, AstroReading.class);

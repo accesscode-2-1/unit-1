@@ -73,6 +73,7 @@
     </string-array>
     <string name="title_activity_horoscope_game">HoroscopeGame</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="randomizedDate"></string>
 
 
     <string name="drawer_open">Open navigation drawer</string>

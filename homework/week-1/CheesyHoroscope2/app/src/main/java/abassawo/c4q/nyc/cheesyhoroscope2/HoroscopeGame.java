@@ -5,14 +5,29 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import java.util.Timer;
-
+import java.util.TimerTask;
+import java.util.Random;
+//todo: create date randomizer, method that stores date and evaluates the sign that corresponds with it,
+//todo: use timer to add constraint to how long user has to guess the sign
 
 public class HoroscopeGame extends ActionBarActivity {
+    private Timer gameTimer;
+    private TimerTask guess;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horoscope_game);
+
+        gameTimer = new Timer();
+        guess = new TimerTask() {
+            @Override
+            public void run() {
+                //guess stuff
+            }
+        };
+//        gameTimer.scheduleAtFixedRate();
+        gameTimer.scheduleAtFixedRate(guess, 15, 11);
     }
 
 
@@ -34,7 +49,6 @@ public class HoroscopeGame extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

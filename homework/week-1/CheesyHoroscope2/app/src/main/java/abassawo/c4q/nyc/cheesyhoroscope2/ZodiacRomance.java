@@ -20,7 +20,9 @@ public class ZodiacRomance extends ActionBarActivity {
 
         Spinner spinner1 = (Spinner) findViewById(R.id.signs_spinner);
         Spinner spinner2 = (Spinner) findViewById(R.id.signs_spinner);
-  //
+
+
+
         Zodiac aries = new Zodiac("Aries");
         Zodiac taurus = new Zodiac("Taurus");
         Zodiac gemini = new Zodiac("Gemini");
