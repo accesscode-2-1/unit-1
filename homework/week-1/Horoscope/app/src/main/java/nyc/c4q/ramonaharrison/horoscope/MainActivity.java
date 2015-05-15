@@ -162,8 +162,8 @@ public class MainActivity extends ActionBarActivity
     }
 
     @Override
-    public void onFragmentInteraction(int id) {
-        mAboutSignFragment = AboutSignFragment.newInstance(id);
+    public void onFragmentInteraction(int sign) {
+        mAboutSignFragment = AboutSignFragment.newInstance(sign);
         FragmentTransaction fx = getSupportFragmentManager().beginTransaction();
         fx.replace(R.id.container, mAboutSignFragment);
         fx.addToBackStack(null);
