@@ -24,58 +24,48 @@ public class ZodiacGameFragment extends Fragment {
         return rootView;
     }
 
-    Button btnStart, btnStop, submit;
-    TextView textViewTime, randomMonth, randomDay;
-    Spinner months;
+    private Button btnStart, submit;
+    private TextView textViewTime, randomMonth, randomDay;
+    private Spinner months;
+    private final CounterClass timer = new CounterClass(60000, 1000);
+    private int counter;
+    private String hms = "01:00";
 
 
     public void gameSetup(View view){
         btnStart = (Button) view.findViewById(R.id.btnStart);
-        btnStop = (Button) view.findViewById(R.id.btnStop);
         textViewTime = (TextView) view.findViewById(R.id.time);
         randomMonth = (TextView) view.findViewById(R.id.monthTextView);
         randomDay = (TextView) view.findViewById(R.id.dayTextView);
-        months = (Spinner) view.findViewById(R.id.monthSpinnerForGame);
+        months = (Spinner) view.findViewById(R.id.signSpinnerForGame);
         submit = (Button) view.findViewById(R.id.submitSpinnerForGame);
 
-        textViewTime.setText("00:03:00");
+        textViewTime.setText(hms);
 
-        final CounterClass timer = new CounterClass(180000, 1000);
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 timer.start();
-            }
-        });
-        btnStop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                timer.cancel();
+                generateRandomDate();
+                submit.setEnabled(true);
+                counter = 0;
+                hms = "01:00";
             }
         });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                counter++;
                 checkResponse();
             }
         });
 
-
-        generateRandomDate();
-
     }
 
+    //Class for creating my timer
     public class CounterClass extends CountDownTimer {
 
-
-        /**
-         * @param millisInFuture    The number of millis in the future from the call
-         *                          to {@link #start()} until the countdown is done and {@link #onFinish()}
-         *                          is called.
-         * @param countDownInterval The interval along the way to receive
-         *                          {@link #onTick(long)} callbacks.
-         */
         public CounterClass(long millisInFuture, long countDownInterval) {
             super(millisInFuture, countDownInterval);
         }
@@ -85,7 +75,7 @@ public class ZodiacGameFragment extends Fragment {
 
             long millis = millisUntilFinished;
 
-            String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
+            hms = String.format("%02d:%02d",
                     TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
                     TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
 
@@ -95,27 +85,28 @@ public class ZodiacGameFragment extends Fragment {
         @Override
         public void onFinish() {
 
-            textViewTime.setText("Completed!");
+            textViewTime.setText("00:00");
         }
     }
 
 
     //Handles creating the random date for the game
     public void generateRandomDate(){
-        String[] months = getResources().getStringArray(R.array.month);
-        String[] days = getResources().getStringArray(R.array.day);
+        String[] monthsArray = getResources().getStringArray(R.array.month);
+        String[] daysArray = getResources().getStringArray(R.array.day);
 
-        int monthNum = new Random().nextInt(months.length);
-        int dayNum = new Random().nextInt(days.length);
+        int monthNum = new Random().nextInt(monthsArray.length);
+        int dayNum = new Random().nextInt(daysArray.length + 1);
 
-        randomMonth.setText("Month: " + months[monthNum]);
-        randomDay.setText("Day: " + dayNum);
+        randomMonth.setText(""+monthsArray[monthNum]);
+        randomDay.setText(""+dayNum);
 
     }
 
+    //Checks the user response against the random date when they submit an answer
     public void checkResponse(){
 
-        String getMonthFromRan = randomMonth.getText().toString();
+        String getMonthFromRan = randomMonth.getText().toString().replace("Month: ","");
         String getDayFromRan = randomDay.getText().toString().replace("Day: ","");
 
 
@@ -124,18 +115,24 @@ public class ZodiacGameFragment extends Fragment {
 
         String zodiacSign = BirthdayZodiacFragment.findZodiacSign(month, day);
 
-        //Get response from spinner
+        //Get response from spinner, if statements to tell user current guessing status
         String userResponse = String.valueOf(months.getSelectedItem());
 
         if(zodiacSign.equals(userResponse)){
-            btnStop.performClick();
+            timer.cancel();
             Toast.makeText(this.getActivity(),"Congratulations you got it!", Toast.LENGTH_SHORT).show();
+            submit.setEnabled(false);
+        }
+
+        else if(counter == 5){
+            timer.cancel();
+            Toast.makeText(this.getActivity(), "You ran out of tries, sorry!", Toast.LENGTH_SHORT).show();
+            submit.setEnabled(false);
         }
         else{
-            Toast.makeText(this.getActivity(), zodiacSign + " " + userResponse +" Sorry, wrong answer", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this.getActivity(),"Wrong answer, You have " + (5 - counter) + " tries left", Toast.LENGTH_SHORT).show();
         }
 
     }
-
 
 }

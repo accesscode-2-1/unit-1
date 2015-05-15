@@ -1,146 +1,139 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity$PlaceholderFragment"
     android:id="@+id/mainActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
-        android:background="@android:color/transparent"
+
         tools:context="ksmaragh.c4q.nyc.horoscope.MainActivity">
 
-        <TextView
-            android:text="@string/hello_world"
-            android:textSize="16dp"
-            android:textAlignment="center"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/firstZodiacLine"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/textView2" />
+            >
 
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/aries"
-            android:src="@drawable/aries"
-            android:adjustViewBounds="true"
-            android:layout_below="@+id/textView2"
-            android:layout_alignParentLeft="true"
-            />
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/taurus"
-            android:src="@drawable/taurus"
-            android:adjustViewBounds="true"
-            android:layout_below="@+id/aries"
-            android:layout_alignParentLeft="true"
-            />
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/gemini"
-            android:src="@drawable/gemini"
-            android:layout_below="@+id/taurus"
-            android:layout_alignParentLeft="true"
-            />
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/cancer"
-            android:src="@drawable/cancer"
-            android:layout_below="@+id/gemini"
-            android:layout_alignParentLeft="true"
-            />
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/aries"
+                android:src="@drawable/aries"
+                android:adjustViewBounds="true"
+                android:background="@null"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/taurus"
+                android:src="@drawable/taurus"
+                android:adjustViewBounds="true"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/gemini"
+                android:src="@drawable/gemini"
+
+                />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondZodiacLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+             <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/cancer"
+                android:src="@drawable/cancer"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/leo"
+                android:src="@drawable/leo"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/virgo"
+                android:src="@drawable/virgo"
+
+                />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdZodiacLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/libra"
+                android:src="@drawable/libra"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/scorpio"
+                android:src="@drawable/scorpio"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/sagittarius"
+                android:src="@drawable/sagittarius"
+
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fourthZodiacLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/capricorn"
+                android:src="@drawable/capricorn"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/aquarius"
+                android:src="@drawable/aquarius"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/oneHundred"
+                android:layout_height="@dimen/oneHundredFifteen"
+                android:id="@+id/pisces"
+                android:src="@drawable/pisces"
+
+                />
+            </LinearLayout>
 
 
-
-
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/leo"
-            android:src="@drawable/leo"
-            android:layout_below="@+id/textView2"
-            android:layout_toRightOf="@+id/aries"
-            />
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/virgo"
-            android:src="@drawable/virgo"
-            android:layout_below="@+id/leo"
-            android:layout_toRightOf="@+id/taurus"
-            />
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/libra"
-            android:src="@drawable/libra"
-            android:layout_below="@+id/virgo"
-            android:layout_toRightOf="@+id/gemini"
-            />
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/scorpio"
-            android:src="@drawable/scorpio"
-            android:layout_below="@+id/libra"
-            android:layout_toRightOf="@+id/cancer"
-            />
-
-
-
-
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/sagittarius"
-            android:src="@drawable/sagittarius"
-            android:layout_below="@+id/textView2"
-            android:layout_toRightOf="@+id/leo"
-            />
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/capricorn"
-            android:src="@drawable/capricorn"
-            android:layout_below="@+id/sagittarius"
-            android:layout_toRightOf="@+id/virgo"
-            />
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/aquarius"
-            android:src="@drawable/aquarius"
-            android:layout_below="@+id/capricorn"
-            android:layout_toRightOf="@+id/libra"
-            />
-        <ImageView
-            android:layout_width="@dimen/oneHundredFifteen"
-            android:layout_height="@dimen/oneHundredFifteen"
-            android:id="@+id/pisces"
-            android:src="@drawable/pisces"
-            android:layout_below="@+id/aquarius"
-            android:layout_toRightOf="@+id/scorpio"
-            />
-
-
-
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </RelativeLayout>

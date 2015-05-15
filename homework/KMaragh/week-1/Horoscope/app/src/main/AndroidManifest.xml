@@ -23,9 +23,6 @@
             android:name=".zodiacSignData"
             android:label="Zodiac Sign Data"/>
 
-        <activity android:name=".birthdayZodiac"
-            android:label="Birthday Zodiac"/>
-
     </application>
 
 </manifest>

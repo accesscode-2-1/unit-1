@@ -68,60 +68,61 @@ public class MainFragment extends android.support.v4.app.Fragment implements Vie
 
         switch (signID) {
             case R.id.aries:
-                bundle.putString("info", "Aries start with the letter A");
+                bundle.putString("info", "Aries starts with the letter A");
                 bundle.putString("name",names[0]);
                 i.putExtras(bundle);
                 startActivity(i);
                 break;
             case R.id.taurus:
-                bundle.putString("info", "Taurus start with the letter T");
+                bundle.putString("info", "Taurus starts with the letter T");
                 bundle.putString("name",names[1]);
                 i.putExtras(bundle);
                 startActivity(i);
                 break;
             case R.id.gemini:
-                bundle.putString("info", "Gemini start with the letter G");
+                bundle.putString("info", "Gemini starts with the letter G");
                 bundle.putString("name",names[2]);
                 i.putExtras(bundle);
                 startActivity(i);
+                break;
             case R.id.cancer:
-                bundle.putString("info", "Cancer start with the letter C");
+                bundle.putString("info", "Cancer starts with the letter C");
                 bundle.putString("name",names[3]);
                 i.putExtras(bundle);
                 startActivity(i);
                 break;
             case R.id.leo:
-                bundle.putString("info", "Leo start with the letter L");
+                bundle.putString("info", "Leo starts with the letter L");
                 bundle.putString("name",names[4]);
                 i.putExtras(bundle);
                 startActivity(i);
                 break;
             case R.id.virgo:
-                bundle.putString("info", "Virgo start with the letter V");
+                bundle.putString("info", "Virgo starts with the letter V");
                 bundle.putString("name",names[5]);
                 i.putExtras(bundle);
                 startActivity(i);
                 break;
             case R.id.libra:
-                bundle.putString("info", "Libra start with the letter L");
+                bundle.putString("info", "Libra starts with the letter L");
                 bundle.putString("name",names[6]);
                 i.putExtras(bundle);
                 startActivity(i);
                 break;
             case R.id.scorpio:
-                bundle.putString("info", "Scorpio start with the letter S");
+                bundle.putString("info", "Scorpio starts with the letter S");
                 bundle.putString("name",names[7]);
                 i.putExtras(bundle);
                 startActivity(i);
                 break;
             case R.id.sagittarius:
-                bundle.putString("info", "Sagittarius start with the letter S");
+                bundle.putString("info", "Sagittarius starts with the letter S");
                 bundle.putString("name",names[8]);
                 i.putExtras(bundle);
                 startActivity(i);
                 break;
             case R.id.capricorn:
-                bundle.putString("info", "Capricorn start with the letter C");
+                bundle.putString("info", "Capricorn starts with the letter C");
                 bundle.putString("name",names[9]);
                 i.putExtras(bundle);
                 startActivity(i);
@@ -133,7 +134,7 @@ public class MainFragment extends android.support.v4.app.Fragment implements Vie
                 startActivity(i);
                 break;
             case R.id.pisces:
-                bundle.putString("info", "Pisces start with the letter P");
+                bundle.putString("info", "Pisces starts with the letter P");
                 bundle.putString("name",names[11]);
                 i.putExtras(bundle);
                 startActivity(i);
