@@ -15,7 +15,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -129,7 +131,7 @@ public class MainActivity extends ActionBarActivity {
             String listItem = getResources().getStringArray(R.array.titles)[i];
             getActivity().setTitle(listItem);
 
-
+            final ImageView img = (ImageView) rootView.findViewById(R.id.image);
             final TextView horoscope = (TextView) rootView.findViewById(R.id.getHoroscopeView);
             final Spinner spinner = (Spinner) rootView.findViewById(R.id.spinner);
             ArrayList<String> list2 = new ArrayList<String>();
@@ -159,6 +161,31 @@ public class MainActivity extends ActionBarActivity {
                 @Override
                 public void onClick(View view) {
                     horoscope.setText(Methods.getHoroscope(spinner.getSelectedItem().toString()));
+                    if (spinner.getSelectedItem().toString().equalsIgnoreCase("capricorn")) {
+                        img.setImageResource(R.drawable.capricorn);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("aquarius")) {
+                        img.setImageResource(R.drawable.aquarius);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("aries")) {
+                        img.setImageResource(R.drawable.aries);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("cancer")) {
+                        img.setImageResource(R.drawable.cancer);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("gemini")) {
+                        img.setImageResource(R.drawable.gemini);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("leo")) {
+                        img.setImageResource(R.drawable.leo);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("libra")) {
+                        img.setImageResource(R.drawable.libra);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("pisces")) {
+                        img.setImageResource(R.drawable.pisces);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("sagittarius")) {
+                        img.setImageResource(R.drawable.sagittarius);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("scorpio")) {
+                        img.setImageResource(R.drawable.scorpio);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("taurus")) {
+                        img.setImageResource(R.drawable.taurus);
+                    } else if (spinner.getSelectedItem().toString().equalsIgnoreCase("virgo")) {
+                        img.setImageResource(R.drawable.virgo);
+                    }
                 }
             });
 

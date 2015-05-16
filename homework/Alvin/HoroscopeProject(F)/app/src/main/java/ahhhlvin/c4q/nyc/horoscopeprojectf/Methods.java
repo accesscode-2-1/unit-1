@@ -10,29 +10,29 @@ import java.util.Random;
 public class Methods {
     public static String getHoroscope(String sign) {
         if (sign.equalsIgnoreCase("Aries")) {
-            return "You are smart.";
+            return "You may be looking for some new values in your personal life, Aries. You're no longer interested in superficial or frivolous relationships. You need to meet different kinds of people and select friends who are really worth keeping. Don't worry if you feel like taking a step back to get some perspective, because this is the time to do it. Relationships are too important to neglect.";
         } else if (sign.equalsIgnoreCase("Taurus")) {
-            return "You are kind.";
+            return "Today's astral configuration brings reality and fantasy face-to-face. In actual fact what you are looking at is one set of events that has already happened, and one that potentially could, but so far has not. You would benefit from getting your priorities in order to truly understand which of them is most important, and therefore what your course of action is likely to be.\n";
         } else if (sign.equalsIgnoreCase("Gemini")) {
-            return "You are funny.";
+            return "Misunderstandings could occur today, especially in the way you perceive not only yourself, but also your love interest. You may think that the signals you are sending are quite plain and obvious, but everyone sees things differently, and they may not be being received in the same vein. With current celestial energies, you have your work cut out for you to make yourself understood.";
         } else if (sign.equalsIgnoreCase("Cancer")) {
-            return "You are lucky.";
+            return "The current planetary energy makes something you were completely certain about seem less sure. A current relationship may suddenly seem to be collapsing, due to forces beyond your control, leaving you wondering exactly what is going on. But don't let this worry you; if you just let things be, you will see that nothing has been undermined, it is just an illusion and all is well.";
         } else if (sign.equalsIgnoreCase("Leo")) {
-            return "You are beautiful.";
+            return "If you are going out on a date this evening, your impression of your potential partner will change from one moment to the next, due to the current astral configuration. You will not be able to fathom them. Perhaps it is best if you don't even try, as this could ruin the magic that might build up between you if you leave it alone.";
         } else if (sign.equalsIgnoreCase("Virgo")) {
-            return "You are thoughtful.";
+            return "Today's celestial energies could create the potential for a very romantic evening with your love interest. But before you both go striding off into the sunset, hand in hand, you need to get one or two things straight between you. Nothing serious, just a couple of issues that have recently given you much food for thought concerning each other. Get it sorted out and then have fun.";
         } else if (sign.equalsIgnoreCase("Libra")) {
-            return "You are hardworking.";
+            return "Today's astral configuration could mean that one or two ego problems arise in a close personal relationship. These will not really be that serious, and in fact are more likely to be amusing, but they do nevertheless imply that both of you have strong personalities and are not likely to back down easily if you do ever have a really big argument. Lessons to be learnt.";
         } else if (sign.equalsIgnoreCase("Scorpio")) {
-            return "You are persistent.";
+            return "There are many types of stubbornness. The kind that refuses to budge once a decision has been reached, and another kind that is based on the misguided knowledge that one is absolutely right. The current astral environment indicates that you and your sweetheart could be creating an impasse. Yet through discussion you could also make a great success of a mutual project. The choice is yours, so use it wisely.\n";
         } else if (sign.equalsIgnoreCase("Sagittarius")) {
-            return "You are sly.";
+            return "Today's celestial energy creates the potential for your feelings about someone special to be made clear. You are able to tell them what is going on within you, which not only helps bring you closer together, but also enables them to talk about their emotions. Just sharing at this level is very strengthening and reassuring. You will both discover there is real love between you.";
         } else if (sign.equalsIgnoreCase("Capricorn")) {
-            return "You are cunning.";
+            return "You may not feel too much like being romantic or sentimental, even if you are going out on a date. The aspect at play today is not really a very sociable influence. But if you do meet with your latest partner, you can still make progress within the relationship. Your discussion may center on more serious or even practical issues that concern you both. It will be fine!";
         } else if (sign.equalsIgnoreCase("Aquarius")) {
-            return "You are artistic.";
+            return "Today's planetary energies may encourage you to feel more self-righteous than usual, and your partner (current or prospective) to feel less flexible than normal. All of this may sound like a potential recipe for disaster, but it needn't be so. You just need to talk to each other heart-to-heart, rather than reacting to a certain issue that is certain to make you both annoyed.";
         } else if (sign.equalsIgnoreCase("Pisces")) {
-            return "You are logical.";
+            return "Today's planetary energies could mean that a misunderstanding will crop up in your relationship with your loved one. So in order to avoid problems and unnecessary conflict it would help if you spelled everything out to each other, and said what you mean in several different ways, so that at least there is a chance that understanding will dawn at some point. Make clarity your goal for today.";
         } else {
             return "Please try again.";
         }
