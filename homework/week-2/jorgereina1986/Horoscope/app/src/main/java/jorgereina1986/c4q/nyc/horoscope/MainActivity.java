@@ -36,6 +36,9 @@ public class MainActivity extends ActionBarActivity {
         final ImageView scorpio = (ImageView) findViewById(R.id.scorpio_img);
         final ImageView taurus = (ImageView) findViewById(R.id.taurus_img);
         final ImageView virgo = (ImageView) findViewById(R.id.virgo_img);
+        final Button game = (Button) findViewById(R.id.gameButton);
+        final Button compatibility = (Button) findViewById(R.id.compatibilityButton);
+        final Button search = (Button) findViewById(R.id.searchButton);
 
         aries.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,6 +134,29 @@ public class MainActivity extends ActionBarActivity {
                 Intent mainIntent = new Intent(MainActivity.this,
                         virgo.class);
                 startActivity(mainIntent);
+            }
+        });
+
+        game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent gameIntent = new Intent (MainActivity.this, GameActivity.class);
+                startActivity(gameIntent);
+            }
+        });
+
+        compatibility.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent compatibilityIntent = new Intent (MainActivity.this, compatibility.class);
+                startActivity(compatibilityIntent);
+            }
+        });
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent searchIntent = new Intent (MainActivity.this, SearchActivity.class);
+                startActivity(searchIntent);
             }
         });
 

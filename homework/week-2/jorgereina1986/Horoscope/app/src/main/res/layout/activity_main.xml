@@ -5,9 +5,9 @@
 
 
     <TableLayout
+        android:id="@+id/tablelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/tablelayout"
         android:background="#ff274756"
         tools:context="jorgereina1986.c4q.nyc.horoscope4.signs">
 
@@ -28,8 +28,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/aries"
-                android:clickable="true"/>
+                android:clickable="true"
+                android:src="@drawable/aries" />
 
             <ImageView
                 android:id="@+id/taurus_img"
@@ -120,6 +120,35 @@
                 android:layout_weight="1"
                 android:src="@drawable/pisces" />
 
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game"
+                android:id="@+id/gameButton"
+                android:layout_column="0"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compatibility"
+                android:id="@+id/compatibilityButton"
+                android:layout_column="1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/searchButton"
+                android:layout_column="2"
+                android:layout_weight="1"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>

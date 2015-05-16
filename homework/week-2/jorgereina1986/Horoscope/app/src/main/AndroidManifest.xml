@@ -21,10 +21,6 @@
             android:label="@string/title_activity_sign_description" >
         </activity>
         <activity
-            android:name=".MainActivity2Activity"
-            android:label="@string/title_activity_main_activity2" >
-        </activity>
-        <activity
             android:name=".cancer"
             android:label="@string/title_activity_cancer" >
         </activity>
@@ -73,12 +69,16 @@
             android:label="@string/title_activity_pisces" >
         </activity>
         <activity
-            android:name=".game"
+            android:name=".GameActivity"
             android:label="@string/title_activity_game" >
         </activity>
         <activity
             android:name=".compatibility"
             android:label="@string/title_activity_compatibility" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search" >
         </activity>
     </application>
 

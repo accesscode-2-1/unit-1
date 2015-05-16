@@ -19,4 +19,5 @@
     <string name="title_activity_main_activity2">MainActivity2Activity</string>
     <string name="title_activity_game">game</string>
     <string name="title_activity_compatibility">compatibility</string>
+    <string name="title_activity_search">SearchActivity</string>
 </resources>
