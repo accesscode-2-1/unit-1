@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string-array name="Signs">
+        <item>Aries - The Ram</item>
+        <item>Taurus - The Bull</item>
+        <item>Gemini - The Twins</item>
+        <item>Cancer - The Crab</item>
+        <item>Leo - The Lion</item>
+        <item>Virgo - The Virgin</item>
+        <item>Libra - The Scales</item>
+        <item>Scorpio - The Scorpion</item>
+        <item>Sagitarius - The Archer</item>
+        <item>Capricorn - The Sea Goat</item>
+        <item>Aquarius - The Water Bearer</item>
+        <item>Pisces - The Fish</item>
+    </string-array>
+
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
