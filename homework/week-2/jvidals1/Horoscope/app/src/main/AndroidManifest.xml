@@ -16,6 +16,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+
+        <activity
+            android:name=".RomanticActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+
+        <activity
+            android:name=".SignActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+
+        <activity
+            android:name=".FindSignActivity"
+            android:label="@string/app_name" >
+
+        </activity>
     </application>
 
 </manifest>

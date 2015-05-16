@@ -1,19 +1,70 @@
 package jvidals1.c4q.nyc.horoscope;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
 
 
 public class MainActivity extends ActionBarActivity {
+
+    Button buttonSign;
+    Button buttonGame;
+    Button buttonRomantic;
+    Button buttonFind;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
+        buttonFind = (Button) findViewById(R.id.button_find_sign);
+        buttonGame = (Button) findViewById(R.id.button_game);
+        buttonRomantic = (Button) findViewById(R.id.button_romantic);
+        buttonSign = (Button) findViewById(R.id.button_sign);
+
+        buttonFind.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), FindSignActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), FindSignActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        buttonRomantic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), FindSignActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        buttonSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), FindSignActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
