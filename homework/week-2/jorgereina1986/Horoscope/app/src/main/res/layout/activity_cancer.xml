@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff274756"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="jorgereina1986.c4q.nyc.horoscope.SignDescription">
+
+    <TextView
+        android:id="@+id/signName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:text="CANCER"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It's likely that you will succeed at whatever you set out to accomplish today, Cancer. If you've been held back by worries over the integrity of a relationship or the long-term prospects of a partnership, you can dispel concerns by confronting the person directly. You may find he or she has the same feelings about you! Honesty is important today."
+        android:id="@+id/description"
+        android:layout_below="@+id/signName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>

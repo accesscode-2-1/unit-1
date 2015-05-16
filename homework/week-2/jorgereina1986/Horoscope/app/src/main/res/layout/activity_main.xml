@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff274756"
+        tools:context="jorgereina1986.c4q.nyc.horoscope4.signs">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="times"
+            android:gravity="center_horizontal"
+            android:text="HOROSCOPE"
+            android:textColor="#ffffff"
+            android:textSize="35dp" />
+
+        <TableRow android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/aries_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/aries" />
+
+            <ImageView
+                android:id="@+id/taurus_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/taurus" />
+
+            <ImageView
+                android:id="@+id/gemini_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/gemini" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/cancer_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/cancer" />
+
+            <ImageView
+                android:id="@+id/leo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/leo" />
+
+            <ImageView
+                android:id="@+id/virgo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/virgo" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/libra_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/libra" />
+
+            <ImageView
+                android:id="@+id/scorpio_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/scorpio" />
+
+            <ImageView
+                android:id="@+id/sagittarius_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sagittarius" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/capricorn_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/capricorn" />
+
+            <ImageView
+                android:id="@+id/aquarius_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/aquarius" />
+
+            <ImageView
+                android:id="@+id/pisces_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pisces" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game"
+                android:id="@+id/gameButton"
+                android:layout_column="0"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compatibility"
+                android:id="@+id/compatibilityButton"
+                android:layout_column="1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/searchButton"
+                android:layout_column="2"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jorgereina1986.c4q.nyc.horoscope" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignDescription"
+            android:label="@string/title_activity_sign_description" >
+        </activity>
+        <activity
+            android:name=".cancer"
+            android:label="@string/title_activity_cancer" >
+        </activity>
+        <activity
+            android:name=".aries"
+            android:label="@string/title_activity_aries" >
+        </activity>
+        <activity
+            android:name=".virgo"
+            android:label="@string/title_activity_virgo" >
+        </activity>
+        <activity
+            android:name=".taurus"
+            android:label="@string/title_activity_taurus" >
+        </activity>
+        <activity
+            android:name=".gemini"
+            android:label="@string/title_activity_gemini" >
+        </activity>
+        <activity
+            android:name=".leo"
+            android:label="@string/title_activity_leo" >
+        </activity>
+        <activity
+            android:name=".libra"
+            android:label="@string/title_activity_libra" >
+        </activity>
+        <activity
+            android:name=".scorpio"
+            android:label="@string/title_activity_scorpio" >
+        </activity>
+        <activity
+            android:name=".sagittarius"
+            android:label="@string/title_activity_sagittarius" >
+        </activity>
+        <activity
+            android:name=".capricorn"
+            android:label="@string/title_activity_capricorn" >
+        </activity>
+        <activity
+            android:name=".aquarius"
+            android:label="@string/title_activity_aquarius" >
+        </activity>
+        <activity
+            android:name=".pisces"
+            android:label="@string/title_activity_pisces" >
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name=".compatibility"
+            android:label="@string/title_activity_compatibility" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+    </application>
+
+</manifest>
