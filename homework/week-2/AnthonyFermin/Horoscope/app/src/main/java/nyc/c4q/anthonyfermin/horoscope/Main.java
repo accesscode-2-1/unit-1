@@ -104,13 +104,16 @@ public class Main extends ActionBarActivity {
         // update the main content by replacing fragments
         Fragment fragment;
 
-        if(position == 0){
-            fragment = new SignInfoFragment();
-        }else if(position == 1){
-            fragment = new GetSignFragment();
-        }else{
-            fragment = new SignInfoFragment();
+        switch (position) {
+            case 0: fragment = new SignInfoFragment();
+                    break;
+            case 1: fragment = new GetSignFragment();
+                    break;
+            case 2: fragment = new SignCompatibilityFragment();
+                    break;
+            default:fragment = new SignInfoFragment();
         }
+
         Bundle args = new Bundle();
         args.putInt(SignInfoFragment.ARG_LIST_NUMBER, position);
         fragment.setArguments(args);

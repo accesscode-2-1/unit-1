@@ -82,4 +82,8 @@
         <item>December</item>
     </string-array>
 
+    <!--- Sign Compatibility Resources -->
+
+    <string name="get_compatibility">Get Compatibility</string>
+
 </resources>
