@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Random;
@@ -12,22 +14,25 @@ import java.util.Random;
 
 public class HoroscopeGame extends ActionBarActivity {
     private Timer gameTimer;
-    private TimerTask guess;
+    private TimerTask guessTimerTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horoscope_game);
+// Random random = new Random();
 
-        gameTimer = new Timer();
-        guess = new TimerTask() {
-            @Override
-            public void run() {
-                //guess stuff
-            }
-        };
-//        gameTimer.scheduleAtFixedRate();
-        gameTimer.scheduleAtFixedRate(guess, 15, 11);
+//        guessTimerTask = new TimerTask() {
+//            @Override
+//            public void run() {
+//                Toast wait = Toast.makeText(getApplicationContext(), "Guess a sign", Toast.LENGTH_LONG);
+//
+//            }
+//        };
+////        gameTimer.scheduleAtFixedRate();
+//        gameTimer.scheduleAtFixedRate(guessTimerTask , 15, 11);
+//        gameTimer = new Timer();
+
     }
 
 

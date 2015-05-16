@@ -78,10 +78,7 @@
     </string-array>
     <string name="title_activity_horoscope_game">HoroscopeGame</string>
     <string name="title_activity_main">Cheesy Horoscope</string>
-    <string name="Horoscope Compatibility"></string>
-
-    <string name="title_activity_horoscope_game">Horoscop eGame</string>
-    <string name="title_activity_main">Cheesy Horoscopey</string>
+    <string name="title_activity_romance">Horoscope Compatibility</string>
 
 
     <string name="drawer_open">Open navigation drawer</string>

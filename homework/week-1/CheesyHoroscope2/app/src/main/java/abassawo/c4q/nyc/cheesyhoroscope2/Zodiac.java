@@ -35,9 +35,9 @@ public class Zodiac {
     }
 
 
-    private static String[] zodiacSigns = {"Capricorn", "Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius"};
+    //private static String[] zodiacSigns = {"Capricorn", "Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius"};
 //            gemini.getName(), cancer.getName(), leo.getName(), virgo.getName(), libra.getName(), scorpio.getName(), sagittarius.getName()};
-=======
+
 
     public Zodiac(String name, String horoscopeDetail){
         this.name = name;
@@ -47,19 +47,18 @@ public class Zodiac {
         return horoscopeDetail;
     }
 
-    public static Zodiac aries = new Zodiac("Aries", " " + R.string.ariesDetail);
-    public static Zodiac taurus = new Zodiac("Taurus", "" + R.string.taurusDetail);
-    public static Zodiac gemini = new Zodiac("Gemini", "" + R.string.geminiDetail);
-    public static Zodiac cancer = new Zodiac("Cancer", "" + R.string.cancerDetail);
-    public static Zodiac leo = new Zodiac("Leo", " " + R.string.leoDetail);
-    public static Zodiac virgo = new Zodiac("Virgo", "" + R.string.virgoDetail);
+    public static Zodiac aries = new Zodiac("Aries", " " + " ");
+    public static Zodiac taurus = new Zodiac("Taurus", "" + " ");
+    public static Zodiac gemini = new Zodiac("Gemini", "" +  " ");
+    public static Zodiac cancer = new Zodiac("Cancer", "" +  " ");
+    public static Zodiac leo = new Zodiac("Leo",  " ");
+    public static Zodiac virgo = new Zodiac("Virgo", "" + " ");
     public static Zodiac libra = new Zodiac("Libra", "" + R.string.libraDetail);
     public static Zodiac scorpio = new Zodiac("Scorpio", "" + R.string.scorpioDetail );
     public static Zodiac sagittarius = new Zodiac("Sagittarius", "" + R.string.sagittariusDetail);
-    public static Zodiac capricorn = new Zodiac("Capricorn", "" + R.string.capricornDetail);
-    public static Zodiac aquarius = new Zodiac("Aquarius", "" + R.string.aquariusDetail );
-    public static Zodiac pisces = new Zodiac("Pisces", "" + R.string.piscesDetail);
-
+    public static Zodiac capricorn = new Zodiac("Capricorn", "" + "");
+    public static Zodiac aquarius = new Zodiac("Aquarius", "" + " " );
+    public static Zodiac pisces = new Zodiac("Pisces", "" + " ");
     private static String[] zodiacSigns = {capricorn.getName(), aquarius.getName(), pisces.getName(), aries.getName(), taurus.getName(),
             gemini.getName(), cancer.getName(), leo.getName(), virgo.getName(), libra.getName(), scorpio.getName(), sagittarius.getName()}; //in Chronological Order.
 

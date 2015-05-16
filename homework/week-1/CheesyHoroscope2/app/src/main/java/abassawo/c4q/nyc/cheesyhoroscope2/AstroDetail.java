@@ -47,10 +47,6 @@ public class AstroDetail extends ActionBarActivity {
                 R.string.aquariusDetail,
                 R.string.piscesDetail};
 
-        int[] zodiacDetails = {R.string.ariesDetail, R.string.taurusDetail, R.string.geminiDetail, R.string.cancerDetail,
-                R.string.leoDetail, R.string.virgoDetail,R.string.libraDetail, R.string.scorpioDetail,
-                R.string.sagittariusDetail, R.string.capricornDetail, R.string.aquariusDetail, R.string.piscesDetail};
-
 
         HashMap<String, Integer> signMap = new HashMap<>();
 

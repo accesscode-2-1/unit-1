@@ -15,6 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -33,7 +34,6 @@ public class MainActivity extends ActionBarActivity
     private String mActivityTitle;
     private Intent detailIntent = null;
     private Intent astroIntent = null;
-
     private Intent intent = null;
     private String astroSign;
     private Button astroButton;
@@ -42,15 +42,7 @@ public class MainActivity extends ActionBarActivity
     private int month, day, year;
     int zMonth, zDay, zYear;
     private String[] mDrawerListItems;
-
-    private String astroSign;
-    private Button astroButton;
-    DatePicker picker;
-    private int month, day, year;
-    int zMonth, zDay, zYear;
-    private Calendar myCalendar;
-
-
+    private FrameLayout frameLayout;
 
 
 
@@ -58,9 +50,9 @@ public class MainActivity extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         setCurrentDateOnView();
         mActivityTitle = getTitle().toString();
+        frameLayout = (FrameLayout)findViewById(R.id.content_frame);
         mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.navList);
         mDrawerListItems = getResources().getStringArray(R.array.navItems);
@@ -94,30 +86,6 @@ public class MainActivity extends ActionBarActivity
         DatePicker picker = (DatePicker) findViewById(R.id.datePicker);
 
         astroIntent = new Intent(MainActivity.this, AstroReading.class);
-
-
-        mDrawerList = (ListView) findViewById(R.id.navList);
-        mActivityTitle = getTitle().toString();
-        mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
-
-
-        addNavBar();
-        setupDrawer();
-        addButtonListener();
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
-
-        Spinner dateSpinner = (Spinner) findViewById(R.id.signs_spinner);
-        setCurrentDateOnView();
-        dateSpinner.setOnItemSelectedListener(this);
-        DatePicker picker = (DatePicker) findViewById(R.id.datePicker);
-
-        astroIntent = new Intent(MainActivity.this, AstroReading.class);
-
-
-
-
         Button button = (Button) findViewById(R.id.openButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,7 +94,6 @@ public class MainActivity extends ActionBarActivity
                 startActivity(detailIntent);
             }
         });
-
         addButtonListener();
 
 
@@ -137,18 +104,27 @@ public class MainActivity extends ActionBarActivity
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch(position){
                     case 0:
+                        mDrawerLayout.closeDrawer(mDrawerList);
                         break;
                     case 1:
                         intent = new Intent(MainActivity.this, ZodiacRomance.class);
+                        Log.d("case 0", " " + getIntent());
                         startActivity(intent);
+                        //startActivity(intent);
+                        mDrawerLayout.closeDrawer(mDrawerList);
                         break;
                     case 2:
                         intent = new Intent(MainActivity.this, HoroscopeGame.class);
+                        Log.d("case 0", " " + getIntent());
                         startActivity(intent);
+                        // startActivity(intent);
+                        mDrawerLayout.closeDrawer(mDrawerList);
+
                         break;
                 }
+                //startActivity(intent);
 
-                mDrawerLayout.closeDrawer(mDrawerList);
+
             }
         });
 
@@ -157,13 +133,6 @@ public class MainActivity extends ActionBarActivity
 
 
     }
-
-
-
-
-    }
-
-
     public void setCurrentDateOnView(){
         picker = (DatePicker) findViewById(R.id.datePicker);
         final Calendar c = Calendar.getInstance();
@@ -175,49 +144,6 @@ public class MainActivity extends ActionBarActivity
 
 
 
-
-
-
-    private void addNavBar() {
-        String[] navArray = {"Learn about Horoscopes","Romantic Compatibility", "Horoscope Game"};
-        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, navArray);
-        mDrawerList.setAdapter(mAdapter);
-
-        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//             switch (position) {
-//                 case 0: {
-//
-//                 }
-                Toast.makeText(MainActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-    }
-
-    private void setupDrawer(){
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-                R.string.drawer_open, R.string.drawer_close) {
-            /** Called when a drawer has settled in a completely open state. */
-
-            public void onDrawerOpened(View drawerView) {
-                super.onDrawerOpened(drawerView);
-                getSupportActionBar().setTitle("Navigation!");
-                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
-            }
-
-            /** Called when a drawer has settled in a completely closed state. */
-            public void onDrawerClosed(View view) {
-                super.onDrawerClosed(view);
-                getSupportActionBar().setTitle(mActivityTitle);
-                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
-            }
-
-        };
-        mDrawerToggle.setDrawerIndicatorEnabled(true);
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
-    }
 
 
     @Override
@@ -264,7 +190,7 @@ public class MainActivity extends ActionBarActivity
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) { //for searching by sign
         String zodiacSign;
         zodiacSign = parent.getItemAtPosition(position).toString();   //Get sign
         Log.d("getItem", zodiacSign);
@@ -302,12 +228,6 @@ public class MainActivity extends ActionBarActivity
                 picker.init(zYear, month, day, l);
             }
         };
-
-
-
-
-
-
 
     }
 }
