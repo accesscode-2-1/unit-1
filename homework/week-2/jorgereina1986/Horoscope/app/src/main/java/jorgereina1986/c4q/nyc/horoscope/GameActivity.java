@@ -4,14 +4,38 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import java.util.Calendar;
+import java.util.Random;
 
 
 public class GameActivity extends ActionBarActivity {
+
+    TextView randomDate;
+    int randomMonth;
+    int randomDay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+    }
+
+    public static String Question() {
+        String date;
+        int dayOfYear, month, day;
+
+        Calendar cal = Calendar.getInstance();
+        Random random = new Random();
+        dayOfYear = random.nextInt(365);
+
+        cal.set(Calendar.DAY_OF_YEAR, dayOfYear);
+        month = cal.get(Calendar.MONTH) + 1;
+        day = cal.get(Calendar.DATE);
+        date = month + "/" + day;
+
+        return date;
     }
 
 

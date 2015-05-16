@@ -14,10 +14,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="G¿ESS THE SIGN"
-        android:id="@+id/textView"
+        android:id="@+id/date"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
         android:textSize="30dp"
         android:fontFamily="times"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView3"
+        android:layout_marginTop="90dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

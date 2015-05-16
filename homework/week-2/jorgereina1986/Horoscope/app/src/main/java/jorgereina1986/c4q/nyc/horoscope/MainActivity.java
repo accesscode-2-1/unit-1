@@ -21,7 +21,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TableLayout tl = (TableLayout) findViewById(R.id.tablelayout);
 
 
         final ImageView aries = (ImageView) findViewById(R.id.aries_img);

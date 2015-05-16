@@ -51,4 +51,16 @@
         android:layout_below="@+id/datePicker"
         android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yourSign"
+        android:layout_below="@+id/enter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:textSize="30dp"
+        android:fontFamily="times"
+        android:textColor="#ffffff"
+        android:text="Your sign is..."/>
+
 </RelativeLayout>
