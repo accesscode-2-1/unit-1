@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Horoscope</string>
+    <string name="app_name">Oracle</string>
 
     <string name="action_settings">Settings</string>
     <string name="action_search">Search</string>
@@ -7,7 +7,7 @@
     <string name="drawer_close">Close</string>
 
     <string name="nav_item_home">Home</string>
-    <string name="nav_item_horoscope">Horoscope</string>
+    <string name="nav_item_horoscopes">Horoscopes</string>
     <string name="nav_item_sign_profiles">Sign Profiles</string>
     <string name="nav_item_compatibility">Compatibility</string>
     <string name="nav_item_guess_sign">Guess the Sign</string>
@@ -15,18 +15,20 @@
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
-        <item>@string/nav_item_horoscope</item>
+        <item>@string/nav_item_horoscopes</item>
         <item>@string/nav_item_sign_profiles</item>
         <item>@string/nav_item_compatibility</item>
         <item>@string/nav_item_guess_sign</item>
+        <item>@string/title_about</item>
     </string-array>
 
     <!-- section titles -->
     <string name="title_home">Home</string>
-    <string name="title_horoscope">Horoscopes</string>
+    <string name="title_horoscopes">Horoscopes</string>
     <string name="title_sign_profiles">Sign Profiles</string>
     <string name="title_compatibility">Compatibility</string>
     <string name="title_guess_sign">Guess the Sign</string>
+    <string name="title_about">About</string>
 
     <!-- signs -->
     <string name="sign_aquarius">Aquarius</string>
@@ -317,6 +319,15 @@
 
     <!-- miscellaneous -->
     <string name="pick_date">Set Birthdate</string>
+    <string name="pick_date_inst">Please set your birthdate.</string>
     <string name="button_text_submit">Submit</string>
+    <string name="credit_icon">
+        Icons:\niconsmind.com via The Noun Project\nhttps://thenounproject.com/imicons/collection/zodiac/
+    </string>
+    <string name="about_me">
+        Made with (highly caffeinated) love by:\n@jaellysbales\nAccess Code 2.1 @ C4Q
+    </string>
+    <string name="app_subtitle">Your fate, foretold...</string>
+    <string name="new_sign">New Sign</string>
 
 </resources>

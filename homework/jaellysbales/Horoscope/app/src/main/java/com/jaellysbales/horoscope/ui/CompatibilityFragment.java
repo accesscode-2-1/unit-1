@@ -26,6 +26,29 @@ public class CompatibilityFragment extends Fragment implements AdapterView.OnIte
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
 
+        spinners(view);
+
+        btnSubmit = (Button) view.findViewById(R.id.button_submit);
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                // Handle submission of spinner selections
+                // TODO: display symbol on selection
+                if (spinner_sign1.getSelectedItem().equals("Sign") || (spinner_sign2.getSelectedItem().equals("Sign"))) {
+                    Toast.makeText(CompatibilityFragment.this.getActivity(),
+                            "Please select a sign.",
+                            Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    // TextView appearing beneath spinners in view?
+                    getCompatibility(String.valueOf(spinner_sign1.getSelectedItem()), String.valueOf(spinner_sign2.getSelectedItem()));
+                }
+            }
+        });
+    }
+
+    public void spinners(View view) {
         // Initializing spinners, adding items.
         spinner_sign1 = (Spinner) view.findViewById(R.id.spinner_sign1);
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(CompatibilityFragment.this.getActivity(),
@@ -46,31 +69,12 @@ public class CompatibilityFragment extends Fragment implements AdapterView.OnIte
         spinner_sign2.setOnItemSelectedListener(CompatibilityFragment.this);
 
         // I really am not sure how to organize any of this code and it's making me crazy.
-        btnSubmit = (Button) view.findViewById(R.id.button_submit);
         spinner_sign1 = (Spinner) view.findViewById(R.id.spinner_sign1);
         spinner_sign2 = (Spinner) view.findViewById(R.id.spinner_sign2);
 
         spinner_sign1.setOnItemSelectedListener(CompatibilityFragment.this);
         spinner_sign2.setOnItemSelectedListener(CompatibilityFragment.this);
-
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                 // Handle submission of spinner selections
-                if (spinner_sign1.getSelectedItem().equals("Sign") || (spinner_sign2.getSelectedItem().equals("Sign"))) {
-                    Toast.makeText(CompatibilityFragment.this.getActivity(),
-                            "Please select a sign.",
-                            Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    // TextView appearing beneath spinners in view?
-                    getCompatibility(String.valueOf(spinner_sign1.getSelectedItem()), String.valueOf(spinner_sign2.getSelectedItem()));
-                }
-            }
-        });
     }
-
     public void getCompatibility(String sign1, String sign2) {
         String pair = sign1 + " + " + sign2;
         String compatibility;

@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bkgr"
     android:orientation="vertical"
-    tools:context=".activity.SignProfilesFragment">
+    android:padding="25dp">
 
-    <Button
-        android:id="@+id/set_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pick_date"
-        android:onClick="showDatePickerDialog"
-        android:layout_centerInParent="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#ffff"
+        android:layout_marginTop="180dp"
+        android:padding="18dp">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_date_inst"
+            android:textColor="#ff152e48"
+            android:textSize="18sp"/>
+        
+        <Button
+            android:id="@+id/set_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/pick_date"
+            android:onClick="showDatePickerDialog"
+            android:layout_below="@id/intro"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

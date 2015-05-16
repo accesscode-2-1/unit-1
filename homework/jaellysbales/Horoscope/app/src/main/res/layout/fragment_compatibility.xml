@@ -1,38 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bkgr"
     android:orientation="vertical"
-    tools:context=".activity.CompatibilityFragment">
+    android:padding="25dp">
 
-    <Spinner
-        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
-        android:id="@+id/spinner_sign1"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="154dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#ffff"
+        android:layout_marginTop="180dp"
+        android:padding="18dp">
 
-    <Spinner
-        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
-        android:id="@+id/spinner_sign2"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/spinner_sign1"
-        android:layout_alignLeft="@+id/spinner_sign1"
-        android:layout_alignStart="@+id/spinner_sign1" />
+        <Spinner
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/spinner_sign1"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/button_submit"
-        android:text="@string/button_text_submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner_sign2"
-        android:layout_alignRight="@+id/spinner_sign2"
-        android:layout_alignEnd="@+id/spinner_sign2"
-        android:layout_marginTop="35dp" />
+        <Spinner
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/spinner_sign2"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/spinner_sign1"
+            android:layout_alignLeft="@+id/spinner_sign1"
+            android:layout_alignStart="@+id/spinner_sign1" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/button_submit"
+            android:text="@string/button_text_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_sign2"
+            android:layout_alignRight="@+id/spinner_sign2"
+            android:layout_alignEnd="@+id/spinner_sign2"
+            android:layout_marginTop="35dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

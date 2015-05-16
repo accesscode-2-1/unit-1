@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgr"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#ffff"
+        android:layout_marginTop="180dp"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff152e48"
+            android:textSize="18sp"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/app_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff152e48"
+            android:textSize="18sp"
+            android:text="@string/app_subtitle"
+            android:layout_below="@id/app_name"/>
+
+        <TextView
+            android:id="@+id/about_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff152e48"
+            android:textSize="18sp"
+            android:text="@string/about_me"
+            android:layout_below="@id/app_subtitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff152e48"
+            android:textSize="18sp"
+            android:text="@string/credit_icon"
+            android:layout_below="@id/about_me"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -13,4 +13,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="zodiac_icon">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="zodiac_button">
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <!-- todo -->
+    <!-- body text, header, date range, counter -->
+
 </resources>

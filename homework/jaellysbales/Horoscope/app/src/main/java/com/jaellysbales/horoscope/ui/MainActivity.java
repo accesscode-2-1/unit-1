@@ -84,7 +84,7 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
                 break;
             case 1:
                 fragment = new HoroscopeFragment();
-                title = getString(R.string.title_horoscope);
+                title = getString(R.string.title_horoscopes);
                 break;
             case 2:
                 fragment = new ProfileFragment();
@@ -97,6 +97,10 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
             case 4:
                 fragment = new GuessSignFragment();
                 title = getString(R.string.title_guess_sign);
+                break;
+            case 5:
+                fragment = new AboutFragment();
+                title = getString(R.string.title_about);
                 break;
             default:
                 break;

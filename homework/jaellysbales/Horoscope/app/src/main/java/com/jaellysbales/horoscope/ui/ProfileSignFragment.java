@@ -29,18 +29,18 @@ public class ProfileSignFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         icons = new HashMap<String, Integer>();
-        icons.put("Aquarius", R.id.icon_aquarius);
-        icons.put("Aries", R.id.icon_aries);
-        icons.put("Cancer", R.id.icon_cancer);
-        icons.put("Capricorn", R.id.icon_capricorn);
-        icons.put("Gemini", R.id.icon_gemini);
-        icons.put("Leo", R.id.icon_leo);
-        icons.put("Libra", R.id.icon_libra);
-        icons.put("Pisces", R.id.icon_pisces);
-        icons.put("Sagittarius", R.id.icon_sagittarius);
-        icons.put("Scorpio", R.id.icon_scorpio);
-        icons.put("Taurus", R.id.icon_taurus);
-        icons.put("Virgo", R.id.icon_virgo);
+        icons.put("Aquarius", R.drawable.zodiac_icon_aquarius);
+        icons.put("Aries", R.drawable.zodiac_icon_aries);
+        icons.put("Cancer", R.drawable.zodiac_icon_cancer);
+        icons.put("Capricorn", R.drawable.zodiac_icon_capricorn);
+        icons.put("Gemini", R.drawable.zodiac_icon_gemini);
+        icons.put("Leo", R.drawable.zodiac_icon_leo);
+        icons.put("Libra", R.drawable.zodiac_icon_libra);
+        icons.put("Pisces", R.drawable.zodiac_icon_pisces);
+        icons.put("Sagittarius", R.drawable.zodiac_icon_sagittarius);
+        icons.put("Scorpio", R.drawable.zodiac_icon_scorpio);
+        icons.put("Taurus", R.drawable.zodiac_icon_taurus);
+        icons.put("Virgo", R.drawable.zodiac_icon_virgo);
     }
 
     @Nullable
@@ -55,21 +55,23 @@ public class ProfileSignFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Bundle args = getArguments();
-        description = args.getString("DESCRIPTION");
+//        description = args.getString("DESCRIPTION");
         startDate = args.getString("STARTDATE");
         endDate = args.getString("ENDDATE");
         profile = args.getString("PROFILE");
 
         TextView myTitle = (TextView) view.findViewById(R.id.sign_title);
-        TextView myDescription = (TextView) view.findViewById(R.id.sign_description);
+//        TextView myDescription = (TextView) view.findViewById(R.id.sign_description);
         ImageView myIcon = (ImageView) view.findViewById(R.id.sign_icon);
         TextView myDateRange = (TextView) view.findViewById(R.id.sign_range);
         TextView myProfile = (TextView) view.findViewById(R.id.sign_profile);
 
         myTitle.setText(sign);
-        myDescription.setText(description);
+//        myDescription.setText(description);
         myIcon.setImageResource(icons.get(sign));
         myDateRange.setText(startDate + " - " + endDate);
         myProfile.setText(profile);
+
+        // TODO: Would really like to implement ViewPager if time allows.
     }
 }
