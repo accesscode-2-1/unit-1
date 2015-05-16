@@ -16,59 +16,45 @@
             android:gravity="center"
             />
 
-        <LinearLayout
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
-            <LinearLayout
+        <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_weight="1">
 
-                <Button
-                    android:layout_width="wrap_content"
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Aquarius"
+                android:textSize="15sp"
+                android:paddingTop="4dp"
+                android:onClick="showAquariusInfo"
+                />
+
+            <Button
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/Scorpio"
-                    android:textSize="15sp"
-                    android:paddingTop="12dp"
-                    android:onClick="showScorpioInfo"
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/Sagittarius"
-                    android:textSize="15sp"
-                    android:paddingTop="4dp"
-                    android:onClick="showSagittariusInfo"
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/Capricorn"
+                    android:text="@string/Pisces"
                     android:textSize="15sp"
                     android:paddingTop="4dp"
-                    android:onClick="showCapricornInfo"
+                    android:onClick="showPiscesInfo"
                     />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/Aquarius"
-                    android:textSize="15sp"
-                    android:paddingTop="4dp"
-                    android:onClick="showAquariusInfo"
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
+            <Button
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/Aries"
@@ -78,24 +64,17 @@
                     />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/Pisces"
+                    android:text="@string/Taurus"
                     android:textSize="15sp"
                     android:paddingTop="4dp"
-                    android:onClick="showPiscesInfo"
+                    android:onClick="showTaurusInfo"
                     />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/Gemini"
@@ -106,17 +85,7 @@
                     />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/Taurus"
-                    android:textSize="15sp"
-                    android:paddingTop="4dp"
-                    android:onClick="showTaurusInfo"
-                    />
-
-                <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/Cancer"
@@ -125,8 +94,16 @@
                     android:onClick="showCancerInfo"
                     />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/Leo"
@@ -136,7 +113,7 @@
                     />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/Virgo"
@@ -146,7 +123,7 @@
                     />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/Libra"
@@ -154,6 +131,37 @@
                     android:paddingTop="4dp"
                     android:onClick="showLibraInfo"
                     />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Scorpio"
+                    android:textSize="15sp"
+                    android:paddingTop="12dp"
+                    android:onClick="showScorpioInfo"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Sagittarius"
+                    android:textSize="15sp"
+                    android:paddingTop="4dp"
+                    android:onClick="showSagittariusInfo"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Capricorn"
+                    android:textSize="15sp"
+                    android:paddingTop="4dp"
+                    android:onClick="showCapricornInfo"
+                    />
+
             </LinearLayout>
 
 
@@ -166,7 +174,7 @@
             android:text="@string/findUserSign"
             android:textSize="12sp"
             android:paddingTop="2dp"
-            />
+            android:layout_gravity="center" />
 
         <EditText
             android:id="@+id/userbday"

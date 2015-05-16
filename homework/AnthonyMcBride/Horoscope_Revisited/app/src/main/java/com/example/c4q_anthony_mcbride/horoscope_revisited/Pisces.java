@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class Pisces extends ActionBarActivity{
+public class Pisces extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

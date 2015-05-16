@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class Cancer extends ActionBarActivity{
+public class Cancer extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
