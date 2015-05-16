@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Rechner</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Zahl2">Zahl 2:</string>
+    <string name="Durch">:</string>
+    <string name="Zahl1">Zahl 1:</string>
+    <string name="Plus">+</string>
+    <string name="Minus">-</string>
+    <string name="Mal">*</string>
+</resources>

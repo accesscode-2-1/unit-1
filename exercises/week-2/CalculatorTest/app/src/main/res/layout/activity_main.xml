@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#ABE033" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/Zahl1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/zahl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/zahl1"
+        android:layout_below="@+id/zahl1"
+        android:text="@string/Zahl2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/zahl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/Ergebnis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/zahl2"
+        android:layout_below="@+id/zahl2"
+        android:inputType="numberDecimal"
+        android:ems="10" />
+
+
+    <Button
+        android:id="@+id/buttonplus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="ButtonClickPlus"
+        android:text="@string/Plus"
+        android:layout_alignLeft="@+id/Ergebnis"
+        android:layout_centerVertical="true"/>
+
+
+
+    <Button
+        android:id="@+id/buttondurch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="12dp"
+        android:onClick="ButtonClickDurch"
+        android:text="@string/Durch"
+        android:layout_alignBaseline="@+id/buttonmal"
+        android:layout_alignBottom="@+id/buttonmal"
+        android:layout_alignRight="@+id/Ergebnis"/>
+
+    <Button
+        android:id="@+id/buttonmal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/buttonminus"
+        android:layout_alignBottom="@+id/buttonminus"
+        android:layout_toLeftOf="@+id/buttondurch"
+        android:onClick="ButtonClickMal"
+        android:text="@string/Mal" />
+
+    <Button
+        android:id="@+id/buttonminus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/buttonplus"
+        android:layout_alignBottom="@+id/buttonplus"
+        android:layout_toRightOf="@+id/buttonplus"
+        android:onClick="ButtonClickMinus"
+        android:text="@string/Minus" />
+
+</RelativeLayout>

@@ -31,9 +31,11 @@ public class Horoscopes extends Fragment implements AbsListView.OnItemClickListe
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
 
     private OnFragmentInteractionListener mListener;
 
@@ -82,7 +84,7 @@ public class Horoscopes extends Fragment implements AbsListView.OnItemClickListe
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_item, container, false);
+        View view = inflater.inflate(R.layout.horoscopefragment_item_list, container, false);
 
         // Set the adapter
         mListView = (AbsListView) view.findViewById(android.R.id.list);
