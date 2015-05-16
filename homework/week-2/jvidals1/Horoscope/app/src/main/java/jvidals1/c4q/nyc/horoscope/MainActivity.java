@@ -7,7 +7,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
+import java.lang.reflect.Array;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -16,6 +18,7 @@ public class MainActivity extends ActionBarActivity {
     Button buttonGame;
     Button buttonRomantic;
     Button buttonFind;
+
 
 
     @Override
@@ -39,7 +42,7 @@ public class MainActivity extends ActionBarActivity {
         buttonGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), FindSignActivity.class);
+                Intent intent = new Intent(getApplicationContext(), GameActivity.class);
                 startActivity(intent);
 
             }
@@ -48,7 +51,7 @@ public class MainActivity extends ActionBarActivity {
         buttonRomantic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), FindSignActivity.class);
+                Intent intent = new Intent(getApplicationContext(), RomanticActivity.class);
                 startActivity(intent);
 
             }
@@ -57,7 +60,7 @@ public class MainActivity extends ActionBarActivity {
         buttonSign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), FindSignActivity.class);
+                Intent intent = new Intent(getApplicationContext(), SignActivity.class);
                 startActivity(intent);
 
             }
