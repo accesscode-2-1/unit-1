@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/pooja/IdeaProjects/Horoscope/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/pooja/IdeaProjects/Horoscope/app/build/intermediates/pre-dexed/debug/classes-611c0c755383aa2aa06957cf3d2f4f29585f464c.jar" />
+    </item>
+    <item
+        jar="/Users/pooja/IdeaProjects/Horoscope/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/pooja/IdeaProjects/Horoscope/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-9640b0b1c54f71ba96ddee036f0823bc2dbd7466.jar" />
+    </item>
+    <item
+        jar="/Users/pooja/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/pooja/IdeaProjects/Horoscope/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-e588f624387ee8467da0e763ee94da9c3a9faa11.jar" />
+    </item>
+    <item
+        jar="/Users/pooja/IdeaProjects/Horoscope/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/pooja/IdeaProjects/Horoscope/app/build/intermediates/pre-dexed/debug/classes-ec2e4ab22382cb602b7f670a55366610187071d6.jar" />
+    </item>
+
+</items>
