@@ -36,7 +36,7 @@ public class GuessSignFragment extends Fragment implements AdapterView.OnItemSel
         spinners(view);
 
         // Calling getGameData() to generate date and sign for game.
-        // Tried to get this to contiously generate until player says stop, but not enough time.
+        // Tried to get this to continuously generate until player says stop, but not enough time.
         String[] gameData = getGameData();
         int month = Integer.parseInt(gameData[0]);
         int day = Integer.parseInt(gameData[1]);
@@ -251,7 +251,7 @@ public class GuessSignFragment extends Fragment implements AdapterView.OnItemSel
         else {
             guesses--;
             guessesLeft.setText("Guesses remaining: " + guesses);
-            if (guesses > 0) {
+            if (guesses == 2) {
                 Toast.makeText(GuessSignFragment.this.getActivity(),
                         "Try again!",
                         Toast.LENGTH_SHORT).show();
@@ -262,6 +262,11 @@ public class GuessSignFragment extends Fragment implements AdapterView.OnItemSel
                         Toast.LENGTH_SHORT).show();
             }
             else {
+                if (gameTimer != null) {
+                    gameTimer.cancel();
+                    gameTimer = null;
+                }
+                mCounter.setText(answer);
                 spinner_guess.setEnabled(false);
             }
         }

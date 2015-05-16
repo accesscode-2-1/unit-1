@@ -26,7 +26,8 @@ public class CompatibilityFragment extends Fragment implements AdapterView.OnIte
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
 
-        spinners(view);
+        spinner_sign1 = (Spinner) view.findViewById(R.id.spinner_sign1);
+        spinner_sign2 = (Spinner) view.findViewById(R.id.spinner_sign2);
 
         btnSubmit = (Button) view.findViewById(R.id.button_submit);
         btnSubmit.setOnClickListener(new View.OnClickListener() {
@@ -48,33 +49,6 @@ public class CompatibilityFragment extends Fragment implements AdapterView.OnIte
         });
     }
 
-    public void spinners(View view) {
-        // Initializing spinners, adding items.
-        spinner_sign1 = (Spinner) view.findViewById(R.id.spinner_sign1);
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(CompatibilityFragment.this.getActivity(),
-                R.array.sign_array, android.R.layout.simple_spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner_sign1.setAdapter(adapter1);
-
-        spinner_sign2 = (Spinner) view.findViewById(R.id.spinner_sign2);
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(CompatibilityFragment.this.getActivity(),
-                R.array.sign_array, android.R.layout.simple_spinner_item);
-        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner_sign2.setAdapter(adapter2);
-
-        // Adding listeners
-        spinner_sign1 = (Spinner) view.findViewById(R.id.spinner_sign1);
-        spinner_sign1.setOnItemSelectedListener(CompatibilityFragment.this);
-        spinner_sign2 = (Spinner) view.findViewById(R.id.spinner_sign2);
-        spinner_sign2.setOnItemSelectedListener(CompatibilityFragment.this);
-
-        // I really am not sure how to organize any of this code and it's making me crazy.
-        spinner_sign1 = (Spinner) view.findViewById(R.id.spinner_sign1);
-        spinner_sign2 = (Spinner) view.findViewById(R.id.spinner_sign2);
-
-        spinner_sign1.setOnItemSelectedListener(CompatibilityFragment.this);
-        spinner_sign2.setOnItemSelectedListener(CompatibilityFragment.this);
-    }
     public void getCompatibility(String sign1, String sign2) {
         String pair = sign1 + " + " + sign2;
         String compatibility;
@@ -119,14 +93,8 @@ public class CompatibilityFragment extends Fragment implements AdapterView.OnIte
 
     public void onItemSelected(AdapterView<?> parent, View view,
                                int pos, long id) {
-        // An item was selected. You can retrieve the selected item using
-        // parent.getItemAtPosition(pos)
-//         TextView sign = (TextView) view;
-//            Toast.makeText(CompatibilityFragment.this.getActivity(), sign.getText(), Toast.LENGTH_SHORT).show();
-
     }
 
     public void onNothingSelected(AdapterView<?> parent) {
-        // Another interface callback
     }
 }

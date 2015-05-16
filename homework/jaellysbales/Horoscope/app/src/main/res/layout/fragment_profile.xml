@@ -20,7 +20,7 @@
             android:text="@string/pick_date_inst"
             android:textColor="#ff152e48"
             android:textSize="18sp"/>
-        
+
         <Button
             android:id="@+id/set_date"
             android:layout_width="wrap_content"
