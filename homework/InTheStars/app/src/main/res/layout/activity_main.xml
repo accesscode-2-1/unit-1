@@ -53,7 +53,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/aries"
                     android:textColor="#F87217"
-                    android:clickable="true" />
+                    android:clickable="true"
+                    android:onClick="Aries"/>
                 <Button
                     android:id="@+id/taurus_button"
                     android:layout_width="wrap_content"
@@ -61,7 +62,8 @@
                     android:layout_gravity="center"
                     android:text="@string/taurus"
                     android:textColor="#F87217"
-                    android:clickable="true" />
+                    android:clickable="true"
+                    android:onClick="Taurus"/>
                 <Button
                     android:id="@+id/gemini_button"
                     android:layout_width="wrap_content"
@@ -69,7 +71,8 @@
                     android:layout_gravity="right"
                     android:text="@string/gemini"
                     android:textColor="#F87217"
-                    android:clickable="true" />
+                    android:clickable="true"
+                    android:onClick="Gemini"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/second_row"
@@ -83,21 +86,24 @@
                     android:layout_height="wrap_content"
                     android:text="@string/cancer"
                     android:textColor="#F87217"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="Cancer"/>
                 <Button
                     android:id="@+id/leo_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/leo"
                     android:textColor="#F87217"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="Leo"/>
                 <Button
                     android:id="@+id/virgo_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/virgo"
                     android:textColor="#F87217"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="Virgo"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/third_row"
@@ -111,21 +117,24 @@
                     android:layout_height="wrap_content"
                     android:text="@string/libra"
                     android:textColor="#F87217"
-                    android:clickable="true" />
+                    android:clickable="true"
+                    android:onClick="Libra"/>
                 <Button
                     android:id="@+id/scorpio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/scorpio"
                     android:textColor="#F87217"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="Scorpio"/>
                 <Button
                     android:id="@+id/sag_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/sag"
                     android:textColor="#F87217"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="Sagi"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/last_row"
@@ -139,21 +148,24 @@
                     android:layout_height="wrap_content"
                     android:text="@string/capricorn"
                     android:textColor="#F87217"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="Capricorn"/>
                 <Button
                     android:id="@+id/aquarius_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/aquarius"
                     android:textColor="#F87217"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="Aquarius"/>
                 <Button
                     android:id="@+id/pisces_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/pisces"
                     android:textColor="#F87217"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="Pisces"/>
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>
