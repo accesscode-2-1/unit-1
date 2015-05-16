@@ -63,7 +63,7 @@ public class Game extends ActionBarActivity {
             public void onFinish() {
 
                 timer.setText("Time's Up!");
-                revealRandomDate(findViewById(R.id.dayView));
+                //revealRandomDate(findViewById(R.id.dayView));
             }
 
 
@@ -99,8 +99,6 @@ public class Game extends ActionBarActivity {
         String answered = answer.getText().toString();
         TextView dayView = (TextView) findViewById(R.id.dayView);
 
-
-        if (birthdayMonth != null) {
             if ((birthdayMonth.equalsIgnoreCase("january") && (birthdayDay >= 21 && birthdayDay <= 31) || ((birthdayMonth.equalsIgnoreCase("february") && (birthdayDay >= 1 && birthdayDay <= 21))))) {
                 if (answered.equalsIgnoreCase("aquarius")) {
                     dayView.setText("CORRECT!");
@@ -164,7 +162,7 @@ public class Game extends ActionBarActivity {
 
 
             } else if ((birthdayMonth.equalsIgnoreCase("october") && (birthdayDay >= 24 && birthdayDay <= 31) || ((birthdayMonth.equalsIgnoreCase("november") && (birthdayDay >= 1 && birthdayDay <= 20))))) {
-                if (answered.equalsIgnoreCase("scorio")) {
+                if (answered.equalsIgnoreCase("scorpio")) {
                     dayView.setText("CORRECT!");
 
                 } else
@@ -186,15 +184,7 @@ public class Game extends ActionBarActivity {
 
             } else
                 dayView.setText("Wrong!");
-            revealRandomDate(findViewById(R.id.dayView));
-            starTimer();
-
-
-//            nWrong=(TextView) findViewById(R.id.numWrong);
-//            numWrong++;
-//            nWrong.setText(numWrong);
-
+                //revealRandomDate(findViewById(R.id.dayView));
+                starTimer();
         }
-
     }
-}

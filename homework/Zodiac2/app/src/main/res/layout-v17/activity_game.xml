@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="32dp"
+        android:textSize="20dp"
         android:textColor="#ffff0a98" />
 
     <TextView
@@ -26,10 +26,10 @@
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:textSize="50dp"
+        android:textSize="25dp"
         android:textColor="#ff1440ff"
         android:onClick="revealRandomDate"
-        android:text="     Click Here    To Reveal Date"
+        android:text="Click Here To Reveal Date"
         android:textAlignment="center" />
 
     <EditText
@@ -57,7 +57,7 @@
         android:id="@+id/timer"
         android:layout_below="@+id/submit"
         android:layout_centerHorizontal="true"
-        android:textSize="50dp"
+        android:textSize="25dp"
         android:textColor="#ffff0205" />
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -7,6 +7,10 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="madelyntav.c4q.nyc.zodiac.Game"
     android:background="#ff1b1b1b">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
     <TextView
         android:layout_width="wrap_content"
@@ -72,6 +76,18 @@
         android:layout_centerHorizontal="true"
         android:textSize="30dp"
         android:textColor="#ffff0205" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#00CED1"
+        android:textColor="@color/black"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="5dp"
+        android:divider="@color/bright_foreground_material_dark" />
 
 
-</RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
