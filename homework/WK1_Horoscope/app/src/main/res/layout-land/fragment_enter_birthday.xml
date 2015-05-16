@@ -23,9 +23,8 @@
             android:textColor="#ffffffff"
             android:textAlignment="center"
             android:gravity="center_horizontal"
-            android:layout_marginBottom="27dp"
-            android:layout_above="@+id/spinner3"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/spinner3" />
 
         <Button
             android:layout_width="wrap_content"

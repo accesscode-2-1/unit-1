@@ -111,6 +111,8 @@ public class CompatibiltyFragment extends Fragment {
                 signGroup1 = water;
             }else if (sign1.equalsIgnoreCase("Gemini")||sign1.equalsIgnoreCase("Libra")||sign1.equalsIgnoreCase("Aquarius")){
                 signGroup1 = wind;
+            }else{
+                signGroup1=null;
             }
 
             if (sign2.equalsIgnoreCase("Aries")||sign2.equalsIgnoreCase("Leo")||sign2.equalsIgnoreCase("Sagittarius")) {
@@ -121,9 +123,14 @@ public class CompatibiltyFragment extends Fragment {
                 signGroup2 = water;
             }else if (sign2.equalsIgnoreCase("Gemini")||sign2.equalsIgnoreCase("Libra")||sign2.equalsIgnoreCase("Aquarius")){
                 signGroup2 = wind;
+            }else{
+                signGroup2 = null;
             }
 
-            if(signGroup1.equals(fire)&& signGroup2.equals(fire)){
+            if (signGroup1==null ||signGroup2==null){
+                result = "Error";
+            }
+            else if(signGroup1.equals(fire)&& signGroup2.equals(fire)){
                 result = "Good";
             }else if(signGroup1.equals(water)&& signGroup2.equals(water)){
                 result = "Good";

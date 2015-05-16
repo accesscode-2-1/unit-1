@@ -2,6 +2,7 @@ package hoshikoo.c4q.nyc.wk1_horoscope;
 
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.app.Fragment;
@@ -30,6 +31,17 @@ public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks,
         ChooseSignFragment.ChooseSignFragmentInteractionListener,
         CompatibiltyFragment.CompatibilityFragmentListener, EnterBirthdayFragment.EnterBirthdayFragmentListner, GameFragment.GameFragmentListener {
+
+
+//    @Override
+//    public void onConfigurationChanged(Configuration newConfig) {
+//        super.onConfigurationChanged(newConfig);
+//        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+//            createHorizontalalLayout();
+//        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+//            createVerticalLayout();
+//        }
+//    }
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
