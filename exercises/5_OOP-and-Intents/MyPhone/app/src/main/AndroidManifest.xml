@@ -2,11 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.accesscode.myphone" >
 
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+>>>>>>> gmsyrimis
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+<<<<<<< HEAD
+=======
+
+>>>>>>> gmsyrimis
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -16,7 +27,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <!-- Add the DialerActivity and EmailActivity here. -->
     </application>
 
 </manifest>
+=======
+
+
+        <activity
+            android:name=".DialerActivity"
+            android:label="Dial" />
+
+        <activity
+            android:name=".EmailActivity"
+            android:label="Email" />
+
+    </application>
+
+</manifest>
+>>>>>>> gmsyrimis

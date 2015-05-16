@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+
+    <string name="title_section1">Aries</string>
+    <string name="aries_description">Arieses are generally bubbling with vitality and have a great sense of adventure. Pioneers by nature, they are usually the first to venture out on a risky project. For instance, when day trading first came on the scene, most of those involved were Aries.</string>
+    <string name="title_section2">Taurus</string>
+    <string name="taurus_description">Those born under the Taurus sign make good companions as they are very dependable. If you have made plans with a Taurus, rest assured he/she will be there and on time too! They are also patient creatures but can be intolerant and narrow-minded as well. </string>
+    <string name="title_section3">Gemini</string>
+    <string name="gemini_description">Those bearing the Gemini zodiac are incredibly flexible people who can adapt to almost any situation. They also possess a tenacity that not only enables them to rise above major setbacks but to take full advantage of negative situations as well.</string>
+    <string name="title_section4">Cancer</string>
+    <string name="cancer_description">People bearing the Cancer sign are so loving, you can almost consider them emotional. Cancers make up the greater part of caring folks on this earth. They cherish family and friends dearly and are usually doting pet owners too.</string>
+    <string name="title_section5">Leo</string>
+    <string name="leo_description">The Leo is giving, willing to help those in need.  Very cheerful and uplifting, they will be the first to help you through a hard time.  The Leo’s personality is full of charm and excitement, and they are very giving and kind.</string>
+    <string name="title_section6">Virgo</string>
+    <string name="virgo_description">The introverted Virgo is very hard to “catch”. Those born under the Virgo zodiac are so reserved that it is hard even to get to know them, much less win their hearts. The worst part is, the more interested they are in you, the shier they will be in your presence. That is why you won’t see Virgos getting attached in a hurry.</string>
+    <string name="title_section7">Libra</string>
+    <string name="libra_description">Libras are active people who love sports, being on the road and being out in the open. They also have a great liking for the arts and entertainment. Libras may act silly sometimes and often waste time daydreaming or making believe as they have quite an imagination.</string>
+    <string name="title_section8">Scorpio</string>
+    <string name="scorpio_description">Some of the most powerful men and women are born under the Scorpio zodiac. Influential and self-motivated, Scorpios are strong leaders who can bring forth success in all their enterprises. Compelling and unwavering in all they do, these formidable personalities do not take failure as an answer.</string>
+    <string name="title_section9">Sagittarius</string>
+    <string name="sagittarius_description">The optimistic Sagittarius is always in good spirits. They are cheerful and upbeat most of the time and believe that there is a positive side to everything. Sagittariuses are also very loyal to their country. Many war heroes bear the Sagittarius zodiac sign.</string>
+    <string name="title_section10">Capricorn</string>
+    <string name="capricorn_description">The pragmatic Capricorn can sense at once whether a new concept is going to work. Their forthright attitude also means that if they think you fall short, they will have no problem telling it “to your face”. Capricorns are great at improvising too.</string>
+    <string name="title_section11">Aquarius</string>
+    <string name="aquarius_description">Those born under the Aquarius sign are generally erratic. Their behavior and temperament are so unpredictable that it is impossible to define their personality type. However, they usually make wonderful first impressions.</string>
+    <string name="title_section12">Pisces</string>
+    <string name="pisces_description">Gifted with a wild imagination, Pisceses have an unrivalled talent for story telling or anything artistic for that matter. They also have a great capacity for love and the depth with which they feel sometimes makes them extremely sensitive.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="check_sign">Check Sign</string>
+    <string name="sign_match">Sign Match</string>
+    <string name="guess_sign">Guess Sign</string>
+    <string name="action_settings">Settings</string>
+</resources>

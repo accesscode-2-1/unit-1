@@ -1,5 +1,9 @@
 package com.example.accesscode.myphone;
 
+<<<<<<< HEAD
+=======
+import android.content.Intent;
+>>>>>>> gmsyrimis
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,27 +20,47 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
         /* DialerActivity */
         Button dialerButton = (Button) findViewById(R.id.dialer_button);
+=======
+
+        Button dialerButton = (Button) findViewById(R.id.dialer_button);
+
+>>>>>>> gmsyrimis
         dialerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Dialer clicked", Toast.LENGTH_SHORT).show();
+<<<<<<< HEAD
                 /*
                     Use Explicit Intent to start DialerActivity here.
                  */
             }
         });
         /* EmailActivity */
+=======
+                Intent intent = new Intent(getApplicationContext(), DialerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+>>>>>>> gmsyrimis
         Button emailButton = (Button) findViewById(R.id.email_button);
         emailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Email clicked", Toast.LENGTH_SHORT).show();
+<<<<<<< HEAD
                  /*
                     Use Explicit Intent to start EmailActivity here.
                  */
 
+=======
+                Intent intent = new Intent(getApplicationContext(), EmailActivity.class);
+                startActivity(intent);
+>>>>>>> gmsyrimis
             }
         });
     }
@@ -63,4 +87,8 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> gmsyrimis

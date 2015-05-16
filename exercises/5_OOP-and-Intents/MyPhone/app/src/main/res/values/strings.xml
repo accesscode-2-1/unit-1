@@ -1,6 +1,18 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">MyPhone</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+=======
+    <string name="app_name">FOHN</string>
+    <string name="action_settings">Settings</string>
+    <string name="callLabel">Initialize Call</string>
+    <string name="dialerLabel">Enter Phone Number:</string>
+    <string name="emailSubjectLabel">Email Subject:</string>
+    <string name="emailBtnLabel">Initialize EMAIL</string>
+    <string name="emailBodyLabel">Email Body:</string>
+    <string name="beginCallBtnLabel">Begin Call</string>
+    <string name="BeginEmailBtnLabel">Begin Email</string>
+>>>>>>> gmsyrimis
 </resources>

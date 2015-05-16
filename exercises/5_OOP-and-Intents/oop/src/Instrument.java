@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+package src;
+
+>>>>>>> gmsyrimis
 /**
  * Created by amyquispe on 4/30/15.
  */
