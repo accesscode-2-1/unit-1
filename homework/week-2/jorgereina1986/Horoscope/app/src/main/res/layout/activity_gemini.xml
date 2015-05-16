@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff274756"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="jorgereina1986.c4q.nyc.horoscope.SignDescription">
+
+    <TextView
+        android:id="@+id/signName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:text="GEMINI"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You could receive some sort of windfall today, Gemini. Use it wisely. Consider buying some time to figure out what you want to do with your life. It's likely that your career isn't exactly ringing your bells these days. You're ready for new challenges and opportunities. Meditate on what would make you happy and then take a systematic approach to achieving it."
+        android:id="@+id/description"
+        android:layout_below="@+id/signName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>
