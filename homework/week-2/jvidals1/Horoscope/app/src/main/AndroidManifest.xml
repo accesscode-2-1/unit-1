@@ -40,6 +40,11 @@
             android:label="@string/app_name" >
 
         </activity>
+
+        <activity
+            android:name=".SignInfoActivity"
+            android:label="@string/app_name" >
+            </activity>
     </application>
 
 </manifest>
