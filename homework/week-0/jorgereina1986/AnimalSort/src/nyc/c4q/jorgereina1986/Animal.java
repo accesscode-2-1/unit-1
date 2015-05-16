@@ -1,9 +1,13 @@
+package nyc.c4q.jorgereina1986;
+
 /**
+ * Access Code 2.1
  * Created by Jorge Reina on 5/4/15.
  */
 public class Animal implements Comparable<Animal>
 {
     String species;
+
 
     public String getSpecies()
     {
@@ -24,7 +28,10 @@ public class Animal implements Comparable<Animal>
     @Override
     public boolean equals(Object obj)
     {
-        Animal animal1 = (Animal) obj;
-        return this.getSpecies().equals(animal1.getSpecies());
+        if (obj instanceof Animal) {
+            Animal animal1 = (Animal) obj;
+            return this.getSpecies().equals(animal1.getSpecies());
+        }
+        return false;
     }
 }
