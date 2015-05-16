@@ -19,28 +19,40 @@
         </activity>
 
         <activity android:name=".AriesActivity"
+            android:screenOrientation="portrait"
             android:label="@string/aries"/>
         <activity android:name=".TaurusActivity"
+            android:screenOrientation="portrait"
             android:label="@string/taurus"/>
         <activity android:name=".GeminiActivity"
+            android:screenOrientation="portrait"
             android:label="@string/gemini"/>
         <activity android:name=".CancerActivity"
+            android:screenOrientation="portrait"
             android:label="@string/cancer"/>
         <activity android:name=".LeoActivity"
+            android:screenOrientation="portrait"
             android:label="@string/leo"/>
         <activity android:name=".VirgoActivity"
+            android:screenOrientation="portrait"
             android:label="@string/virgo"/>
         <activity android:name=".ScorpioActivity"
+            android:screenOrientation="portrait"
             android:label="@string/scorpio"/>
         <activity android:name=".LibraActivity"
+            android:screenOrientation="portrait"
             android:label="@string/libra"/>
         <activity android:name=".SagittariusActivity"
+            android:screenOrientation="portrait"
             android:label="@string/sagittarius"/>
         <activity android:name=".CapricornActivity"
+            android:screenOrientation="portrait"
             android:label="@string/capricorn"/>
         <activity android:name=".AquariusActivity"
+            android:screenOrientation="portrait"
             android:label="@string/aquarius"/>
         <activity android:name=".PiscesActivity"
+            android:screenOrientation="portrait"
             android:label="@string/pisces"/>
 
 
