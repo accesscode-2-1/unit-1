@@ -111,6 +111,8 @@ public class Main extends ActionBarActivity {
                     break;
             case 2: fragment = new SignCompatibilityFragment();
                     break;
+            case 3: fragment = new HoroscopeGameFragment();
+                    break;
             default:fragment = new SignInfoFragment();
         }
 

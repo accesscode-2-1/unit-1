@@ -86,4 +86,8 @@
 
     <string name="get_compatibility">Get Compatibility</string>
 
+    <!--- Horoscope Game Resources -->
+
+    <string name="submit">Submit</string>
+
 </resources>
