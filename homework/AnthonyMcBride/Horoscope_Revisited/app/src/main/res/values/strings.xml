@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Horoscope_Revisited</string>
     <string name="app_title">Look to the Stars</string>
+
     <string name="aquarius_title">Aquarius - The Water Bearer</string>
     <string name="aquarius_dates">January 18 - February 20</string>
     <string name="Aquarius">Aquarius</string>
@@ -24,7 +25,7 @@
     <string name="Leo">Leo</string>
     <string name="virgo_title">Virgo - The Virgin</string>
     <string name="virgo_dates">August 28 - September 23</string>
-    <String name="Virgo">Virgo</String>
+    <string name="Virgo">Virgo</string>
     <string name="libra_title">Libra - The Scales</string>
     <string name="libra_dates">September 24 - October 23</string>
     <string name="Libra">Libra</string>
@@ -37,4 +38,14 @@
     <string name="capricorn_title">Capricorn - The Sea Goat</string>
     <string name="capricorn_dates">December 23 - January 17</string>
     <string name="Capricorn">Capricorn</string>
+
+    <string name="navigator">Navigator</string>
+    <string name="findUserSign">Type in your birthday (MM-DD) to view your sign.</string>
+    <string name="chris_rock">You\'re gonna die.</string>
+    <string name="chris_rock_gemini">You\'re gonna die twice.</string>
+    <string name="chris_rock_scorpio">You\'re gonna die having sex.</string>
+    <string name="sign_by_date">Find Sign</string>
+    <string name="game_button">Game of Stars</string>
+    <string name="the_good">Good</string>
+    <string name="the_bad">Bad</string>
 </resources>

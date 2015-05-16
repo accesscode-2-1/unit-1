@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.c4q_anthony_mcbride.horoscope_revisited.GameOfStars">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="Guess The Sign!"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  I\'ll show you a date\, you have 20 Seconds to tell me the sign to corresponds to (no need to capitalize your Response).  Press start when you\'re ready. "
+            android:textSize="17sp"
+            />
+        <Button
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Start"
+            android:textSize="20sp"
+            android:onClick="makeRandomNumber"/>
+
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/randomNumberTextView"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/userResponse"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/answerTextView"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:textSize="20sp"
+            android:onClick="whatanswerShouldBe"/>
+
+        <Button
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Try Again"
+            android:textSize="20sp"
+            android:onClick="tryAgain"/>
+
+
+    </LinearLayout>
