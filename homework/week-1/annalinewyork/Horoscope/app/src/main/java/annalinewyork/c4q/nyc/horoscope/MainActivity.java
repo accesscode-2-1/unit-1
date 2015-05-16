@@ -12,12 +12,17 @@ import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
 
+    Button signbutton;
+    Button findbutton;
+    Button romanticbutton;
+    Button gamebutton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button signbutton = (Button) findViewById(R.id.signButton);
+        signbutton = (Button) findViewById(R.id.signButton);
         signbutton.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
@@ -28,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
         );
 
 
-        Button findbutton = (Button) findViewById(R.id.findButton);
+        findbutton = (Button) findViewById(R.id.findButton);
         findbutton.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
@@ -39,7 +44,7 @@ public class MainActivity extends ActionBarActivity {
 
         );
 
-        Button romanticbutton = (Button) findViewById(R.id.romanticButton);
+        romanticbutton = (Button) findViewById(R.id.romanticButton);
         romanticbutton.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
@@ -49,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
                 }
         );
 
-        Button gamebutton = (Button) findViewById(R.id.gameButton);
+        gamebutton = (Button) findViewById(R.id.gameButton);
         gamebutton.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
@@ -59,7 +64,6 @@ public class MainActivity extends ActionBarActivity {
                 }
         );
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -79,7 +83,6 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
