@@ -10,7 +10,7 @@
         android:layout_height="fill_parent"
         android:layout_gravity="right|top"
         android:clickable="true"
-        android:background="@drawable/background3">
+        android:background="@drawable/background2">
 
 
         <TextView

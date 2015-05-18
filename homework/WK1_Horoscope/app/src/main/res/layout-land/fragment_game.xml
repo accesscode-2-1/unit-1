@@ -10,7 +10,7 @@
         android:layout_height="fill_parent"
         android:layout_gravity="right|top"
         android:clickable="true"
-        android:background="@drawable/background3">
+        android:background="@drawable/background2">
 
 
         <TextView
@@ -61,7 +61,6 @@
             android:textColor="#ffe8ff61"
             android:textAlignment="center"
             android:gravity="center_horizontal"
-
             android:textSize="18dp"
             android:layout_below="@+id/rightWrong"
             android:layout_centerHorizontal="true" />
