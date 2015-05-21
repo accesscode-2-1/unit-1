@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
+<!-- From: file:/Users/c4q-tashasmith/Desktop/unit-1/homework/tashsmit/hw_05-08/Homework_05-08/app/src/main/res/menu/global.xml -->

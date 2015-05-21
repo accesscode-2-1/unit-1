@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Homework_05-08</string>
+
+    <string name="title_section1">Astro Info</string>
+    <string name="title_section2">Birthday Lookup</string>
+    <string name="title_section3">Compatibility</string>
+    <string name="title_section4">Countdown Game</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="zodiac">
+        <item>aries</item>
+        <item>taurus</item>
+        <item>gemini</item>
+        <item>cancer</item>
+        <item>leo</item>
+        <item>virgo</item>
+        <item>leo</item>
+        <item>scorpio</item>
+        <item>sagittarius</item>
+        <item>capricorn</item>
+        <item>aquarius</item>
+        <item>pisces</item>
+    </string-array>
+</resources>

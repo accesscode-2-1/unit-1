@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zodiac Sign Information"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WATER SIGNS"
+        android:id="@+id/water"
+       />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EARTH SIGNS"
+        android:id="@+id/earth"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FIRE SIGNS"
+        android:id="@+id/fire"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AIR SIGNS"
+        android:id="@+id/air"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info here"
+        android:id="@+id/info"
+        android:layout_gravity="center_horizontal" />
+
+
+
+</LinearLayout><!-- From: file:/Users/c4q-tashasmith/Desktop/unit-1/homework/tashsmit/hw_05-08/Homework_05-08/app/src/main/res/layout/astro_info.xml -->
