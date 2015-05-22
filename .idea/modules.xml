@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/review/2015-04-27/2015-04-27.iml" filepath="$PROJECT_DIR$/review/2015-04-27/2015-04-27.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review/2015-04-27/2015-04-27.iml" filepath="$PROJECT_DIR$/review/2015-04-27/2015-04-27.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/22.0.0.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/22.0.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/22.0.0.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/22.0.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/androidTest/androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/generated/source/buildConfig/androidTest/androidTest1.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/generated/source/buildConfig/androidTest/androidTest1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/generated/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/generated/source/buildConfig/buildConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/manifests/androidTest/debug/debug.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/manifests/androidTest/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/manifests/full/debug/debug.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/manifests/full/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/main/main.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review/2015-04-29/AndroidSample/app/src/main/main.iml" filepath="$PROJECT_DIR$/review/2015-04-29/AndroidSample/app/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review/2015-04-29/AndroidSample/app/src/main/main1.iml" filepath="$PROJECT_DIR$/review/2015-04-29/AndroidSample/app/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/main/main1.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/oop/oop.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/oop/oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/generated/source/r/r.iml" filepath="$PROJECT_DIR$/exercises/5_OOP-and-Intents/MyPhone/app/build/generated/source/r/r.iml" />
+    </modules>
+  </component>
+</project>
