@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgr">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <!-- Row 1, icons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/icon_aries"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_aries"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/icon_taurus"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_taurus"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/icon_gemini"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_gemini"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <!-- Row 2, labels -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/sign_aries"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:text="@string/sign_taurus"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:text="@string/sign_gemini"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <!-- Row 3, icons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dp">
+
+        <ImageButton
+            android:id="@+id/icon_cancer"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_cancer"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/icon_leo"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_leo"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/icon_virgo"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_virgo"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <!-- Row 4, labels -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/sign_cancer"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:text="@string/sign_leo"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:text="@string/sign_virgo"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <!-- Row 5, icons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dp">
+
+        <ImageButton
+            android:id="@+id/icon_libra"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_libra"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/icon_scorpio"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_scorpio"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/icon_sagittarius"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_sagittarius"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <!-- Row 6, labels -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/sign_libra"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:text="@string/sign_scorpio"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:text="@string/sign_sagittarius"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <!-- Row 7, icons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dp">
+
+        <ImageButton
+            android:id="@+id/icon_capricorn"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_capricorn"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/icon_aquarius"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_aquarius"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/icon_pisces"
+            style="zodiac_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/zodiac_icon_pisces"
+            android:scaleType="fitCenter"
+            android:background="#00000000">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <!-- Row 8, labels -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/sign_capricorn"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:text="@string/sign_aquarius"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:text="@string/sign_pisces"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+</LinearLayout>
+</FrameLayout>
