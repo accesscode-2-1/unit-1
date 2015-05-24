@@ -1,0 +1,1 @@
+package nyc.c4q.hoshikoo;/** * Created by Hoshiko on 4/27/15. */public interface Domestic{    //Create the Domestic interface.    // This interface should include getters and setters for a name field,    // since pets tend to have their own names.    public void setName(String name);    public String getName();}

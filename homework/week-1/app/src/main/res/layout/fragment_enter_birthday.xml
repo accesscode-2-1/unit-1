@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hoshikoo.c4q.nyc.myapplication.EnterBirthday"
+    android:background="#ffffff0e"
+    android:textAlignment="center">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|top"
+        android:clickable="true"
+        android:background="#ff000000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter your birthday in number. (MMDD format) May 5th should be 0505"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+            android:textSize="20dp"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/birth_day"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffffff"
+            android:minHeight="40dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get your zodiac sign!"
+            android:id="@+id/get_zodiac_sign"
+            android:layout_marginTop="67dp"
+
+            android:layout_below="@+id/birth_day"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Your Zodiac Sign is..."
+            android:id="@+id/textView3"
+            android:layout_below="@+id/get_zodiac_sign"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/zodiac_sign_result"
+            android:textColorHighlight="#ffffffff"
+            android:height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
