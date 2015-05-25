@@ -3,16 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/next"
+    android:background="@drawable/background_home_screen"
     android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#00FFFFFF"
-     >
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/title_zodiac_sign"
@@ -21,7 +19,7 @@
             android:gravity="center"
             android:padding="10dp"
             android:text="Zodiac Signs"
-            android:textColor="#ffffffff"
+            android:textColor="#fffdfd"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -29,8 +27,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#00FFFFFF">
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/aries_id"
@@ -76,8 +73,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#00FFFFFF">
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/leo_id"
@@ -123,8 +119,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#00FFFFFF">
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/sagittarius_id"
@@ -170,9 +165,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-          android:background="#00FFFFFF"
-        >
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/title_zodiac_sign2"
@@ -185,5 +178,6 @@
             android:textSize="20sp" />
 
     </LinearLayout>
+
 </LinearLayout>
 

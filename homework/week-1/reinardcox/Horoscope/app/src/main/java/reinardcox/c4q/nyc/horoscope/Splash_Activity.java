@@ -7,23 +7,25 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.widget.TextView;
 
-public class SplashScreen extends Activity {
-    protected TextView _titleScreen, _titleScreen2; // Ask about the protected vs. private
+public class Splash_Activity extends Activity {
+    protected TextView _mainTitle, _authorTitle; // Ask about the protected vs. private
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash_screen);
+        setContentView(R.layout.splash_layout);
 
-        _titleScreen = (TextView) findViewById(R.id.displayText);
-        _titleScreen2 = (TextView) findViewById(R.id.displayText2);
+        _mainTitle = (TextView) findViewById(R.id.main_title);
+        _authorTitle = (TextView) findViewById(R.id.author_title);
 
+        //This imports the custom font being used.
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/ObelixProBIt-cyr.ttf");
 
-        _titleScreen.setTypeface(typeface);
-        _titleScreen2.setTypeface(typeface);
+        //Apply the font to the TextView
+        _mainTitle.setTypeface(typeface);
+        _authorTitle.setTypeface(typeface);
 
-        final Intent intent = new Intent(this, HomeScreen.class);
+        final Intent intent = new Intent(this, Home_Activity.class);
 
         new CountDownTimer(2000, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -31,7 +33,6 @@ public class SplashScreen extends Activity {
             }
 
             public void onFinish() {
-                //mTextField.setText("done!");
                 startActivity(intent);
                 finish();
             }
