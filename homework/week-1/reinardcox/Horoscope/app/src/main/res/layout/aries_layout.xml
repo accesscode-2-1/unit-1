@@ -20,8 +20,8 @@
 
     </LinearLayout>
 <TextView
+    android:id="@+id/output_aries_display"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:text="Aries, the Ram, is the first sign of the Zodiac. In astrology, Aries combines the element fire and the cardinal quality. That makes the Aries Zodiac sign pesonality one of a contender. A brave and eager challenger."/>
-
+    />
 </LinearLayout>
