@@ -24,4 +24,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile files('libs/HoroscopeAPI1.7.jar')
     compile files('lib/HoroscopeAPI1.7.jar')
+    compile files('lib/http-request-6.0.jar')
 }

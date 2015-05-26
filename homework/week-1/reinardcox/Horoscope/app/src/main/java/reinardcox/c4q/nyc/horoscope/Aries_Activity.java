@@ -9,11 +9,6 @@ import android.widget.TextView;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import horoscopeapi.HoroscopeAPI;
-import horoscopeapi.SQLExcpetion;
-import horoscopeapi.ZodiacReading;
-import horoscopeapi.ZodiacSign;
-
 
 public class Aries_Activity extends AppCompatActivity {
 
@@ -25,7 +20,8 @@ public class Aries_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aries_layout);
         _display = (TextView) findViewById(R.id.output_aries_display);
-        _display.setText(readingSign());
+
+        _display.setText(checkSignReadings());
 
     }
 
@@ -38,23 +34,23 @@ public class Aries_Activity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    public String readingSign() {
-
-        String reading = "";
+    public String checkSignReadings() {
 
         try {
             HoroscopeAPI api = new HoroscopeAPI(10000);
-            reading = api.getZodiacReading(ZodiacSign.Dragon, ZodiacReading.Daily_Zodiac);
-        } catch (MalformedURLException ex) {
-            ex.printStackTrace();
-        } catch (IOException ex) {
-            //ex.printStackTrace();
-        } catch (SQLExcpetion ex) {
-            //ex.printStackTrace();
-        }
-        return reading;
-    }
+            String reading = "";
 
+            reading = api.getHoroscopeReading(HoroscopeSign.Libra, HoroscopeReading.Love);
+            return reading;
+        } catch (MalformedURLException ex) {
+            System.out.println("Cannot connect to server");
+        } catch (IOException ex) {
+            System.out.println("Cannot get stream from server");
+        } catch (SQLExcpetion ex) {
+            System.out.println("Cannot connect to database");
+        }
+        return null;
+    }
 }
 
 

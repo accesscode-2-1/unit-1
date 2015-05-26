@@ -93,5 +93,6 @@
     <orderEntry type="library" exported="" name="1_HoroscopeAPI1.7" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.1.1" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.1.1" level="project" />
+    <orderEntry type="library" exported="" name="http-request-6.0" level="project" />
   </component>
 </module>
