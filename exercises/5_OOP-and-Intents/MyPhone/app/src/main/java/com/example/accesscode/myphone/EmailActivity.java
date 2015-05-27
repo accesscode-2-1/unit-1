@@ -34,7 +34,10 @@ public class EmailActivity extends Activity {
                 String subject = emailSubject.getText().toString();
                 String body = emailBody.getText().toString();
 
+                // IMPLICIT INTENT ?
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+
+                // Intent emailIntent = new Intent(getApplicationContext, EmailActivity.class);   <---- EXPLICIT INTENT ?
                 emailIntent.setData(Uri.parse("mailto:" + myEmailAddress)); // only email apps should handle this
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
                 emailIntent.putExtra(Intent.EXTRA_TEXT, body);
