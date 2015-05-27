@@ -17,6 +17,14 @@
         android:layout_alignLeft="@id/txt"
         android:layout_alignBottom="@+id/datePicker" />
 
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/img"
+        android:layout_below="@+id/txt"
+        android:layout_toRightOf="@+id/txt"
+        android:layout_toEndOf="@+id/txt" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

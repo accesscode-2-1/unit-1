@@ -2,11 +2,11 @@ package doubleabatteries.c4q.nyc.calculatorproject;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.math.BigDecimal;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -16,10 +16,13 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         textview = (TextView) findViewById(R.id.textView);
+        textview.setTextSize(30);
+
 
         if(savedInstanceState != null){
             textview.setText(savedInstanceState.getString("equation"));
@@ -143,11 +146,12 @@ public class MainActivity extends ActionBarActivity {
                     textview.append(((Button) view).getText().toString());
                 }            }
         });
-        Button buttonNegative = (Button) findViewById(R.id.negative);
-        buttonNegative.setOnClickListener(new View.OnClickListener() {
+        Button buttonPercentage = (Button) findViewById(R.id.percentage);
+        buttonPercentage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textview.append("");
+                if (textview.getText().equals("")) {
+                }
             }
         });
         Button buttonBackspace = (Button) findViewById(R.id.backspace);
@@ -175,14 +179,16 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View view) {
                 if (textview.getText().equals("")) {
                 } else if (!isOperator(textview.getText().toString())){
-                    textview.append(((Button) view).getText().toString());
+                    textview.append("/");
                 }            }
         });
         Button buttonEnter = (Button) findViewById(R.id.enter);
         buttonEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            // TODO: LIBRARY PARSE CODE GOES HERE !!!!
+                Expression expression = new Expression(textview.getText().toString());
+                BigDecimal answer = expression.eval();
+                textview.setText(answer.toPlainString());
             }
         });
 

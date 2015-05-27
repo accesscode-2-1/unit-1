@@ -40,6 +40,8 @@ public class MainActivity extends ActionBarActivity {
     private ActionBarDrawerToggle mDrawerToggle;
     private CharSequence mTitle;
     private String[] mListTitles;
+    public static Calendar calendar;
+
 
 
     @Override
@@ -218,16 +220,43 @@ public class MainActivity extends ActionBarActivity {
 
 
             final DatePicker date = (DatePicker) rootView.findViewById(R.id.datePicker);
-            TextView txt = (TextView) rootView.findViewById(R.id.txt);
+
+            final ImageView img = (ImageView) rootView.findViewById(R.id.img);
+
 
             final TextView textview = (TextView) rootView.findViewById(R.id.textView);
             Button button = (Button) rootView.findViewById(R.id.button);
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    int birthMonth = date.getMonth() + 1;
+                    int birthMonth = (date.getMonth() + 1);
                     int birthDate = date.getDayOfMonth();
                     textview.setText(Methods.getHoroscopeSign(birthMonth, birthDate));
+                    if (textview.getText().toString().equalsIgnoreCase("capricorn")) {
+                        img.setImageResource(R.drawable.capricorn);
+                    } else if (textview.getText().toString().equalsIgnoreCase("aquarius")) {
+                        img.setImageResource(R.drawable.aquarius);
+                    } else if (textview.getText().toString().equalsIgnoreCase("aries")) {
+                        img.setImageResource(R.drawable.aries);
+                    } else if (textview.getText().toString().equalsIgnoreCase("cancer")) {
+                        img.setImageResource(R.drawable.cancer);
+                    } else if (textview.getText().toString().equalsIgnoreCase("gemini")) {
+                        img.setImageResource(R.drawable.gemini);
+                    } else if (textview.getText().toString().equalsIgnoreCase("leo")) {
+                        img.setImageResource(R.drawable.leo);
+                    } else if (textview.getText().toString().equalsIgnoreCase("libra")) {
+                        img.setImageResource(R.drawable.libra);
+                    } else if (textview.getText().toString().equalsIgnoreCase("pisces")) {
+                        img.setImageResource(R.drawable.pisces);
+                    } else if (textview.getText().toString().equalsIgnoreCase("sagittarius")) {
+                        img.setImageResource(R.drawable.sagittarius);
+                    } else if (textview.getText().toString().equalsIgnoreCase("scorpio")) {
+                        img.setImageResource(R.drawable.scorpio);
+                    } else if (textview.getText().toString().equalsIgnoreCase("taurus")) {
+                        img.setImageResource(R.drawable.taurus);
+                    } else if (textview.getText().toString().equalsIgnoreCase("virgo")) {
+                        img.setImageResource(R.drawable.virgo);
+                    }
 
                 }
             });
@@ -332,7 +361,6 @@ public class MainActivity extends ActionBarActivity {
         public static class horoscopeGame extends Fragment {
             public static final String ARG_LIST_NUMBER = "list_number";
             public static TextView time;
-            public static Calendar calendar;
 
             public horoscopeGame() {
                 // Empty constructor required for fragment subclasses
@@ -400,11 +428,12 @@ public class MainActivity extends ActionBarActivity {
                     public void onClick(View view) {
                         instructions.setVisibility(View.INVISIBLE);
                         Random random = new Random();
-                        final Calendar calendar = Calendar.getInstance();
+                        calendar = Calendar.getInstance();
                         calendar.set(Calendar.DAY_OF_YEAR, random.nextInt(365));
                         spinner.setEnabled(true);
                         button.setEnabled(false);
                         guessButton.setEnabled(true);
+                        answer.setText("");
 
                         new CountDownTimer(30000, 1000) {
 
@@ -416,7 +445,7 @@ public class MainActivity extends ActionBarActivity {
 
                             public void onFinish() {
                                 time.setText("Time is up!");
-                                answer.setText("The answer was:  " + Methods.getHoroscopeSign(calendar.MONTH, calendar.DAY_OF_MONTH).toString().toUpperCase());
+                                answer.setText("The answer was:  " + Methods.getHoroscopeSign(calendar.get(calendar.MONTH)+1, calendar.get(calendar.DAY_OF_MONTH)).toString().toUpperCase());
                                 button.setEnabled(true);
                                 spinner.setEnabled(false);
                                 guessButton.setEnabled(false);
@@ -438,7 +467,7 @@ public class MainActivity extends ActionBarActivity {
                             @Override
                             public void onClick(View view) {
 
-                                    if (spinner.getSelectedItem().toString().equalsIgnoreCase(Methods.getHoroscopeSign(calendar.MONTH, calendar.DAY_OF_MONTH))) {
+                                    if (spinner.getSelectedItem().toString().equalsIgnoreCase(Methods.getHoroscopeSign(calendar.get(calendar.MONTH)+1, calendar.get(calendar.DAY_OF_MONTH)).toString())) {
                                         answer.setText("You are correct!");
                                     } else {
                                         answer.setText("Sorry that is incorrect. \nPlease try again!");
