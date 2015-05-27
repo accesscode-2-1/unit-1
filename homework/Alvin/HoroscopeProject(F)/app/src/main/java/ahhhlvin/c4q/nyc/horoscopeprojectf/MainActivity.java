@@ -81,19 +81,23 @@ public class MainActivity extends ActionBarActivity {
         Fragment fragment;
 
         if (position == 0) {
-            fragment = new getHoroscope();
+            fragment = new homeScreen();
+
         } else if (position == 1) {
-            fragment = new getHoroscopeSign();
-        } else if (position == 2) {
-            fragment = new horoscopeCompatibility();
-        } else if (position == 3) {
-            fragment = new horoscopeGame();
-        } else {
             fragment = new getHoroscope();
+
+        } else if (position == 2) {
+            fragment = new getHoroscopeSign();
+
+        } else if (position == 3) {
+            fragment = new horoscopeCompatibility();
+
+        } else {
+            fragment = new horoscopeGame();
         }
 
         Bundle args = new Bundle();
-        args.putInt(getHoroscope.ARG_LIST_NUMBER, position);
+        args.putInt(homeScreen.ARG_LIST_NUMBER, position);
         fragment.setArguments(args);
 
 
@@ -112,6 +116,35 @@ public class MainActivity extends ActionBarActivity {
         super.onConfigurationChanged(newConfig);
         // Pass any configuration change to the drawer toggles
         mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+
+    public static class homeScreen extends Fragment {
+        public static final String ARG_LIST_NUMBER = "list_number";
+
+        public homeScreen() {
+
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            // this is the default screen that opens when the app is opened up
+            View rootView = inflater.inflate(R.layout.fragment_home_screen, container, false);
+
+
+            int i = getArguments().getInt(ARG_LIST_NUMBER);
+            String listItem = getResources().getStringArray(R.array.titles)[i];
+            getActivity().setTitle(listItem);
+
+            ImageView img = (ImageView) rootView.findViewById(R.id.image);
+            TextView txt = (TextView) rootView.findViewById(R.id.text);
+
+            img.setImageResource(R.drawable.horoscope);
+
+            return rootView;
+        }
+
     }
 
 
