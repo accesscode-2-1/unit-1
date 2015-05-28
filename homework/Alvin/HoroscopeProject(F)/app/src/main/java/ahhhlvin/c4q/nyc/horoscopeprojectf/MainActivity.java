@@ -1,6 +1,7 @@
 package ahhhlvin.c4q.nyc.horoscopeprojectf;
 import android.app.Fragment;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
 import android.app.FragmentManager;
@@ -20,7 +21,6 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

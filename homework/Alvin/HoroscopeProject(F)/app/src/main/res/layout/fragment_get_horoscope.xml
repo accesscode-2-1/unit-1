@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="GET"
             android:id="@+id/getHoroscopeButton"
-            android:layout_margin="30dp"
+            android:layout_marginTop="90px"
             android:layout_centerHorizontal="true"
             android:hapticFeedbackEnabled="true" />
 

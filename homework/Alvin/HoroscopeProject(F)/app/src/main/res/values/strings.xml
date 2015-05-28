@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Horoscope It Out</string>
+    <string name="app_name">Horoscopr</string>
 
     <string-array name ="titles">
         <item>Home</item>
