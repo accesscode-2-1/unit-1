@@ -32,10 +32,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GET HOROSCOPE SIGN!"
+        android:text="GET HOROSCOPE SIGN"
         android:hapticFeedbackEnabled="true"
         android:id="@+id/button"
         android:layout_below="@+id/datePicker"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
         android:layout_centerHorizontal="true" />
 
     <TextView

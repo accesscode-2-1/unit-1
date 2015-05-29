@@ -1,5 +1,6 @@
 package ahhhlvin.c4q.nyc.horoscopeprojectf;
 import android.app.Fragment;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.CountDownTimer;
@@ -21,6 +22,8 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -82,6 +85,8 @@ public class MainActivity extends ActionBarActivity {
 
         if (position == 0) {
             fragment = new homeScreen();
+            Toast toast = Toast.makeText(getApplicationContext(), "→ swipe right to get started", Toast.LENGTH_LONG);
+            toast.show();
 
         } else if (position == 1) {
             fragment = new getHoroscope();
@@ -137,10 +142,13 @@ public class MainActivity extends ActionBarActivity {
             String listItem = getResources().getStringArray(R.array.titles)[i];
             getActivity().setTitle(listItem);
 
-            ImageView img = (ImageView) rootView.findViewById(R.id.image);
-            TextView txt = (TextView) rootView.findViewById(R.id.text);
 
+            ImageView img = (ImageView) rootView.findViewById(R.id.image);
+            ImageView logo = (ImageView) rootView.findViewById(R.id.logo);
             img.setImageResource(R.drawable.horoscope);
+            logo.setImageResource(R.drawable.logo);
+
+
 
             return rootView;
         }

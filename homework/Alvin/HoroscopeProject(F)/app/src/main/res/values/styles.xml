@@ -3,6 +3,10 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:activatedBackgroundIndicator">@drawable/drawer_list_selector</item>
+
     </style>
+
+
 
 </resources>

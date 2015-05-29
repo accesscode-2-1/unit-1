@@ -10,14 +10,18 @@
     tools:context="ahhhlvin.c4q.nyc.horoscopeprojectf.GetHoroscopeSignActivity"
     android:id="@+id/R">
 
-
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginTop="100px"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"/>
 
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="400px"
         android:id="@+id/image"/>
 
 
@@ -27,22 +31,13 @@
         android:layout_height="wrap_content"
         android:text="horoscopr"
         android:textSize="130px"
-        android:layout_marginTop="100px"
-        android:gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/logo"
         android:textColor="#FFF"
         android:id="@+id/title"/>
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="2"
-        android:textSize="30px"
-        android:gravity="center"
-        android:text="→ swipe right to get started"
-        android:textColor="#FFF"
-        android:id="@+id/text"/>
+
 
 
 
