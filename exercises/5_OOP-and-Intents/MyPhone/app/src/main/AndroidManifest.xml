@@ -16,6 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".DialerActivity"
+            android:label="MyPhone" >
+
+            </activity>
+
+        <activity android:name=".EmailActivity"
+            android:label="MyPhone">
+
+
+            </activity>
+
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
         <!-- Add the DialerActivity and EmailActivity here. -->
     </application>
 
