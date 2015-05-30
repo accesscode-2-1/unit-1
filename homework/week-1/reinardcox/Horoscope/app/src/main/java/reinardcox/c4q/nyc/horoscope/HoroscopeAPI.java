@@ -97,7 +97,6 @@ public final class HoroscopeAPI {
     public final String getSignSymbol(HoroscopeSign hsign) {
         return hsign.getSymbol();
     }
-
     public final String getSignSymbol(ZodiacSign zsign) {
         return zsign.getSymbol();
     }

@@ -3,11 +3,11 @@ package reinardcox.c4q.nyc.horoscope;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -15,7 +15,8 @@ public class Home_Activity extends AppCompatActivity {
 
     private TextView _display, _display2;
     private ImageButton _aries, _taurus, _gemini, _cancer, _leo, _virgo, _libra, _scorpio, _sagittarius, _capricorn, _aquarius, _pisces;
-    private Intent _one, _two, _three, _four, _five, _six, _seven, _eight, _nine, _ten, _eleven, _twelve;
+    private Intent _one, _two, _three, _four, _five, _six, _seven, _eight, _nine, _ten, _eleven, _twelve, _sign;
+    private Button _chooseSign;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,7 @@ public class Home_Activity extends AppCompatActivity {
         _pisces = (ImageButton) findViewById(R.id.pisces_id); //Associated with _Twelve Intent variable
 
         _one = new Intent(this, Aries_Activity.class);
+        _one.putExtra("sign","aries");
         _two = new Intent(this, Taurus_Activity.class);
         _three = new Intent(this, Gemini_Activity.class);
         _four = new Intent(this, Cancer_Activity.class);
@@ -55,6 +57,7 @@ public class Home_Activity extends AppCompatActivity {
         _ten = new Intent (this, Capricorn_Activity.class);
         _eleven = new Intent(this, Aquarius_Activity.class);
         _twelve = new Intent(this, Pisces_Activity.class);
+        //_sign = new Intent(this, See_What_Sign.class);
 
         _aries.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,6 +142,16 @@ public class Home_Activity extends AppCompatActivity {
                 startActivity(_twelve);
             }
         });
+
+        _chooseSign = (Button) findViewById(R.id.choose_sign_id);
+
+        _chooseSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(_sign);
+            }
+        });
+
     }
 
     @Override
