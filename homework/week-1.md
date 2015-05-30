@@ -46,7 +46,8 @@ Create at least one change based on the code review you receive.
 ##### Exercise 2: Horoscope app
 
 Create a horoscope app with the following features:
-* A [navigation drawer](https://developer.android.com/design/patterns/navigation-drawer.html).
+
+1.  A [navigation drawer](https://developer.android.com/design/patterns/navigation-drawer.html).
 * An feature which displays the option to choose one of several different types of "signs". When the sign is
 selected, display information about the sign.
 * A feature where a user can enter their birthdate and receive information about what their sign is.
