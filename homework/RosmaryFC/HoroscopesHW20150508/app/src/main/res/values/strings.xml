@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">HoroscopesHW20150508</string>
+
+    <string-array name="signs_array">
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+    </string-array>
+
+    <string name="capricorn">
+        <b>Your element:</b> Earth \n \n
+        <b>Your ruling planets:</b> Saturn \n \n
+        <b>Symbol:</b> The Goat \n \n
+        <b>Your stone:</b> Garnet \n \n
+        <b>Life Pursuit:</b> To be proud of their achievements \n \n
+        <b>Vibration:</b> Powerful resilient energy \n \n
+        <b>Capricorn Secret Desire:</b> to be admired by their family and friends and the world at large \n \n
+    </string>
+
+    <string name="aquarius">
+        <b>Your element:</b> Air \n \n
+        <b>Your ruling planets:</b> Uranus \n \n
+        <b>Symbol:</b> The Water Bearer \n \n
+        <b>Your stone:</b> Amethyst \n \n
+        <b>Life Pursuit:</b> To understand life\'s mysteries \n \n
+        <b>Vibration:</b> High frequency \n \n
+        <b>Aquarius Secret Desire:</b> To be unique and original \n \n
+    </string>
+
+    <string name="pisces">
+        <b>Your element:</b> Water \n \n
+        <b>Your ruling planets:</b> Neptune \n \n
+        <b>Symbol:</b> The Fish \n \n
+        <b>Your stone:</b> Bloodstone \n \n
+        <b>Life Pursuit:</b> To avoid feeling alone and instead feel connected to others and the world at large \n \n
+        <b>Vibration:</b> Erratic Energy levels \n \n
+        <b>Pisces Secret Desire:</b> To live their dreams and turn fantasies into realities. \n \n
+    </string>
+
+    <string name="aries">
+        <b>Your element:</b> Fire \n \n
+        <b>Your ruling planets:</b> Mars \n \n
+        <b>Symbol:</b> The Ram \n \n
+        <b>Your stone:</b> Diamond \n \n
+        <b>Life Pursuit:</b> The thrill of the moment \n \n
+        <b>Vibration:</b> Enthusiastic \n \n
+        <b>Aries Secret Desire:</b> To lead the way for others. \n \n
+    </string>
+
+    <string name="taurus">
+        <b>Your element:</b> Earth \n \n
+        <b>Your ruling planets:</b> Venus \n \n
+        <b>Symbol:</b> The Bull \n \n
+        <b>Your stone:</b> Emerald \n \n
+        <b>Life Pursuit:</b> Emotional and financial security \n \n
+        <b>Vibration:</b> Determined energy \n \n
+        <b>Taurus Secret Desire:</b> To have a secure, happy and wealthy life/marriage. \n \n
+    </string>
+
+    <string name="gemini">
+        <b>Your element:</b> Air \n \n
+        <b>Your ruling planets:</b> Mercury \n \n
+        <b>Symbol:</b> The Twins \n \n
+        <b>Your stone:</b> Aquamarine \n \n
+        <b>Life Pursuit:</b> To explore a little bit of everything. \n \n
+        <b>Vibration:</b> Intense mental energy \n \n
+        <b>Gemini Secret Desire:</b> To be ahead of the crowd \n \n
+    </string>
+
+    <string name="cancer">
+        <b>Your element:</b> Water \n \n
+        <b>Your ruling planets:</b> The Moon \n \n
+        <b>Symbol:</b> The Crab \n \n
+        <b>Your stone:</b> Moonstone \n \n
+        <b>Life Pursuit:</b> Constant reassurance and intimacy \n \n
+        <b>Vibration:</b> Moody \n \n
+        <b>Cancer Secret Desire:</b> To feel safe (emotionally, spiritually, romantically and financially) \n \n
+    </string>
+
+    <string name="leo">
+        <b>Your element:</b> Fire \n \n
+        <b>Your ruling planets:</b> The Sun \n \n
+        <b>Symbol:</b> The Lion \n \n
+        <b>Your stone:</b> Peridot \n \n
+        <b>Life Pursuit:</b> To lead the way \n \n
+        <b>Vibration:</b> Radiant Energy \n \n
+        <b>Leo Secret Desire:</b> To be a star \n \n
+    </string>
+
+    <string name="virgo">
+        <b>Your element:</b> Earth \n \n
+        <b>Your ruling planets:</b> Mercury \n \n
+        <b>Symbol:</b> The Virgin \n \n
+        <b>Your stone:</b> Sapphire \n \n
+        <b>Life Pursuit:</b> To do the right thing \n \n
+        <b>Vibration:</b> Compassionate and caring \n \n
+        <b>Virgo Secret Desire:</b> To love and be loved in return \n \n
+    </string>
+
+    <string name="libra">
+        <b>Your element:</b> Air \n \n
+        <b>Your ruling planets:</b> Venus \n \n
+        <b>Symbol:</b> The Scales \n \n
+        <b>Your stone:</b> Opals \n \n
+        <b>Life Pursuit:</b> To be consistent \n \n
+        <b>Vibration:</b> Unsteady \n \n
+        <b>Libra Secret Desire:</b> To live an easy, uncomplicated life. \n \n
+    </string>
+
+    <string name="scorpio">
+        <b>Your element:</b> Water  \n \n
+        <b>Your ruling planets:</b> Pluto  \n \n
+        <b>Symbol:</b> The Scorpion \n \n
+        <b>Your stone:</b> Topaz \n \n
+        <b>Life Pursuit:</b> To survive against all opposition  \n \n
+        <b>Vibration:</b> Resilient \n \n
+        <b>Scorpio Secret Desire:</b> To triumph \n \n
+    </string>
+
+    <string name="sagittarius">
+        <b>Your element:</b> Fire \n \n
+        <b>Your ruling planets:</b> Jupiter \n \n
+        <b>Symbol:</b> The Archer \n \n
+        <b>Your stone:</b> Turquoise \n \n
+        <b>Life Pursuit:</b> To live the good life \n \n
+        <b>Vibration:</b> Overly expressive - frequent burnouts \n \n
+        <b>Sagittarius Secret Desire:</b> To make a difference in the world \n \n
+    </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
