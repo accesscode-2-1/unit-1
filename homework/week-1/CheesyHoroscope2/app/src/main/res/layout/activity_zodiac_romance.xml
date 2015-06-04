@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="abassawo.c4q.nyc.cheesyhoroscope2.ZodiacRomance"
+    android:background="#ff2aebff">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are we Compatible?"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/button"
+        android:id="@+id/linearLayout2"
+        android:layout_alignRight="@+id/linearLayout3">
+
+        <Spinner
+            android:background="@android:drawable/btn_dropdown"
+            android:id="@+id/signs_spinner"
+
+            android:layout_width="181dp"
+            android:layout_height="50dp"
+            android:entries="@array/spinners_array"
+            android:gravity="left" />
+
+
+        <Spinner
+        android:background="@android:drawable/btn_dropdown"
+        android:id="@+id/signs_spinner2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:entries="@array/spinners_array"
+        android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"></ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="281dp"
+            android:text="When Leo and Pisces join together in a love match, each partner enjoys the new perspective the other brings to life in general. Leo is a strong and assertive Sign, being free to do what they want and taking command of their surroundings. Pisces is quieter and more reserved and introspective. In many ways the two are polar opposites, yet both are dreamers at heart. When they care for one another, they each fill the other’s voids and have a caring, mutually beneficial relationship."
+            android:id="@+id/textView6"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+
+</RelativeLayout>

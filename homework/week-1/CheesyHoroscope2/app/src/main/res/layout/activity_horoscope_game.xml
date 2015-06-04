@@ -1,0 +1,219 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionGroup="false">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="abassawo.c4q.nyc.cheesyhoroscope.HoroscopeGame"
+        android:background="#ff2aebff"
+        android:id="@+id/randomDate">
+
+
+
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linlayout"
+
+
+        ></LinearLayout>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Guess a Sign!"
+        android:id="@+id/titleA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/ariesButton"
+    android:src="@drawable/ariestat"
+        android:layout_below="@id/randomDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/taurusButton"
+    android:src="@drawable/taurustat"
+        android:layout_below="@id/randomDate"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/geminiButton"
+    android:src="@drawable/geminitat"
+        android:layout_above="@+id/sagButton"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/cancerButton"
+    android:src="@drawable/cancertat"
+        android:layout_above="@+id/geminiButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/leoButton"
+    android:src="@drawable/leotat"
+        android:layout_alignTop="@+id/aquariusButton"
+        android:layout_alignLeft="@+id/taurusButton"
+        android:layout_alignStart="@+id/taurusButton" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/virgoButton"
+    android:src="@drawable/virgotat"
+        android:layout_alignTop="@+id/taurusButton"
+        android:layout_alignRight="@+id/titleA"
+        android:layout_alignEnd="@+id/titleA" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/libraButton"
+    android:src="@drawable/libratat"
+        android:layout_alignTop="@+id/geminiButton"
+        android:layout_alignLeft="@+id/leoButton"
+        android:layout_alignStart="@+id/leoButton" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/scorpioButton"
+    android:src="@drawable/scorpiotat"
+        android:layout_below="@+id/aquariusButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/sagButton"
+    android:src="@drawable/sagittariustat"
+        android:layout_alignTop="@+id/piscesButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/capricornButton"
+    android:src="@drawable/capricorntat"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/scorpioButton"
+        android:layout_alignStart="@+id/scorpioButton" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/aquariusButton"
+    android:src="@drawable/aquariustat"
+        android:layout_above="@+id/libraButton"
+        android:layout_alignLeft="@+id/virgoButton"
+        android:layout_alignStart="@+id/virgoButton" />
+
+    <ImageButton
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:id="@+id/piscesButton"
+    android:src="@drawable/piscestat"
+        android:layout_alignTop="@+id/capricornButton"
+        android:layout_alignLeft="@+id/libraButton"
+        android:layout_alignStart="@+id/libraButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@id/randomDate"
+        android:text="November 11, 2015"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/titleA"
+        android:layout_toRightOf="@+id/ariesButton"
+        android:layout_toEndOf="@+id/ariesButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Aries"
+        android:id="@+id/ariesCapt"
+        android:layout_below="@+id/taurusButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Aries"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/ariesButton"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Aries"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/virgoButton"
+        android:layout_alignLeft="@+id/virgoButton"
+        android:layout_alignStart="@+id/virgoButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Aries"
+        android:id="@+id/textView5"
+        android:layout_above="@+id/sagButton"
+        android:layout_alignRight="@+id/leoButton"
+        android:layout_alignEnd="@+id/leoButton" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
