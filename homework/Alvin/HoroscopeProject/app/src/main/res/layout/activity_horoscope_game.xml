@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ahhhlvin.c4q.nyc.horoscopeproject.HoroscopeGame"
+    android:id="@+id/R">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START GAME"
+        android:id="@+id/startGame"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="TYPE HOROSCOPE SIGN GUESS HERE"
+        android:id="@+id/horoscopeGuess"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/submit"
+        android:layout_below="@+id/horoscopeGuess"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/time"
+        android:textAlignment="gravity"
+        android:layout_below="@+id/startGame"
+        android:layout_toLeftOf="@+id/horoscopeGuess"
+        android:layout_toStartOf="@+id/horoscopeGuess" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/answer"
+        android:layout_below="@+id/submit"
+        android:layout_alignRight="@+id/birthGuess"
+        android:layout_alignEnd="@+id/birthGuess" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/birthGuess"
+        android:layout_below="@+id/startGame"
+        android:layout_alignRight="@+id/submit"
+        android:layout_alignEnd="@+id/submit" />
+
+</RelativeLayout>
