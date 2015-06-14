@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff020000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff020000">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Aries"
+            android:id="@+id/buttonAries"
+            android:background="@android:color/holo_red_dark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Taurus"
+            android:id="@+id/buttonTaurus"
+            android:background="@android:color/holo_green_light" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Gemini"
+            android:id="@+id/buttonGemini"
+            android:background="@android:color/holo_blue_light" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Cancer"
+            android:id="@+id/buttonCancer"
+            android:background="#ff120eff" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff020000">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Leo"
+            android:id="@+id/buttonLeo"
+            android:background="@android:color/holo_red_dark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Virgo"
+            android:id="@+id/buttonVirgo"
+            android:background="@android:color/holo_green_light" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Libra"
+            android:id="@+id/buttonLibra"
+            android:background="@android:color/holo_blue_light" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Scorpio"
+            android:id="@+id/buttonScorpio"
+            android:background="#ff120eff" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff020000">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sagittarius"
+            android:id="@+id/buttonSagittarius"
+            android:background="#ffcc0000" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Capricorn"
+            android:id="@+id/buttonCapricorn"
+            android:background="#ff99cc00" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Aquarius"
+            android:id="@+id/buttonAquarius"
+            android:background="@android:color/holo_blue_light" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Pisces"
+            android:id="@+id/buttonPisces"
+            android:background="#ff120eff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
