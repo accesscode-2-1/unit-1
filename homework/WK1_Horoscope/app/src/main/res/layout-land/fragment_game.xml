@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hoshikoo.c4q.nyc.wk1_horoscope.GameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|top"
+        android:clickable="true"
+        android:background="@drawable/background2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_marginTop="33dp"
+            android:text="Guess the zodiac sign is for who born on"
+            android:textColor="#ffffffff"
+            android:textSize="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="random birthdate"
+            android:id="@+id/randomBD"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerZodiac"
+            android:entries="@array/zodiac_array"
+            android:prompt="@string/zodiac_prompt"
+            android:background="#fff1f1f1"
+            android:textColor="#ffffffff"
+            android:layout_below="@+id/randomBD"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/answerButton"
+            android:layout_below="@+id/spinnerZodiac"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer"
+            android:textColor="#ffe8ff61"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="18dp"
+            android:layout_below="@+id/rightWrong"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rightWrong"
+
+            android:layout_below="@+id/answerButton"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

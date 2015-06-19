@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hoshikoo.c4q.nyc.wk1_horoscope.EnterBirthdayFragment"
+    android:textAlignment="center"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|top"
+        android:clickable="true"
+        android:background="@drawable/background2">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Please enter your birthday"
+            android:id="@+id/textView2"
+            android:textSize="20dp"
+            android:textColor="#ffffffff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/spinner3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get your zodiac sign!"
+            android:id="@+id/get_zodiac_sign"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner3"
+            android:background="#ffffffff"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_above="@+id/get_zodiac_sign"
+            android:layout_toLeftOf="@+id/spinner4"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignTop="@+id/spinner4"
+            android:layout_alignLeft="@+id/get_zodiac_sign"
+            android:layout_alignStart="@+id/get_zodiac_sign" />
+
+        <Spinner
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner4"
+            android:background="#ffffffff"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/zodiac_sign_result2"
+            android:layout_above="@+id/get_zodiac_sign"
+            android:layout_alignRight="@+id/get_zodiac_sign"
+            android:layout_alignEnd="@+id/get_zodiac_sign" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/zodiac_sign_result2"
+            android:textColorHighlight="#ffffffff"
+            android:height="50dp"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textColor="#ffffffff"
+            android:layout_below="@+id/get_zodiac_sign"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/zodiac_sign_result"
+            android:textColorHighlight="#ffffffff"
+            android:height="50dp"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textColor="#ffffffff"
+            android:layout_below="@+id/get_zodiac_sign"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

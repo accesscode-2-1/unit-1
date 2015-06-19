@@ -1,0 +1,1 @@
+package nyc.c4q.hoshikoo;import java.util.ArrayList;/** * Created by Hoshiko on 4/30/15. */public abstract class Game{    public abstract ArrayList<String> getpieces();}

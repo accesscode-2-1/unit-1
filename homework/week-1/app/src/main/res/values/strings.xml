@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Horoscope app</string>
+
+    <string name="title_section1">Choose your zodiac sign</string>
+    <string name="title_section2">Enter your birthday</string>
+    <string name="title_section3">Romantic compatibility</string>
+    <string name="title_section4">Horoscope Game</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="chose_zodiac_sign_fragment">Please chose your zodiac sign</string>
+
+    <string name="hello_blank_fragment">hello blank fragment</string>
+    <string name="done">Done</string>
+
+    <string name="Aries_Description">March 21 - April 19
+ \n Your element: Fire
+ \n Your ruling planets: Mars
+ \n Symbol: The Ram
+ \n Your stone: Diamond
+ \n Life Pursuit: The thrill of the moment
+ \n Vibration: Enthusiastic
+ \n Aries Secret Desire: To lead the way for others.</string>
+</resources>
