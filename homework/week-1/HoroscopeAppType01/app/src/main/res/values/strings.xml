@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Horoscope App Type One</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
