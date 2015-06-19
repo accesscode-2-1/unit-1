@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/c4q-raynaldie/Desktop/Android/HelloWorld2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/libs/internal_impl-22.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
+        <dex dex="/Users/c4q-raynaldie/Desktop/Android/HelloWorld2/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.0-c9dcde9a469fe3dd2bc23baa6a772823bd6dae68.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-raynaldie/Desktop/Android/HelloWorld2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
+        <dex dex="/Users/c4q-raynaldie/Desktop/Android/HelloWorld2/app/build/intermediates/pre-dexed/debug/classes-1cfc1f97a7bb5845a36207b4e6047ec6479ce7b6.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-raynaldie/Desktop/Android/HelloWorld2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="983e2f375504bc04def18e709c35192afe92e65f">
+        <dex dex="/Users/c4q-raynaldie/Desktop/Android/HelloWorld2/app/build/intermediates/pre-dexed/debug/classes-a52c84e19d4fd8660c0f228f371910e0bc50b25e.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-raynaldie/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.0/support-annotations-22.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="281bc6c58ecb3644c23fbc5ee0452019f67b4d5d">
+        <dex dex="/Users/c4q-raynaldie/Desktop/Android/HelloWorld2/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.0-e8aa7f71aa7c1569fe16df14c615dfea8fd460ba.jar" />
+    </item>
+
+</items>
