@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgr"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/counter"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:padding="18dp">
+
+       <TextView
+            android:id="@+id/date"
+           android:textColor="#ff152e48"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/guesses_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff152e48"
+            android:textSize="18sp"/>
+
+        <Spinner
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/spinner_guess"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/guesses_left"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
