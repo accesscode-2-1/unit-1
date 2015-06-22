@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sign_button">Signs</string>
+    <string name="find_button">Find Your Sign</string>
+    <string name="romantic_button">Romantic Math</string>
+    <string name="game_button">Game</string>
+    <string name="aries_star">Aries</string>
+    <string name="taurus_star">Taurus</string>
+    <string name="gemini_star">gemini</string>
+    <string name="cancer_star">cancer</string>
+    <string name="leo_star">leo</string>
+    <string name="virgo_star">virgo</string>
+    <string name="libra_star">libra</string>
+    <string name="scorpio_star">scorpio</string>
+    <string name="capricorn_star">Capricorn</string>
+    <string name="sagittarius_star">sagittarius</string>
+    <string name="pisces_star">pisces</string>
+    <string name="aquarius_star">aquarius</string>
+</resources>
