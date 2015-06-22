@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu0">Signs</string>
+    <string name="menu1">Find My Signs</string>
+    <string name="menu2">Romantic Test</string>
+    <string name="menu3">Game</string>
+
+    <string name="set_your_birth_date">Set Your Birth Date</string>
+    <string name="set_his_birth_date">Set His Birth Date</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+</resources>
