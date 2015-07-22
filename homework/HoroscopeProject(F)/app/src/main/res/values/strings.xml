@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Horoscopr</string>
+
+    <string-array name ="titles">
+        <item>Home</item>
+        <item>Get Horoscope</item>
+        <item>Get Horoscope Sign</item>
+        <item>Horoscope Compatibility</item>
+        <item>Horoscope Game</item>
+    </string-array>
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>
+

@@ -1,5 +1,7 @@
 package com.example.accesscode.myphone;
 
+import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,21 +24,20 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Dialer clicked", Toast.LENGTH_SHORT).show();
-                /*
-                    Use Explicit Intent to start DialerActivity here.
-                 */
+                Intent dialerActivity = new Intent(getApplicationContext(), DialerActivity.class);
+                startActivity(dialerActivity);
             }
         });
+
+
         /* EmailActivity */
         Button emailButton = (Button) findViewById(R.id.email_button);
         emailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Email clicked", Toast.LENGTH_SHORT).show();
-                 /*
-                    Use Explicit Intent to start EmailActivity here.
-                 */
-
+                Intent emailActivity = new Intent(getApplicationContext(), EmailActivity.class);
+                startActivity(emailActivity);
             }
         });
     }

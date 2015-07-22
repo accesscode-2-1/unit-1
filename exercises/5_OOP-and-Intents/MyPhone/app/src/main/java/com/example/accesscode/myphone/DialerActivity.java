@@ -1,6 +1,8 @@
 package com.example.accesscode.myphone;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,8 +23,15 @@ public class DialerActivity extends Activity {
             @Override
             public void onClick(View v) {
                 /* get text input */
-                String phoneNumber = dialerText.getText().toString();
 
+                String phoneNumber = dialerText.getText().toString();
+                Intent numberEnter = new Intent(Intent.ACTION_CALL);
+                Intent dialerIntent = new Intent(Intent.ACTION_DIAL);
+                dialerIntent.setData(Uri.parse("tel:" + phoneNumber));
+                if (dialerIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(numberEnter);
+                    startActivity(dialerIntent);
+                }
                 /*
                     Use an implicit intent to open the user's phone app to call this number.
                     http://developer.android.com/guide/components/intents-common.html#Phone
@@ -30,4 +39,7 @@ public class DialerActivity extends Activity {
             }
         });
     }
+
+
+
 }

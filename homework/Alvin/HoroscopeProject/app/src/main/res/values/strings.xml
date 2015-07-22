@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Horoscope It Out</string>
+
+    <string-array name ="titles">
+        <item>Get Horoscope</item>
+        <item>Get Horoscope Sign</item>
+        <item>Horoscope Compatibility</item>
+        <item>Horoscope Game</item>
+    </string-array>
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="title_activity_get_horoscope">Get Horoscope</string>
+    <string name="title_activity_get_horoscope_sign">Get Horoscope Sign</string>
+    <string name="title_activity_horoscope_compatibility">Horoscope Compatibility</string>
+    <string name="title_activity_horoscope_game">Horoscope Game</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+</resources>
