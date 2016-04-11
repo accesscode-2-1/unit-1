@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">InTheStars</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="in_the_stars">In The Stars</string>
+
+    <string-array name="appMenu">
+                             <item>In The Stars</item>
+                             <item>Le Romance</item>
+                             <item>Guessing Game</item>
+    </string-array>
+    <string name="enter_bday">Enter Your Birthday</string>
+    <string name="aries">Aries</string>
+    <string name="taurus">Taurus</string>
+    <string name="gemini">Gemini</string>
+    <string name="cancer">Cancer</string>
+    <string name="leo">Leo</string>
+    <string name="virgo">Virgo</string>
+    <string name="libra">Libra</string>
+    <string name="scorpio">Scorpio</string>
+    <string name="sag">Sagittarius</string>
+    <string name="capricorn">Capricorn</string>
+    <string name="aquarius">Aquarius</string>
+    <string name="pisces">Pisces</string>
+
+    <string name="ariesInfo">THIS IS ARIES</string>
+    <string name="taurusInfo">THIS IS TAURUS</string>
+    <string name="geminiInfo">THIS IS GEMINI</string>
+    <string name="cancerInfo">THIS IS CANCER</string>
+    <string name="leoInfo">THIS IS LEO</string>
+    <string name="virgoInfo">THIS IS VIRGO</string>
+    <string name="libraInfo">THIS IS LIBRA</string>
+    <string name="scorpioInfo">THIS IS SCORPIO</string>
+    <string name="sagInfo">THIS IS SAG</string>
+    <string name="capricornInfo">THIS IS CAPRICORN</string>
+    <string name="aquariusInfo">THIS IS AQUARIUS</string>
+    <string name="piscesInfo">THIS IS PISCES</string>
+</resources>
