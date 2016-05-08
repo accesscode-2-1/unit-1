@@ -1,5 +1,6 @@
 package com.example.accesscode.myphone;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -24,7 +25,14 @@ public class MainActivity extends ActionBarActivity {
                 Toast.makeText(getApplicationContext(), "Dialer clicked", Toast.LENGTH_SHORT).show();
                 /*
                     Use Explicit Intent to start DialerActivity here.
+
                  */
+                public void sendMessage(View v) {
+                    Intent intent = new Intent();
+
+                }
+
+
             }
         });
         /* EmailActivity */
@@ -36,6 +44,8 @@ public class MainActivity extends ActionBarActivity {
                  /*
                     Use Explicit Intent to start EmailActivity here.
                  */
+
+
 
             }
         });
