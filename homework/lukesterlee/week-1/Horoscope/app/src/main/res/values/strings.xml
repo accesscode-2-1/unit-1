@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="set_your_birth_date">Set Your Birth Date</string>
+    <string name="set_his_birth_date">Set His Birth Date</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <color name="white">#FFFFFF</color>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

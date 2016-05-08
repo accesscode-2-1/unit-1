@@ -1,5 +1,6 @@
 package com.example.accesscode.myphone;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,6 +17,9 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final Intent dialer = new Intent(getApplicationContext(), DialerActivity.class);
+        final Intent email = new Intent(getApplicationContext(), EmailActivity.class);
+
         /* DialerActivity */
         Button dialerButton = (Button) findViewById(R.id.dialer_button);
         dialerButton.setOnClickListener(new View.OnClickListener() {
@@ -25,6 +29,8 @@ public class MainActivity extends ActionBarActivity {
                 /*
                     Use Explicit Intent to start DialerActivity here.
                  */
+                startActivity(dialer);
+
             }
         });
         /* EmailActivity */
@@ -36,6 +42,7 @@ public class MainActivity extends ActionBarActivity {
                  /*
                     Use Explicit Intent to start EmailActivity here.
                  */
+                startActivity(email);
 
             }
         });
