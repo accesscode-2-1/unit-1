@@ -1,6 +1,7 @@
 package com.example.accesscode.myphone;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +11,18 @@ import android.widget.EditText;
  * Created by amyquispe on 4/30/15.
  */
 public class EmailActivity extends Activity {
+
+    public void composeEmail(String[] addresses, String subject) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("*/*");
+        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_)
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +44,8 @@ public class EmailActivity extends Activity {
                     http://developer.android.com/guide/components/intents-common.html#Email
 
                  */
+                composeEmail(myEmailAddress, subject, body);
+
             }
         });
     }
