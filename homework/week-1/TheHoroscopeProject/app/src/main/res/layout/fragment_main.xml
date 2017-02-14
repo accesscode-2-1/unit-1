@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Main$PlaceholderFragment"
+    android:id="@+id/mainscreen"
+    android:background="#ffffeb00">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horosmainpic"
+        android:layout_gravity="center"
+        android:contentDescription="@string/watt"
+        android:src="horoscope_icon"
+        android:clickable="true"
+        android:cropToPadding="false" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="mainscreentitle"
+        android:id="@+id/maintitle"
+        android:layout_gravity="center_horizontal|top"
+        android:textColor="#ff808080"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:id="@+id/scrollView"
+        android:fillViewport="false"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/mainscreentext"
+            android:id="@+id/mainscreenintro"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textStyle="bold"
+            android:textColor="#ff8a9193"
+            android:nestedScrollingEnabled="false"
+            android:autoText="false"
+            android:gravity="start" />
+    </ScrollView>
+
+
+</FrameLayout>

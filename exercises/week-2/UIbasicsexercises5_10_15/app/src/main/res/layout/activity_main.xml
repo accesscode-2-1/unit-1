@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <!-- button 1 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:text="1"
+         />
+    <!-- text view 1 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewbutton1"
+        android:layout_below="@id/button1"
+        android:text="txt1"
+       />
+    <!-- button 2 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:text="2"
+        android:layout_below="@id/textviewbutton1"/>
+    <!-- text view 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewbutton2"
+        android:layout_below="@id/button2"
+        android:text="txt2"
+        />
+    <!-- button 3 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:text="3"
+        android:layout_below="@+id/textviewbutton2"/>
+    <!-- text view 3 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewbutton3"
+        android:layout_below="@id/button3"
+        android:text="txt3"
+        />
+
+
+    <!-- To the right -->
+    <!-- button R1 -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonr1"
+        android:text="R1"
+        android:layout_toRightOf="@id/button1"
+        />
+    <!-- text view R1 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewbuttonr1"
+        android:layout_below="@id/buttonr1"
+        android:layout_toRightOf="@id/textviewbutton1"
+        android:text="txtr1"
+        android:layout_alignStart="@+id/buttonr1"
+        />
+    <!-- Button R2 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonr2"
+        android:text="R2"
+        android:layout_below="@+id/textviewbuttonr1"
+        android:layout_toRightOf="@id/button2"/>
+    <!-- text view R2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewbuttonr2"
+        android:layout_below="@id/buttonr2"
+        android:layout_toRightOf="@id/textviewbutton2"
+        android:text="txtr2"
+        android:layout_alignStart="@+id/buttonr2"
+        />
+    <!-- Button R3 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonr3"
+        android:text="R3"
+        android:layout_below="@+id/textviewbutton2"
+        android:layout_toRightOf="@id/button3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewbuttonr3"
+        android:text="txtr3"
+        android:layout_below="@+id/buttonr3"
+        android:layout_alignStart="@+id/buttonr3" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lighterletter.c4q.nyc.thehoroscopeproject.HoroscopeItemFragment">
+
+    <ListView android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HoroscopeItemFragment"
+        android:id="@+id/choosehoroscopes"
+        android:background="#ff9586ff"
+        android:nestedScrollingEnabled="true"
+        android:clickable="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aries"
+            android:src="@drawable/aries"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancer"
+            android:src="@drawable/cancer"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capricorn"
+            android:src="@drawable/capricorn"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gemini"
+            android:src="@drawable/gemini"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:clickable="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leo"
+            android:src="@drawable/leo"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/libra"
+            android:src="@drawable/libra"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pices"
+            android:src="@drawable/pices"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sagittarius"
+            android:src="@drawable/sagittarius"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scorpio"
+            android:src="@drawable/scorpio"
+            android:layout_row="2"
+            android:layout_column="2" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taurus"
+            android:src="@drawable/taurus"
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/virgo"
+            android:src="@drawable/virgo"
+            android:layout_row="3"
+            android:layout_column="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aquarious"
+            android:src="@drawable/aquarious"
+            android:layout_row="3"
+            android:layout_column="2" />
+
+    </GridLayout>
+
+</FrameLayout>
