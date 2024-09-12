@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HW_04-28/Adventure_Game/Adventure_Game.iml" filepath="$PROJECT_DIR$/HW_04-28/Adventure_Game/Adventure_Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW_04-28/Animal_Class/Animal_Class.iml" filepath="$PROJECT_DIR$/HW_04-28/Animal_Class/Animal_Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW_04-28/Card_Game/Card_Game.iml" filepath="$PROJECT_DIR$/HW_04-28/Card_Game/Card_Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AC_04-30/Excercise1/Excercise1.iml" filepath="$PROJECT_DIR$/AC_04-30/Excercise1/Excercise1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Tasha_Smith.iml" filepath="$PROJECT_DIR$/.idea/Tasha_Smith.iml" />
+    </modules>
+  </component>
+</project>
