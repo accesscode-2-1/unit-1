@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/c4q-george/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/c4q-george/IdeaProjects/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-75cf151762463252d9bedf2f81f982b58da2de5a.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-george/IdeaProjects/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/c4q-george/IdeaProjects/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-b4fed422fece907025787d8be3235dcdc794d603.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-george/IdeaProjects/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/c4q-george/IdeaProjects/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/classes-419d69e85df9c8c7bf3be18d775bdedadaef025b.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-george/IdeaProjects/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/c4q-george/IdeaProjects/unit-1/exercises/5_OOP-and-Intents/MyPhone/app/build/intermediates/pre-dexed/debug/classes-a2186637e70bfafbe53ec4f328f377171e1cba8a.jar" />
+    </item>
+
+</items>
