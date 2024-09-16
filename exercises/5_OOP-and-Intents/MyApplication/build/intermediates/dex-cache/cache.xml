@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/c4q-madelyntavarez/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.0/support-annotations-22.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="281bc6c58ecb3644c23fbc5ee0452019f67b4d5d">
+        <dex dex="/Users/c4q-madelyntavarez/Desktop/unit-2/exercises/5_OOP-and-Intents/MyApplication/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.0-07d610769ead02b6ec4825876728068e085e0562.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-madelyntavarez/Desktop/unit-2/exercises/5_OOP-and-Intents/MyApplication/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/libs/internal_impl-22.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
+        <dex dex="/Users/c4q-madelyntavarez/Desktop/unit-2/exercises/5_OOP-and-Intents/MyApplication/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.0-4ee3ac7d5d680471e84223b32c7486e9581b9569.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-madelyntavarez/Desktop/unit-2/exercises/5_OOP-and-Intents/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="983e2f375504bc04def18e709c35192afe92e65f">
+        <dex dex="/Users/c4q-madelyntavarez/Desktop/unit-2/exercises/5_OOP-and-Intents/MyApplication/app/build/intermediates/pre-dexed/debug/classes-ab7c06f933391258f7baa5752c75f4fee776118a.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-madelyntavarez/Desktop/unit-2/exercises/5_OOP-and-Intents/MyApplication/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
+        <dex dex="/Users/c4q-madelyntavarez/Desktop/unit-2/exercises/5_OOP-and-Intents/MyApplication/app/build/intermediates/pre-dexed/debug/classes-384bd8bd66d54ff0a2e4d88bc6fad02b408d0d27.jar" />
+    </item>
+
+</items>
