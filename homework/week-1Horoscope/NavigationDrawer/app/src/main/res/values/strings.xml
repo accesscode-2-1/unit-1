@@ -1,0 +1,52 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">Horoscope</string>
+    <string-array name="drawer_options">
+        <item>Choose a sign</item>
+        <item>MY SIGN</item>
+        <item>ROMANCE</item>
+        <item>Horoscope Guru</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="enter_BD">Choose Your BirthDay</string>
+    <string name="press_to_start">Press to start</string>
+    <string name="intro">Let\'s Test out how well you know zodiac signs. For each randomly presented date of birth you have to provide the right zodiac sign. You have 30 seconds to guess the sign. Good Luck!</string>
+
+
+
+
+</resources>
